@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class SmartQuery - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/smart_query.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ActiveRecord/Base.html">ActiveRecord::Base</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-assoc_sids_to_columns">::assoc_sids_to_columns</a>
+    
+    <li><a href="#method-c-attribute_condition">::attribute_condition</a>
+    
+    <li><a href="#method-c-clean_criteria">::clean_criteria</a>
+    
+    <li><a href="#method-c-from_kml">::from_kml</a>
+    
+    <li><a href="#method-c-load_from_params">::load_from_params</a>
+    
+    <li><a href="#method-c-named_scope_active_filter_method">::named_scope_active_filter_method</a>
+    
+    <li><a href="#method-c-named_scope_default_scope_method">::named_scope_default_scope_method</a>
+    
+    <li><a href="#method-c-named_scope_for_table_method">::named_scope_for_table_method</a>
+    
+    <li><a href="#method-c-search">::search</a>
+    
+    <li><a href="#method-c-search_fields_of">::search_fields_of</a>
+    
+    <li><a href="#method-i-criteria_from_spreadsheet">#criteria_from_spreadsheet</a>
+    
+    <li><a href="#method-i-criteria_to_spreadsheet">#criteria_to_spreadsheet</a>
+    
+    <li><a href="#method-i-disp_name">#disp_name</a>
+    
+    <li><a href="#method-i-joining_criteria">#joining_criteria</a>
+    
+    <li><a href="#method-i-joining_criteria-3D">#joining_criteria=</a>
+    
+    <li><a href="#method-i-joining_criteria__index">#joining_criteria__index</a>
+    
+    <li><a href="#method-i-joining_criteria__potential_values">#joining_criteria__potential_values</a>
+    
+    <li><a href="#method-i-joining_criteria_from_spreadsheet">#joining_criteria_from_spreadsheet</a>
+    
+    <li><a href="#method-i-joining_criteria_report_color_for">#joining_criteria_report_color_for</a>
+    
+    <li><a href="#method-i-joining_criteria_to_spreadsheet">#joining_criteria_to_spreadsheet</a>
+    
+    <li><a href="#method-i-my_model">#my_model</a>
+    
+    <li><a href="#method-i-name_from_spreadsheet">#name_from_spreadsheet</a>
+    
+    <li><a href="#method-i-name_to_spreadsheet">#name_to_spreadsheet</a>
+    
+    <li><a href="#method-i-next">#next</a>
+    
+    <li><a href="#method-i-previous">#previous</a>
+    
+    <li><a href="#method-i-table_sid_from_spreadsheet">#table_sid_from_spreadsheet</a>
+    
+    <li><a href="#method-i-table_sid_to_spreadsheet">#table_sid_to_spreadsheet</a>
+    
+    <li><a href="#method-i-test_query_to_spreadsheet">#test_query_to_spreadsheet</a>
+    
+    <li><a href="#method-i-to_ar_opts">#to_ar_opts</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Faveod.html">Faveod</a>
+  
+    <li><a href="./Faveod/AVBBFTranslationService.html">Faveod::AVBBFTranslationService</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions.html">Faveod::ActiveResourceExtensions</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions/ClassMethods.html">Faveod::ActiveResourceExtensions::ClassMethods</a>
+  
+    <li><a href="./Faveod/DistributedColors.html">Faveod::DistributedColors</a>
+  
+    <li><a href="./Faveod/GoogleTranslationService.html">Faveod::GoogleTranslationService</a>
+  
+    <li><a href="./Faveod/GraphMaker.html">Faveod::GraphMaker</a>
+  
+    <li><a href="./Faveod/HtmlTruncator.html">Faveod::HtmlTruncator</a>
+  
+    <li><a href="./Faveod/IePdfHeadersMiddleware.html">Faveod::IePdfHeadersMiddleware</a>
+  
+    <li><a href="./Faveod/PoUtils.html">Faveod::PoUtils</a>
+  
+    <li><a href="./Faveod/TranslationServer.html">Faveod::TranslationServer</a>
+  
+    <li><a href="./Faveod/TranslationServicesHelper.html">Faveod::TranslationServicesHelper</a>
+  
+    <li><a href="./Faveod/Validations.html">Faveod::Validations</a>
+  
+    <li><a href="./Faveod/Validations/Syntax.html">Faveod::Validations::Syntax</a>
+  
+    <li><a href="./Faveod/Validations/Syntax/ClassMethods.html">Faveod::Validations::Syntax::ClassMethods</a>
+  
+    <li><a href="./ActiveRecord.html">ActiveRecord</a>
+  
+    <li><a href="./ActiveRecord/Base.html">ActiveRecord::Base</a>
+  
+    <li><a href="./ActiveRecord/Condition.html">ActiveRecord::Condition</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters.html">ActiveRecord::ConnectionAdapters</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters/Column.html">ActiveRecord::ConnectionAdapters::Column</a>
+  
+    <li><a href="./ActiveRecord/Validations.html">ActiveRecord::Validations</a>
+  
+    <li><a href="./ActiveRecord/Validations/ClassMethods.html">ActiveRecord::Validations::ClassMethods</a>
+  
+    <li><a href="./ActionView.html">ActionView</a>
+  
+    <li><a href="./ActionView/Helpers.html">ActionView::Helpers</a>
+  
+    <li><a href="./ActionView/Helpers/FormOptionsHelper.html">ActionView::Helpers::FormOptionsHelper</a>
+  
+    <li><a href="./DefaultFinder.html">DefaultFinder</a>
+  
+    <li><a href="./DefaultFinder/Finder.html">DefaultFinder::Finder</a>
+  
+    <li><a href="./DefaultFinder/Finder/ClassMethods.html">DefaultFinder::Finder::ClassMethods</a>
+  
+    <li><a href="./IrbjaxEngine.html">IrbjaxEngine</a>
+  
+    <li><a href="./IrbjaxEngine/IrbjaxSession.html">IrbjaxEngine::IrbjaxSession</a>
+  
+    <li><a href="./IrbjaxEngine/Output.html">IrbjaxEngine::Output</a>
+  
+    <li><a href="./SymetrieCom.html">SymetrieCom</a>
+  
+    <li><a href="./SymetrieCom/Acts.html">SymetrieCom::Acts</a>
+  
+    <li><a href="./SymetrieCom/Acts/BetterNestedSetHelper.html">SymetrieCom::Acts::BetterNestedSetHelper</a>
+  
+    <li><a href="./GetText.html">GetText</a>
+  
+    <li><a href="./GetText/PoParser.html">GetText::PoParser</a>
+  
+    <li><a href="./Rack.html">Rack</a>
+  
+    <li><a href="./Rack/Utils.html">Rack::Utils</a>
+  
+    <li><a href="./WillPaginate.html">WillPaginate</a>
+  
+    <li><a href="./WillPaginate/ViewHelpers.html">WillPaginate::ViewHelpers</a>
+  
+    <li><a href="./AbstractReport.html">AbstractReport</a>
+  
+    <li><a href="./Access.html">Access</a>
+  
+    <li><a href="./AccessApi.html">AccessApi</a>
+  
+    <li><a href="./AccessReport.html">AccessReport</a>
+  
+    <li><a href="./AccessesController.html">AccessesController</a>
+  
+    <li><a href="./AccessesHelper.html">AccessesHelper</a>
+  
+    <li><a href="./AppLocale.html">AppLocale</a>
+  
+    <li><a href="./AppLocaleApi.html">AppLocaleApi</a>
+  
+    <li><a href="./AppLocalesController.html">AppLocalesController</a>
+  
+    <li><a href="./AppLocalesHelper.html">AppLocalesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BgWorker.html">BgWorker</a>
+  
+    <li><a href="./BgWorkerApi.html">BgWorkerApi</a>
+  
+    <li><a href="./BgWorkerReport.html">BgWorkerReport</a>
+  
+    <li><a href="./BgWorkersController.html">BgWorkersController</a>
+  
+    <li><a href="./BgWorkersHelper.html">BgWorkersHelper</a>
+  
+    <li><a href="./Customer.html">Customer</a>
+  
+    <li><a href="./CustomerApi.html">CustomerApi</a>
+  
+    <li><a href="./CustomersController.html">CustomersController</a>
+  
+    <li><a href="./CustomersHelper.html">CustomersHelper</a>
+  
+    <li><a href="./Date.html">Date</a>
+  
+    <li><a href="./DateHelper.html">DateHelper</a>
+  
+    <li><a href="./DevFeedback.html">DevFeedback</a>
+  
+    <li><a href="./DevFeedbackApi.html">DevFeedbackApi</a>
+  
+    <li><a href="./DevFeedbacksController.html">DevFeedbacksController</a>
+  
+    <li><a href="./DevFeedbacksHelper.html">DevFeedbacksHelper</a>
+  
+    <li><a href="./Enumerable.html">Enumerable</a>
+  
+    <li><a href="./FileImport.html">FileImport</a>
+  
+    <li><a href="./FileImportApi.html">FileImportApi</a>
+  
+    <li><a href="./FileImportReport.html">FileImportReport</a>
+  
+    <li><a href="./FileImportsController.html">FileImportsController</a>
+  
+    <li><a href="./FileImportsHelper.html">FileImportsHelper</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./PdfHandler.html">PdfHandler</a>
+  
+    <li><a href="./Profile.html">Profile</a>
+  
+    <li><a href="./ProfileAccess.html">ProfileAccess</a>
+  
+    <li><a href="./ProfileAccessApi.html">ProfileAccessApi</a>
+  
+    <li><a href="./ProfileAccessesController.html">ProfileAccessesController</a>
+  
+    <li><a href="./ProfileAccessesHelper.html">ProfileAccessesHelper</a>
+  
+    <li><a href="./ProfileApi.html">ProfileApi</a>
+  
+    <li><a href="./ProfilesController.html">ProfilesController</a>
+  
+    <li><a href="./ProfilesHelper.html">ProfilesHelper</a>
+  
+    <li><a href="./RBeautify.html">RBeautify</a>
+  
+    <li><a href="./Range.html">Range</a>
+  
+    <li><a href="./SavedReport.html">SavedReport</a>
+  
+    <li><a href="./SavedReportApi.html">SavedReportApi</a>
+  
+    <li><a href="./SavedReportsController.html">SavedReportsController</a>
+  
+    <li><a href="./SavedReportsHelper.html">SavedReportsHelper</a>
+  
+    <li><a href="./SmartQueriesController.html">SmartQueriesController</a>
+  
+    <li><a href="./SmartQueriesHelper.html">SmartQueriesHelper</a>
+  
+    <li><a href="./SmartQuery.html">SmartQuery</a>
+  
+    <li><a href="./SmartQueryApi.html">SmartQueryApi</a>
+  
+    <li><a href="./SystemSetting.html">SystemSetting</a>
+  
+    <li><a href="./SystemSettingApi.html">SystemSettingApi</a>
+  
+    <li><a href="./SystemSettingsController.html">SystemSettingsController</a>
+  
+    <li><a href="./SystemSettingsHelper.html">SystemSettingsHelper</a>
+  
+    <li><a href="./Thumbnailer.html">Thumbnailer</a>
+  
+    <li><a href="./Translation.html">Translation</a>
+  
+    <li><a href="./TranslationApi.html">TranslationApi</a>
+  
+    <li><a href="./TranslationsController.html">TranslationsController</a>
+  
+    <li><a href="./TranslationsHelper.html">TranslationsHelper</a>
+  
+    <li><a href="./UncatchedException.html">UncatchedException</a>
+  
+    <li><a href="./UncatchedExceptionApi.html">UncatchedExceptionApi</a>
+  
+    <li><a href="./UncatchedExceptionMailer.html">UncatchedExceptionMailer</a>
+  
+    <li><a href="./UncatchedExceptionsController.html">UncatchedExceptionsController</a>
+  
+    <li><a href="./UncatchedExceptionsHelper.html">UncatchedExceptionsHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserAccess.html">UserAccess</a>
+  
+    <li><a href="./UserAccessApi.html">UserAccessApi</a>
+  
+    <li><a href="./UserAccessesController.html">UserAccessesController</a>
+  
+    <li><a href="./UserAccessesHelper.html">UserAccessesHelper</a>
+  
+    <li><a href="./UserApi.html">UserApi</a>
+  
+    <li><a href="./UserMailer.html">UserMailer</a>
+  
+    <li><a href="./UserReport.html">UserReport</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class SmartQuery</h1>
+
+  <div id="description" class="description">
+    
+<pre>This file and all its content belong to Faveod S.A.S unless a commercial
+contract signed by a representant of Faveod S.A.S states otherwise.</pre>
+
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</p>
+
+<pre>This has been generated by Faveod Generator on Mon Jul 08 14:03:11 +0200 2013
+It should be placed at 'app/models/smart_query.rb'
+All manual modifications will be destroyed on next generation</pre>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="COMPARATORS">COMPARATORS
+        
+        <dd class="description">
+        
+      
+        <dt id="FIELDS">FIELDS
+        
+        <dd class="description">
+        
+      
+        <dt id="FILES_DEST">FILES_DEST
+        
+        <dd class="description">
+        
+      
+        <dt id="JOINING_CRITERIA">JOINING_CRITERIA
+        
+        <dd class="description">
+        
+      
+        <dt id="LOCALIZED_JOINING_CRITERIA">LOCALIZED_JOINING_CRITERIA
+        
+        <dd class="description">
+        
+      
+        <dt id="RESTRICTED_FIELDS">RESTRICTED_FIELDS
+        
+        <dd class="description">
+        
+      
+        <dt id="SEARCHABLE_FIELDS">SEARCHABLE_FIELDS
+        
+        <dd class="description">
+        
+      
+      </dl>
+    </section>
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-joining_criteria__index_was" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">joining_criteria__index_was</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <h2 id="attribute-i-joining_criteria__index_was-label-Relations">Relations</h2>
+
+<p>Associations through specific setters</p>
+
+<p>Virtual Fields</p>
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-assoc_sids_to_columns" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">assoc_sids_to_columns</span><span
+            class="method-args">(attrs)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="assoc_sids_to_columns-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 439</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">assoc_sids_to_columns</span>(<span class="ruby-identifier">attrs</span>)
+<span class="ruby-identifier">h</span> = <span class="ruby-identifier">attrs</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:conditions</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">attrs</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-operator">:</span> <span class="ruby-identifier">attrs</span>
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">attrs</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:conditions</span>)
+  <span class="ruby-identifier">attrs</span>[<span class="ruby-value">:conditions</span>] = <span class="ruby-identifier">h</span>
+  <span class="ruby-identifier">attrs</span>
+<span class="ruby-keyword">else</span>
+  <span class="ruby-identifier">h</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- assoc_sids_to_columns-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- assoc_sids_to_columns-method -->
+
+    
+      <div id="method-c-attribute_condition" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">attribute_condition</span><span
+            class="method-args">(quoted_column_name, argument)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="attribute_condition-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 54</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">attribute_condition</span>(<span class="ruby-identifier">quoted_column_name</span>, <span class="ruby-identifier">argument</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">quoted_column_name</span>[<span class="ruby-regexp">%r\.(\'|\`){0,1}(joining_criteria)(__index){0,1}(\'|\`){0,1}\Z/</span>]
+    <span class="ruby-node">%Q[#{quoted_column_name.sub('__index', '')} = ?]</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">case</span> <span class="ruby-identifier">argument</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-keyword">nil</span>   <span class="ruby-keyword">then</span> <span class="ruby-node">&quot;#{quoted_column_name} IS ?&quot;</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-constant">Array</span>, <span class="ruby-constant">ActiveRecord</span><span class="ruby-operator">::</span><span class="ruby-constant">Associations</span><span class="ruby-operator">::</span><span class="ruby-constant">AssociationCollection</span>, <span class="ruby-constant">ActiveRecord</span><span class="ruby-operator">::</span><span class="ruby-constant">NamedScope</span><span class="ruby-operator">::</span><span class="ruby-constant">Scope</span> <span class="ruby-keyword">then</span> <span class="ruby-node">&quot;#{quoted_column_name} IN (?)&quot;</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-constant">Range</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">argument</span>.<span class="ruby-identifier">exclude_end?</span>
+        <span class="ruby-node">&quot;#{quoted_column_name} &gt;= ? AND #{quoted_column_name} &lt; ?&quot;</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-node">&quot;#{quoted_column_name} BETWEEN ? AND ?&quot;</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">else</span>            <span class="ruby-node">&quot;#{quoted_column_name} = ?&quot;</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- attribute_condition-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- attribute_condition-method -->
+
+    
+      <div id="method-c-clean_criteria" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">clean_criteria</span><span
+            class="method-args">(criteria)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Takes raw query parameters and makes a more usable conditions hash.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>8</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 14:51:43 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="clean_criteria-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 406</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">clean_criteria</span>(<span class="ruby-identifier">criteria</span>)
+<span class="ruby-identifier">crits</span> = <span class="ruby-identifier">criteria</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">criteria</span>.<span class="ruby-identifier">values</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">criteria</span>
+<span class="ruby-keyword">return</span> [] <span class="ruby-keyword">if</span> <span class="ruby-identifier">crits</span>.<span class="ruby-identifier">blank?</span>
+<span class="ruby-identifier">res</span> = <span class="ruby-identifier">crits</span>.<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">v</span>[<span class="ruby-value">:compare</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> (<span class="ruby-identifier">v</span>[<span class="ruby-value">:value</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">v</span>[<span class="ruby-value">:compare</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-string">'NULL'</span>))}.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">v</span>[<span class="ruby-value">:value</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+    <span class="ruby-identifier">t</span>  = <span class="ruby-identifier">v</span>[<span class="ruby-value">:value</span>]
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">t</span>[<span class="ruby-value">:year</span>].<span class="ruby-identifier">blank?</span>
+      <span class="ruby-identifier">dt</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-node">&quot;#{t[:hour]}:#{t[:minute]}&quot;</span>)
+      <span class="ruby-identifier">v</span>[<span class="ruby-value">:value</span>] = <span class="ruby-identifier">dt</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-string">&quot;%H:%M&quot;</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">dt</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">dt</span> = <span class="ruby-constant">DateTime</span>.<span class="ruby-identifier">civil</span>(<span class="ruby-identifier">t</span>[<span class="ruby-value">:year</span>].<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">t</span>[<span class="ruby-value">:month</span>].<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">t</span>[<span class="ruby-value">:day</span>].<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">t</span>[<span class="ruby-value">:hour</span>].<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">t</span>[<span class="ruby-value">:minute</span>].<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">t</span>[<span class="ruby-value">:second</span>].<span class="ruby-identifier">to_i</span>)
+      <span class="ruby-identifier">dt</span> = <span class="ruby-identifier">dt</span>.<span class="ruby-identifier">to_date</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">dt</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">t</span>[<span class="ruby-value">:hour</span>].<span class="ruby-identifier">blank?</span>
+      <span class="ruby-identifier">v</span>[<span class="ruby-value">:value</span>] = <span class="ruby-identifier">dt</span>.<span class="ruby-identifier">to_formatted_s</span>(<span class="ruby-value">:db</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">dt</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">v</span>
+}
+<span class="ruby-keyword">return</span> <span class="ruby-identifier">res</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- clean_criteria-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- clean_criteria-method -->
+
+    
+      <div id="method-c-from_kml" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">from_kml</span><span
+            class="method-args">(path)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Import maps elements from KML format.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-10-18 22:14:54 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="from_kml-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 171</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">from_kml</span>(<span class="ruby-identifier">path</span>)
+  <span class="ruby-identifier">doc</span> = <span class="ruby-constant">Nokogiri</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">path</span>))
+  <span class="ruby-identifier">doc</span>.<span class="ruby-identifier">css</span>(<span class="ruby-string">'Placemark'</span>).<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">pi</span> = <span class="ruby-identifier">l</span>.<span class="ruby-identifier">css</span>(<span class="ruby-string">'Data[name=Name] value'</span>)[<span class="ruby-value">0</span>].<span class="ruby-identifier">content</span>.<span class="ruby-identifier">strip</span>
+    <span class="ruby-identifier">country</span> = <span class="ruby-constant">SmartQuery</span>.<span class="ruby-identifier">find_by_name</span>(<span class="ruby-identifier">pi</span>)
+    <span class="ruby-identifier">poly</span> = <span class="ruby-identifier">l</span>.<span class="ruby-identifier">css</span>(<span class="ruby-string">'Polygon'</span>).<span class="ruby-identifier">to_a</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">p</span>.<span class="ruby-identifier">content</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r,0\.0/</span>, <span class="ruby-string">','</span>).<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>).<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:to_f</span>)
+    }.<span class="ruby-identifier">flatten</span>
+    (<span class="ruby-identifier">poly</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">/</span> <span class="ruby-value">2</span>).<span class="ruby-identifier">times</span>{
+      <span class="ruby-identifier">country</span>.<span class="ruby-identifier">smartquery_borders</span>.<span class="ruby-identifier">create</span>(<span class="ruby-value">:lat</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">poly</span>.<span class="ruby-identifier">shift</span>, <span class="ruby-value">:lng</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">poly</span>.<span class="ruby-identifier">shift</span>)
+    }
+  }
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- from_kml-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- from_kml-method -->
+
+    
+      <div id="method-c-load_from_params" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">load_from_params</span><span
+            class="method-args">(att)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Load the matching object with right attributes.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>53</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-03-22 09:46:46 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="load_from_params-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 86</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-identifier">att</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-constant">SmartQuery</span>.<span class="ruby-identifier">new</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">att</span>.<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">std_atts</span> = <span class="ruby-identifier">att</span>.<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-node">%w(id)</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_s</span>) }
+  <span class="ruby-identifier">smart_query</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">att</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:id</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">att</span>[<span class="ruby-value">:id</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span> <span class="ruby-comment"># Useful for HasOne (ho_assoc)</span>
+    <span class="ruby-identifier">smart_query</span> = <span class="ruby-constant">SmartQuery</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">att</span>[<span class="ruby-value">:id</span>])
+    <span class="ruby-identifier">smart_query</span>.<span class="ruby-identifier">attributes</span> = <span class="ruby-identifier">std_atts</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">smart_query</span> = <span class="ruby-constant">SmartQuery</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">std_atts</span>)
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment"># clean associations</span>
+  <span class="ruby-comment">#clean binaries</span>
+  <span class="ruby-comment">## clean binaries</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">att</span>[<span class="ruby-value">:criteria</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">att</span>[<span class="ruby-value">:criteria</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>)
+    <span class="ruby-identifier">smart_query</span>.<span class="ruby-identifier">criteria</span> = <span class="ruby-constant">ActiveSupport</span><span class="ruby-operator">::</span><span class="ruby-constant">JSON</span>.<span class="ruby-identifier">decode</span>(<span class="ruby-identifier">att</span>[<span class="ruby-value">:criteria</span>])
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">smart_query</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- load_from_params-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- load_from_params-method -->
+
+    
+      <div id="method-c-named_scope_active_filter_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">named_scope_active_filter_method</span><span
+            class="method-args">(hash)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>9</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-02-03 20:51:21 UTC</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="named_scope_active_filter_method-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 241</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">named_scope_active_filter_method</span>(<span class="ruby-identifier">hash</span>)
+
+    <span class="ruby-comment">#hash looks like {'field1' =&gt; {'op' =&gt; value}, 'field2' =&gt; ... }</span>
+    <span class="ruby-comment">#op could be =, !=, ^=, $=, =~, !~, &gt;, &lt;, &gt;=, &lt;=, IN, FTS...</span>
+
+    <span class="ruby-identifier">hash</span> <span class="ruby-operator">||=</span> {}
+    <span class="ruby-identifier">values</span> = []
+    <span class="ruby-identifier">joins_fields</span> = []
+    <span class="ruby-identifier">_scopes</span> = <span class="ruby-keyword">nil</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">hash</span>[<span class="ruby-string">'_scopes'</span>].<span class="ruby-identifier">blank?</span>
+      (<span class="ruby-node">%w()</span> &amp; <span class="ruby-identifier">hash</span>[<span class="ruby-string">'_scopes'</span>]).<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">s</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">_scopes</span> = (<span class="ruby-identifier">_scopes</span> <span class="ruby-operator">||</span> <span class="ruby-keyword">self</span>).<span class="ruby-identifier">send</span>(<span class="ruby-identifier">s</span>.<span class="ruby-identifier">to_sym</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">str</span> = <span class="ruby-identifier">hash</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">field</span>, <span class="ruby-identifier">pairs</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">if</span> [<span class="ruby-value">:name</span>, <span class="ruby-value">:table_sid</span>, <span class="ruby-value">:joining_criteria</span>, <span class="ruby-value">:criteria</span>
+      ].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">field</span>.<span class="ruby-identifier">to_sym</span>)
+      <span class="ruby-constant">Array</span>(<span class="ruby-identifier">pairs</span>).<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">op</span>,<span class="ruby-identifier">val</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-constant">COMPARATORS</span>[<span class="ruby-identifier">field</span>.<span class="ruby-identifier">to_sym</span>][<span class="ruby-identifier">op</span>]
+        <span class="ruby-identifier">values</span> <span class="ruby-operator">&lt;&lt;</span> (<span class="ruby-identifier">cmp</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">val</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">%</span> <span class="ruby-identifier">val</span>)) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">cmp</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">cmp</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-string">''</span>
+        <span class="ruby-identifier">cmp</span>[<span class="ruby-value">0</span>]
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">elsif</span> [
+    ].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">field</span>.<span class="ruby-identifier">to_sym</span>)
+    <span class="ruby-constant">Array</span>(<span class="ruby-identifier">pairs</span>).<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">op</span>,<span class="ruby-identifier">val</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">cmp</span> = <span class="ruby-constant">COMPARATORS</span>[<span class="ruby-identifier">field</span>.<span class="ruby-identifier">to_sym</span>][<span class="ruby-identifier">op</span>]
+      <span class="ruby-identifier">values</span> <span class="ruby-operator">+=</span> <span class="ruby-constant">Array</span>(<span class="ruby-identifier">val</span>)
+      <span class="ruby-string">&quot;(%s)&quot;</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">val</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">cmp</span>[<span class="ruby-value">0</span>] }.<span class="ruby-identifier">join</span>(<span class="ruby-string">' OR '</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+}.<span class="ruby-identifier">compact</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">' AND '</span>)
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">_scopes</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">_scopes</span>.<span class="ruby-identifier">proxy_options</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">values</span>.<span class="ruby-identifier">blank?</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">_scopes</span>.<span class="ruby-identifier">joins</span>(<span class="ruby-identifier">joins_fields</span>).<span class="ruby-identifier">where</span>(<span class="ruby-identifier">values</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">str</span>)).<span class="ruby-identifier">proxy_options</span>
+<span class="ruby-keyword">else</span>
+  <span class="ruby-identifier">res</span> = <span class="ruby-identifier">joins_fields</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> {} <span class="ruby-operator">:</span> {<span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">joins_fields</span>}
+  <span class="ruby-identifier">res</span>[<span class="ruby-value">:conditions</span>] = <span class="ruby-identifier">values</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">str</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">res</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- named_scope_active_filter_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- named_scope_active_filter_method-method -->
+
+    
+      <div id="method-c-named_scope_default_scope_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">named_scope_default_scope_method</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>5</p>
+</dd><dt>Last Update
+<dd>
+<p>2009-11-01 16:01:43 UTC</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="named_scope_default_scope_method-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 229</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">named_scope_default_scope_method</span>
+
+  {}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- named_scope_default_scope_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- named_scope_default_scope_method-method -->
+
+    
+      <div id="method-c-named_scope_for_table_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">named_scope_for_table_method</span><span
+            class="method-args">(table)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2009-11-10 19:37:36 UTC</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="named_scope_for_table_method-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 218</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">named_scope_for_table_method</span>(<span class="ruby-identifier">table</span>)
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- named_scope_for_table_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- named_scope_for_table_method-method -->
+
+    
+      <div id="method-c-search" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">search</span><span
+            class="method-args">(values, comps=nil, opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Search</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>23</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-08-09 11:16:42 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="search-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 136</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">search</span>(<span class="ruby-identifier">values</span>, <span class="ruby-identifier">comps</span>=<span class="ruby-keyword">nil</span>, <span class="ruby-identifier">opts</span>={})
+  <span class="ruby-identifier">ar_opts</span> = {}
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">values</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">SmartQuery</span>)
+    <span class="ruby-identifier">ar_opts</span> = <span class="ruby-identifier">values</span>.<span class="ruby-identifier">to_ar_opts</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">cond</span> = {}
+    <span class="ruby-identifier">inc</span> = []
+    <span class="ruby-identifier">string_h</span> = {<span class="ruby-string">'='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'&lt;&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ne</span>, <span class="ruby-string">'=~'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:like</span>, <span class="ruby-string">'!=~'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:not</span>,
+      <span class="ruby-string">'LIKE'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:eq</span>, <span class="ruby-string">'NOT LIKE'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ne</span>, <span class="ruby-string">'STARTS WITH'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:starts_with</span>, <span class="ruby-string">'ENDS WITH'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ends_with</span>,
+    <span class="ruby-string">'IS NULL'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'IN'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-identifier">numb_h</span> = {<span class="ruby-string">'='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'&lt;&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ne</span>, <span class="ruby-string">'&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:gt</span>, <span class="ruby-string">'&lt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lt</span>, <span class="ruby-string">'&gt;='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:gte</span>, <span class="ruby-string">'&lt;='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lte</span>, <span class="ruby-string">'IS NULL'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'IN'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-identifier">date_h</span> = {<span class="ruby-string">'='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'&lt;&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ne</span>, <span class="ruby-string">'&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:gt</span>, <span class="ruby-string">'&lt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lt</span>, <span class="ruby-string">'&gt;='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:gte</span>, <span class="ruby-string">'&lt;='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lte</span>, <span class="ruby-string">'IS NULL'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'IN'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-identifier">bin_h</span> = {<span class="ruby-string">'is named'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:eq</span>, <span class="ruby-string">'size larger than'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:gte</span>, <span class="ruby-string">'size smaller than'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lte</span>, <span class="ruby-string">'is not set'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-identifier">assoc_h</span> = {<span class="ruby-string">'&lt;&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ne</span>, <span class="ruby-string">'='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'IN'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'IS NULL'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-constant">SmartQuery</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">params_to_attributes</span>(<span class="ruby-identifier">values</span>).<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+
+    }
+    <span class="ruby-identifier">ar_opts</span> = {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">cond</span>}
+    <span class="ruby-identifier">ar_opts</span>[<span class="ruby-value">:include</span>] = <span class="ruby-identifier">inc</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">inc</span>.<span class="ruby-identifier">blank?</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">ar_opts</span>[<span class="ruby-value">:per_page</span>] = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:per_page</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">opts</span>[<span class="ruby-value">:per_page</span>] <span class="ruby-operator">:</span> <span class="ruby-identifier">count</span>(<span class="ruby-value">:all</span>, <span class="ruby-identifier">ar_opts</span>)
+  <span class="ruby-identifier">ar_opts</span>[<span class="ruby-value">:per_page</span>] = <span class="ruby-value">1</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">ar_opts</span>[<span class="ruby-value">:per_page</span>] <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+  <span class="ruby-identifier">ar_opts</span>[<span class="ruby-value">:page</span>]         = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:page</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">opts</span>[<span class="ruby-value">:page</span>] <span class="ruby-operator">:</span> <span class="ruby-value">1</span>
+  <span class="ruby-identifier">paginate</span>(<span class="ruby-identifier">ar_opts</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- search-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- search-method -->
+
+    
+      <div id="method-c-search_fields_of" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">search_fields_of</span><span
+            class="method-args">(model)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get fields eligible for search.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Pierre Carrio</p>
+</dd><dt>Version
+<dd>
+<p>6</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-03-21 17:32:02 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="search_fields_of-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 384</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">search_fields_of</span>(<span class="ruby-identifier">model</span>)
+<span class="ruby-identifier">kl</span> = <span class="ruby-keyword">case</span> <span class="ruby-identifier">model</span>
+<span class="ruby-keyword">when</span> <span class="ruby-constant">Class</span> <span class="ruby-keyword">then</span> <span class="ruby-identifier">model</span>
+<span class="ruby-keyword">when</span> <span class="ruby-constant">String</span> <span class="ruby-keyword">then</span> <span class="ruby-identifier">model</span>.<span class="ruby-identifier">classify</span>.<span class="ruby-identifier">constantize</span>
+<span class="ruby-keyword">when</span> <span class="ruby-constant">Symbol</span> <span class="ruby-keyword">then</span> <span class="ruby-identifier">model</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">classify</span>.<span class="ruby-identifier">constantize</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">return</span> <span class="ruby-identifier">kl</span><span class="ruby-operator">::</span><span class="ruby-constant">SEARCHABLE_FIELDS</span>
+
+<span class="ruby-comment"># return kl::FIELDS.reject{|k,v|</span>
+<span class="ruby-comment">#  [:binary, :any_object, :color].include?(v) || !fields.include?(k.to_s)}.keys</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- search_fields_of-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- search_fields_of-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-criteria_from_spreadsheet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">criteria_from_spreadsheet</span><span
+            class="method-args">(v, opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Importing raw data: string, text, color and any_objects.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-06-08 19:24:00 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="criteria_from_spreadsheet-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 636</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">criteria_from_spreadsheet</span>(<span class="ruby-identifier">v</span>, <span class="ruby-identifier">opts</span>={})
+<span class="ruby-identifier">v</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- criteria_from_spreadsheet-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- criteria_from_spreadsheet-method -->
+
+    
+      <div id="method-i-criteria_to_spreadsheet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">criteria_to_spreadsheet</span><span
+            class="method-args">(opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Exporting data: try to dump data as a string</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>3</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-06-08 18:34:24 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="criteria_to_spreadsheet-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 649</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">criteria_to_spreadsheet</span>(<span class="ruby-identifier">opts</span>={})
+<span class="ruby-keyword">self</span>.<span class="ruby-identifier">criteria</span>.<span class="ruby-identifier">to_s</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- criteria_to_spreadsheet-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- criteria_to_spreadsheet-method -->
+
+    
+      <div id="method-i-disp_name" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">disp_name</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>The <a href="SmartQuery.html#method-i-disp_name">#disp_name</a> is how any
+record will appear in most use cases, such as lists of associated records
+during ‘show’, ‘list’…</p>
+
+<p><a href="Faveod.html">Faveod</a> will try to guess the best single field,
+based on SID, usually from fields containing “Title”, “Name” or
+“Label”.</p>
+
+<p>Customized code often will often look like these snippets: Multiple key:
+“#{self.first_name} #{self.last_name}” <a href="Date.html">Date</a> or
+time: “#{self.name} #{self.created_at.strftime(‘%H:%M %y-%m-%d’) if
+self.created_at}” Associations: “#{self.name} #{self.user ?
+self.user.disp_name : _(‘No user’)}”</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-05-31 17:21:54 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="disp_name-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 123</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">disp_name</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">name</span> <span class="ruby-operator">||</span> <span class="ruby-string">''</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- disp_name-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- disp_name-method -->
+
+    
+      <div id="method-i-joining_criteria" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">joining_criteria</span><span
+            class="method-args">(t = false)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns translated string value.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-03-21 11:35:21 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="joining_criteria-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 514</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">joining_criteria</span>(<span class="ruby-identifier">t</span> = <span class="ruby-keyword">false</span>)
+<span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">read_attribute</span>(<span class="ruby-value">:joining_criteria</span>).<span class="ruby-identifier">nil?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">read_attribute</span>(<span class="ruby-value">:joining_criteria</span>) <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="ruby-keyword">return</span> <span class="ruby-identifier">t</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">_</span>(<span class="ruby-constant">JOINING_CRITERIA</span>[(<span class="ruby-identifier">read_attribute</span>(<span class="ruby-value">:joining_criteria</span>)) <span class="ruby-operator">-</span> <span class="ruby-value">1</span>].<span class="ruby-identifier">to_s</span>) <span class="ruby-operator">:</span> <span class="ruby-constant">JOINING_CRITERIA</span>[(<span class="ruby-identifier">read_attribute</span>(<span class="ruby-value">:joining_criteria</span>)) <span class="ruby-operator">-</span> <span class="ruby-value">1</span>].<span class="ruby-identifier">to_s</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- joining_criteria-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- joining_criteria-method -->
+
+    
+      <div id="method-i-joining_criteria-3D" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">joining_criteria=</span><span
+            class="method-args">(val)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Flexible setter for the static list.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>12</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-04-18 16:26:46 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="joining_criteria-3D-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 554</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">joining_criteria=</span>(<span class="ruby-identifier">val</span>)
+
+<span class="ruby-keyword">self</span>.<span class="ruby-identifier">joining_criteria__index_was</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">joining_criteria__index</span>
+<span class="ruby-keyword">case</span> <span class="ruby-identifier">val</span>
+<span class="ruby-keyword">when</span> <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">write_attribute</span>(<span class="ruby-value">:joining_criteria</span>, <span class="ruby-keyword">nil</span>)
+<span class="ruby-keyword">when</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">2</span> <span class="ruby-comment"># index</span>
+  <span class="ruby-identifier">write_attribute</span>(<span class="ruby-value">:joining_criteria</span>, <span class="ruby-identifier">val</span>)
+<span class="ruby-keyword">when</span> <span class="ruby-string">&quot;1&quot;</span>, <span class="ruby-string">&quot;2&quot;</span> <span class="ruby-comment"># index as string</span>
+  <span class="ruby-identifier">write_attribute</span>(<span class="ruby-value">:joining_criteria</span>, <span class="ruby-identifier">val</span>.<span class="ruby-identifier">to_i</span>)
+<span class="ruby-keyword">else</span> <span class="ruby-constant">String</span> <span class="ruby-comment"># value</span>
+  <span class="ruby-identifier">write_attribute</span>(<span class="ruby-value">:joining_criteria</span>, (<span class="ruby-keyword">self</span>.<span class="ruby-identifier">joining_criteria__potential_values</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">val</span>)))
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- joining_criteria-3D-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- joining_criteria-3D-method -->
+
+    
+      <div id="method-i-joining_criteria__index" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">joining_criteria__index</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the 1-based index(es).</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>1</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-01-18 00:13:42 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="joining_criteria__index-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 528</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">joining_criteria__index</span>
+<span class="ruby-keyword">return</span> <span class="ruby-identifier">read_attribute</span>(<span class="ruby-value">:joining_criteria</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- joining_criteria__index-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- joining_criteria__index-method -->
+
+    
+      <div id="method-i-joining_criteria__potential_values" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">joining_criteria__potential_values</span><span
+            class="method-args">(current_user = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the potential values for this list.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-08-09 11:09:07 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="joining_criteria__potential_values-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 541</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">joining_criteria__potential_values</span>(<span class="ruby-identifier">current_user</span> = <span class="ruby-keyword">nil</span>)
+<span class="ruby-constant">JOINING_CRITERIA</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- joining_criteria__potential_values-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- joining_criteria__potential_values-method -->
+
+    
+      <div id="method-i-joining_criteria_from_spreadsheet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">joining_criteria_from_spreadsheet</span><span
+            class="method-args">(v, opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Importing static lists: if inputs are not sanitized, you will probably have
+to specify this method.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-08-09 11:18:36 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="joining_criteria_from_spreadsheet-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 609</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">joining_criteria_from_spreadsheet</span>(<span class="ruby-identifier">v</span>, <span class="ruby-identifier">opts</span>={})
+
+<span class="ruby-comment"># Getting potential values</span>
+
+<span class="ruby-identifier">po_values</span> = <span class="ruby-constant">SmartQuery</span><span class="ruby-operator">::</span><span class="ruby-constant">JOINING_CRITERIA</span>
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Numeric</span>)
+  <span class="ruby-identifier">v</span>                             <span class="ruby-comment"># index</span>
+<span class="ruby-keyword">elsif</span> <span class="ruby-identifier">po_values</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">v</span>)
+  <span class="ruby-identifier">po_values</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">c</span>) <span class="ruby-operator">+</span> <span class="ruby-value">1</span>        <span class="ruby-comment"># value</span>
+<span class="ruby-keyword">elsif</span> <span class="ruby-identifier">c</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">c</span> <span class="ruby-operator">==</span> <span class="ruby-string">'0'</span>   <span class="ruby-comment"># 0 index</span>
+  <span class="ruby-value">1</span>
+<span class="ruby-keyword">elsif</span> <span class="ruby-identifier">c</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>                <span class="ruby-comment"># string as an index</span>
+  <span class="ruby-identifier">c</span>.<span class="ruby-identifier">to_i</span>
+<span class="ruby-keyword">else</span>
+  <span class="ruby-keyword">nil</span>                           <span class="ruby-comment"># could not match</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- joining_criteria_from_spreadsheet-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- joining_criteria_from_spreadsheet-method -->
+
+    
+      <div id="method-i-joining_criteria_report_color_for" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">joining_criteria_report_color_for</span><span
+            class="method-args">(value)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>5</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-08-09 11:20:02 UTC</p>
+</dd><dt>Status
+<dd>
+<p>In Progress</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="joining_criteria_report_color_for-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 576</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">joining_criteria_report_color_for</span>(<span class="ruby-identifier">value</span>)
+
+<span class="ruby-identifier">colors</span> = <span class="ruby-constant">Faveod</span><span class="ruby-operator">::</span><span class="ruby-constant">DistributedColors</span>.<span class="ruby-identifier">n_colors</span>(<span class="ruby-value">2</span>)
+<span class="ruby-keyword">case</span> <span class="ruby-identifier">value</span>
+<span class="ruby-keyword">when</span> <span class="ruby-string">&quot;AND - matching all criteria&quot;</span>, <span class="ruby-value">1</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">colors</span>[<span class="ruby-value">0</span>]
+<span class="ruby-keyword">when</span> <span class="ruby-string">&quot;OR - matching one of the criteria&quot;</span>, <span class="ruby-value">2</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">colors</span>[<span class="ruby-value">1</span>]
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- joining_criteria_report_color_for-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- joining_criteria_report_color_for-method -->
+
+    
+      <div id="method-i-joining_criteria_to_spreadsheet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">joining_criteria_to_spreadsheet</span><span
+            class="method-args">(opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Exporting: displays raw value</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-06-09 19:52:49 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="joining_criteria_to_spreadsheet-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 596</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">joining_criteria_to_spreadsheet</span>(<span class="ruby-identifier">opts</span>={})
+<span class="ruby-keyword">self</span>.<span class="ruby-identifier">joining_criteria</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- joining_criteria_to_spreadsheet-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- joining_criteria_to_spreadsheet-method -->
+
+    
+      <div id="method-i-my_model" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">my_model</span><span
+            class="method-args">(name=nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Gets model class from name</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>3</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 14:51:54 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="my_model-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 435</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">my_model</span>(<span class="ruby-identifier">name</span>=<span class="ruby-keyword">nil</span>)
+<span class="ruby-constant">Kernel</span>.<span class="ruby-identifier">const_get</span>((<span class="ruby-identifier">name</span> <span class="ruby-operator">||</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">table_sid</span>).<span class="ruby-identifier">classify</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- my_model-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- my_model-method -->
+
+    
+      <div id="method-i-name_from_spreadsheet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">name_from_spreadsheet</span><span
+            class="method-args">(v, opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Importing raw data: string, text, color and any_objects.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-06-08 19:24:00 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="name_from_spreadsheet-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 462</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">name_from_spreadsheet</span>(<span class="ruby-identifier">v</span>, <span class="ruby-identifier">opts</span>={})
+<span class="ruby-identifier">v</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- name_from_spreadsheet-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- name_from_spreadsheet-method -->
+
+    
+      <div id="method-i-name_to_spreadsheet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">name_to_spreadsheet</span><span
+            class="method-args">(opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Exporting: displays raw value</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-06-09 19:52:49 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="name_to_spreadsheet-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 475</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">name_to_spreadsheet</span>(<span class="ruby-identifier">opts</span>={})
+<span class="ruby-keyword">self</span>.<span class="ruby-identifier">name</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- name_to_spreadsheet-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- name_to_spreadsheet-method -->
+
+    
+      <div id="method-i-next" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">next</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns next element.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>1</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-04-02 13:10:22 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="next-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 208</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">next</span>
+
+  <span class="ruby-constant">SmartQuery</span>.<span class="ruby-identifier">first</span>(<span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'smart_queries.id'</span>, <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;smart_queries.id &gt; ?&quot;</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">id</span>])
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- next-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- next-method -->
+
+    
+      <div id="method-i-previous" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">previous</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Return the previous element.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>1</p>
+</dd><dt>Last Update
+<dd>
+<p>2009-09-14 14:48:02 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="previous-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 194</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">previous</span>
+
+  <span class="ruby-constant">SmartQuery</span>.<span class="ruby-identifier">first</span>(<span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'smart_queries.id DESC'</span>, <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;smart_queries.id &lt; ?&quot;</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">id</span>])
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- previous-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- previous-method -->
+
+    
+      <div id="method-i-table_sid_from_spreadsheet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">table_sid_from_spreadsheet</span><span
+            class="method-args">(v, opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Importing raw data: string, text, color and any_objects.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-06-08 19:24:00 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="table_sid_from_spreadsheet-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 488</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">table_sid_from_spreadsheet</span>(<span class="ruby-identifier">v</span>, <span class="ruby-identifier">opts</span>={})
+<span class="ruby-identifier">v</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- table_sid_from_spreadsheet-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- table_sid_from_spreadsheet-method -->
+
+    
+      <div id="method-i-table_sid_to_spreadsheet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">table_sid_to_spreadsheet</span><span
+            class="method-args">(opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Exporting: displays raw value</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-06-09 19:52:49 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="table_sid_to_spreadsheet-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 501</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">table_sid_to_spreadsheet</span>(<span class="ruby-identifier">opts</span>={})
+<span class="ruby-keyword">self</span>.<span class="ruby-identifier">table_sid</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- table_sid_to_spreadsheet-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- table_sid_to_spreadsheet-method -->
+
+    
+      <div id="method-i-test_query_to_spreadsheet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_query_to_spreadsheet</span><span
+            class="method-args">(opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Exporting no data: displays the field name</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>3</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-06-08 18:34:35 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="test_query_to_spreadsheet-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 662</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_query_to_spreadsheet</span>(<span class="ruby-identifier">opts</span>={})
+<span class="ruby-identifier">_</span>(<span class="ruby-string">%q{Test Query}</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_query_to_spreadsheet-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_query_to_spreadsheet-method -->
+
+    
+      <div id="method-i-to_ar_opts" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">to_ar_opts</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Transforms query hash in <a href="ActiveRecord.html">ActiveRecord</a>
+conditions.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>38</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-05-19 11:50:52 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="to_ar_opts-source">
+            <pre><span class="ruby-comment"># File app/models/smart_query.rb, line 293</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_ar_opts</span>
+<span class="ruby-keyword">return</span> {} <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">criteria</span>.<span class="ruby-identifier">blank?</span>
+<span class="ruby-identifier">cond1</span> = <span class="ruby-string">&quot;&quot;</span>
+<span class="ruby-identifier">cond2</span> = []
+<span class="ruby-identifier">joins</span> = []
+<span class="ruby-identifier">incs</span>  = []
+
+<span class="ruby-comment"># TODO : case sensitive, IS et NULL séparés, manage date and times correctly for &lt; and &gt;</span>
+
+<span class="ruby-keyword">self</span>.<span class="ruby-identifier">criteria</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">c</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>) <span class="ruby-operator">||</span> <span class="ruby-identifier">c</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">HashWithIndifferentAccess</span>)
+
+    <span class="ruby-comment"># FIELD</span>
+
+    <span class="ruby-identifier">field</span> = <span class="ruby-identifier">c</span>[<span class="ruby-value">:field</span>].<span class="ruby-identifier">to_sym</span>
+    <span class="ruby-identifier">c_field</span> = <span class="ruby-keyword">case</span> <span class="ruby-identifier">my_model</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>[<span class="ruby-identifier">field</span>]
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:bt_assoc</span>
+      <span class="ruby-identifier">assoc</span> = <span class="ruby-identifier">my_model</span>.<span class="ruby-identifier">reflect_on_association</span>(<span class="ruby-identifier">field</span>)
+      <span class="ruby-identifier">assoc</span>.<span class="ruby-identifier">primary_key_name</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:hm_assoc</span>, <span class="ruby-value">:ho_assoc</span>
+      <span class="ruby-identifier">assoc</span> = <span class="ruby-identifier">my_model</span>.<span class="ruby-identifier">reflect_on_association</span>(<span class="ruby-identifier">field</span>)
+      <span class="ruby-identifier">table</span> = <span class="ruby-identifier">assoc</span>.<span class="ruby-identifier">klass</span>.<span class="ruby-identifier">table_name</span>
+      <span class="ruby-identifier">joins</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">table</span>
+      <span class="ruby-node">&quot;`#{table}`.`id`&quot;</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:habtm_assoc</span>
+      <span class="ruby-identifier">assoc</span> = <span class="ruby-identifier">my_model</span>.<span class="ruby-identifier">reflect_on_association</span>(<span class="ruby-identifier">field</span>)
+      <span class="ruby-identifier">table</span> = <span class="ruby-identifier">assoc</span>.<span class="ruby-identifier">klass</span>.<span class="ruby-identifier">table_name</span>
+      <span class="ruby-identifier">joins</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">table</span>
+      <span class="ruby-identifier">join_table</span> = <span class="ruby-identifier">assoc</span>.<span class="ruby-identifier">options</span>[<span class="ruby-value">:join_table</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">join_table_name</span>(<span class="ruby-identifier">table</span>, <span class="ruby-identifier">undecorated_table_name</span>(<span class="ruby-identifier">my_model</span>.<span class="ruby-identifier">table_name</span>, <span class="ruby-identifier">reflection</span>.<span class="ruby-identifier">class_name</span>))
+      <span class="ruby-node">&quot;`#{join_table}`.`#{assoc.primary_key_name}`&quot;</span>
+    <span class="ruby-keyword">else</span> <span class="ruby-identifier">field</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">c_field</span> = <span class="ruby-node">&quot;`#{c_field}`&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">c_field</span>.<span class="ruby-identifier">to_s</span>[<span class="ruby-regexp">%r\A\`.*\`\Z/</span>]
+
+    <span class="ruby-comment"># VALUE</span>
+
+    <span class="ruby-identifier">c_val</span> = <span class="ruby-string">'NULL'</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">c</span>[<span class="ruby-value">:value</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'NULL'</span>
+    <span class="ruby-identifier">c_val</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword">case</span> <span class="ruby-identifier">my_model</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>[<span class="ruby-identifier">field</span>]
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:date</span>
+      <span class="ruby-identifier">d</span> = <span class="ruby-constant">Chronic</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">c</span>[<span class="ruby-value">:value</span>])
+      <span class="ruby-identifier">d</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">d</span>.<span class="ruby-identifier">to_date</span>.<span class="ruby-identifier">to_s</span>(<span class="ruby-value">:db</span>) <span class="ruby-operator">:</span> <span class="ruby-keyword">next</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:datetime</span>, <span class="ruby-value">:timestamp</span>
+      <span class="ruby-identifier">d</span> = <span class="ruby-constant">Chronic</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">c</span>[<span class="ruby-value">:value</span>])
+      <span class="ruby-identifier">d</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">d</span>.<span class="ruby-identifier">to_s</span>(<span class="ruby-value">:db</span>) <span class="ruby-operator">:</span> <span class="ruby-keyword">next</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:boolean</span>
+      <span class="ruby-identifier">c</span>[<span class="ruby-value">:value</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'true'</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">c</span>[<span class="ruby-value">:value</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword">true</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">c</span>[<span class="ruby-value">:value</span>] <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:static_list</span>
+      <span class="ruby-identifier">idx</span> = <span class="ruby-identifier">my_model</span>.<span class="ruby-identifier">const_get</span>(<span class="ruby-identifier">field</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">pluralize</span>.<span class="ruby-identifier">upcase</span>).<span class="ruby-identifier">index</span>(<span class="ruby-identifier">c</span>[<span class="ruby-value">:value</span>])
+      <span class="ruby-identifier">idx</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">idx</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">c</span>[<span class="ruby-value">:value</span>].<span class="ruby-identifier">to_i</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:hm_assoc</span>, <span class="ruby-value">:ho_assoc</span>, <span class="ruby-value">:habtm_assoc</span>, <span class="ruby-value">:bt_assoc</span>
+      <span class="ruby-identifier">c</span>[<span class="ruby-value">:value</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Enumerable</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">c</span>[<span class="ruby-value">:value</span>].<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:to_i</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">c</span>.<span class="ruby-identifier">to_i</span>
+    <span class="ruby-keyword">else</span> <span class="ruby-identifier">c</span>[<span class="ruby-value">:value</span>] <span class="ruby-operator">||</span> <span class="ruby-string">''</span>
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-comment"># COMPARISON</span>
+
+    <span class="ruby-identifier">c</span>[<span class="ruby-value">:compare</span>] = <span class="ruby-string">'IN'</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">c_val</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Array</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">c</span>[<span class="ruby-value">:compare</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'LIKE2'</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">c</span>[<span class="ruby-value">:compare</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'NOT LIKE2'</span>
+      <span class="ruby-identifier">c_comp</span> = <span class="ruby-identifier">c</span>[<span class="ruby-value">:compare</span>].<span class="ruby-identifier">sub</span>(<span class="ruby-regexp">%r2/</span>, <span class="ruby-string">''</span>)
+      <span class="ruby-identifier">cond1</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;(#{c_field} #{c_comp} ?)&quot;</span>
+      <span class="ruby-identifier">cond2</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">'%'</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">c_val</span> <span class="ruby-operator">+</span> <span class="ruby-string">'%'</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">c</span>[<span class="ruby-value">:compare</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">||</span> (<span class="ruby-identifier">c</span>[<span class="ruby-value">:compare</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'IS'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">c_val</span> <span class="ruby-operator">==</span> <span class="ruby-string">'NULL'</span>)
+      <span class="ruby-identifier">cond1</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;#{c_field} IS NULL &quot;</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">cond1</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;(#{c_field} #{c[:compare]} (?))&quot;</span>
+      <span class="ruby-identifier">cond2</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">c_val</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">cond1</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">c</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; &quot;</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment"># JOINING</span>
+
+  <span class="ruby-identifier">cond1</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot; #{self.joining_criteria__index == 2 ? 'OR' : 'AND'} &quot;</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-identifier">cond1</span>.<span class="ruby-identifier">sub!</span>(<span class="ruby-regexp">%r(OR|AND)\s\Z/</span>, <span class="ruby-string">''</span>)
+<span class="ruby-identifier">ret</span> = <span class="ruby-identifier">cond1</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> {} <span class="ruby-operator">:</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> ([<span class="ruby-identifier">cond1</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">cond2</span>)}
+<span class="ruby-identifier">ret</span>[<span class="ruby-value">:joins</span>] = <span class="ruby-identifier">joins</span>.<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:to_sym</span>) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">joins</span>.<span class="ruby-identifier">empty?</span>
+<span class="ruby-identifier">ret</span>[<span class="ruby-value">:include</span>] = <span class="ruby-identifier">incs</span>.<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:to_sym</span>) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">incs</span>.<span class="ruby-identifier">empty?</span>
+<span class="ruby-keyword">return</span> <span class="ruby-identifier">ret</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- to_ar_opts-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- to_ar_opts-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

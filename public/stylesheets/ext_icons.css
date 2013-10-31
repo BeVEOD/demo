@@ -1,0 +1,405 @@
+
+/* [no container] */
+.icon-calculator {
+  background-image:url(/images/page_icons/calculator.png)
+}
+.icon-wages {
+  background-image:url(/images/page_icons/euro_16.png)
+}
+.icon-error {
+  background-image:url(/images/page_icons/cancel.png)
+}
+.icon-lock-go {
+  background-image:url(/images/page_icons/lock_go.png)
+}
+.icon-open-popup {
+  background-image:url(/images/page_icons/application_double.png)
+}
+.icon-open {
+  background-image:url(/images/page_icons/application_go.png)
+}
+.icon-arrow-down {
+  background-image:url(/images/page_icons/arrow_down.png)
+}
+.icon-lock-open {
+  background-image:url(/images/page_icons/unlock16.png)
+}
+.icon-lock {
+  background-image:url(/images/page_icons/lock16.png)
+}
+.icon-key {
+  background-image:url(/images/page_icons/key.png)
+}
+.icon-ob {
+  background-image:url(/images/page_icons/ob_16.png)
+}
+.icon-tree-post {
+  background-image:url(/images/page_icons/page_white.png)
+}
+.icon-trash-closed {
+  background-image:url(/images/page_icons/bin_closed.png)
+}
+.icon-del-tab {
+  background-image:url(/images/page_icons/tab_delete.png)
+}
+.icon-plus {
+  background-image:url(/images/page_icons/add.png)
+}
+.x-form-field-wrap .trigger-tag {
+  background-image: url(/images/page_icons/trigger-tag.png);
+cursor:pointer
+}
+.icon-user {
+  background-image:url(/images/page_icons/user2_16.png)
+}
+.icon-house {
+  background-image:url(/images/page_icons/house_16.png)
+}
+.icon-wrench {
+  background-image:url(/images/page_icons/wrench_16.png)
+}
+.icon-disk {
+  background-image:url(/images/page_icons/disk.png)
+}
+.icon-add-table {
+  background-image:url(/images/page_icons/table_add.png)
+}
+.icon-reconfigure {
+  background-image:url(/images/page_icons/database_gear.png)
+}
+.x-form-field-wrap .x-trigger-disabled {
+  cursor:default;
+opacity:0.5;
+background-position:0 0
+}
+.icon-php {
+  background-image:url(/images/page_icons/script_code.png)
+}
+.icon-html {
+  background-image:url(/images/page_icons/html.png)
+}
+.icon-cancel {
+  background-image:url(/images/page_icons/cancel16.png)
+}
+.icon-tree-orgboard {
+  background-image:url(/images/page_icons/chart_organisation.png)
+}
+.icon-undo {
+  background-image:url(/images/page_icons/arrow_undo.png)
+}
+.icon-script {
+  background-image:url(/images/page_icons/script.png)
+}
+.icon-graph {
+  background-image:url(/images/page_icons/chart_curve.png)
+}
+.icon-stat-portal {
+  background-image:url(/images/page_icons/stat_portal_16.png)
+}
+.icon-manual {
+  background-image:url(/images/page_icons/book_open.png)
+}
+.icon-add-tab {
+  background-image:url(/images/page_icons/tab_add.png)
+}
+.icon-stop {
+  background-image:url(/images/page_icons/control_stop.png)
+}
+.icon-admin {
+  background-image:url(/images/page_icons/adv_settings_16.png)
+}
+.icon-working {
+  background-image:url(/ext/resources/images/default/grid/wait.gif)
+}
+.icon-blank-img {
+  background-image:url(/ext/resources/images/default/s.gif)
+}
+.icon-run {
+  background-image:url(/images/page_icons/application_go.png)
+}
+.icon-stat-data {
+  background-image:url(/images/page_icons/kate_16.png)
+}
+.icon-minus {
+  background-image:url(/images/page_icons/delete.png)
+}
+.x-form-field-wrap .trigger-tree {
+  background-image: url(/images/page_icons/trigger-tree.png);
+cursor:pointer
+}
+.icon-warn {
+  background-image:url(/images/page_icons/error.png)
+}
+.icon-actions {
+  background-image:url(/images/page_icons/lightning.png)
+}
+.icon-copy {
+  background-image:url(/images/page_icons/page_white_copy.png)
+}
+.icon-folder-component {
+  background-image:url(/images/page_icons/folder_brick.png)
+}
+.icon-email-compose {
+  background-image:url(/images/page_icons/email_edit.png)
+}
+.icon-view-tile {
+  background-image:url(/images/page_icons/application_view_tile.png)
+}
+.icon-del-table {
+  background-image:url(/images/page_icons/table_delete.png)
+}
+.icon-cross {
+  background-image:url(/images/page_icons/cross.png)
+}
+.icon-defaults {
+  background-image:url(/images/page_icons/arrow_rotate_clockwise.png)
+}
+.icon-function {
+  background-image:url(/images/page_icons/flag_yellow.png)
+}
+.icon-zoom {
+  background-image:url(/images/page_icons/zoom.png)
+}
+.icon-expand-all {
+  background-image:url(/images/page_icons/expand-all.gif)
+}
+.icon-stat-list {
+  background-image:url(/images/page_icons/stat_list_16.png)
+}
+.icon-grid {
+  background-image:url(/images/page_icons/application_view_columns.png) !important
+}
+.icon-email {
+  background-image:url(/images/page_icons/email.png)
+}
+.icon-folder-add {
+  background-image:url(/images/page_icons/folder_add.png)
+}
+.icon-add-col {
+  background-image:url(/images/page_icons/page_white_add.png)
+}
+.icon-ok {
+  background-image:url(/images/page_icons/ok16.png)
+}
+.icon-open-blank {
+  background-image:url(/images/page_icons/application_cascade.png)
+}
+.icon-group-add {
+  background-image:url(/images/page_icons/group_add.png)
+}
+.icon-disk-bullet {
+  background-image:url(/images/page_icons/bullet_disk.png)
+}
+.icon-bulb-off {
+  background-image:url(/images/page_icons/lightbulb_off.png)
+}
+.icon-plugin {
+  background-image:url(/images/page_icons/plugin.png)
+}
+.icon-prefs {
+  background-image:url(/images/page_icons/application_form.png)
+}
+.icon-del-col {
+  background-image:url(/images/page_icons/page_white_delete.png)
+}
+.icon-collapse {
+  background-image:url(/images/page_icons/collapse-all.gif)
+}
+.icon-check, .icon-check-off {
+  background-image:url(/ext/resources/images/default/menu/unchecked.gif)
+}
+.icon-wrench-orange {
+  background-image:url(/images/page_icons/wrench_orange.png)
+}
+.icon-expand {
+  background-image:url(/images/page_icons/expand-all.gif)
+}
+.icon-group-del {
+  background-image:url(/images/page_icons/group_delete.png)
+}
+.icon-filter-active {
+  background-image:url(/images/page_icons/view-filter-go16.png)
+}
+.icon-del-wage {
+  background-image:url(/images/page_icons/bin_closed.png)
+}
+.icon-bulb {
+  background-image:url(/images/page_icons/lightbulb.png)
+}
+.icon-print {
+  background-image:url(/images/page_icons/printer.png)
+}
+.icon-check-on {
+  background-image:url(/ext/resources/images/default/menu/checked.gif)
+}
+.icon-loading {
+  background-image:url(/ext/resources/images/default/grid/grid-loading.gif)
+}
+.icon-stat-cat {
+  background-image:url(/images/page_icons/stat-cat_16.png)
+}
+.icon-form-add {
+  background-image:url(/images/page_icons/application_form_add.png)
+}
+.icon-key2 {
+  background-image:url(/images/page_icons/key_16.png)
+}
+.icon-open-download {
+  background-image:url(/images/page_icons/application_put.png)
+}
+.icon-rename {
+  background-image:url(/images/page_icons/textfield_rename.png)
+}
+.icon-load {
+  background-image:url(/images/page_icons/database_go.png)
+}
+.icon-pencil {
+  background-image:url(/images/page_icons/pencil.png)
+}
+.x-form-field-wrap .trigger-tag-add {
+  background-image: url(/images/page_icons/trigger-tag-add.png);
+cursor:pointer
+}
+.icon-form-edit {
+  background-image:url(/images/page_icons/application_form_edit.png)
+}
+.icon-delete {
+  background-image:url(/images/page_icons/bin_empty.png)
+}
+.icon-info {
+  background-image:url(/images/page_icons/information.png)
+}
+.icon-collapse-all {
+  background-image:url(/images/page_icons/collapse-all.gif)
+}
+.icon-tree-area {
+  background-image:url(/images/page_icons/post_title.png)
+}
+.icon-filter {
+  background-image:url(/images/page_icons/view-filter16.png)
+}
+.icon-edit-record {
+  background-image:url(/images/page_icons/table_edit.png)
+}
+.icon-chart {
+  background-image:url(/images/page_icons/chart_bar.png)
+}
+.icon-star {
+  background-image:url(/images/page_icons/award_star_gold_3.png)
+}
+.icon-db-gear {
+  background-image:url(/images/page_icons/database_gear.png)
+}
+.icon-go-tab {
+  background-image:url(/images/page_icons/tab_go.png)
+}
+.icon-upload {
+  background-image:url(/images/page_icons/up.png)
+}
+.icon-css {
+  background-image:url(/images/page_icons/css.png)
+}
+.icon-extension {
+  background-image:url(/images/page_icons/brick.png)
+}
+.icon-clock {
+  background-image:url(/images/page_icons/clock.png)
+}
+.icon-save-table {
+  background-image:url(/images/page_icons/table_save.png)
+}
+.icon-magnifier {
+  background-image:url(/images/page_icons/magnifier.png)
+}
+.icon-tree {
+  background-image:url(/images/page_icons/tree_16.png)
+}
+.icon-arrow-right {
+  background-image:url(/images/page_icons/arrow_right.png)
+}
+.icon-add-wage {
+  background-image:url(/images/page_icons/coins_add.png)
+}
+.icon-coins {
+  background-image:url(/images/page_icons/coins.png)
+}
+.icon-refresh {
+  background-image:url(/images/page_icons/arrow_refresh.png)
+}
+.icon-db-refresh {
+  background-image:url(/images/page_icons/database_refresh.png)
+}
+.icon-trash-empty {
+  background-image:url(/images/page_icons/bin_empty.png)
+}
+.icon-open-self {
+  background-image:url(/images/page_icons/application.png)
+}
+
+
+/* [no container] */
+.ux-up-item {
+  	line-height:17px;
+	height:17px;
+	cursor:default;
+	margin-bottom:1px;
+	position:relative;
+	background-color:#e0e0e0;
+/*	background-image:url(../img/white_bg.png);
+	background-repeat:no-repeat
+	border: 1px solid transparent; */
+
+}
+.ux-up-icon-file {
+  	width:16px;
+	height:16px;
+	vertical-align:-3px;
+	margin-right:4px;
+	background-image:url(/ext/resources/images/default/tree/leaf.gif);
+	float:left;
+	
+}
+.ux-up-indicator {
+  	background-color:yellow;
+	height:17px;
+	width:40px;
+	position:absolute;
+	opacity:0.4;
+	
+}
+.ux-up-icon-state {
+  	width:16px;
+	float:right;
+	margin-right:2px;
+	cursor:pointer;
+	z-index:-1;
+}
+.ux-up-icon-queued {
+  	background-image:url(/images/page_icons/page_white_get.png);
+	
+}
+.ux-up-icon-uploading {
+  	background-image:url(/ext/resources/images/default/grid/wait.gif);
+}
+.ux-up-icon-done {
+  	background-image:url(/images/page_icons/accept.png);
+}
+.ux-up-icon-failed {
+  	background-image:url(/images/page_icons/error.png);
+}
+.ux-up-icon-stopped {
+  	background-image:url(/images/page_icons/stop.png);
+}
+.ux-up-text {
+  	float:left;
+}
+.ux-ftm-nodename {
+  	color:black;
+	font-weight:bold;
+	cursor:default;
+}
+.folder {
+  background-image:url(/ext/resources/images/default/tree/folder.gif);
+
+}
+

@@ -1,0 +1,24 @@
+production:
+  adapter: mysql2
+  host: localhost
+  database: demo_dev
+  username: demo_dev
+  password: rYewr0dmssd1wer4
+  encoding: utf8
+
+development:
+  adapter: mysql2
+  host: localhost
+  database: demo_dev
+  username: demo_dev
+  password: weY60HGgv14
+  encoding: utf8
+
+test:
+  adapter: mysql2
+  host: localhost
+  database: demo_test
+  username: demo_test
+  password: weY60HGgv14_test
+  encoding: utf8
+

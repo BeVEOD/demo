@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class UserAccessesController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/user_accesses_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-linker">#linker</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Faveod.html">Faveod</a>
+  
+    <li><a href="./Faveod/AVBBFTranslationService.html">Faveod::AVBBFTranslationService</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions.html">Faveod::ActiveResourceExtensions</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions/ClassMethods.html">Faveod::ActiveResourceExtensions::ClassMethods</a>
+  
+    <li><a href="./Faveod/DistributedColors.html">Faveod::DistributedColors</a>
+  
+    <li><a href="./Faveod/GoogleTranslationService.html">Faveod::GoogleTranslationService</a>
+  
+    <li><a href="./Faveod/GraphMaker.html">Faveod::GraphMaker</a>
+  
+    <li><a href="./Faveod/HtmlTruncator.html">Faveod::HtmlTruncator</a>
+  
+    <li><a href="./Faveod/IePdfHeadersMiddleware.html">Faveod::IePdfHeadersMiddleware</a>
+  
+    <li><a href="./Faveod/PoUtils.html">Faveod::PoUtils</a>
+  
+    <li><a href="./Faveod/TranslationServer.html">Faveod::TranslationServer</a>
+  
+    <li><a href="./Faveod/TranslationServicesHelper.html">Faveod::TranslationServicesHelper</a>
+  
+    <li><a href="./Faveod/Validations.html">Faveod::Validations</a>
+  
+    <li><a href="./Faveod/Validations/Syntax.html">Faveod::Validations::Syntax</a>
+  
+    <li><a href="./Faveod/Validations/Syntax/ClassMethods.html">Faveod::Validations::Syntax::ClassMethods</a>
+  
+    <li><a href="./ActiveRecord.html">ActiveRecord</a>
+  
+    <li><a href="./ActiveRecord/Base.html">ActiveRecord::Base</a>
+  
+    <li><a href="./ActiveRecord/Condition.html">ActiveRecord::Condition</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters.html">ActiveRecord::ConnectionAdapters</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters/Column.html">ActiveRecord::ConnectionAdapters::Column</a>
+  
+    <li><a href="./ActiveRecord/Validations.html">ActiveRecord::Validations</a>
+  
+    <li><a href="./ActiveRecord/Validations/ClassMethods.html">ActiveRecord::Validations::ClassMethods</a>
+  
+    <li><a href="./ActionView.html">ActionView</a>
+  
+    <li><a href="./ActionView/Helpers.html">ActionView::Helpers</a>
+  
+    <li><a href="./ActionView/Helpers/FormOptionsHelper.html">ActionView::Helpers::FormOptionsHelper</a>
+  
+    <li><a href="./DefaultFinder.html">DefaultFinder</a>
+  
+    <li><a href="./DefaultFinder/Finder.html">DefaultFinder::Finder</a>
+  
+    <li><a href="./DefaultFinder/Finder/ClassMethods.html">DefaultFinder::Finder::ClassMethods</a>
+  
+    <li><a href="./IrbjaxEngine.html">IrbjaxEngine</a>
+  
+    <li><a href="./IrbjaxEngine/IrbjaxSession.html">IrbjaxEngine::IrbjaxSession</a>
+  
+    <li><a href="./IrbjaxEngine/Output.html">IrbjaxEngine::Output</a>
+  
+    <li><a href="./SymetrieCom.html">SymetrieCom</a>
+  
+    <li><a href="./SymetrieCom/Acts.html">SymetrieCom::Acts</a>
+  
+    <li><a href="./SymetrieCom/Acts/BetterNestedSetHelper.html">SymetrieCom::Acts::BetterNestedSetHelper</a>
+  
+    <li><a href="./GetText.html">GetText</a>
+  
+    <li><a href="./GetText/PoParser.html">GetText::PoParser</a>
+  
+    <li><a href="./Rack.html">Rack</a>
+  
+    <li><a href="./Rack/Utils.html">Rack::Utils</a>
+  
+    <li><a href="./WillPaginate.html">WillPaginate</a>
+  
+    <li><a href="./WillPaginate/ViewHelpers.html">WillPaginate::ViewHelpers</a>
+  
+    <li><a href="./AbstractReport.html">AbstractReport</a>
+  
+    <li><a href="./Access.html">Access</a>
+  
+    <li><a href="./AccessApi.html">AccessApi</a>
+  
+    <li><a href="./AccessReport.html">AccessReport</a>
+  
+    <li><a href="./AccessesController.html">AccessesController</a>
+  
+    <li><a href="./AccessesHelper.html">AccessesHelper</a>
+  
+    <li><a href="./AppLocale.html">AppLocale</a>
+  
+    <li><a href="./AppLocaleApi.html">AppLocaleApi</a>
+  
+    <li><a href="./AppLocalesController.html">AppLocalesController</a>
+  
+    <li><a href="./AppLocalesHelper.html">AppLocalesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BgWorker.html">BgWorker</a>
+  
+    <li><a href="./BgWorkerApi.html">BgWorkerApi</a>
+  
+    <li><a href="./BgWorkerReport.html">BgWorkerReport</a>
+  
+    <li><a href="./BgWorkersController.html">BgWorkersController</a>
+  
+    <li><a href="./BgWorkersHelper.html">BgWorkersHelper</a>
+  
+    <li><a href="./Customer.html">Customer</a>
+  
+    <li><a href="./CustomerApi.html">CustomerApi</a>
+  
+    <li><a href="./CustomersController.html">CustomersController</a>
+  
+    <li><a href="./CustomersHelper.html">CustomersHelper</a>
+  
+    <li><a href="./Date.html">Date</a>
+  
+    <li><a href="./DateHelper.html">DateHelper</a>
+  
+    <li><a href="./DevFeedback.html">DevFeedback</a>
+  
+    <li><a href="./DevFeedbackApi.html">DevFeedbackApi</a>
+  
+    <li><a href="./DevFeedbacksController.html">DevFeedbacksController</a>
+  
+    <li><a href="./DevFeedbacksHelper.html">DevFeedbacksHelper</a>
+  
+    <li><a href="./Enumerable.html">Enumerable</a>
+  
+    <li><a href="./FileImport.html">FileImport</a>
+  
+    <li><a href="./FileImportApi.html">FileImportApi</a>
+  
+    <li><a href="./FileImportReport.html">FileImportReport</a>
+  
+    <li><a href="./FileImportsController.html">FileImportsController</a>
+  
+    <li><a href="./FileImportsHelper.html">FileImportsHelper</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./PdfHandler.html">PdfHandler</a>
+  
+    <li><a href="./Profile.html">Profile</a>
+  
+    <li><a href="./ProfileAccess.html">ProfileAccess</a>
+  
+    <li><a href="./ProfileAccessApi.html">ProfileAccessApi</a>
+  
+    <li><a href="./ProfileAccessesController.html">ProfileAccessesController</a>
+  
+    <li><a href="./ProfileAccessesHelper.html">ProfileAccessesHelper</a>
+  
+    <li><a href="./ProfileApi.html">ProfileApi</a>
+  
+    <li><a href="./ProfilesController.html">ProfilesController</a>
+  
+    <li><a href="./ProfilesHelper.html">ProfilesHelper</a>
+  
+    <li><a href="./RBeautify.html">RBeautify</a>
+  
+    <li><a href="./Range.html">Range</a>
+  
+    <li><a href="./SavedReport.html">SavedReport</a>
+  
+    <li><a href="./SavedReportApi.html">SavedReportApi</a>
+  
+    <li><a href="./SavedReportsController.html">SavedReportsController</a>
+  
+    <li><a href="./SavedReportsHelper.html">SavedReportsHelper</a>
+  
+    <li><a href="./SmartQueriesController.html">SmartQueriesController</a>
+  
+    <li><a href="./SmartQueriesHelper.html">SmartQueriesHelper</a>
+  
+    <li><a href="./SmartQuery.html">SmartQuery</a>
+  
+    <li><a href="./SmartQueryApi.html">SmartQueryApi</a>
+  
+    <li><a href="./SystemSetting.html">SystemSetting</a>
+  
+    <li><a href="./SystemSettingApi.html">SystemSettingApi</a>
+  
+    <li><a href="./SystemSettingsController.html">SystemSettingsController</a>
+  
+    <li><a href="./SystemSettingsHelper.html">SystemSettingsHelper</a>
+  
+    <li><a href="./Thumbnailer.html">Thumbnailer</a>
+  
+    <li><a href="./Translation.html">Translation</a>
+  
+    <li><a href="./TranslationApi.html">TranslationApi</a>
+  
+    <li><a href="./TranslationsController.html">TranslationsController</a>
+  
+    <li><a href="./TranslationsHelper.html">TranslationsHelper</a>
+  
+    <li><a href="./UncatchedException.html">UncatchedException</a>
+  
+    <li><a href="./UncatchedExceptionApi.html">UncatchedExceptionApi</a>
+  
+    <li><a href="./UncatchedExceptionMailer.html">UncatchedExceptionMailer</a>
+  
+    <li><a href="./UncatchedExceptionsController.html">UncatchedExceptionsController</a>
+  
+    <li><a href="./UncatchedExceptionsHelper.html">UncatchedExceptionsHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserAccess.html">UserAccess</a>
+  
+    <li><a href="./UserAccessApi.html">UserAccessApi</a>
+  
+    <li><a href="./UserAccessesController.html">UserAccessesController</a>
+  
+    <li><a href="./UserAccessesHelper.html">UserAccessesHelper</a>
+  
+    <li><a href="./UserApi.html">UserApi</a>
+  
+    <li><a href="./UserMailer.html">UserMailer</a>
+  
+    <li><a href="./UserReport.html">UserReport</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class UserAccessesController</h1>
+
+  <div id="description" class="description">
+    
+<pre>This file and all its content belong to Faveod S.A.S unless a commercial
+contract signed by a representant of Faveod S.A.S states otherwise.</pre>
+
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</p>
+
+<pre>This has been generated by Faveod Generator on Thu Oct 31 16:40:24 +0100 2013
+It should be placed at 'app/controllers/user_accesses_controller.rb'
+All manual modifications will be destroyed on next generation</pre>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-linker" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">linker</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>AJAX association management.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>11</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-06-23 17:57:01 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="linker-source">
+            <pre><span class="ruby-comment"># File app/controllers/user_accesses_controller.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">linker</span>
+
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">'AJAX only'</span>)) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">'Missing required parameter'</span>)) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>] = <span class="ruby-value">1</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+  <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>] = <span class="ruby-value">15</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@user_access</span>   = <span class="ruby-constant">UserAccess</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-ivar">@user_access</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">UserAccess</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>].<span class="ruby-identifier">to_sym</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:user</span>
+    <span class="ruby-identifier">val</span> = <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;user&quot;</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;user&quot;</span>][<span class="ruby-string">&quot;0&quot;</span>] <span class="ruby-operator">:</span> {}
+    <span class="ruby-ivar">@user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">search</span>(<span class="ruby-identifier">val</span>, <span class="ruby-identifier">params</span>.<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-operator">!</span><span class="ruby-identifier">k</span>[<span class="ruby-regexp">%rcomp_/</span>]}, <span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>], <span class="ruby-value">:per_page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>])
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:partial</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/users/list_for_linker'</span>, <span class="ruby-value">:locals</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:assoc_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user_accesses</span>, <span class="ruby-value">:assoc_type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:belongs_to</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:access</span>
+    <span class="ruby-identifier">val</span> = <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;access&quot;</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;access&quot;</span>][<span class="ruby-string">&quot;0&quot;</span>] <span class="ruby-operator">:</span> {}
+    <span class="ruby-ivar">@access</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">search</span>(<span class="ruby-identifier">val</span>, <span class="ruby-identifier">params</span>.<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-operator">!</span><span class="ruby-identifier">k</span>[<span class="ruby-regexp">%rcomp_/</span>]}, <span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>], <span class="ruby-value">:per_page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>])
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:partial</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/accesses/list_for_linker'</span>, <span class="ruby-value">:locals</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:assoc_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user_accesses</span>, <span class="ruby-value">:assoc_type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:belongs_to</span>}
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- linker-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- linker-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,0 +1,115 @@
+
+/* #style_editor */
+#style_editor .style_set select {
+  width: 155px
+}
+#style_editor .style_set input {
+  float: left
+}
+#style_editor .color_picker_input {
+  width: 5em;
+text-align: center;
+border: 1px outset
+}
+#style_editor fieldset.style_set {
+  background-color: #EEF
+}
+#style_editor .style_set table td {
+  border: none
+}
+#style_editor .style_set .label {
+  width: 10em;
+// clear:left;
+// float:left
+}
+
+
+/* #pick_style */
+#pick_style #stylesheet {
+  border: 1px solid inset;
+background: #CDE;
+padding: 5px;
+margin: 1px
+}
+#pick_style  {
+  width: 25%;
+float:left
+}
+
+
+/* [no container] */
+#edit_style {
+  float:left;
+background: #DEF;
+margin-left:0.5%;
+width:73%;
+border: 1px inset blue;
+padding: 5px
+}
+.two_columns {
+  width: 31em;
+float:left
+}
+
+
+/* #previewer:hover */
+#previewer:hover #inner {
+  // border: 1px dashed white;
+background: white;
+opacity: 80%
+}
+#previewer:hover #outer {
+  // border: 1px solid #5599CC;
+background: #77BBEE;
+opacity: 0.8;
+color: black
+}
+#previewer:hover #preview {
+  // border: 1px solid #0BB;
+background: #0FF;
+opacity: 0.8
+}
+
+
+/* #styles */
+#styles .style_group {
+  font-weight: bold
+}
+#styles a:hover {
+  background: #DEF
+}
+#styles .active {
+  background: #9999CC
+}
+#styles ul ul {
+  padding-left: 1em
+}
+#styles  {
+  border: 1px solid inset;
+background: #CDE;
+padding: 5px;
+margin: 1px
+}
+#styles li.loading {
+  background: #FFFFCC
+}
+#styles ul {
+  padding-left: 0;
+list-style-type: none
+}
+#styles a {
+  display:block;
+width: 100%;
+text-decoration: none;
+color: #258
+}
+
+
+/* #previewer */
+#previewer #inner {
+  height: 100%
+}
+#previewer #outer {
+  border: 1px solid #5599CC
+}
+

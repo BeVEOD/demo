@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class CustomersController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/customers_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-adv_search">#adv_search</a>
+    
+    <li><a href="#method-i-create">#create</a>
+    
+    <li><a href="#method-i-destroy">#destroy</a>
+    
+    <li><a href="#method-i-download">#download</a>
+    
+    <li><a href="#method-i-edit">#edit</a>
+    
+    <li><a href="#method-i-feed">#feed</a>
+    
+    <li><a href="#method-i-get_file">#get_file</a>
+    
+    <li><a href="#method-i-get_file_size">#get_file_size</a>
+    
+    <li><a href="#method-i-get_file_thumb">#get_file_thumb</a>
+    
+    <li><a href="#method-i-help">#help</a>
+    
+    <li><a href="#method-i-index">#index</a>
+    
+    <li><a href="#method-i-linker">#linker</a>
+    
+    <li><a href="#method-i-list">#list</a>
+    
+    <li><a href="#method-i-new">#new</a>
+    
+    <li><a href="#method-i-search">#search</a>
+    
+    <li><a href="#method-i-show">#show</a>
+    
+    <li><a href="#method-i-update">#update</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Faveod.html">Faveod</a>
+  
+    <li><a href="./Faveod/AVBBFTranslationService.html">Faveod::AVBBFTranslationService</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions.html">Faveod::ActiveResourceExtensions</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions/ClassMethods.html">Faveod::ActiveResourceExtensions::ClassMethods</a>
+  
+    <li><a href="./Faveod/DistributedColors.html">Faveod::DistributedColors</a>
+  
+    <li><a href="./Faveod/GoogleTranslationService.html">Faveod::GoogleTranslationService</a>
+  
+    <li><a href="./Faveod/GraphMaker.html">Faveod::GraphMaker</a>
+  
+    <li><a href="./Faveod/HtmlTruncator.html">Faveod::HtmlTruncator</a>
+  
+    <li><a href="./Faveod/IePdfHeadersMiddleware.html">Faveod::IePdfHeadersMiddleware</a>
+  
+    <li><a href="./Faveod/PoUtils.html">Faveod::PoUtils</a>
+  
+    <li><a href="./Faveod/TranslationServer.html">Faveod::TranslationServer</a>
+  
+    <li><a href="./Faveod/TranslationServicesHelper.html">Faveod::TranslationServicesHelper</a>
+  
+    <li><a href="./Faveod/Validations.html">Faveod::Validations</a>
+  
+    <li><a href="./Faveod/Validations/Syntax.html">Faveod::Validations::Syntax</a>
+  
+    <li><a href="./Faveod/Validations/Syntax/ClassMethods.html">Faveod::Validations::Syntax::ClassMethods</a>
+  
+    <li><a href="./ActiveRecord.html">ActiveRecord</a>
+  
+    <li><a href="./ActiveRecord/Base.html">ActiveRecord::Base</a>
+  
+    <li><a href="./ActiveRecord/Condition.html">ActiveRecord::Condition</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters.html">ActiveRecord::ConnectionAdapters</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters/Column.html">ActiveRecord::ConnectionAdapters::Column</a>
+  
+    <li><a href="./ActiveRecord/Validations.html">ActiveRecord::Validations</a>
+  
+    <li><a href="./ActiveRecord/Validations/ClassMethods.html">ActiveRecord::Validations::ClassMethods</a>
+  
+    <li><a href="./ActionView.html">ActionView</a>
+  
+    <li><a href="./ActionView/Helpers.html">ActionView::Helpers</a>
+  
+    <li><a href="./ActionView/Helpers/FormOptionsHelper.html">ActionView::Helpers::FormOptionsHelper</a>
+  
+    <li><a href="./DefaultFinder.html">DefaultFinder</a>
+  
+    <li><a href="./DefaultFinder/Finder.html">DefaultFinder::Finder</a>
+  
+    <li><a href="./DefaultFinder/Finder/ClassMethods.html">DefaultFinder::Finder::ClassMethods</a>
+  
+    <li><a href="./IrbjaxEngine.html">IrbjaxEngine</a>
+  
+    <li><a href="./IrbjaxEngine/IrbjaxSession.html">IrbjaxEngine::IrbjaxSession</a>
+  
+    <li><a href="./IrbjaxEngine/Output.html">IrbjaxEngine::Output</a>
+  
+    <li><a href="./SymetrieCom.html">SymetrieCom</a>
+  
+    <li><a href="./SymetrieCom/Acts.html">SymetrieCom::Acts</a>
+  
+    <li><a href="./SymetrieCom/Acts/BetterNestedSetHelper.html">SymetrieCom::Acts::BetterNestedSetHelper</a>
+  
+    <li><a href="./GetText.html">GetText</a>
+  
+    <li><a href="./GetText/PoParser.html">GetText::PoParser</a>
+  
+    <li><a href="./Rack.html">Rack</a>
+  
+    <li><a href="./Rack/Utils.html">Rack::Utils</a>
+  
+    <li><a href="./WillPaginate.html">WillPaginate</a>
+  
+    <li><a href="./WillPaginate/ViewHelpers.html">WillPaginate::ViewHelpers</a>
+  
+    <li><a href="./AbstractReport.html">AbstractReport</a>
+  
+    <li><a href="./Access.html">Access</a>
+  
+    <li><a href="./AccessApi.html">AccessApi</a>
+  
+    <li><a href="./AccessReport.html">AccessReport</a>
+  
+    <li><a href="./AccessesController.html">AccessesController</a>
+  
+    <li><a href="./AccessesHelper.html">AccessesHelper</a>
+  
+    <li><a href="./AppLocale.html">AppLocale</a>
+  
+    <li><a href="./AppLocaleApi.html">AppLocaleApi</a>
+  
+    <li><a href="./AppLocalesController.html">AppLocalesController</a>
+  
+    <li><a href="./AppLocalesHelper.html">AppLocalesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BgWorker.html">BgWorker</a>
+  
+    <li><a href="./BgWorkerApi.html">BgWorkerApi</a>
+  
+    <li><a href="./BgWorkerReport.html">BgWorkerReport</a>
+  
+    <li><a href="./BgWorkersController.html">BgWorkersController</a>
+  
+    <li><a href="./BgWorkersHelper.html">BgWorkersHelper</a>
+  
+    <li><a href="./Customer.html">Customer</a>
+  
+    <li><a href="./CustomerApi.html">CustomerApi</a>
+  
+    <li><a href="./CustomersController.html">CustomersController</a>
+  
+    <li><a href="./CustomersHelper.html">CustomersHelper</a>
+  
+    <li><a href="./Date.html">Date</a>
+  
+    <li><a href="./DateHelper.html">DateHelper</a>
+  
+    <li><a href="./DevFeedback.html">DevFeedback</a>
+  
+    <li><a href="./DevFeedbackApi.html">DevFeedbackApi</a>
+  
+    <li><a href="./DevFeedbacksController.html">DevFeedbacksController</a>
+  
+    <li><a href="./DevFeedbacksHelper.html">DevFeedbacksHelper</a>
+  
+    <li><a href="./Enumerable.html">Enumerable</a>
+  
+    <li><a href="./FileImport.html">FileImport</a>
+  
+    <li><a href="./FileImportApi.html">FileImportApi</a>
+  
+    <li><a href="./FileImportReport.html">FileImportReport</a>
+  
+    <li><a href="./FileImportsController.html">FileImportsController</a>
+  
+    <li><a href="./FileImportsHelper.html">FileImportsHelper</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./PdfHandler.html">PdfHandler</a>
+  
+    <li><a href="./Profile.html">Profile</a>
+  
+    <li><a href="./ProfileAccess.html">ProfileAccess</a>
+  
+    <li><a href="./ProfileAccessApi.html">ProfileAccessApi</a>
+  
+    <li><a href="./ProfileAccessesController.html">ProfileAccessesController</a>
+  
+    <li><a href="./ProfileAccessesHelper.html">ProfileAccessesHelper</a>
+  
+    <li><a href="./ProfileApi.html">ProfileApi</a>
+  
+    <li><a href="./ProfilesController.html">ProfilesController</a>
+  
+    <li><a href="./ProfilesHelper.html">ProfilesHelper</a>
+  
+    <li><a href="./RBeautify.html">RBeautify</a>
+  
+    <li><a href="./Range.html">Range</a>
+  
+    <li><a href="./SavedReport.html">SavedReport</a>
+  
+    <li><a href="./SavedReportApi.html">SavedReportApi</a>
+  
+    <li><a href="./SavedReportsController.html">SavedReportsController</a>
+  
+    <li><a href="./SavedReportsHelper.html">SavedReportsHelper</a>
+  
+    <li><a href="./SmartQueriesController.html">SmartQueriesController</a>
+  
+    <li><a href="./SmartQueriesHelper.html">SmartQueriesHelper</a>
+  
+    <li><a href="./SmartQuery.html">SmartQuery</a>
+  
+    <li><a href="./SmartQueryApi.html">SmartQueryApi</a>
+  
+    <li><a href="./SystemSetting.html">SystemSetting</a>
+  
+    <li><a href="./SystemSettingApi.html">SystemSettingApi</a>
+  
+    <li><a href="./SystemSettingsController.html">SystemSettingsController</a>
+  
+    <li><a href="./SystemSettingsHelper.html">SystemSettingsHelper</a>
+  
+    <li><a href="./Thumbnailer.html">Thumbnailer</a>
+  
+    <li><a href="./Translation.html">Translation</a>
+  
+    <li><a href="./TranslationApi.html">TranslationApi</a>
+  
+    <li><a href="./TranslationsController.html">TranslationsController</a>
+  
+    <li><a href="./TranslationsHelper.html">TranslationsHelper</a>
+  
+    <li><a href="./UncatchedException.html">UncatchedException</a>
+  
+    <li><a href="./UncatchedExceptionApi.html">UncatchedExceptionApi</a>
+  
+    <li><a href="./UncatchedExceptionMailer.html">UncatchedExceptionMailer</a>
+  
+    <li><a href="./UncatchedExceptionsController.html">UncatchedExceptionsController</a>
+  
+    <li><a href="./UncatchedExceptionsHelper.html">UncatchedExceptionsHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserAccess.html">UserAccess</a>
+  
+    <li><a href="./UserAccessApi.html">UserAccessApi</a>
+  
+    <li><a href="./UserAccessesController.html">UserAccessesController</a>
+  
+    <li><a href="./UserAccessesHelper.html">UserAccessesHelper</a>
+  
+    <li><a href="./UserApi.html">UserApi</a>
+  
+    <li><a href="./UserMailer.html">UserMailer</a>
+  
+    <li><a href="./UserReport.html">UserReport</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class CustomersController</h1>
+
+  <div id="description" class="description">
+    
+<pre>This file and all its content belong to Faveod S.A.S unless a commercial
+contract signed by a representant of Faveod S.A.S states otherwise.</pre>
+
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</p>
+
+<pre>This has been generated by Faveod Generator on Thu Oct 31 16:40:27 +0100 2013
+It should be placed at 'app/controllers/customers_controller.rb'
+All manual modifications will be destroyed on next generation</pre>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-adv_search" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">adv_search</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Make complex queries.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>7</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-05-27 12:12:45 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="adv_search-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 753</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">adv_search</span>
+
+  <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:search</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- adv_search-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- adv_search-method -->
+
+    
+      <div id="method-i-create" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Inserts the record in the database.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>23</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-10-31 16:38:41 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="create-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 261</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create</span>
+
+  <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">post?</span>
+  <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+  <span class="ruby-ivar">@customer_attributes</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>][<span class="ruby-string">'0'</span>].<span class="ruby-identifier">clone</span> <span class="ruby-operator">:</span> {}
+
+  <span class="ruby-ivar">@customer</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-ivar">@customer_attributes</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">save</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{page} was successfully created.&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Customer&quot;</span>)}
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span> <span class="ruby-comment"># &amp;&amp; params[:format] == 'json'</span>
+      <span class="ruby-identifier">render</span>(<span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">id</span>}.<span class="ruby-identifier">merge</span>(<span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">attributes</span>).<span class="ruby-identifier">to_json</span>)
+      <span class="ruby-keyword">return</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span> <span class="ruby-comment"># &amp;&amp; params[:format] == 'json'</span>
+      <span class="ruby-identifier">render</span>(<span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> ({<span class="ruby-value">:errors</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">full_messages</span>}.<span class="ruby-identifier">merge</span>(<span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">attributes</span>)).<span class="ruby-identifier">to_json</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">render</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:new</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:go_to</span>].<span class="ruby-identifier">blank?</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-identifier">params</span>[<span class="ruby-value">:commit_and_new</span>] <span class="ruby-operator">?</span> <span class="ruby-value">:new</span> <span class="ruby-operator">:</span> <span class="ruby-value">:index</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">redirect_to</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:go_to</span>])
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create-method -->
+
+    
+      <div id="method-i-destroy" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">destroy</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Deletes an object or list of objects from the database.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>9</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-03-08 15:34:31 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="destroy-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 399</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">destroy</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Array</span>)
+    <span class="ruby-ivar">@success</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">destroy</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@customer</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+    <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">destroy</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-ivar">@success</span> = <span class="ruby-ivar">@customer</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">destroyed?</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@success</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{model} %{name} successfully deleted.&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:model</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Customer&quot;</span>), <span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">disp_name</span>}
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{model} %{name} could not be deleted.&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:model</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Customer&quot;</span>), <span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:name</span>]}
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">!=</span> <span class="ruby-string">&quot;json&quot;</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+      <span class="ruby-identifier">render</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'ajax_update'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:go_to</span>].<span class="ruby-identifier">blank?</span>
+        <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">redirect_to</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:go_to</span>])
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">resp</span> = {}
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@success</span>
+      <span class="ruby-identifier">resp</span>[<span class="ruby-value">:success</span>] = <span class="ruby-keyword">true</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">resp</span>[<span class="ruby-value">:success</span>] = <span class="ruby-keyword">false</span>
+      <span class="ruby-identifier">resp</span>[<span class="ruby-value">:error</span>] = <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>]
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">resp</span>.<span class="ruby-identifier">to_json</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- destroy-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- destroy-method -->
+
+    
+      <div id="method-i-download" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">download</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Allows download of all or current record in many formats.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>46</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-02-11 07:45:35 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="download-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 552</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">download</span>
+
+  <span class="ruby-ivar">@restricted_fields</span> = []
+  <span class="ruby-ivar">@no_menubar</span> = <span class="ruby-keyword">true</span>
+  <span class="ruby-ivar">@no_links</span>   = <span class="ruby-keyword">true</span>
+  <span class="ruby-ivar">@no_filterbar</span>       = <span class="ruby-keyword">true</span>
+  <span class="ruby-ivar">@no_row_links</span>       = <span class="ruby-keyword">true</span>
+  <span class="ruby-identifier">pagin_opts</span>            = {<span class="ruby-value">:include</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:user</span>]}
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:order</span>]    = <span class="ruby-ivar">@default_order</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@default_order</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:order</span>]  <span class="ruby-operator">||=</span> <span class="ruby-node">&quot;customers.#{params[:sort_by]}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:sort_by</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-operator">||=</span> <span class="ruby-ivar">@default_filter</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:joins</span>]  <span class="ruby-operator">||=</span> <span class="ruby-ivar">@joins_fields</span> <span class="ruby-operator">||</span> []
+
+  <span class="ruby-comment"># pagin_opts[:select]       ||= &quot;`customers`.`first_name`,`customers`.`last_name`&quot; unless params[:format] == 'html'</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+    <span class="ruby-ivar">@customer</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>], <span class="ruby-identifier">pagin_opts</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@customer</span>
+      <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Error: %{obj} not found!&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:obj</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">%q[Customer]</span>)}
+      <span class="ruby-keyword">begin</span>
+        <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:back</span>
+      <span class="ruby-keyword">rescue</span>
+        <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:list</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">return</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">f_name</span> = <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">disp_name</span>
+    <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> {
+        <span class="ruby-ivar">@no_menubar</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-ivar">@no_links</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-identifier">data</span> = <span class="ruby-identifier">render_to_string</span>(<span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/customers/show.html.erb'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'minimal'</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r\ssrc=\&quot;\//</span>, <span class="ruby-node">%Q[ src=&quot;#{request.protocol}#{request.host_with_port}/]</span>)
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">data</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;#{f_name}.html&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'text/html;charset=utf-8'</span>) }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">doc</span> {
+        <span class="ruby-ivar">@no_menubar</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-ivar">@no_links</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-identifier">data</span> = <span class="ruby-identifier">render_to_string</span>(<span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/customers/show.html.erb'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'minimal'</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r\ssrc=\&quot;\//</span>, <span class="ruby-node">%Q[ src=&quot;#{request.protocol}#{request.host_with_port}/]</span>)
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">data</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;#{f_name}.doc&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'application/msword;charset=utf-8'</span>) }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">pdf</span> {
+        <span class="ruby-ivar">@pdf</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-ivar">@debug_pdf</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>]
+        <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] = <span class="ruby-string">'html'</span>
+        <span class="ruby-identifier">html</span> = <span class="ruby-identifier">render_to_string</span>(<span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/customers/show.html.erb'</span>, <span class="ruby-value">:format</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:html</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">id</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'pdf'</span>)
+        <span class="ruby-identifier">html</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">%r\/images\//</span>, <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'public'</span>, <span class="ruby-string">'images/'</span>)) <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>]
+        <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">html</span>,  <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'pdf'</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>]
+        <span class="ruby-identifier">kit</span> = <span class="ruby-constant">PDFKit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">html</span>, <span class="ruby-value">:encoding</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'UTF-8'</span>)
+        <span class="ruby-identifier">kit</span>.<span class="ruby-identifier">stylesheets</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'public'</span>, <span class="ruby-string">'stylesheets'</span>, <span class="ruby-string">'pdf.css'</span>)
+        <span class="ruby-identifier">pdf</span> = <span class="ruby-identifier">kit</span>.<span class="ruby-identifier">to_pdf</span>
+        <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">pdf</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;#{@customer.disp_name}.pdf&quot;</span>) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">pdf</span>.<span class="ruby-identifier">blank?</span>
+
+        <span class="ruby-comment"># send_data(render_to_string(:format =&gt; :html, :layout =&gt; false, :action =&gt; :show, :id =&gt; @customer.id), :filename =&gt; &quot;#{f_name}.pdf&quot;, :disposition =&gt; 'attachment', :type =&gt; 'application/pdf;charset=utf-8')</span>
+
+        <span class="ruby-keyword">return</span>
+      }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span> {
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">to_xml</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;#{f_name}.xml&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'text/xml;charset=utf-8'</span>)}
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> {
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">to_json</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;#{f_name}.json&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'text/json;charset=utf-8'</span>)}
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xls</span> {
+        <span class="ruby-identifier">book</span> = <span class="ruby-constant">Spreadsheet</span><span class="ruby-operator">::</span><span class="ruby-constant">Workbook</span>.<span class="ruby-identifier">new</span>
+        <span class="ruby-identifier">sheet</span> = <span class="ruby-identifier">book</span>.<span class="ruby-identifier">create_worksheet</span>(<span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;customers&quot;</span>)
+        <span class="ruby-identifier">sheet</span>.<span class="ruby-identifier">row</span>(<span class="ruby-value">0</span>).<span class="ruby-identifier">concat</span>([<span class="ruby-string">&quot;First Name&quot;</span>, <span class="ruby-string">&quot;Last Name&quot;</span>])
+        <span class="ruby-identifier">sheet</span>.<span class="ruby-identifier">row</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">replace</span>([<span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">first_name</span>, <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">last_name</span>])
+        <span class="ruby-identifier">fname</span> = <span class="ruby-string">&quot;customers.xls&quot;</span>
+        <span class="ruby-identifier">tmp</span> = <span class="ruby-constant">Tempfile</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">fname</span>)
+        <span class="ruby-identifier">book</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">path</span>)
+        <span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">close</span>
+        <span class="ruby-identifier">send_file</span>(<span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">path</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">fname</span>)
+      }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">csv</span> { <span class="ruby-identifier">row</span> = <span class="ruby-ivar">@customer</span>
+        <span class="ruby-ivar">@csv_string</span> = <span class="ruby-constant">FasterCSV</span>.<span class="ruby-identifier">generate</span>({<span class="ruby-value">:encoding</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'UTF-8'</span>, <span class="ruby-value">:col_sep</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-constant">SystemSetting</span>[<span class="ruby-string">'csv_export_separator'</span>] <span class="ruby-operator">||</span> <span class="ruby-string">';'</span>)}) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">csv</span><span class="ruby-operator">|</span>
+          <span class="ruby-identifier">cols</span> = []
+          <span class="ruby-constant">Customer</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">cols</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword">if</span> [<span class="ruby-value">:string</span>, <span class="ruby-value">:text</span>, <span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:date</span>, <span class="ruby-value">:time</span>, <span class="ruby-value">:datetime</span>, <span class="ruby-value">:timestamp</span>, <span class="ruby-value">:ho_assoc</span>, <span class="ruby-value">:bt_assoc</span>].<span class="ruby-identifier">include?</span> <span class="ruby-identifier">v</span>}
+          <span class="ruby-identifier">cols</span>.<span class="ruby-identifier">reject!</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span> [<span class="ruby-value">:user</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">c</span>) }
+          <span class="ruby-identifier">csv</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">cols</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span>
+            <span class="ruby-keyword">if</span> [<span class="ruby-value">:ho_assoc</span>, <span class="ruby-value">:bt_assoc</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-constant">Customer</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>[<span class="ruby-identifier">c</span>])
+              <span class="ruby-identifier">v</span> = <span class="ruby-identifier">row</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">c</span>) ; <span class="ruby-identifier">v</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">disp_name</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+            <span class="ruby-keyword">else</span>
+              <span class="ruby-identifier">row</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">c</span>)
+            <span class="ruby-keyword">end</span>
+          }
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-ivar">@export_encoding</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">SystemSetting</span>[<span class="ruby-string">'csv_export_encoding'</span>] <span class="ruby-operator">||</span> <span class="ruby-string">'UTF-16LE'</span>
+        <span class="ruby-identifier">conv</span> = <span class="ruby-constant">Iconv</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@export_encoding</span>, <span class="ruby-string">'UTF-8'</span>)
+        <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">conv</span>.<span class="ruby-identifier">iconv</span>(<span class="ruby-ivar">@csv_string</span>), <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;#{f_name}.csv&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;text/csv;charset=#{@export_encoding.downcase}&quot;</span>)
+        <span class="ruby-keyword">return</span>
+      }
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:page</span>] = <span class="ruby-value">1</span>
+    <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:per_page</span>] = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">count</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>
+    <span class="ruby-ivar">@customers</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">paginate</span>(<span class="ruby-identifier">pagin_opts</span>)
+    <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> {
+        <span class="ruby-ivar">@no_menubar</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-ivar">@no_links</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-identifier">data</span> = <span class="ruby-identifier">render_to_string</span>(<span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/customers/list.html.erb'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'minimal'</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r\ssrc=\&quot;\//</span>, <span class="ruby-node">%Q[ src=&quot;#{request.protocol}#{request.host_with_port}/]</span>)
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">data</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;customers.html&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'text/html;charset=utf-8'</span>) }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">doc</span> {
+        <span class="ruby-ivar">@no_menubar</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-ivar">@no_links</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-identifier">data</span> = <span class="ruby-identifier">render_to_string</span>(<span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/customers/list.html.erb'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'minimal'</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r\ssrc=\&quot;\//</span>, <span class="ruby-node">%Q[ src=&quot;#{request.protocol}#{request.host_with_port}/]</span>)
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">data</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;customers.doc&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'application/msword;charset=utf-8'</span>) }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">pdf</span> {
+        <span class="ruby-ivar">@pdf</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-ivar">@debug_pdf</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>]
+        <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] = <span class="ruby-string">'html'</span>
+        <span class="ruby-identifier">html</span> = <span class="ruby-identifier">render_to_string</span>(<span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/customers/list.html.erb'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'pdf'</span>)
+        <span class="ruby-identifier">html</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">%r\/images\//</span>, <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'public'</span>, <span class="ruby-string">'images/'</span>)) <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>]
+        <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">html</span>,  <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'pdf'</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>]
+        <span class="ruby-identifier">kit</span> = <span class="ruby-constant">PDFKit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">html</span>, <span class="ruby-value">:encoding</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'UTF-8'</span>)
+        <span class="ruby-identifier">kit</span>.<span class="ruby-identifier">stylesheets</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'public'</span>, <span class="ruby-string">'stylesheets'</span>, <span class="ruby-string">'pdf.css'</span>)
+        <span class="ruby-identifier">pdf</span> = <span class="ruby-identifier">kit</span>.<span class="ruby-identifier">to_pdf</span>
+        <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">pdf</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;customers.pdf&quot;</span>) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">pdf</span>.<span class="ruby-identifier">blank?</span>
+
+        <span class="ruby-comment">#      send_data(render_to_string(:layout =&gt; false, :action =&gt; :list), :filename =&gt; &quot;customers.pdf&quot;, :disposition =&gt; 'attachment', :type =&gt; 'application/pdf;charset=utf-8')</span>
+
+      }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span> {
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-ivar">@customers</span>.<span class="ruby-identifier">to_xml</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-string">'customers.xml'</span>), <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'text/xml;charset=utf-8'</span>)}
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xls</span> {
+        <span class="ruby-identifier">book</span> = <span class="ruby-constant">Spreadsheet</span><span class="ruby-operator">::</span><span class="ruby-constant">Workbook</span>.<span class="ruby-identifier">new</span>
+        <span class="ruby-identifier">sheet</span> = <span class="ruby-identifier">book</span>.<span class="ruby-identifier">create_worksheet</span>(<span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;customers&quot;</span>)
+        <span class="ruby-identifier">sheet</span>.<span class="ruby-identifier">row</span>(<span class="ruby-value">0</span>).<span class="ruby-identifier">concat</span>([<span class="ruby-string">&quot;First Name&quot;</span>, <span class="ruby-string">&quot;Last Name&quot;</span>])
+        <span class="ruby-ivar">@customers</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">row</span>,<span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+          <span class="ruby-identifier">sheet</span>.<span class="ruby-identifier">row</span>(<span class="ruby-identifier">i</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>).<span class="ruby-identifier">replace</span>([<span class="ruby-identifier">row</span>.<span class="ruby-identifier">first_name</span>, <span class="ruby-identifier">row</span>.<span class="ruby-identifier">last_name</span>])
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-identifier">fname</span> = <span class="ruby-string">&quot;customers.xls&quot;</span>
+        <span class="ruby-identifier">tmp</span> = <span class="ruby-constant">Tempfile</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">fname</span>)
+        <span class="ruby-identifier">book</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">path</span>)
+        <span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">close</span>
+        <span class="ruby-identifier">send_file</span>(<span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">path</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">fname</span>)
+      }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">csv</span> {
+        <span class="ruby-ivar">@csv_string</span> = <span class="ruby-constant">FasterCSV</span>.<span class="ruby-identifier">generate</span>({<span class="ruby-value">:encoding</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'UTF-8'</span>, <span class="ruby-value">:col_sep</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-constant">SystemSetting</span>[<span class="ruby-string">'csv_export_separator'</span>] <span class="ruby-operator">||</span> <span class="ruby-string">';'</span>)}) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">csv</span><span class="ruby-operator">|</span>
+          <span class="ruby-identifier">cols</span> = []
+          <span class="ruby-constant">Customer</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">cols</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword">if</span> [<span class="ruby-value">:string</span>, <span class="ruby-value">:text</span>, <span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:date</span>, <span class="ruby-value">:time</span>, <span class="ruby-value">:datetime</span>, <span class="ruby-value">:timestamp</span>, <span class="ruby-value">:ho_assoc</span>, <span class="ruby-value">:bt_assoc</span>].<span class="ruby-identifier">include?</span> <span class="ruby-identifier">v</span>}
+          <span class="ruby-identifier">cols</span>.<span class="ruby-identifier">reject!</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span> [<span class="ruby-value">:user</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">c</span>) }
+          <span class="ruby-identifier">csv</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">cols</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span> <span class="ruby-identifier">_</span>(<span class="ruby-identifier">c</span>.<span class="ruby-identifier">titleize</span>)}
+          <span class="ruby-ivar">@customers</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">row</span><span class="ruby-operator">|</span>
+            <span class="ruby-identifier">csv</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">cols</span>.<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span>
+              <span class="ruby-keyword">if</span> [<span class="ruby-value">:ho_assoc</span>, <span class="ruby-value">:bt_assoc</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-constant">Customer</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>[<span class="ruby-identifier">c</span>])
+                <span class="ruby-identifier">v</span> = <span class="ruby-identifier">row</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">c</span>) ; <span class="ruby-identifier">v</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">disp_name</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+              <span class="ruby-keyword">else</span>
+                <span class="ruby-identifier">row</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">c</span>)
+              <span class="ruby-keyword">end</span>
+            }
+          }
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-ivar">@export_encoding</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">SystemSetting</span>[<span class="ruby-string">'csv_export_encoding'</span>] <span class="ruby-operator">||</span> <span class="ruby-string">'UTF-16LE'</span>
+        <span class="ruby-identifier">conv</span> = <span class="ruby-constant">Iconv</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@export_encoding</span>, <span class="ruby-string">'UTF-8'</span>)
+        <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">conv</span>.<span class="ruby-identifier">iconv</span>(<span class="ruby-ivar">@csv_string</span>), <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;customers.csv&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;text/csv;charset=#{@export_encoding.downcase}&quot;</span>)
+      }
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- download-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- download-method -->
+
+    
+      <div id="method-i-edit" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">edit</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Load the data to fill the edit form.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>11</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-03-25 20:53:17 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="edit-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 332</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">edit</span>
+
+  <span class="ruby-ivar">@customer_attributes</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>][<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]].<span class="ruby-identifier">clone</span> <span class="ruby-operator">:</span> {}
+  <span class="ruby-ivar">@customer_attributes</span>.<span class="ruby-identifier">merge!</span>(<span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]) <span class="ruby-keyword">if</span> <span class="ruby-ivar">@customer_attributes</span>
+
+  <span class="ruby-ivar">@customer</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-ivar">@customer_attributes</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] <span class="ruby-operator">||=</span> []
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Warning: %{obj} with ID %{id} does not exist!&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:obj</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'customer'</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]}
+    <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>)
+    <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- edit-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- edit-method -->
+
+    
+      <div id="method-i-feed" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">feed</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Exports RSS, XML and ATOM feeds.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>6</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 12:11:11 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="feed-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 718</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">feed</span>
+
+  <span class="ruby-ivar">@customers</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">all</span>(<span class="ruby-value">:limit</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">50</span>)
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">rss</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'customers/rss'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>}
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'customers/rss'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>}
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'customers/rss'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>}
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">atom</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'customers/atom'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>}
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- feed-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- feed-method -->
+
+    
+      <div id="method-i-get_file" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_file</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Load the entire file.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>8</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-09-11 00:06:47 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="get_file-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 154</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_file</span>
+
+  <span class="ruby-ivar">@customer</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-identifier">filename</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">filepath</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">document</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>].<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;photo&quot;</span>
+    <span class="ruby-identifier">filename</span> = <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">photo__name</span>
+    <span class="ruby-identifier">filepath</span> = <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">photo__path</span>
+    <span class="ruby-identifier">document</span> = <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">photo</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">document</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-identifier">filepath</span>)
+    <span class="ruby-identifier">mime</span> = <span class="ruby-constant">MIME</span><span class="ruby-operator">::</span><span class="ruby-constant">Types</span>.<span class="ruby-identifier">type_for</span>(<span class="ruby-identifier">filename</span>)
+    <span class="ruby-identifier">file_type</span> = <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">content_type</span> <span class="ruby-operator">:</span> <span class="ruby-string">'application/octet-stream'</span>
+    <span class="ruby-identifier">disposition</span>       = <span class="ruby-string">'inline'</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span> <span class="ruby-operator">&amp;&amp;</span> [<span class="ruby-string">'text'</span>, <span class="ruby-string">'image'</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">media_type</span>)
+    <span class="ruby-identifier">disposition</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'attachment'</span>
+    <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">document</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">filename</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">file_type</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">disposition</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:nothing</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_file-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_file-method -->
+
+    
+      <div id="method-i-get_file_size" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_file_size</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>File management: gets files’ size.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 12:23:12 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="get_file_size-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 126</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_file_size</span>
+
+  <span class="ruby-identifier">size</span>          = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">filename</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">document</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-ivar">@customer</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>].<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;photo&quot;</span>
+    <span class="ruby-identifier">filename</span>  = <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">photo__path</span>
+    <span class="ruby-identifier">document</span>  = <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">photo</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">columns</span>.<span class="ruby-identifier">find</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">name</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>]} <span class="ruby-comment"># binary in db</span>
+    <span class="ruby-identifier">size</span> = <span class="ruby-identifier">document</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">document</span>.<span class="ruby-identifier">length</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">size</span> = <span class="ruby-identifier">filename</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">size</span>(<span class="ruby-identifier">filename</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">render</span> <span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">size</span>.<span class="ruby-identifier">to_s</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_file_size-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_file_size-method -->
+
+    
+      <div id="method-i-get_file_thumb" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_file_thumb</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Retrieve the thumbnail of a file (icon or image).</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>14</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-02-04 15:20:42 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="get_file_thumb-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 69</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_file_thumb</span>
+
+  <span class="ruby-ivar">@customer</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-identifier">filename</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">document</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">mime</span>         = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>].<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;photo&quot;</span>
+    <span class="ruby-identifier">filename</span>   = <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">photo__thumb_path</span>
+    <span class="ruby-identifier">filename</span> <span class="ruby-operator">||=</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">photo__name</span>
+    <span class="ruby-identifier">document</span>   = <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">photo</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">filename</span>
+    <span class="ruby-identifier">mime</span> = <span class="ruby-constant">MIME</span><span class="ruby-operator">::</span><span class="ruby-constant">Types</span>.<span class="ruby-identifier">type_for</span>(<span class="ruby-identifier">filename</span>)
+    <span class="ruby-identifier">file_type</span> = <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">content_type</span> <span class="ruby-operator">:</span> <span class="ruby-string">'application/octet-stream'</span>
+    <span class="ruby-identifier">disposition</span>       = <span class="ruby-string">'inline'</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span> <span class="ruby-operator">&amp;&amp;</span> [<span class="ruby-string">'text'</span>, <span class="ruby-string">'image'</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">media_type</span>)
+    <span class="ruby-identifier">disposition</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'attachment'</span>
+    <span class="ruby-identifier">extension</span> = <span class="ruby-identifier">filename</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">'.'</span>).<span class="ruby-identifier">last</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">media_type</span> <span class="ruby-operator">!=</span> <span class="ruby-string">'image'</span>
+      <span class="ruby-identifier">icon</span> = <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'public'</span>, <span class="ruby-string">'images'</span>, <span class="ruby-string">'file_icons'</span>, <span class="ruby-node">&quot;#{extension}.png&quot;</span>).<span class="ruby-identifier">to_s</span>
+      <span class="ruby-identifier">icon</span> = <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'public'</span>, <span class="ruby-string">'images'</span>, <span class="ruby-string">'file_icons'</span>, <span class="ruby-string">&quot;defaut.png&quot;</span>).<span class="ruby-identifier">to_s</span> <span class="ruby-keyword">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-identifier">icon</span>)
+
+      <span class="ruby-comment"># sends thumbnail file</span>
+
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">icon</span>).<span class="ruby-identifier">read</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">basename</span>(<span class="ruby-identifier">icon</span>), <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'image/png'</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'inline'</span>)
+      <span class="ruby-keyword">return</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">document</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">columns</span>.<span class="ruby-identifier">find</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">name</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>]}
+
+      <span class="ruby-comment"># sends thumbnail blob in the database</span>
+
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">thumbnail</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>]), <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">filename</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">file_type</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'inline'</span>)
+    <span class="ruby-keyword">else</span>
+
+      <span class="ruby-comment"># makes thumbnail and send</span>
+
+      <span class="ruby-identifier">thmb</span> = <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">thumbnail</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>])
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">thmb</span>
+        <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">thmb</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">filename</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">file_type</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'inline'</span>)
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:nothing</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:nothing</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_file_thumb-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_file_thumb-method -->
+
+    
+      <div id="method-i-help" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">help</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Gives help about current module.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>17</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-05-19 23:29:44 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="help-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 738</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">help</span>
+
+  <span class="ruby-ivar">@user_actions</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:table_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;customers&quot;</span>, <span class="ruby-value">:action_sid</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;index&quot;</span>, <span class="ruby-string">&quot;list&quot;</span>, <span class="ruby-string">&quot;new&quot;</span>, <span class="ruby-string">&quot;create&quot;</span>, <span class="ruby-string">&quot;show&quot;</span>, <span class="ruby-string">&quot;edit&quot;</span>, <span class="ruby-string">&quot;update&quot;</span>, <span class="ruby-string">&quot;destroy&quot;</span>, <span class="ruby-string">&quot;search&quot;</span>, <span class="ruby-string">&quot;download&quot;</span>, <span class="ruby-string">&quot;feed&quot;</span>, <span class="ruby-string">&quot;help&quot;</span>, <span class="ruby-string">&quot;adv_search&quot;</span>]).<span class="ruby-identifier">includes</span>([<span class="ruby-value">:user_accesses</span>, <span class="ruby-value">:profile_accesses</span>]).<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">a</span><span class="ruby-operator">|</span> <span class="ruby-ivar">@current_user</span>.<span class="ruby-identifier">can_run?</span>(<span class="ruby-identifier">a</span>) }
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- help-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- help-method -->
+
+    
+      <div id="method-i-index" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">index</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Index of all &lt;%= model.sid %&gt;.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>10</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-05-20 16:26:24 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="index-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 186</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">index</span>
+
+  <span class="ruby-identifier">list</span>
+  <span class="ruby-keyword">unless</span>(<span class="ruby-node">%w(json xml)</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>]))
+    <span class="ruby-identifier">render</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:list</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- index-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- index-method -->
+
+    
+      <div id="method-i-linker" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">linker</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>AJAX association management.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>11</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-06-23 17:57:01 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="linker-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 44</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">linker</span>
+
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">'AJAX only'</span>)) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">'Missing required parameter'</span>)) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>] = <span class="ruby-value">1</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+  <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>] = <span class="ruby-value">15</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@customer</span>   = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-ivar">@customer</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>].<span class="ruby-identifier">to_sym</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:user</span>
+    <span class="ruby-identifier">val</span> = <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;user&quot;</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;user&quot;</span>][<span class="ruby-string">&quot;0&quot;</span>] <span class="ruby-operator">:</span> {}
+    <span class="ruby-ivar">@user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">search</span>(<span class="ruby-identifier">val</span>, <span class="ruby-identifier">params</span>.<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-operator">!</span><span class="ruby-identifier">k</span>[<span class="ruby-regexp">%rcomp_/</span>]}, <span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>], <span class="ruby-value">:per_page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>])
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:partial</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/users/list_for_linker'</span>, <span class="ruby-value">:locals</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:assoc_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:customers</span>, <span class="ruby-value">:assoc_type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:belongs_to</span>}
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- linker-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- linker-method -->
+
+    
+      <div id="method-i-list" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">list</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>This gives the list of all records</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>24</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-01-29 17:02:44 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="list-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 203</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">list</span>
+
+  <span class="ruby-ivar">@restricted_fields</span> = []
+  <span class="ruby-identifier">pagin_opts</span> = {<span class="ruby-value">:include</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:user</span>]}
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:page</span>]     = <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">:</span> <span class="ruby-value">1</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:per_page</span>]         = (<span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">cookies</span>[<span class="ruby-value">:customers_per_page</span>] <span class="ruby-operator">||</span> <span class="ruby-value">50</span>).<span class="ruby-identifier">to_i</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:order</span>]    = <span class="ruby-ivar">@default_order</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@default_order</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:order</span>]  <span class="ruby-operator">||=</span> <span class="ruby-string">'customers.'</span> <span class="ruby-operator">+</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:sort_by</span>] <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:sort_by</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-operator">||=</span> <span class="ruby-ivar">@default_filter</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@default_filter</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-operator">||=</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:conditions</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:joins</span>]  <span class="ruby-operator">||=</span> <span class="ruby-ivar">@joins_fields</span> <span class="ruby-operator">||</span> []
+
+  <span class="ruby-ivar">@customers</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">paginate</span>(<span class="ruby-identifier">pagin_opts</span>)
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@customers</span>.<span class="ruby-identifier">to_xml</span>(<span class="ruby-value">:dasherize</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>, <span class="ruby-value">:only</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:id</span>,<span class="ruby-value">:first_name</span>,<span class="ruby-value">:last_name</span>,<span class="ruby-value">:photo__name</span>,<span class="ruby-value">:new_date</span>,<span class="ruby-value">:new_string</span>], <span class="ruby-value">:methods</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:user_human_display</span>])) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'xml'</span>
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@customers</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'json'</span>
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:pdf</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@customers</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:list</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'pdf'</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> [<span class="ruby-string">&quot;first_name&quot;</span>, <span class="ruby-string">&quot;last_name&quot;</span>, <span class="ruby-string">&quot;user&quot;</span>, <span class="ruby-string">&quot;new_date&quot;</span>, <span class="ruby-string">&quot;new_string&quot;</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>])
+    <span class="ruby-ivar">@customers_groups</span> = <span class="ruby-ivar">@customers</span>.<span class="ruby-identifier">inject</span>({}) { <span class="ruby-operator">|</span><span class="ruby-identifier">acc</span>,<span class="ruby-identifier">elt</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">crit</span> = <span class="ruby-keyword">nil</span>
+      <span class="ruby-keyword">if</span> [<span class="ruby-string">&quot;user&quot;</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>])
+        <span class="ruby-identifier">crit</span> = <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>]) <span class="ruby-operator">?</span> <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>]).<span class="ruby-identifier">disp_name</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">crit</span> = <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">attributes</span>[<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>]]
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-identifier">acc</span>[<span class="ruby-identifier">crit</span>] <span class="ruby-operator">||=</span> []
+      <span class="ruby-identifier">acc</span>[<span class="ruby-identifier">crit</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">elt</span>
+      <span class="ruby-identifier">acc</span>
+    }
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- list-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- list-method -->
+
+    
+      <div id="method-i-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Loads a new record.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-03-25 18:26:30 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 243</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">new</span>
+
+  <span class="ruby-ivar">@customer_attributes</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>][<span class="ruby-string">'0'</span>].<span class="ruby-identifier">clone</span> <span class="ruby-operator">:</span> {}
+
+  <span class="ruby-ivar">@customer</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-ivar">@customer_attributes</span>)
+
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+      <div id="method-i-search" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">search</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Search and filter data.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>44</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-15 18:38:22 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="search-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 444</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">search</span>
+
+  <span class="ruby-ivar">@customer</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>][<span class="ruby-string">&quot;0&quot;</span>]) <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>]
+  <span class="ruby-ivar">@customer</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">page</span>           = <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">:</span> <span class="ruby-value">1</span>
+  <span class="ruby-identifier">per_page</span>   = <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>]
+  <span class="ruby-identifier">per_page</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">count</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-node">%w(xml xls csv)</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>])
+  <span class="ruby-identifier">per_page</span>   = <span class="ruby-value">50</span> <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">per_page</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">per_page</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+
+  <span class="ruby-comment"># GET RESULTS FROM SMART_QUERY OR PARAMS</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>]
+    <span class="ruby-identifier">my_p</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>][<span class="ruby-string">&quot;0&quot;</span>].<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>, <span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;comp_#{k}&quot;</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> (<span class="ruby-identifier">v</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;comp_#{k}&quot;</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-string">'NULL'</span>))
+    } <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>][<span class="ruby-string">&quot;0&quot;</span>]
+    <span class="ruby-ivar">@customers</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">search</span>(<span class="ruby-identifier">my_p</span>, <span class="ruby-identifier">params</span>.<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-operator">!</span><span class="ruby-identifier">k</span>[<span class="ruby-regexp">%rcomp_/</span>]}, <span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">page</span>, <span class="ruby-value">:per_page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">per_page</span>)
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:query</span>]
+    <span class="ruby-ivar">@customers</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">active_filter</span>(<span class="ruby-constant">ActiveSupport</span><span class="ruby-operator">::</span><span class="ruby-constant">JSON</span>.<span class="ruby-identifier">decode</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:query</span>])).<span class="ruby-identifier">paginate</span>(<span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">page</span>, <span class="ruby-value">:per_page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">per_page</span>)
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:fts_query</span>]
+    <span class="ruby-identifier">l</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:limit</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:limit</span>] <span class="ruby-operator">:</span> <span class="ruby-value">:all</span>
+    <span class="ruby-ivar">@customers</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">find_with_ferret</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:fts_query</span>], <span class="ruby-value">:limit</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">l</span>)
+  <span class="ruby-keyword">elsif</span> (<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:smart_query</span>])
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]
+      <span class="ruby-ivar">@smart_query</span> = <span class="ruby-constant">SmartQuery</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">attr</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:smart_query</span>].<span class="ruby-identifier">first</span>[<span class="ruby-value">1</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:smart_query</span>].<span class="ruby-identifier">first</span>
+      <span class="ruby-identifier">attr</span>[<span class="ruby-value">:criteria</span>] = <span class="ruby-constant">SmartQuery</span>.<span class="ruby-identifier">clean_criteria</span>(<span class="ruby-identifier">attr</span>[<span class="ruby-value">:criteria</span>])
+      <span class="ruby-ivar">@smart_query</span> = <span class="ruby-constant">SmartQuery</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">attr</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-ivar">@customers</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">search</span>(<span class="ruby-ivar">@smart_query</span>, <span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">page</span>, <span class="ruby-value">:per_page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">per_page</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">opts</span> = {<span class="ruby-value">:include</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:user</span>]}
+    <span class="ruby-identifier">opts</span>[<span class="ruby-value">:page</span>]                 = <span class="ruby-identifier">page</span>
+    <span class="ruby-identifier">opts</span>[<span class="ruby-value">:per_page</span>]     = <span class="ruby-identifier">per_page</span>
+    <span class="ruby-identifier">opts</span>[<span class="ruby-value">:order</span>]                = <span class="ruby-ivar">@default_order</span>
+    <span class="ruby-identifier">opts</span>[<span class="ruby-value">:order</span>]              <span class="ruby-operator">||=</span> <span class="ruby-string">'customers.'</span> <span class="ruby-operator">+</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:sort_by</span>] <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:sort_by</span>].<span class="ruby-identifier">blank?</span>
+    <span class="ruby-identifier">opts</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-operator">||=</span> <span class="ruby-ivar">@default_filter</span>
+    <span class="ruby-identifier">opts</span>[<span class="ruby-value">:joins</span>]              <span class="ruby-operator">||=</span> <span class="ruby-ivar">@joins_fields</span>  <span class="ruby-operator">||</span> []
+    <span class="ruby-ivar">@customers</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">paginate</span>(<span class="ruby-identifier">opts</span>)
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment"># RENDER SOMETHING</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@customers</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-comment"># GET</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'xml'</span>
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-ivar">@customers</span>.<span class="ruby-identifier">to_xml</span>,
+      <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-string">'customers.xml'</span>),
+      <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>,
+      <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'text/xml;charset=utf-8'</span>)
+      <span class="ruby-keyword">return</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'xls'</span>
+      <span class="ruby-identifier">cols</span> = []
+      <span class="ruby-constant">Customer</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">cols</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword">if</span> [<span class="ruby-value">:string</span>, <span class="ruby-value">:text</span>, <span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:decimal</span>, <span class="ruby-value">:date</span>, <span class="ruby-value">:time</span>, <span class="ruby-value">:datetime</span>, <span class="ruby-value">:timestamp</span>, <span class="ruby-value">:ho_assoc</span>, <span class="ruby-value">:bt_assoc</span>].<span class="ruby-identifier">include?</span> <span class="ruby-identifier">v</span>}
+      <span class="ruby-identifier">book</span> = <span class="ruby-constant">Spreadsheet</span><span class="ruby-operator">::</span><span class="ruby-constant">Workbook</span>.<span class="ruby-identifier">new</span>
+      <span class="ruby-identifier">sheet</span> = <span class="ruby-identifier">book</span>.<span class="ruby-identifier">create_worksheet</span>(<span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;customers&quot;</span>)
+      <span class="ruby-identifier">sheet</span>.<span class="ruby-identifier">row</span>(<span class="ruby-value">0</span>).<span class="ruby-identifier">concat</span>(<span class="ruby-identifier">cols</span>)
+      <span class="ruby-ivar">@customers</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">row</span>,<span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">sheet</span>.<span class="ruby-identifier">row</span>(<span class="ruby-identifier">i</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>).<span class="ruby-identifier">replace</span>(<span class="ruby-identifier">cols</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span>
+          <span class="ruby-keyword">if</span> [<span class="ruby-value">:ho_assoc</span>, <span class="ruby-value">:bt_assoc</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-constant">Customer</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>[<span class="ruby-identifier">c</span>])
+            <span class="ruby-identifier">v</span> = <span class="ruby-identifier">row</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">c</span>)
+            <span class="ruby-identifier">v</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">disp_name</span> <span class="ruby-operator">:</span> <span class="ruby-string">''</span>
+          <span class="ruby-keyword">else</span>
+            <span class="ruby-identifier">row</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">c</span>)
+          <span class="ruby-keyword">end</span>
+        })
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-identifier">fname</span> = <span class="ruby-string">&quot;customers.xls&quot;</span>
+      <span class="ruby-identifier">tmp</span> = <span class="ruby-constant">Tempfile</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">fname</span>)
+      <span class="ruby-identifier">book</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">path</span>)
+      <span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">close</span>
+      <span class="ruby-identifier">send_file</span>(<span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">path</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">fname</span>)
+      <span class="ruby-keyword">return</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'csv'</span>
+      <span class="ruby-identifier">cols</span> = <span class="ruby-constant">Customer</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>.<span class="ruby-identifier">inject</span>([]) {<span class="ruby-operator">|</span><span class="ruby-identifier">a</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">a</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">v</span>[<span class="ruby-value">0</span>] <span class="ruby-keyword">if</span> [<span class="ruby-value">:ho_assoc</span>, <span class="ruby-value">:bt_assoc</span>, <span class="ruby-value">:string</span>, <span class="ruby-value">:text</span>, <span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:decimal</span>, <span class="ruby-value">:date</span>, <span class="ruby-value">:time</span>, <span class="ruby-value">:datetime</span>, <span class="ruby-value">:timestamp</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">v</span>[<span class="ruby-value">1</span>]) ; <span class="ruby-identifier">a</span>}
+      <span class="ruby-ivar">@csv_string</span> = <span class="ruby-constant">FasterCSV</span>.<span class="ruby-identifier">generate</span>({<span class="ruby-value">:encoding</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'UTF-8'</span>, <span class="ruby-value">:col_sep</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-constant">SystemSetting</span>[<span class="ruby-string">'csv_export_separator'</span>] <span class="ruby-operator">||</span> <span class="ruby-string">';'</span>) }) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">csv</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">csv</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">cols</span>
+        <span class="ruby-keyword">for</span> <span class="ruby-identifier">row</span> <span class="ruby-keyword">in</span> <span class="ruby-ivar">@customers</span>
+          <span class="ruby-identifier">csv</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">cols</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span>
+            <span class="ruby-keyword">if</span> [<span class="ruby-value">:ho_assoc</span>, <span class="ruby-value">:bt_assoc</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-constant">Customer</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>[<span class="ruby-identifier">c</span>])
+              <span class="ruby-identifier">v</span> = <span class="ruby-identifier">row</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">c</span>) ; <span class="ruby-identifier">v</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">disp_name</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+            <span class="ruby-keyword">else</span>
+              <span class="ruby-identifier">row</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">c</span>)
+            <span class="ruby-keyword">end</span>
+          }
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-ivar">@export_encoding</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">SystemSetting</span>[<span class="ruby-string">'csv_export_encoding'</span>] <span class="ruby-operator">||</span> <span class="ruby-string">'UTF-16LE'</span>
+      <span class="ruby-identifier">conv</span> = <span class="ruby-constant">Iconv</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@export_encoding</span>, <span class="ruby-string">'UTF-8'</span>)
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">conv</span>.<span class="ruby-identifier">iconv</span>(<span class="ruby-ivar">@csv_string</span>), <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;customers.csv&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;text/csv;charset=#{@export_encoding.downcase}&quot;</span>)
+      <span class="ruby-keyword">return</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">post?</span>
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:partial</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'result_list'</span> <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- search-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- search-method -->
+
+    
+      <div id="method-i-show" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">show</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Display the record.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>14</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-03-26 04:12:53 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="show-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 298</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">show</span>
+
+  <span class="ruby-ivar">@customer_attributes</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>][<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]].<span class="ruby-identifier">clone</span> <span class="ruby-operator">:</span> {}
+  <span class="ruby-ivar">@customer_attributes</span>.<span class="ruby-identifier">merge!</span>(<span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]) <span class="ruby-keyword">if</span> <span class="ruby-ivar">@customer_attributes</span>
+
+  <span class="ruby-ivar">@customer</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-ivar">@customer_attributes</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] <span class="ruby-operator">||=</span> []
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Warning: %{obj} with ID %{id} does not exist!&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:obj</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'customer'</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]}
+    <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>)
+    <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> {
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span> }
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">pdf</span> {
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span> }
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span> {
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">to_xml</span> }
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> {
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">to_json</span> }
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- show-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- show-method -->
+
+    
+      <div id="method-i-update" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Updates the current row in database from the sent form.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>14</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-12-13 11:53:56 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="update-source">
+            <pre><span class="ruby-comment"># File app/controllers/customers_controller.rb, line 357</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update</span>
+
+  <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">put?</span>
+  <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+  <span class="ruby-ivar">@customer_attributes</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>][<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]].<span class="ruby-identifier">clone</span> <span class="ruby-operator">:</span> {}
+  <span class="ruby-ivar">@customer_attributes</span>.<span class="ruby-identifier">merge!</span>(<span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]) <span class="ruby-keyword">if</span> <span class="ruby-ivar">@customer_attributes</span>
+
+  <span class="ruby-ivar">@customer</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-ivar">@customer_attributes</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] <span class="ruby-operator">||=</span> []
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Warning: %{obj} with ID %{id} does not exist!&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:obj</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'customer'</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]}
+    <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>)
+    <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">save</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{page} was successfully updated.&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Customer&quot;</span>)}
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+      <span class="ruby-identifier">render</span>(<span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:errors</span> =<span class="ruby-operator">&gt;</span>
+      <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">full_messages</span>})
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">render</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:edit</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">id</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;OK&quot;</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:customer</span>].<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span> <span class="ruby-comment"># single edit</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:show</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@customer</span>.<span class="ruby-identifier">id</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

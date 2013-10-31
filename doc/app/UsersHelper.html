@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>module UsersHelper - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/helpers/users_helper.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-bottom_links_for_edit">#bottom_links_for_edit</a>
+    
+    <li><a href="#method-i-bottom_links_for_show">#bottom_links_for_show</a>
+    
+    <li><a href="#method-i-links_for_list_element">#links_for_list_element</a>
+    
+    <li><a href="#method-i-series_details">#series_details</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Faveod.html">Faveod</a>
+  
+    <li><a href="./Faveod/AVBBFTranslationService.html">Faveod::AVBBFTranslationService</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions.html">Faveod::ActiveResourceExtensions</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions/ClassMethods.html">Faveod::ActiveResourceExtensions::ClassMethods</a>
+  
+    <li><a href="./Faveod/DistributedColors.html">Faveod::DistributedColors</a>
+  
+    <li><a href="./Faveod/GoogleTranslationService.html">Faveod::GoogleTranslationService</a>
+  
+    <li><a href="./Faveod/GraphMaker.html">Faveod::GraphMaker</a>
+  
+    <li><a href="./Faveod/HtmlTruncator.html">Faveod::HtmlTruncator</a>
+  
+    <li><a href="./Faveod/IePdfHeadersMiddleware.html">Faveod::IePdfHeadersMiddleware</a>
+  
+    <li><a href="./Faveod/PoUtils.html">Faveod::PoUtils</a>
+  
+    <li><a href="./Faveod/TranslationServer.html">Faveod::TranslationServer</a>
+  
+    <li><a href="./Faveod/TranslationServicesHelper.html">Faveod::TranslationServicesHelper</a>
+  
+    <li><a href="./Faveod/Validations.html">Faveod::Validations</a>
+  
+    <li><a href="./Faveod/Validations/Syntax.html">Faveod::Validations::Syntax</a>
+  
+    <li><a href="./Faveod/Validations/Syntax/ClassMethods.html">Faveod::Validations::Syntax::ClassMethods</a>
+  
+    <li><a href="./ActiveRecord.html">ActiveRecord</a>
+  
+    <li><a href="./ActiveRecord/Base.html">ActiveRecord::Base</a>
+  
+    <li><a href="./ActiveRecord/Condition.html">ActiveRecord::Condition</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters.html">ActiveRecord::ConnectionAdapters</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters/Column.html">ActiveRecord::ConnectionAdapters::Column</a>
+  
+    <li><a href="./ActiveRecord/Validations.html">ActiveRecord::Validations</a>
+  
+    <li><a href="./ActiveRecord/Validations/ClassMethods.html">ActiveRecord::Validations::ClassMethods</a>
+  
+    <li><a href="./ActionView.html">ActionView</a>
+  
+    <li><a href="./ActionView/Helpers.html">ActionView::Helpers</a>
+  
+    <li><a href="./ActionView/Helpers/FormOptionsHelper.html">ActionView::Helpers::FormOptionsHelper</a>
+  
+    <li><a href="./DefaultFinder.html">DefaultFinder</a>
+  
+    <li><a href="./DefaultFinder/Finder.html">DefaultFinder::Finder</a>
+  
+    <li><a href="./DefaultFinder/Finder/ClassMethods.html">DefaultFinder::Finder::ClassMethods</a>
+  
+    <li><a href="./IrbjaxEngine.html">IrbjaxEngine</a>
+  
+    <li><a href="./IrbjaxEngine/IrbjaxSession.html">IrbjaxEngine::IrbjaxSession</a>
+  
+    <li><a href="./IrbjaxEngine/Output.html">IrbjaxEngine::Output</a>
+  
+    <li><a href="./SymetrieCom.html">SymetrieCom</a>
+  
+    <li><a href="./SymetrieCom/Acts.html">SymetrieCom::Acts</a>
+  
+    <li><a href="./SymetrieCom/Acts/BetterNestedSetHelper.html">SymetrieCom::Acts::BetterNestedSetHelper</a>
+  
+    <li><a href="./GetText.html">GetText</a>
+  
+    <li><a href="./GetText/PoParser.html">GetText::PoParser</a>
+  
+    <li><a href="./Rack.html">Rack</a>
+  
+    <li><a href="./Rack/Utils.html">Rack::Utils</a>
+  
+    <li><a href="./WillPaginate.html">WillPaginate</a>
+  
+    <li><a href="./WillPaginate/ViewHelpers.html">WillPaginate::ViewHelpers</a>
+  
+    <li><a href="./AbstractReport.html">AbstractReport</a>
+  
+    <li><a href="./Access.html">Access</a>
+  
+    <li><a href="./AccessApi.html">AccessApi</a>
+  
+    <li><a href="./AccessReport.html">AccessReport</a>
+  
+    <li><a href="./AccessesController.html">AccessesController</a>
+  
+    <li><a href="./AccessesHelper.html">AccessesHelper</a>
+  
+    <li><a href="./AppLocale.html">AppLocale</a>
+  
+    <li><a href="./AppLocaleApi.html">AppLocaleApi</a>
+  
+    <li><a href="./AppLocalesController.html">AppLocalesController</a>
+  
+    <li><a href="./AppLocalesHelper.html">AppLocalesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BgWorker.html">BgWorker</a>
+  
+    <li><a href="./BgWorkerApi.html">BgWorkerApi</a>
+  
+    <li><a href="./BgWorkerReport.html">BgWorkerReport</a>
+  
+    <li><a href="./BgWorkersController.html">BgWorkersController</a>
+  
+    <li><a href="./BgWorkersHelper.html">BgWorkersHelper</a>
+  
+    <li><a href="./Customer.html">Customer</a>
+  
+    <li><a href="./CustomerApi.html">CustomerApi</a>
+  
+    <li><a href="./CustomersController.html">CustomersController</a>
+  
+    <li><a href="./CustomersHelper.html">CustomersHelper</a>
+  
+    <li><a href="./Date.html">Date</a>
+  
+    <li><a href="./DateHelper.html">DateHelper</a>
+  
+    <li><a href="./DevFeedback.html">DevFeedback</a>
+  
+    <li><a href="./DevFeedbackApi.html">DevFeedbackApi</a>
+  
+    <li><a href="./DevFeedbacksController.html">DevFeedbacksController</a>
+  
+    <li><a href="./DevFeedbacksHelper.html">DevFeedbacksHelper</a>
+  
+    <li><a href="./Enumerable.html">Enumerable</a>
+  
+    <li><a href="./FileImport.html">FileImport</a>
+  
+    <li><a href="./FileImportApi.html">FileImportApi</a>
+  
+    <li><a href="./FileImportReport.html">FileImportReport</a>
+  
+    <li><a href="./FileImportsController.html">FileImportsController</a>
+  
+    <li><a href="./FileImportsHelper.html">FileImportsHelper</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./PdfHandler.html">PdfHandler</a>
+  
+    <li><a href="./Profile.html">Profile</a>
+  
+    <li><a href="./ProfileAccess.html">ProfileAccess</a>
+  
+    <li><a href="./ProfileAccessApi.html">ProfileAccessApi</a>
+  
+    <li><a href="./ProfileAccessesController.html">ProfileAccessesController</a>
+  
+    <li><a href="./ProfileAccessesHelper.html">ProfileAccessesHelper</a>
+  
+    <li><a href="./ProfileApi.html">ProfileApi</a>
+  
+    <li><a href="./ProfilesController.html">ProfilesController</a>
+  
+    <li><a href="./ProfilesHelper.html">ProfilesHelper</a>
+  
+    <li><a href="./RBeautify.html">RBeautify</a>
+  
+    <li><a href="./Range.html">Range</a>
+  
+    <li><a href="./SavedReport.html">SavedReport</a>
+  
+    <li><a href="./SavedReportApi.html">SavedReportApi</a>
+  
+    <li><a href="./SavedReportsController.html">SavedReportsController</a>
+  
+    <li><a href="./SavedReportsHelper.html">SavedReportsHelper</a>
+  
+    <li><a href="./SmartQueriesController.html">SmartQueriesController</a>
+  
+    <li><a href="./SmartQueriesHelper.html">SmartQueriesHelper</a>
+  
+    <li><a href="./SmartQuery.html">SmartQuery</a>
+  
+    <li><a href="./SmartQueryApi.html">SmartQueryApi</a>
+  
+    <li><a href="./SystemSetting.html">SystemSetting</a>
+  
+    <li><a href="./SystemSettingApi.html">SystemSettingApi</a>
+  
+    <li><a href="./SystemSettingsController.html">SystemSettingsController</a>
+  
+    <li><a href="./SystemSettingsHelper.html">SystemSettingsHelper</a>
+  
+    <li><a href="./Thumbnailer.html">Thumbnailer</a>
+  
+    <li><a href="./Translation.html">Translation</a>
+  
+    <li><a href="./TranslationApi.html">TranslationApi</a>
+  
+    <li><a href="./TranslationsController.html">TranslationsController</a>
+  
+    <li><a href="./TranslationsHelper.html">TranslationsHelper</a>
+  
+    <li><a href="./UncatchedException.html">UncatchedException</a>
+  
+    <li><a href="./UncatchedExceptionApi.html">UncatchedExceptionApi</a>
+  
+    <li><a href="./UncatchedExceptionMailer.html">UncatchedExceptionMailer</a>
+  
+    <li><a href="./UncatchedExceptionsController.html">UncatchedExceptionsController</a>
+  
+    <li><a href="./UncatchedExceptionsHelper.html">UncatchedExceptionsHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserAccess.html">UserAccess</a>
+  
+    <li><a href="./UserAccessApi.html">UserAccessApi</a>
+  
+    <li><a href="./UserAccessesController.html">UserAccessesController</a>
+  
+    <li><a href="./UserAccessesHelper.html">UserAccessesHelper</a>
+  
+    <li><a href="./UserApi.html">UserApi</a>
+  
+    <li><a href="./UserMailer.html">UserMailer</a>
+  
+    <li><a href="./UserReport.html">UserReport</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module UsersHelper</h1>
+
+  <div id="description" class="description">
+    
+<pre>This file and all its content belong to Faveod S.A.S unless a commercial
+contract signed by a representant of Faveod S.A.S states otherwise.</pre>
+
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</p>
+
+<pre>This has been generated by Faveod Generator on Thu Oct 31 16:41:16 +0100 2013
+It should be placed at 'app/helpers/users_helper.rb'
+All manual modifications will be destroyed on next generation</pre>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-bottom_links_for_edit" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">bottom_links_for_edit</span><span
+            class="method-args">(opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>17</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-03-19 15:06:52 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="bottom_links_for_edit-source">
+            <pre><span class="ruby-comment"># File app/helpers/users_helper.rb, line 125</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">bottom_links_for_edit</span>(<span class="ruby-identifier">opts</span>={})
+
+  <span class="ruby-identifier">links</span> = []
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+    <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">link_to_remote</span>(<span class="ruby-identifier">image_tag</span>(<span class="ruby-string">'std/show.png'</span>, <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">'Show'</span>)), <span class="ruby-value">:update</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users_element'</span>, <span class="ruby-value">:url</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:show</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@user</span>, <span class="ruby-value">:version</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:version</span>]})
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pres_mode</span> <span class="ruby-operator">==</span> <span class="ruby-value">:list_zoom</span>
+      <span class="ruby-node">%Q{&lt;a href=&quot;#&quot; data-method=&quot;get&quot; onclick=&quot;new Ajax.Updater('users_element', '#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/show/#{ @user.id }', {asynchronous:true, evalScripts:true});location.href='#users_element'; return false;&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Display the record.}) }&quot;&gt;&lt;img src=&quot;/images/std/show.png&quot; alt=&quot;#{ _(%q{Show}) }&quot; title=&quot;#{ _(%q{Show}) }&quot; /&gt; #{ _(%q{Show}) }&lt;/a&gt;}</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-node">%Q{&lt;a data-method=&quot;get&quot; href=&quot;#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/show/#{ @user.id }&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Display the record.}) }&quot;&gt;&lt;img src=&quot;/images/std/show.png&quot; alt=&quot;#{ _(%q{Show}) }&quot; title=&quot;#{ _(%q{Show}) }&quot; /&gt; #{ _(%q{Show}) }&lt;/a&gt;}</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pres_mode</span> <span class="ruby-operator">==</span> <span class="ruby-value">:list_zoom</span>
+    <span class="ruby-node">%Q{&lt;a href=&quot;#&quot; data-confirm=&quot;#{ _('Do you really want to delete %{record}?') % {:record =&gt; @user.disp_name} }&quot; data-method=&quot;post&quot; onclick=&quot;new Ajax.Updater('users_element', '#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/destroy/#{ @user.id }', {asynchronous:true, evalScripts:true});location.href='#users_element'; return false;&quot; title=&quot;#{ _(%q{Deletes an object or list of objects from the database.}) }&quot;&gt;&lt;img src=&quot;/images/page_icons/cancel.png&quot; alt=&quot;#{ _(%q{Destroy}) }&quot; title=&quot;#{ _(%q{Destroy}) }&quot; /&gt; #{ _(%q{Destroy}) }&lt;/a&gt;}</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-node">%Q{&lt;a data-confirm=&quot;#{ _('Do you really want to delete %{record}?') % {:record =&gt; @user.disp_name} }&quot; data-method=&quot;post&quot; href=&quot;#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/destroy/#{ @user.id }&quot; title=&quot;#{ _(%q{Deletes an object or list of objects from the database.}) }&quot;&gt;&lt;img src=&quot;/images/page_icons/cancel.png&quot; alt=&quot;#{ _(%q{Destroy}) }&quot; title=&quot;#{ _(%q{Destroy}) }&quot; /&gt; #{ _(%q{Destroy}) }&lt;/a&gt;}</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pres_mode</span> <span class="ruby-operator">==</span> <span class="ruby-value">:list_zoom</span>
+    <span class="ruby-node">%Q{&lt;a href=&quot;#&quot; data-method=&quot;get&quot; onclick=&quot;new Ajax.Updater('users_element', '#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/index', {asynchronous:true, evalScripts:true});location.href='#users_element'; return false;&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Index of all users.}) }&quot;&gt;&lt;img src=&quot;/images/page_icons/user.png&quot; alt=&quot;#{ _(%q{Users}) }&quot; title=&quot;#{ _(%q{Users}) }&quot;/&gt; #{ _(%q{Users}) }&lt;/a&gt;}</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-node">%Q{&lt;a data-method=&quot;get&quot; href=&quot;#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/index&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Index of all users.}) }&quot;&gt;&lt;img src=&quot;/images/page_icons/user.png&quot; alt=&quot;#{ _(%q{Users}) }&quot; title=&quot;#{ _(%q{Users}) }&quot;/&gt; #{ _(%q{Users}) }&lt;/a&gt;}</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">prev</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">first</span>(<span class="ruby-value">:select</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'`users`.id'</span>, <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;`users`.id &lt; ?&quot;</span>, <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">id</span>], <span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'`users`.id DESC'</span>)
+  <span class="ruby-identifier">nex</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">first</span>(<span class="ruby-value">:select</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'`users`.id'</span>, <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;`users`.id &gt; ?&quot;</span>, <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">id</span>], <span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'`users`.id'</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+    <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">link_to_remote</span>(<span class="ruby-identifier">image_tag</span>(<span class="ruby-string">'std/go_left.png'</span>, <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">'Previous'</span>)), <span class="ruby-value">:update</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users_element'</span>, <span class="ruby-value">:url</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:edit</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">prev</span>.<span class="ruby-identifier">id</span>}) <span class="ruby-keyword">if</span> <span class="ruby-identifier">prev</span>
+    <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">link_to_remote</span>(<span class="ruby-identifier">image_tag</span>(<span class="ruby-string">'std/go_right.png'</span>, <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">'Next'</span>)), <span class="ruby-value">:update</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users_element'</span>, <span class="ruby-value">:url</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:edit</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">nex</span>.<span class="ruby-identifier">id</span>}) <span class="ruby-keyword">if</span> <span class="ruby-identifier">nex</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">prev</span>
+      <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pres_mode</span> <span class="ruby-operator">==</span> <span class="ruby-value">:list_zoom</span>
+        <span class="ruby-node">%Q{&lt;a href=&quot;#&quot; data-method=&quot;get&quot; onclick=&quot;new Ajax.Updater('users_element', '#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/edit/#{ prev.id }', {asynchronous:true, evalScripts:true});location.href='#users_element'; return false;&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Load the data to fill the edit form.}) }&quot;&gt;&lt;img src=&quot;/images/std/go_left.png&quot; alt=&quot;#{ _(%q{Previous}) }&quot; title=&quot;#{ _(%q{Previous}) }&quot;/&gt;&lt;/a&gt;}</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-node">%Q{&lt;a data-method=&quot;get&quot; href=&quot;#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/edit/#{ prev.id }&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Load the data to fill the edit form.}) }&quot;&gt;&lt;img src=&quot;/images/std/go_left.png&quot; alt=&quot;#{ _(%q{Previous}) }&quot; title=&quot;#{ _(%q{Previous}) }&quot;/&gt;&lt;/a&gt;}</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">nex</span>
+      <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pres_mode</span> <span class="ruby-operator">==</span> <span class="ruby-value">:list_zoom</span>
+        <span class="ruby-node">%Q{&lt;a href=&quot;#&quot; data-method=&quot;get&quot; onclick=&quot;new Ajax.Updater('users_element', '#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/edit/#{ nex.id }', {asynchronous:true, evalScripts:true});location.href='#users_element'; return false;&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Load the data to fill the edit form.}) }&quot;&gt;&lt;img src=&quot;/images/std/go_right.png&quot; alt=&quot;#{ _(%q{Next}) }&quot; title=&quot;#{ _(%q{Next}) }&quot;/&gt;&lt;/a&gt;}</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-node">%Q{&lt;a data-method=&quot;get&quot; href=&quot;#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/edit/#{ nex.id }&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Load the data to fill the edit form.}) }&quot;&gt;&lt;img src=&quot;/images/std/go_right.png&quot; alt=&quot;#{ _(%q{Next}) }&quot; title=&quot;#{ _(%q{Next}) }&quot;/&gt;&lt;/a&gt;}</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:span</span>, <span class="ruby-identifier">links</span>.<span class="ruby-identifier">compact</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">' | '</span>).<span class="ruby-identifier">html_safe</span>, <span class="ruby-value">:class</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'std_links'</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- bottom_links_for_edit-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- bottom_links_for_edit-method -->
+
+    
+      <div id="method-i-bottom_links_for_show" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">bottom_links_for_show</span><span
+            class="method-args">(opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>17</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-03-19 15:06:38 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="bottom_links_for_show-source">
+            <pre><span class="ruby-comment"># File app/helpers/users_helper.rb, line 70</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">bottom_links_for_show</span>(<span class="ruby-identifier">opts</span>={})
+
+  <span class="ruby-identifier">links</span> = []
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+    <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">link_to_remote</span>(<span class="ruby-identifier">image_tag</span>(<span class="ruby-string">'std/edit.png'</span>, <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Edit&quot;</span>)), <span class="ruby-value">:update</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users_element'</span>, <span class="ruby-value">:url</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:edit</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@user</span>, <span class="ruby-value">:version</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:version</span>]})
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pres_mode</span> <span class="ruby-operator">==</span> <span class="ruby-value">:list_zoom</span>
+      <span class="ruby-node">%Q{&lt;a href=&quot;#&quot; data-method=&quot;get&quot; onclick=&quot;new Ajax.Updater('users_element', '#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/edit/#{ @user.id }', {asynchronous:true, evalScripts:true});location.href='#users_element'; return false;&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Load the data to fill the edit form.}) }&quot;&gt;&lt;img src=&quot;/images/page_icons/page_white_paintbrush.png&quot; alt=&quot;#{ _(%q{Edit}) }&quot; title=&quot;#{ _(%q{Edit}) }&quot; /&gt; #{ _(%q{Edit}) }&lt;/a&gt;}</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-node">%Q{&lt;a data-method=&quot;get&quot; href=&quot;#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/edit/#{ @user.id }&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Load the data to fill the edit form.}) }&quot;&gt;&lt;img src=&quot;/images/page_icons/page_white_paintbrush.png&quot; alt=&quot;#{ _(%q{Edit}) }&quot; title=&quot;#{ _(%q{Edit}) }&quot; /&gt; #{ _(%q{Edit}) }&lt;/a&gt;}</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pres_mode</span> <span class="ruby-operator">==</span> <span class="ruby-value">:list_zoom</span>
+    <span class="ruby-node">%Q{&lt;a href=&quot;#&quot; data-confirm=&quot;#{ _('Do you really want to delete %{record}?') % {:record =&gt; @user.disp_name} }&quot; data-method=&quot;post&quot; onclick=&quot;new Ajax.Updater('users_element', '#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/destroy/#{ @user.id }', {asynchronous:true, evalScripts:true});location.href='#users_element'; return false;&quot; title=&quot;#{ _(%q{Deletes an object or list of objects from the database.}) }&quot;&gt;&lt;img src=&quot;/images/page_icons/cancel.png&quot; alt=&quot;#{ _(%q{Destroy}) }&quot; title=&quot;#{ _(%q{Destroy}) }&quot; /&gt; #{ _(%q{Destroy}) }&lt;/a&gt;}</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-node">%Q{&lt;a data-confirm=&quot;#{ _('Do you really want to delete %{record}?') % {:record =&gt; @user.disp_name} }&quot; data-method=&quot;post&quot; href=&quot;#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/destroy/#{ @user.id }&quot; title=&quot;#{ _(%q{Deletes an object or list of objects from the database.}) }&quot;&gt;&lt;img src=&quot;/images/page_icons/cancel.png&quot; alt=&quot;#{ _(%q{Destroy}) }&quot; title=&quot;#{ _(%q{Destroy}) }&quot; /&gt; #{ _(%q{Destroy}) }&lt;/a&gt;}</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pres_mode</span> <span class="ruby-operator">==</span> <span class="ruby-value">:list_zoom</span>
+    <span class="ruby-node">%Q{&lt;a href=&quot;#&quot; data-method=&quot;get&quot; onclick=&quot;new Ajax.Updater('users_element', '#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/index', {asynchronous:true, evalScripts:true});location.href='#users_element'; return false;&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Index of all users.}) }&quot;&gt;&lt;img src=&quot;/images/page_icons/user.png&quot; alt=&quot;#{ _(%q{Users}) }&quot; title=&quot;#{ _(%q{Users}) }&quot;/&gt; #{ _(%q{Users}) }&lt;/a&gt;}</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-node">%Q{&lt;a data-method=&quot;get&quot; href=&quot;#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/index&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Index of all users.}) }&quot;&gt;&lt;img src=&quot;/images/page_icons/user.png&quot; alt=&quot;#{ _(%q{Users}) }&quot; title=&quot;#{ _(%q{Users}) }&quot;/&gt; #{ _(%q{Users}) }&lt;/a&gt;}</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">unless</span> <span class="ruby-identifier">opts</span>[<span class="ruby-value">:no_sibling</span>]
+    <span class="ruby-identifier">prev</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">first</span>(<span class="ruby-value">:select</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'`users`.id'</span>, <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;`users`.id &lt; ?&quot;</span>, <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">id</span>], <span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'`users`.id DESC'</span>)
+    <span class="ruby-identifier">nex</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">first</span>(<span class="ruby-value">:select</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'`users`.id'</span>, <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;`users`.id &gt; ?&quot;</span>, <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">id</span>], <span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'`users`.id'</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+      <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">link_to_remote</span>(<span class="ruby-identifier">image_tag</span>(<span class="ruby-string">'std/go_left.png'</span>, <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Previous&quot;</span>)), <span class="ruby-value">:update</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users_element'</span>, <span class="ruby-value">:url</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:show</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">prev</span>.<span class="ruby-identifier">id</span>}) <span class="ruby-keyword">if</span> <span class="ruby-identifier">prev</span>
+      <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">link_to_remote</span>(<span class="ruby-identifier">image_tag</span>(<span class="ruby-string">'std/go_right.png'</span>, <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Next&quot;</span>)), <span class="ruby-value">:update</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users_element'</span>, <span class="ruby-value">:url</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:show</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">nex</span>.<span class="ruby-identifier">id</span>}) <span class="ruby-keyword">if</span> <span class="ruby-identifier">nex</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">prev</span>
+        <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pres_mode</span> <span class="ruby-operator">==</span> <span class="ruby-value">:list_zoom</span>
+          <span class="ruby-node">%Q{&lt;a href=&quot;#&quot; data-method=&quot;get&quot; onclick=&quot;new Ajax.Updater('users_element', '#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/show/#{ prev.id }', {asynchronous:true, evalScripts:true});location.href='#users_element'; return false;&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Display the record.}) }&quot;&gt;&lt;img src=&quot;/images/std/go_left.png&quot; alt=&quot;#{ _(%q{Previous}) }&quot; title=&quot;#{ _(%q{Previous}) }&quot;/&gt;&lt;/a&gt;}</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-node">%Q{&lt;a data-method=&quot;get&quot; href=&quot;#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/show/#{ prev.id }&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Display the record.}) }&quot;&gt;&lt;img src=&quot;/images/std/go_left.png&quot; alt=&quot;#{ _(%q{Previous}) }&quot; title=&quot;#{ _(%q{Previous}) }&quot;/&gt;&lt;/a&gt;}</span>
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">nex</span>
+        <span class="ruby-identifier">links</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pres_mode</span> <span class="ruby-operator">==</span> <span class="ruby-value">:list_zoom</span>
+          <span class="ruby-node">%Q{&lt;a href=&quot;#&quot; data-method=&quot;get&quot; onclick=&quot;new Ajax.Updater('users_element', '#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/show/#{ nex.id }', {asynchronous:true, evalScripts:true});location.href='#users_element'; return false;&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Display the record.}) }&quot;&gt;&lt;img src=&quot;/images/std/go_right.png&quot; alt=&quot;#{ _(%q{Next}) }&quot; title=&quot;#{ _(%q{Next}) }&quot;/&gt;&lt;/a&gt;}</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-node">%Q{&lt;a data-method=&quot;get&quot; href=&quot;#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/show/#{ nex.id }&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Display the record.}) }&quot;&gt;&lt;img src=&quot;/images/std/go_right.png&quot; alt=&quot;#{ _(%q{Next}) }&quot; title=&quot;#{ _(%q{Next}) }&quot;/&gt;&lt;/a&gt;}</span>
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:span</span>, <span class="ruby-identifier">links</span>.<span class="ruby-identifier">compact</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">' | '</span>).<span class="ruby-identifier">html_safe</span>, <span class="ruby-value">:class</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'std_links'</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- bottom_links_for_show-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- bottom_links_for_show-method -->
+
+    
+      <div id="method-i-links_for_list_element" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">links_for_list_element</span><span
+            class="method-args">(row, opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Generally used for list actions.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>12</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-01-29 23:35:49 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="links_for_list_element-source">
+            <pre><span class="ruby-comment"># File app/helpers/users_helper.rb, line 30</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">links_for_list_element</span>(<span class="ruby-identifier">row</span>, <span class="ruby-identifier">opts</span>={})
+  <span class="ruby-keyword">return</span> <span class="ruby-string">&quot;&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@no_row_links</span>
+  <span class="ruby-identifier">html</span> = []
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pres_mode</span> <span class="ruby-operator">==</span> <span class="ruby-value">:list_zoom</span>
+    <span class="ruby-identifier">html</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">link_to_remote</span>(<span class="ruby-identifier">image_tag</span>(<span class="ruby-string">'std/show.png'</span>, <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">'Show'</span>)),
+    <span class="ruby-value">:url</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:controller</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:users</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:show</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">row</span>.<span class="ruby-identifier">id</span>},
+    <span class="ruby-value">:update</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;users_element&quot;</span>)
+    <span class="ruby-identifier">html</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">link_to_remote</span>(<span class="ruby-identifier">image_tag</span>(<span class="ruby-string">'std/edit.png'</span>, <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">'Edit'</span>)),
+    <span class="ruby-value">:url</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:controller</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:users</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:edit</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">row</span>.<span class="ruby-identifier">id</span>},
+    <span class="ruby-value">:update</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;users_element&quot;</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">html</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pres_mode</span> <span class="ruby-operator">==</span> <span class="ruby-value">:list_zoom</span>
+      <span class="ruby-node">%Q{&lt;a href=&quot;#&quot; data-method=&quot;get&quot; onclick=&quot;new Ajax.Updater('users_element', '#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/show/#{ row.id }', {asynchronous:true, evalScripts:true});location.href='#users_element'; return false;&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Display the record.}) }&quot;&gt;&lt;img src=&quot;/images/std/show.png&quot; alt=&quot;#{ _(%q{Show}) }&quot; title=&quot;#{ _(%q{Show}) }&quot; /&gt;&lt;/a&gt;}</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-node">%Q{&lt;a data-method=&quot;get&quot; href=&quot;#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/show/#{ row.id }&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Display the record.}) }&quot;&gt;&lt;img src=&quot;/images/std/show.png&quot; alt=&quot;#{ _(%q{Show}) }&quot; title=&quot;#{ _(%q{Show}) }&quot; /&gt;&lt;/a&gt;}</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">html</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pres_mode</span> <span class="ruby-operator">==</span> <span class="ruby-value">:list_zoom</span>
+      <span class="ruby-node">%Q{&lt;a href=&quot;#&quot; data-method=&quot;get&quot; onclick=&quot;new Ajax.Updater('users_element', '#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/edit/#{ row.id }', {asynchronous:true, evalScripts:true});location.href='#users_element'; return false;&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Load the data to fill the edit form.}) }&quot;&gt;&lt;img src=&quot;/images/page_icons/page_white_paintbrush.png&quot; alt=&quot;#{ _(%q{Edit}) }&quot; title=&quot;#{ _(%q{Edit}) }&quot; /&gt;&lt;/a&gt;}</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-node">%Q{&lt;a data-method=&quot;get&quot; href=&quot;#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/edit/#{ row.id }&quot; rel=&quot;nofollow&quot; title=&quot;#{ _(%q{Load the data to fill the edit form.}) }&quot;&gt;&lt;img src=&quot;/images/page_icons/page_white_paintbrush.png&quot; alt=&quot;#{ _(%q{Edit}) }&quot; title=&quot;#{ _(%q{Edit}) }&quot; /&gt;&lt;/a&gt;}</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">html</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">html</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pres_mode</span> <span class="ruby-operator">==</span> <span class="ruby-value">:list_zoom</span>
+    <span class="ruby-node">%Q{&lt;a href=&quot;#&quot; data-confirm=&quot;#{ _('Do you really want to delete %{record}?') %
+    {:record =&gt; @user.disp_name} }&quot; data-method=&quot;post&quot; onclick=&quot;new Ajax.Updater('users_element', '#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/destroy/#{ @user.id }', {asynchronous:true, evalScripts:true});location.href='#users_element'; return false;&quot; title=&quot;#{ _(%q{Deletes an object or list of objects from the database.}) }&quot;&gt;&lt;img src=&quot;/images/page_icons/cancel.png&quot; alt=&quot;#{ _(%q{Destroy}) }&quot; title=&quot;#{ _(%q{Destroy}) }&quot; /&gt;&lt;/a&gt;}</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-node">%Q{&lt;a data-confirm=&quot;#{ _('Do you really want to delete %{record}?') %
+    {:record =&gt; @user.disp_name} }&quot; data-method=&quot;post&quot; href=&quot;#{ &quot;/#{params[:lang]}&quot; if params[:lang] }/users/destroy/#{ @user.id }&quot; title=&quot;#{ _(%q{Deletes an object or list of objects from the database.}) }&quot;&gt;&lt;img src=&quot;/images/page_icons/cancel.png&quot; alt=&quot;#{ _(%q{Destroy}) }&quot; title=&quot;#{ _(%q{Destroy}) }&quot; /&gt;&lt;/a&gt;}</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">html</span>.<span class="ruby-identifier">compact</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">' | '</span>).<span class="ruby-identifier">html_safe</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- links_for_list_element-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- links_for_list_element-method -->
+
+    
+      <div id="method-i-series_details" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">series_details</span><span
+            class="method-args">(s, txt=nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Displays details about series</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>1</p>
+</dd><dt>Last Update
+<dd>
+<p>2009-10-05 13:31:56 UTC</p>
+</dd><dt>Status
+<dd>
+<p>In Progress</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="series_details-source">
+            <pre><span class="ruby-comment"># File app/helpers/users_helper.rb, line 180</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">series_details</span>(<span class="ruby-identifier">s</span>, <span class="ruby-identifier">txt</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-string">'empty'</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">info</span> = <span class="ruby-node">&quot;#{s.calculation}&quot;</span>
+  <span class="ruby-identifier">info</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot; of #{s.field.name}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">field</span>
+    <span class="ruby-identifier">info</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot; by #{s.key_field.name}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">key_field</span>
+      <span class="ruby-identifier">details</span> = <span class="ruby-identifier">txt</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">info</span>
+      <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:span</span>,
+      <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:span</span>, <span class="ruby-string">'&amp;nbsp;&amp;nbsp;&amp;nbsp;'</span>, <span class="ruby-value">:style</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;background-color: #{s.html_color}; border: 1px inset gray;&quot;</span>) <span class="ruby-operator">+</span>
+      <span class="ruby-node">&quot; #{s.disp_name} [#{details}]&quot;</span>,
+      <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">info</span>,
+      <span class="ruby-value">:class</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;report_#{s.serie_type.downcase}&quot;</span>)
+    <span class="ruby-keyword">end</span></pre>
+          </div><!-- series_details-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- series_details-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

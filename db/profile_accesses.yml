@@ -1,0 +1,3832 @@
+
+--- 
+profiles: 
+  columns: 
+  - id
+  - name
+  - home_page_id
+  records: 
+  - - 1
+    - Faveod User
+    - 
+  - - 2
+    - Admin
+    - 
+  - - 3
+    - Logged In
+    - 
+  - - 4
+    - Not Logged
+    - 
+  - - 9
+    - Professeur
+    - 
+
+--- 
+accesses: 
+  columns: 
+  - id
+  - set_sid
+  - table_sid
+  - field_sid
+  - action_sid
+  - type_sid
+  - app_sid
+  - system_setting_id
+  - aktion_sid
+  records: 
+  - - 1
+    - System
+    - system_settings
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 2
+    - System
+    - system_settings
+    - name
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 13
+    - System
+    - system_settings
+    - 
+    - index
+    - get
+    - 
+    - 
+    - 
+  - - 15
+    - System
+    - system_settings
+    - 
+    - list
+    - get
+    - 
+    - 
+    - 
+  - - 17
+    - System
+    - system_settings
+    - 
+    - new
+    - get
+    - 
+    - 
+    - 
+  - - 20
+    - System
+    - system_settings
+    - 
+    - create
+    - post
+    - 
+    - 
+    - 
+  - - 21
+    - System
+    - system_settings
+    - 
+    - show
+    - get
+    - 
+    - 
+    - 
+  - - 22
+    - System
+    - system_settings
+    - 
+    - edit
+    - get
+    - 
+    - 
+    - 
+  - - 25
+    - System
+    - system_settings
+    - 
+    - update
+    - put
+    - 
+    - 
+    - 
+  - - 26
+    - System
+    - system_settings
+    - 
+    - destroy
+    - delete
+    - 
+    - 
+    - 
+  - - 27
+    - System
+    - system_settings
+    - 
+    - search
+    - any
+    - 
+    - 
+    - 
+  - - 28
+    - System
+    - system_settings
+    - 
+    - download
+    - get
+    - 
+    - 
+    - 
+  - - 29
+    - System
+    - system_settings
+    - 
+    - feed
+    - get
+    - 
+    - 
+    - 
+  - - 30
+    - System
+    - system_settings
+    - 
+    - help
+    - get
+    - 
+    - 
+    - 
+  - - 31
+    - System
+    - system_settings
+    - 
+    - adv_search
+    - any
+    - 
+    - 
+    - 
+  - - 37
+    - System
+    - profile_accesses
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 39
+    - System
+    - profile_accesses
+    - 
+    - linker
+    - any
+    - 
+    - 
+    - 
+  - - 66
+    - System
+    - user_accesses
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 68
+    - System
+    - user_accesses
+    - 
+    - linker
+    - any
+    - 
+    - 
+    - 
+  - - 70
+    - System
+    - profiles
+    - 
+    - linker
+    - any
+    - 
+    - 
+    - 
+  - - 71
+    - System
+    - users
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 73
+    - System
+    - users
+    - 
+    - linker
+    - any
+    - 
+    - 
+    - 
+  - - 75
+    - System
+    - users
+    - login
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 77
+    - System
+    - users
+    - 
+    - index
+    - get
+    - 
+    - 
+    - 
+  - - 78
+    - System
+    - users
+    - 
+    - list
+    - get
+    - 
+    - 
+    - 
+  - - 79
+    - System
+    - users
+    - 
+    - new
+    - get
+    - 
+    - 
+    - 
+  - - 80
+    - System
+    - users
+    - 
+    - create
+    - post
+    - 
+    - 
+    - 
+  - - 81
+    - System
+    - users
+    - 
+    - show
+    - get
+    - 
+    - 
+    - 
+  - - 82
+    - System
+    - users
+    - 
+    - edit
+    - get
+    - 
+    - 
+    - 
+  - - 83
+    - System
+    - users
+    - 
+    - update
+    - put
+    - 
+    - 
+    - 
+  - - 84
+    - System
+    - users
+    - 
+    - destroy
+    - delete
+    - 
+    - 
+    - 
+  - - 85
+    - System
+    - users
+    - 
+    - search
+    - any
+    - 
+    - 
+    - 
+  - - 86
+    - System
+    - users
+    - 
+    - download
+    - get
+    - 
+    - 
+    - 
+  - - 87
+    - System
+    - users
+    - 
+    - feed
+    - get
+    - 
+    - 
+    - 
+  - - 88
+    - System
+    - users
+    - 
+    - help
+    - get
+    - 
+    - 
+    - 
+  - - 89
+    - System
+    - users
+    - first_name
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 91
+    - System
+    - users
+    - last_name
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 93
+    - System
+    - accesses
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 94
+    - System
+    - accesses
+    - app_sid
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 96
+    - System
+    - accesses
+    - table_sid
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 98
+    - System
+    - users
+    - email
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 100
+    - System
+    - users
+    - password
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 103
+    - System
+    - app_locales
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 104
+    - System
+    - app_locales
+    - 
+    - index
+    - get
+    - 
+    - 
+    - 
+  - - 105
+    - System
+    - app_locales
+    - 
+    - list
+    - get
+    - 
+    - 
+    - 
+  - - 106
+    - System
+    - app_locales
+    - 
+    - new
+    - get
+    - 
+    - 
+    - 
+  - - 107
+    - System
+    - app_locales
+    - 
+    - create
+    - post
+    - 
+    - 
+    - 
+  - - 108
+    - System
+    - app_locales
+    - 
+    - show
+    - get
+    - 
+    - 
+    - 
+  - - 109
+    - System
+    - app_locales
+    - 
+    - edit
+    - get
+    - 
+    - 
+    - 
+  - - 110
+    - System
+    - app_locales
+    - 
+    - update
+    - put
+    - 
+    - 
+    - 
+  - - 111
+    - System
+    - app_locales
+    - 
+    - destroy
+    - delete
+    - 
+    - 
+    - 
+  - - 114
+    - System
+    - app_locales
+    - 
+    - help
+    - get
+    - 
+    - 
+    - 
+  - - 115
+    - System
+    - profiles
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 117
+    - System
+    - profiles
+    - 
+    - index
+    - get
+    - 
+    - 
+    - 
+  - - 118
+    - System
+    - profiles
+    - 
+    - list
+    - get
+    - 
+    - 
+    - 
+  - - 119
+    - System
+    - profiles
+    - 
+    - new
+    - get
+    - 
+    - 
+    - 
+  - - 120
+    - System
+    - profiles
+    - 
+    - create
+    - post
+    - 
+    - 
+    - 
+  - - 121
+    - System
+    - profiles
+    - 
+    - show
+    - get
+    - 
+    - 
+    - 
+  - - 122
+    - System
+    - profiles
+    - 
+    - edit
+    - get
+    - 
+    - 
+    - 
+  - - 125
+    - System
+    - profiles
+    - name
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 128
+    - System
+    - profiles
+    - 
+    - update
+    - put
+    - 
+    - 
+    - 
+  - - 129
+    - System
+    - profiles
+    - 
+    - destroy
+    - delete
+    - 
+    - 
+    - 
+  - - 130
+    - System
+    - profiles
+    - 
+    - search
+    - any
+    - 
+    - 
+    - 
+  - - 135
+    - System
+    - profile_accesses
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 137
+    - System
+    - profile_accesses
+    - 
+    - linker
+    - 
+    - 
+    - 
+    - 
+  - - 138
+    - System
+    - accesses
+    - 
+    - index
+    - get
+    - 
+    - 
+    - 
+  - - 140
+    - System
+    - accesses
+    - 
+    - linker
+    - any
+    - 
+    - 
+    - 
+  - - 142
+    - System
+    - accesses
+    - action_sid
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 144
+    - System
+    - accesses
+    - 
+    - list
+    - get
+    - 
+    - 
+    - 
+  - - 179
+    - System
+    - bg_workers
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 183
+    - System
+    - bg_workers
+    - 
+    - index
+    - get
+    - 
+    - 
+    - 
+  - - 184
+    - System
+    - bg_workers
+    - 
+    - list
+    - get
+    - 
+    - 
+    - 
+  - - 185
+    - System
+    - bg_workers
+    - 
+    - new
+    - get
+    - 
+    - 
+    - 
+  - - 186
+    - System
+    - bg_workers
+    - 
+    - show
+    - get
+    - 
+    - 
+    - 
+  - - 187
+    - System
+    - bg_workers
+    - 
+    - edit
+    - get
+    - 
+    - 
+    - 
+  - - 194
+    - System
+    - accesses
+    - field_sid
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 197
+    - System
+    - profiles
+    - profile_accesses
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 198
+    - System
+    - profile_accesses
+    - profile
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 203
+    - System
+    - user_accesses
+    - access
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 204
+    - System
+    - accesses
+    - profile_accesses
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 205
+    - System
+    - accesses
+    - user_accesses
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 206
+    - System
+    - users
+    - user_accesses
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 209
+    - System
+    - user_accesses
+    - user
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 210
+    - System
+    - profile_accesses
+    - access
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 212
+    - System
+    - users
+    - access_management
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 213
+    - System
+    - profiles
+    - users
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 214
+    - System
+    - profiles
+    - access_management
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 216
+    - System
+    - users
+    - profiles
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 217
+    - System
+    - users
+    - active
+    - 
+    - boolean
+    - 
+    - 
+    - 
+  - - 220
+    - System
+    - accesses
+    - 
+    - download
+    - get
+    - 
+    - 
+    - 
+  - - 221
+    - System
+    - accesses
+    - 
+    - permissions
+    - get
+    - 
+    - 
+    - 
+  - - 224
+    - System
+    - users
+    - 
+    - login
+    - any
+    - 
+    - 
+    - 
+  - - 225
+    - System
+    - profiles
+    - accesses
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 226
+    - System
+    - accesses
+    - profiles
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 227
+    - System
+    - accesses
+    - users
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 229
+    - System
+    - users
+    - accesses
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 230
+    - System
+    - users
+    - password_cont
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 232
+    - System
+    - users
+    - salt
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 234
+    - System
+    - users
+    - hashed_password
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 235
+    - System
+    - accesses
+    - 
+    - set_permission
+    - any
+    - 
+    - 
+    - 
+  - - 238
+    - System
+    - users
+    - last_login
+    - 
+    - datetime
+    - 
+    - 
+    - 
+  - - 245
+    - System
+    - bg_workers
+    - worker
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 247
+    - System
+    - bg_workers
+    - name
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 254
+    - System
+    - bg_workers
+    - 
+    - search
+    - any
+    - 
+    - 
+    - 
+  - - 256
+    - System
+    - users
+    - 
+    - logout
+    - any
+    - 
+    - 
+    - 
+  - - 258
+    - System
+    - users
+    - language
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 273
+    - System
+    - bg_workers
+    - 
+    - create
+    - post
+    - 
+    - 
+    - 
+  - - 274
+    - System
+    - bg_workers
+    - 
+    - update
+    - put
+    - 
+    - 
+    - 
+  - - 349
+    - System
+    - system_settings
+    - 
+    - dev_doc
+    - any
+    - 
+    - 
+    - 
+  - - 350
+    - System
+    - system_settings
+    - 
+    - gen_doc
+    - post
+    - 
+    - 
+    - 
+  - - 351
+    - System
+    - system_settings
+    - 
+    - routes
+    - any
+    - 
+    - 
+    - 
+  - - 352
+    - System
+    - bg_workers
+    - 
+    - help
+    - get
+    - 
+    - 
+    - 
+  - - 354
+    - System
+    - smart_queries
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 361
+    - System
+    - smart_queries
+    - name
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 377
+    - System
+    - smart_queries
+    - table_sid
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 379
+    - System
+    - smart_queries
+    - criteria
+    - 
+    - any_object
+    - 
+    - 
+    - 
+  - - 382
+    - System
+    - smart_queries
+    - 
+    - new
+    - get
+    - 
+    - 
+    - 
+  - - 383
+    - System
+    - smart_queries
+    - 
+    - index
+    - get
+    - 
+    - 
+    - 
+  - - 384
+    - System
+    - smart_queries
+    - 
+    - search
+    - any
+    - 
+    - 
+    - 
+  - - 385
+    - System
+    - system_settings
+    - 
+    - page_icons
+    - get
+    - 
+    - 
+    - 
+  - - 386
+    - System
+    - smart_queries
+    - 
+    - edit
+    - get
+    - 
+    - 
+    - 
+  - - 394
+    - System
+    - system_settings
+    - 
+    - file_icons
+    - any
+    - 
+    - 
+    - 
+  - - 414
+    - System
+    - system_settings
+    - 
+    - monitoring
+    - any
+    - 
+    - 
+    - 
+  - - 415
+    - System
+    - system_settings
+    - 
+    - requests_times
+    - any
+    - 
+    - 
+    - 
+  - - 416
+    - System
+    - system_settings
+    - 
+    - list_logs
+    - any
+    - 
+    - 
+    - 
+  - - 419
+    - System
+    - users
+    - last_session_id
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 420
+    - System
+    - system_settings
+    - 
+    - clear_logs
+    - any
+    - 
+    - 
+    - 
+  - - 505
+    - System
+    - accesses
+    - home_page_profiles
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 507
+    - System
+    - profiles
+    - home_page
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 508
+    - System
+    - system_settings
+    - 
+    - reload
+    - any
+    - 
+    - 
+    - 
+  - - 514
+    - System
+    - app_locales
+    - locale_code
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 516
+    - System
+    - app_locales
+    - po
+    - 
+    - binary
+    - 
+    - 
+    - 
+  - - 518
+    - System
+    - app_locales
+    - updated_at
+    - 
+    - datetime
+    - 
+    - 
+    - 
+  - - 519
+    - System
+    - system_settings
+    - 
+    - public_files
+    - any
+    - 
+    - 
+    - 
+  - - 521
+    - System
+    - system_settings
+    - 
+    - node_details
+    - any
+    - 
+    - 
+    - 
+  - - 895
+    - System
+    - accesses
+    - 
+    - report_chooser
+    - any
+    - 
+    - 
+    - 
+  - - 896
+    - System
+    - accesses
+    - 
+    - report_generate
+    - any
+    - 
+    - 
+    - 
+  - - 1058
+    - System
+    - smart_queries
+    - 
+    - list
+    - get
+    - 
+    - 
+    - 
+  - - 1067
+    - System
+    - smart_queries
+    - 
+    - show
+    - get
+    - 
+    - 
+    - 
+  - - 1507
+    - System
+    - smart_queries
+    - 
+    - destroy
+    - delete
+    - 
+    - 
+    - 
+  - - 1784
+    - System
+    - system_settings
+    - value
+    - 
+    - text
+    - 
+    - 
+    - 
+  - - 1785
+    - System
+    - smart_queries
+    - 
+    - download
+    - get
+    - 
+    - 
+    - 
+  - - 1973
+    - System
+    - app_locales
+    - 
+    - get_file_thumb
+    - get
+    - 
+    - 
+    - 
+  - - 1976
+    - System
+    - app_locales
+    - 
+    - get_file_size
+    - get
+    - 
+    - 
+    - 
+  - - 1977
+    - System
+    - app_locales
+    - 
+    - get_file
+    - get
+    - 
+    - 
+    - 
+  - - 1982
+    - System
+    - smart_queries
+    - 
+    - create
+    - post
+    - 
+    - 
+    - 
+  - - 1983
+    - System
+    - smart_queries
+    - 
+    - update
+    - put
+    - 
+    - 
+    - 
+  - - 1984
+    - System
+    - smart_queries
+    - 
+    - feed
+    - get
+    - 
+    - 
+    - 
+  - - 1985
+    - System
+    - smart_queries
+    - 
+    - help
+    - get
+    - 
+    - 
+    - 
+  - - 1986
+    - System
+    - smart_queries
+    - 
+    - adv_search
+    - any
+    - 
+    - 
+    - 
+  - - 1999
+    - System
+    - bg_workers
+    - 
+    - report_chooser
+    - any
+    - 
+    - 
+    - 
+  - - 2000
+    - System
+    - bg_workers
+    - 
+    - report_generate
+    - any
+    - 
+    - 
+    - 
+  - - 2008
+    - System
+    - app_locales
+    - 
+    - po_files
+    - any
+    - 
+    - 
+    - 
+  - - 2009
+    - System
+    - app_locales
+    - 
+    - get_po_file
+    - any
+    - 
+    - 
+    - 
+  - - 2100
+    - System
+    - users
+    - 
+    - home
+    - get
+    - 
+    - 
+    - 
+  - - 2143
+    - System
+    - app_locales
+    - 
+    - feed
+    - get
+    - 
+    - 
+    - 
+  - - 2764
+    - System
+    - system_settings
+    - 
+    - dependency_graph
+    - get
+    - 
+    - 
+    - 
+  - - 3017
+    - System
+    - profiles
+    - 
+    - access_graph
+    - any
+    - 
+    - 
+    - 
+  - - 3019
+    - System
+    - profiles
+    - 
+    - field_access_graph
+    - any
+    - 
+    - 
+    - 
+  - - 3021
+    - System
+    - profile_accesses
+    - read
+    - 
+    - boolean
+    - 
+    - 
+    - 
+  - - 3023
+    - System
+    - profile_accesses
+    - write
+    - 
+    - boolean
+    - 
+    - 
+    - 
+  - - 3025
+    - System
+    - user_accesses
+    - read
+    - 
+    - boolean
+    - 
+    - 
+    - 
+  - - 3027
+    - System
+    - user_accesses
+    - write
+    - 
+    - boolean
+    - 
+    - 
+    - 
+  - - 3029
+    - System
+    - users
+    - 
+    - access_graph
+    - get
+    - 
+    - 
+    - 
+  - - 3031
+    - System
+    - users
+    - 
+    - field_access_graph
+    - get
+    - 
+    - 
+    - 
+  - - 3037
+    - System
+    - users
+    - 
+    - change_password
+    - any
+    - 
+    - 
+    - 
+  - - 3411
+    - System
+    - saved_reports
+    - 
+    - index
+    - get
+    - 
+    - 
+    - 
+  - - 3412
+    - System
+    - saved_reports
+    - 
+    - list
+    - get
+    - 
+    - 
+    - 
+  - - 3413
+    - System
+    - saved_reports
+    - 
+    - new
+    - get
+    - 
+    - 
+    - 
+  - - 3414
+    - System
+    - saved_reports
+    - 
+    - create
+    - post
+    - 
+    - 
+    - 
+  - - 3415
+    - System
+    - saved_reports
+    - 
+    - show
+    - get
+    - 
+    - 
+    - 
+  - - 3416
+    - System
+    - saved_reports
+    - 
+    - edit
+    - get
+    - 
+    - 
+    - 
+  - - 3417
+    - System
+    - saved_reports
+    - 
+    - update
+    - put
+    - 
+    - 
+    - 
+  - - 3418
+    - System
+    - saved_reports
+    - 
+    - destroy
+    - delete
+    - 
+    - 
+    - 
+  - - 3419
+    - System
+    - saved_reports
+    - 
+    - search
+    - any
+    - 
+    - 
+    - 
+  - - 3420
+    - System
+    - saved_reports
+    - 
+    - download
+    - get
+    - 
+    - 
+    - 
+  - - 3421
+    - System
+    - saved_reports
+    - 
+    - feed
+    - get
+    - 
+    - 
+    - 
+  - - 3422
+    - System
+    - saved_reports
+    - 
+    - help
+    - get
+    - 
+    - 
+    - 
+  - - 3423
+    - System
+    - saved_reports
+    - 
+    - adv_search
+    - any
+    - 
+    - 
+    - 
+  - - 3435
+    - System
+    - saved_reports
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 3437
+    - System
+    - saved_reports
+    - name
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 3439
+    - System
+    - saved_reports
+    - created_at
+    - 
+    - datetime
+    - 
+    - 
+    - 
+  - - 3441
+    - System
+    - saved_reports
+    - url
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 3443
+    - System
+    - saved_reports
+    - data
+    - 
+    - text
+    - 
+    - 
+    - 
+  - - 3444
+    - System
+    - saved_reports
+    - 
+    - ajax_create
+    - post
+    - 
+    - 
+    - 
+  - - 3445
+    - System
+    - saved_reports
+    - 
+    - ajax_update
+    - post
+    - 
+    - 
+    - 
+  - - 4201
+    - System
+    - accesses
+    - 
+    - reporting_data
+    - any
+    - 
+    - 
+    - 
+  - - 4203
+    - System
+    - accesses
+    - 
+    - reporting
+    - any
+    - 
+    - 
+    - 
+  - - 4333
+    - System
+    - saved_reports
+    - 
+    - add_report
+    - any
+    - 
+    - 
+    - 
+  - - 4727
+    - System
+    - smart_queries
+    - 
+    - change_table
+    - post
+    - 
+    - 
+    - 
+  - - 4883
+    - System
+    - smart_queries
+    - test_query
+    - 
+    - label
+    - 
+    - 
+    - 
+  - - 4884
+    - System
+    - smart_queries
+    - 
+    - db_table
+    - any
+    - 
+    - 
+    - 
+  - - 4885
+    - System
+    - smart_queries
+    - 
+    - test_query
+    - any
+    - 
+    - 
+    - 
+  - - 4895
+    - System
+    - bg_workers
+    - 
+    - reporting
+    - any
+    - 
+    - 
+    - 
+  - - 4896
+    - System
+    - bg_workers
+    - 
+    - reporting_data
+    - any
+    - 
+    - 
+    - 
+  - - 4898
+    - System
+    - smart_queries
+    - joining_criteria
+    - 
+    - static_list
+    - 
+    - 
+    - 
+  - - 5141
+    - System
+    - uncatched_exceptions
+    - 
+    - index
+    - get
+    - 
+    - 
+    - 
+  - - 5142
+    - System
+    - uncatched_exceptions
+    - 
+    - list
+    - get
+    - 
+    - 
+    - 
+  - - 5145
+    - System
+    - uncatched_exceptions
+    - 
+    - show
+    - get
+    - 
+    - 
+    - 
+  - - 5148
+    - System
+    - uncatched_exceptions
+    - 
+    - destroy
+    - delete
+    - 
+    - 
+    - 
+  - - 5149
+    - System
+    - uncatched_exceptions
+    - 
+    - search
+    - any
+    - 
+    - 
+    - 
+  - - 5150
+    - System
+    - uncatched_exceptions
+    - 
+    - download
+    - get
+    - 
+    - 
+    - 
+  - - 5151
+    - System
+    - uncatched_exceptions
+    - 
+    - feed
+    - get
+    - 
+    - 
+    - 
+  - - 5152
+    - System
+    - uncatched_exceptions
+    - 
+    - help
+    - get
+    - 
+    - 
+    - 
+  - - 5153
+    - System
+    - uncatched_exceptions
+    - 
+    - adv_search
+    - any
+    - 
+    - 
+    - 
+  - - 5167
+    - System
+    - uncatched_exceptions
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 5169
+    - System
+    - uncatched_exceptions
+    - exception_class
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 5171
+    - System
+    - uncatched_exceptions
+    - controller_name
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 5173
+    - System
+    - uncatched_exceptions
+    - action_name
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 5175
+    - System
+    - uncatched_exceptions
+    - message
+    - 
+    - text
+    - 
+    - 
+    - 
+  - - 5177
+    - System
+    - uncatched_exceptions
+    - backtrace
+    - 
+    - text
+    - 
+    - 
+    - 
+  - - 5179
+    - System
+    - uncatched_exceptions
+    - environment
+    - 
+    - text
+    - 
+    - 
+    - 
+  - - 5181
+    - System
+    - uncatched_exceptions
+    - request
+    - 
+    - text
+    - 
+    - 
+    - 
+  - - 5183
+    - System
+    - uncatched_exceptions
+    - created_at
+    - 
+    - datetime
+    - 
+    - 
+    - 
+  - - 11093
+    - System
+    - smart_queries
+    - 
+    - global_search
+    - any
+    - 
+    - 
+    - 
+  - - 12062
+    - System
+    - users
+    - application_usage
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 12063
+    - System
+    - users
+    - dev_feedbacks
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 12064
+    - System
+    - users
+    - file_imports
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 12065
+    - System
+    - dev_feedbacks
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 12066
+    - System
+    - dev_feedbacks
+    - management
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 12067
+    - System
+    - dev_feedbacks
+    - ticket_status
+    - 
+    - static_list
+    - 
+    - 
+    - 
+  - - 12068
+    - System
+    - dev_feedbacks
+    - user_feedback_cont
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 12069
+    - System
+    - dev_feedbacks
+    - title
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 12070
+    - System
+    - dev_feedbacks
+    - text
+    - 
+    - text
+    - 
+    - 
+    - 
+  - - 12071
+    - System
+    - dev_feedbacks
+    - zone
+    - 
+    - any_object
+    - 
+    - 
+    - 
+  - - 12072
+    - System
+    - dev_feedbacks
+    - url_cont
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 12073
+    - System
+    - dev_feedbacks
+    - url
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 12074
+    - System
+    - dev_feedbacks
+    - controller
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 12075
+    - System
+    - dev_feedbacks
+    - action
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 12076
+    - System
+    - dev_feedbacks
+    - source_cont
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 12077
+    - System
+    - dev_feedbacks
+    - created_at
+    - 
+    - datetime
+    - 
+    - 
+    - 
+  - - 12078
+    - System
+    - dev_feedbacks
+    - user
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 12079
+    - System
+    - dev_feedbacks
+    - ip
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 12080
+    - System
+    - dev_feedbacks
+    - ua
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 12081
+    - System
+    - dev_feedbacks
+    - browser
+    - 
+    - any_object
+    - 
+    - 
+    - 
+  - - 12082
+    - System
+    - dev_feedbacks
+    - lft
+    - 
+    - integer
+    - 
+    - 
+    - 
+  - - 12083
+    - System
+    - dev_feedbacks
+    - parent_id
+    - 
+    - integer
+    - 
+    - 
+    - 
+  - - 12084
+    - System
+    - dev_feedbacks
+    - rgt
+    - 
+    - integer
+    - 
+    - 
+    - 
+  - - 12085
+    - System
+    - file_imports
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 12086
+    - System
+    - file_imports
+    - import
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 12087
+    - System
+    - file_imports
+    - user
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 12088
+    - System
+    - file_imports
+    - file
+    - 
+    - binary
+    - 
+    - 
+    - 
+  - - 12089
+    - System
+    - file_imports
+    - file_import
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 12090
+    - System
+    - file_imports
+    - re_imports
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 12091
+    - System
+    - file_imports
+    - progress_cont
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 12092
+    - System
+    - file_imports
+    - started_at
+    - 
+    - datetime
+    - 
+    - 
+    - 
+  - - 12093
+    - System
+    - file_imports
+    - completed_at
+    - 
+    - datetime
+    - 
+    - 
+    - 
+  - - 12095
+    - System
+    - file_imports
+    - expected_total
+    - 
+    - integer
+    - 
+    - 
+    - 
+  - - 12096
+    - System
+    - file_imports
+    - error_count
+    - 
+    - integer
+    - 
+    - 
+    - 
+  - - 12097
+    - System
+    - file_imports
+    - log_cont
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 12098
+    - System
+    - file_imports
+    - log
+    - 
+    - text
+    - 
+    - 
+    - 
+  - - 13057
+    - System
+    - bg_workers
+    - start_conditions
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 13058
+    - System
+    - bg_workers
+    - every
+    - 
+    - static_list
+    - 
+    - 
+    - 
+  - - 13059
+    - System
+    - bg_workers
+    - start_cond_overview
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 13060
+    - System
+    - bg_workers
+    - from
+    - 
+    - datetime
+    - 
+    - 
+    - 
+  - - 13061
+    - System
+    - bg_workers
+    - cron
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 13062
+    - System
+    - bg_workers
+    - triggered_by
+    - 
+    - static_list
+    - 
+    - 
+    - 
+  - - 13063
+    - System
+    - bg_workers
+    - no_duplicate
+    - 
+    - boolean
+    - 
+    - 
+    - 
+  - - 13066
+    - System
+    - bg_workers
+    - timestamps
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 13067
+    - System
+    - bg_workers
+    - created_at
+    - 
+    - datetime
+    - 
+    - 
+    - 
+  - - 13068
+    - System
+    - bg_workers
+    - started_at
+    - 
+    - datetime
+    - 
+    - 
+    - 
+  - - 13069
+    - System
+    - bg_workers
+    - running
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 13070
+    - System
+    - bg_workers
+    - locked_at
+    - 
+    - datetime
+    - 
+    - 
+    - 
+  - - 13072
+    - System
+    - bg_workers
+    - finished
+    - 
+    - container
+    - 
+    - 
+    - 
+  - - 13073
+    - System
+    - bg_workers
+    - started_at2
+    - 
+    - label
+    - 
+    - 
+    - 
+  - - 13074
+    - System
+    - bg_workers
+    - completed_at
+    - 
+    - datetime
+    - 
+    - 
+    - 
+  - - 13075
+    - System
+    - bg_workers
+    - last_return_code
+    - 
+    - integer
+    - 
+    - 
+    - 
+  - - 13076
+    - System
+    - bg_workers
+    - attempts
+    - 
+    - integer
+    - 
+    - 
+    - 
+  - - 13077
+    - System
+    - bg_workers
+    - failed_at
+    - 
+    - datetime
+    - 
+    - 
+    - 
+  - - 13078
+    - System
+    - bg_workers
+    - logs
+    - 
+    - text
+    - 
+    - 
+    - 
+  - - 15862
+    - System
+    - system_settings
+    - 
+    - upload_form
+    - get
+    - 
+    - 
+    - 
+  - - 15863
+    - System
+    - system_settings
+    - 
+    - download_zip
+    - any
+    - 
+    - 
+    - 
+  - - 16462
+    - System
+    - bg_workers
+    - 
+    - destroy
+    - delete
+    - 
+    - 
+    - 
+  - - 16463
+    - System
+    - bg_workers
+    - 
+    - run_job_deprecated
+    - any
+    - 
+    - 
+    - 
+  - - 16464
+    - System
+    - bg_workers
+    - 
+    - clear_locks
+    - any
+    - 
+    - 
+    - 
+  - - 16465
+    - System
+    - bg_workers
+    - 
+    - update_task
+    - any
+    - 
+    - 
+    - 
+  - - 16466
+    - System
+    - bg_workers
+    - 
+    - edit_task
+    - any
+    - 
+    - 
+    - 
+  - - 16467
+    - System
+    - bg_workers
+    - 
+    - tasks
+    - any
+    - 
+    - 
+    - 
+  - - 16468
+    - System
+    - bg_workers
+    - 
+    - destroy_task
+    - post
+    - 
+    - 
+    - 
+  - - 16469
+    - System
+    - bg_workers
+    - 
+    - add_task
+    - any
+    - 
+    - 
+    - 
+  - - 16470
+    - System
+    - bg_workers
+    - 
+    - new_task
+    - any
+    - 
+    - 
+    - 
+  - - 16471
+    - System
+    - bg_workers
+    - 
+    - start_worker
+    - any
+    - 
+    - 
+    - 
+  - - 16472
+    - System
+    - bg_workers
+    - 
+    - processes
+    - any
+    - 
+    - 
+    - 
+  - - 16473
+    - System
+    - bg_workers
+    - 
+    - kill_process
+    - post
+    - 
+    - 
+    - 
+  - - 16474
+    - System
+    - bg_workers
+    - 
+    - ptest
+    - any
+    - 
+    - 
+    - 
+  - - 16475
+    - System
+    - bg_workers
+    - 
+    - clear_queue
+    - any
+    - 
+    - 
+    - 
+  - - 16476
+    - System
+    - bg_workers
+    - 
+    - running
+    - any
+    - 
+    - 
+    - 
+  - - 16477
+    - System
+    - bg_workers
+    - 
+    - clear_log
+    - any
+    - 
+    - 
+    - 
+  - - 16478
+    - System
+    - bg_workers
+    - 
+    - run_task
+    - any
+    - 
+    - 
+    - 
+  - - 16479
+    - System
+    - bg_workers
+    - 
+    - kill_task
+    - any
+    - 
+    - 
+    - 
+  - - 16480
+    - System
+    - bg_workers
+    - 
+    - report_load_labels
+    - any
+    - 
+    - 
+    - 
+  - - 16481
+    - System
+    - bg_workers
+    - locked_by
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 16488
+    - System
+    - bg_workers
+    - priority
+    - 
+    - integer
+    - 
+    - 
+    - 
+  - - 16490
+    - System
+    - bg_workers
+    - planned_at
+    - 
+    - datetime
+    - 
+    - 
+    - 
+  - - 16893
+    - System
+    - accesses
+    - 
+    - report_load_labels
+    - any
+    - 
+    - 
+    - 
+  - - 17250
+    - System
+    - system_settings
+    - 
+    - console
+    - any
+    - 
+    - 
+    - 
+  - - 17251
+    - System
+    - system_settings
+    - 
+    - sql_console
+    - any
+    - 
+    - 
+    - 
+  - - 17252
+    - System
+    - system_settings
+    - 
+    - irbjax
+    - get
+    - 
+    - 
+    - 
+  - - 17253
+    - System
+    - system_settings
+    - 
+    - run_command
+    - get
+    - 
+    - 
+    - 
+  - - 17254
+    - System
+    - accesses
+    - set_sid
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 17255
+    - System
+    - accesses
+    - type_sid
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 17256
+    - System
+    - accesses
+    - 
+    - set_access
+    - put
+    - 
+    - 
+    - 
+  - - 17257
+    - System
+    - app_locales
+    - 
+    - update_po
+    - any
+    - 
+    - 
+    - 
+  - - 17258
+    - System
+    - app_locales
+    - 
+    - translate_deprecated
+    - any
+    - 
+    - 
+    - 
+  - - 17259
+    - System
+    - app_locales
+    - 
+    - make_mo
+    - any
+    - 
+    - 
+    - 
+  - - 17260
+    - System
+    - app_locales
+    - 
+    - auto_translate_all
+    - any
+    - 
+    - 
+    - 
+  - - 17261
+    - System
+    - app_locales
+    - 
+    - submit
+    - post
+    - 
+    - 
+    - 
+  - - 17262
+    - System
+    - app_locales
+    - 
+    - auto_translate
+    - any
+    - 
+    - 
+    - 
+  - - 17263
+    - System
+    - uncatched_exceptions
+    - 
+    - create_error
+    - any
+    - 
+    - 
+    - 
+  - - 17264
+    - System
+    - dev_feedbacks
+    - 
+    - index
+    - get
+    - 
+    - 
+    - 
+  - - 17265
+    - System
+    - dev_feedbacks
+    - 
+    - list
+    - get
+    - 
+    - 
+    - 
+  - - 17266
+    - System
+    - dev_feedbacks
+    - 
+    - new
+    - get
+    - 
+    - 
+    - 
+  - - 17267
+    - System
+    - dev_feedbacks
+    - 
+    - create
+    - post
+    - 
+    - 
+    - 
+  - - 17268
+    - System
+    - dev_feedbacks
+    - 
+    - show
+    - get
+    - 
+    - 
+    - 
+  - - 17269
+    - System
+    - dev_feedbacks
+    - 
+    - edit
+    - get
+    - 
+    - 
+    - 
+  - - 17270
+    - System
+    - dev_feedbacks
+    - 
+    - update
+    - put
+    - 
+    - 
+    - 
+  - - 17271
+    - System
+    - dev_feedbacks
+    - 
+    - destroy
+    - delete
+    - 
+    - 
+    - 
+  - - 17272
+    - System
+    - dev_feedbacks
+    - 
+    - search
+    - any
+    - 
+    - 
+    - 
+  - - 17273
+    - System
+    - dev_feedbacks
+    - 
+    - download
+    - get
+    - 
+    - 
+    - 
+  - - 17274
+    - System
+    - dev_feedbacks
+    - 
+    - feed
+    - get
+    - 
+    - 
+    - 
+  - - 17275
+    - System
+    - dev_feedbacks
+    - 
+    - help
+    - get
+    - 
+    - 
+    - 
+  - - 17276
+    - System
+    - dev_feedbacks
+    - 
+    - adv_search
+    - any
+    - 
+    - 
+    - 
+  - - 17277
+    - System
+    - dev_feedbacks
+    - 
+    - linker
+    - any
+    - 
+    - 
+    - 
+  - - 17278
+    - System
+    - dev_feedbacks
+    - 
+    - report_chooser
+    - any
+    - 
+    - 
+    - 
+  - - 17279
+    - System
+    - dev_feedbacks
+    - 
+    - report_generate
+    - any
+    - 
+    - 
+    - 
+  - - 17280
+    - System
+    - dev_feedbacks
+    - 
+    - report_load_labels
+    - any
+    - 
+    - 
+    - 
+  - - 17281
+    - System
+    - dev_feedbacks
+    - 
+    - tree_list
+    - any
+    - 
+    - 
+    - 
+  - - 17282
+    - System
+    - dev_feedbacks
+    - 
+    - tree_move
+    - any
+    - 
+    - 
+    - 
+  - - 17283
+    - System
+    - dev_feedbacks
+    - 
+    - reporting
+    - any
+    - 
+    - 
+    - 
+  - - 17284
+    - System
+    - dev_feedbacks
+    - 
+    - reporting_data
+    - any
+    - 
+    - 
+    - 
+  - - 17285
+    - System
+    - file_imports
+    - read_lines
+    - 
+    - integer
+    - 
+    - 
+    - 
+  - - 17286
+    - System
+    - file_imports
+    - wrote_records
+    - 
+    - integer
+    - 
+    - 
+    - 
+  - - 17287
+    - System
+    - file_imports
+    - 
+    - index
+    - get
+    - 
+    - 
+    - 
+  - - 17288
+    - System
+    - file_imports
+    - 
+    - new
+    - get
+    - 
+    - 
+    - 
+  - - 17289
+    - System
+    - file_imports
+    - 
+    - create
+    - post
+    - 
+    - 
+    - 
+  - - 17290
+    - System
+    - file_imports
+    - 
+    - show
+    - get
+    - 
+    - 
+    - 
+  - - 17291
+    - System
+    - file_imports
+    - 
+    - edit
+    - get
+    - 
+    - 
+    - 
+  - - 17292
+    - System
+    - file_imports
+    - 
+    - update
+    - put
+    - 
+    - 
+    - 
+  - - 17293
+    - System
+    - file_imports
+    - 
+    - destroy
+    - delete
+    - 
+    - 
+    - 
+  - - 17294
+    - System
+    - file_imports
+    - 
+    - search
+    - any
+    - 
+    - 
+    - 
+  - - 17295
+    - System
+    - file_imports
+    - 
+    - download
+    - get
+    - 
+    - 
+    - 
+  - - 17296
+    - System
+    - file_imports
+    - 
+    - feed
+    - get
+    - 
+    - 
+    - 
+  - - 17297
+    - System
+    - file_imports
+    - 
+    - help
+    - get
+    - 
+    - 
+    - 
+  - - 17298
+    - System
+    - file_imports
+    - 
+    - adv_search
+    - any
+    - 
+    - 
+    - 
+  - - 17299
+    - System
+    - file_imports
+    - 
+    - preview
+    - any
+    - 
+    - 
+    - 
+  - - 17300
+    - System
+    - file_imports
+    - 
+    - load
+    - post
+    - 
+    - 
+    - 
+  - - 17301
+    - System
+    - file_imports
+    - 
+    - list
+    - get
+    - 
+    - 
+    - 
+  - - 17302
+    - System
+    - file_imports
+    - 
+    - source_files
+    - get
+    - 
+    - 
+    - 
+  - - 17303
+    - System
+    - file_imports
+    - 
+    - running
+    - get
+    - 
+    - 
+    - 
+  - - 17304
+    - System
+    - file_imports
+    - 
+    - complete
+    - get
+    - 
+    - 
+    - 
+  - - 17305
+    - System
+    - file_imports
+    - 
+    - linker
+    - any
+    - 
+    - 
+    - 
+  - - 17306
+    - System
+    - file_imports
+    - 
+    - get_file_thumb
+    - get
+    - 
+    - 
+    - 
+  - - 17307
+    - System
+    - file_imports
+    - 
+    - report_chooser
+    - any
+    - 
+    - 
+    - 
+  - - 17308
+    - System
+    - file_imports
+    - 
+    - report_generate
+    - any
+    - 
+    - 
+    - 
+  - - 17309
+    - System
+    - file_imports
+    - 
+    - report_load_labels
+    - any
+    - 
+    - 
+    - 
+  - - 17310
+    - System
+    - file_imports
+    - 
+    - get_file_size
+    - get
+    - 
+    - 
+    - 
+  - - 17311
+    - System
+    - file_imports
+    - 
+    - get_file
+    - get
+    - 
+    - 
+    - 
+  - - 17312
+    - System
+    - file_imports
+    - 
+    - reporting
+    - any
+    - 
+    - 
+    - 
+  - - 17313
+    - System
+    - file_imports
+    - 
+    - reporting_data
+    - any
+    - 
+    - 
+    - 
+  - - 17450
+    - System
+    - users
+    - 
+    - report_chooser
+    - any
+    - 
+    - 
+    - 
+  - - 17451
+    - System
+    - users
+    - 
+    - report_generate
+    - any
+    - 
+    - 
+    - 
+  - - 17452
+    - System
+    - users
+    - 
+    - report_load_labels
+    - any
+    - 
+    - 
+    - 
+  - - 17453
+    - System
+    - users
+    - 
+    - reporting
+    - any
+    - 
+    - 
+    - 
+  - - 17454
+    - System
+    - users
+    - 
+    - reporting_data
+    - any
+    - 
+    - 
+    - 
+  - - 17455
+    - System
+    - translations
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 17456
+    - System
+    - translations
+    - 
+    - index
+    - get
+    - 
+    - 
+    - 
+  - - 17457
+    - System
+    - translations
+    - 
+    - update
+    - put
+    - 
+    - 
+    - 
+  - - 17458
+    - System
+    - translations
+    - 
+    - destroy
+    - delete
+    - 
+    - 
+    - 
+  - - 17459
+    - System
+    - translations
+    - 
+    - get_po
+    - get
+    - 
+    - 
+    - 
+  - - 17460
+    - System
+    - translations
+    - 
+    - generation_status
+    - get
+    - 
+    - 
+    - 
+  - - 17461
+    - System
+    - translations
+    - 
+    - generate_pos
+    - post
+    - 
+    - 
+    - 
+  - - 17462
+    - System
+    - translations
+    - 
+    - delete_po
+    - delete
+    - 
+    - 
+    - 
+  - - 17463
+    - System
+    - translations
+    - 
+    - upload_po
+    - any
+    - 
+    - 
+    - 
+  - - 17689
+    - None
+    - books
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 17690
+    - None
+    - books
+    - 
+    - index
+    - get
+    - 
+    - 
+    - 
+  - - 17691
+    - None
+    - books
+    - 
+    - list
+    - get
+    - 
+    - 
+    - 
+  - - 17692
+    - None
+    - books
+    - 
+    - new
+    - get
+    - 
+    - 
+    - 
+  - - 17693
+    - None
+    - books
+    - 
+    - create
+    - post
+    - 
+    - 
+    - 
+  - - 17694
+    - None
+    - books
+    - 
+    - show
+    - get
+    - 
+    - 
+    - 
+  - - 17695
+    - None
+    - books
+    - 
+    - edit
+    - get
+    - 
+    - 
+    - 
+  - - 17696
+    - None
+    - books
+    - 
+    - update
+    - put
+    - 
+    - 
+    - 
+  - - 17697
+    - None
+    - books
+    - 
+    - destroy
+    - delete
+    - 
+    - 
+    - 
+  - - 17698
+    - None
+    - books
+    - 
+    - search
+    - any
+    - 
+    - 
+    - 
+  - - 17699
+    - None
+    - books
+    - 
+    - download
+    - get
+    - 
+    - 
+    - 
+  - - 17700
+    - None
+    - books
+    - 
+    - feed
+    - get
+    - 
+    - 
+    - 
+  - - 17701
+    - None
+    - books
+    - 
+    - help
+    - get
+    - 
+    - 
+    - 
+  - - 17702
+    - None
+    - books
+    - 
+    - adv_search
+    - any
+    - 
+    - 
+    - 
+  - - 17704
+    - None
+    - books
+    - titre
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 17706
+    - None
+    - books
+    - isbn
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 17708
+    - None
+    - books
+    - stars
+    - 
+    - integer
+    - 
+    - 
+    - 
+  - - 17709
+    - None
+    - editeurs
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 17710
+    - None
+    - editeurs
+    - 
+    - index
+    - get
+    - 
+    - 
+    - 
+  - - 17711
+    - None
+    - editeurs
+    - 
+    - list
+    - get
+    - 
+    - 
+    - 
+  - - 17712
+    - None
+    - editeurs
+    - 
+    - new
+    - get
+    - 
+    - 
+    - 
+  - - 17713
+    - None
+    - editeurs
+    - 
+    - create
+    - post
+    - 
+    - 
+    - 
+  - - 17714
+    - None
+    - editeurs
+    - 
+    - show
+    - get
+    - 
+    - 
+    - 
+  - - 17715
+    - None
+    - editeurs
+    - 
+    - edit
+    - get
+    - 
+    - 
+    - 
+  - - 17716
+    - None
+    - editeurs
+    - 
+    - update
+    - put
+    - 
+    - 
+    - 
+  - - 17717
+    - None
+    - editeurs
+    - 
+    - destroy
+    - delete
+    - 
+    - 
+    - 
+  - - 17718
+    - None
+    - editeurs
+    - 
+    - search
+    - any
+    - 
+    - 
+    - 
+  - - 17719
+    - None
+    - editeurs
+    - 
+    - download
+    - get
+    - 
+    - 
+    - 
+  - - 17720
+    - None
+    - editeurs
+    - 
+    - feed
+    - get
+    - 
+    - 
+    - 
+  - - 17721
+    - None
+    - editeurs
+    - 
+    - help
+    - get
+    - 
+    - 
+    - 
+  - - 17722
+    - None
+    - editeurs
+    - 
+    - adv_search
+    - any
+    - 
+    - 
+    - 
+  - - 17724
+    - None
+    - editeurs
+    - name
+    - 
+    - string
+    - 
+    - 
+    - 
+  - - 17725
+    - None
+    - books
+    - editeur
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 17726
+    - None
+    - books
+    - 
+    - linker
+    - any
+    - 
+    - 
+    - 
+  - - 17727
+    - None
+    - editeurs
+    - books
+    - 
+    - association
+    - 
+    - 
+    - 
+  - - 17728
+    - None
+    - editeurs
+    - 
+    - linker
+    - any
+    - 
+    - 
+    - 
+  - - 17729
+    - None
+    - books
+    - 
+    - importer
+    - any
+    - 
+    - 
+    - 
+  - - 17730
+    - None
+    - books
+    - 
+    - report_chooser
+    - any
+    - 
+    - 
+    - 
+  - - 17731
+    - None
+    - books
+    - 
+    - report_generate
+    - any
+    - 
+    - 
+    - 
+  - - 17732
+    - None
+    - books
+    - 
+    - report_load_labels
+    - any
+    - 
+    - 
+    - 
+  - - 17733
+    - None
+    - books
+    - 
+    - reporting
+    - any
+    - 
+    - 
+    - 
+  - - 17734
+    - None
+    - books
+    - 
+    - reporting_data
+    - any
+    - 
+    - 
+    - 
+
+--- 
+profile_accesses: 
+  columns: 
+  - id
+  - profile_id
+  - access_id
+  - read
+  - write
+  records: 
+  - - 1
+    - 4
+    - 224
+    - false
+    - false
+  - - 2
+    - 4
+    - 385
+    - false
+    - false
+  - - 3
+    - 4
+    - 394
+    - false
+    - false
+  - - 162
+    - 3
+    - 224
+    - false
+    - false
+  - - 163
+    - 3
+    - 256
+    - false
+    - false
+  - - 373
+    - 2
+    - 118
+    - false
+    - false
+  - - 374
+    - 2
+    - 117
+    - false
+    - false
+  - - 502
+    - 9
+    - 77
+    - false
+    - false
+  - - 503
+    - 9
+    - 78
+    - false
+    - false
+  - - 504
+    - 9
+    - 81
+    - false
+    - false

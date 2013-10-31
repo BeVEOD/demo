@@ -1,0 +1,11 @@
+
+pdf.header() do
+	pdf.image('File.join(RAILS_ROOT, 'images', '/images/std/show.png')', :position => :left)
+	pdf.text(_("Showing %{record} from %{records}") % {:record => @system_setting.disp_name, :records => _("System Settings")}, :align => :center, :style => :bold, :size => 16)
+end
+
+pdf.indent(20) do
+pdf.text("Name: %s" % @system_setting.name)
+pdf.text("Value: %s" % @system_setting.value)
+end
+

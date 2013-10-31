@@ -1,0 +1,91 @@
+
+/* ._array */
+._array ._entry ._value {
+  margin: 0;
+}
+._array ._key {
+  height: 0;
+margin-top: 0.5em;
+}
+._array ._no_type_field {
+  padding-left: 3.3em;
+}
+
+
+/* ._key */
+._key ._string_input {
+  width: 9em;
+}
+._key  {
+  font-weight: bold;
+width: 15em;
+}
+
+
+/* [no container] */
+._item {
+  ._item
+}
+._string_input:focus {
+  background: #FF9;
+border: 1px solid black
+}
+._minus {
+  background: transparent url(/images/std/minus.png) no-repeat
+}
+._plus {
+  background: transparent url(/images/std/plus.png) no-repeat
+}
+._no_type_field {
+  width: 9em;
+margin-top:-1.3em
+}
+._entry {
+  font-size: 9px
+}
+._button {
+  margin-top: 5px;
+padding-left:10px;
+padding-right:5px
+}
+._minus._del {
+  // position: absolute;
+// right: 1%
+}
+._string_input {
+  padding: 0;
+font-size: 9px  background:#EEE;
+border: 1px solid #EEE;
+border-bottom: 1px solid gray
+}
+._entry:hover {
+  background-color: #FDD
+}
+._string_input:hover {
+  background: #FFD;
+border: 1px solid gray
+}
+._type_field {
+  font-size: 9px
+}
+
+
+/* ._value */
+._value ._string_input {
+  width: 90%;
+}
+._value  {
+  margin-bottom: 1em;
+margin-left: 16em;
+margin-top: -1.7em;
+}
+
+
+/* ._root */
+._root  {
+  // margin: 1em
+}
+._root ol {
+  padding-left: 1.5em;
+}
+

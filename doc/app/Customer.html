@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class Customer - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/customer.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ActiveRecord/Base.html">ActiveRecord::Base</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-assoc_sids_to_columns">::assoc_sids_to_columns</a>
+    
+    <li><a href="#method-c-from_kml">::from_kml</a>
+    
+    <li><a href="#method-c-load_from_params">::load_from_params</a>
+    
+    <li><a href="#method-c-named_scope_active_filter_method">::named_scope_active_filter_method</a>
+    
+    <li><a href="#method-c-named_scope_default_scope_method">::named_scope_default_scope_method</a>
+    
+    <li><a href="#method-c-photo_folder">::photo_folder</a>
+    
+    <li><a href="#method-c-search">::search</a>
+    
+    <li><a href="#method-i-disp_name">#disp_name</a>
+    
+    <li><a href="#method-i-next">#next</a>
+    
+    <li><a href="#method-i-photo">#photo</a>
+    
+    <li><a href="#method-i-photo-3D">#photo=</a>
+    
+    <li><a href="#method-i-photo__after_create_trigger">#photo__after_create_trigger</a>
+    
+    <li><a href="#method-i-photo__after_destroy_trigger">#photo__after_destroy_trigger</a>
+    
+    <li><a href="#method-i-photo__after_update_trigger">#photo__after_update_trigger</a>
+    
+    <li><a href="#method-i-photo__cache">#photo__cache</a>
+    
+    <li><a href="#method-i-photo__mime_type">#photo__mime_type</a>
+    
+    <li><a href="#method-i-photo__path">#photo__path</a>
+    
+    <li><a href="#method-i-photo__size">#photo__size</a>
+    
+    <li><a href="#method-i-photo__thumb_path">#photo__thumb_path</a>
+    
+    <li><a href="#method-i-photo_load_from_params">#photo_load_from_params</a>
+    
+    <li><a href="#method-i-previous">#previous</a>
+    
+    <li><a href="#method-i-thumbnail">#thumbnail</a>
+    
+    <li><a href="#method-i-user__potential_values">#user__potential_values</a>
+    
+    <li><a href="#method-i-user_human_display">#user_human_display</a>
+    
+    <li><a href="#method-i-user_load_from_params">#user_load_from_params</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Faveod.html">Faveod</a>
+  
+    <li><a href="./Faveod/AVBBFTranslationService.html">Faveod::AVBBFTranslationService</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions.html">Faveod::ActiveResourceExtensions</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions/ClassMethods.html">Faveod::ActiveResourceExtensions::ClassMethods</a>
+  
+    <li><a href="./Faveod/DistributedColors.html">Faveod::DistributedColors</a>
+  
+    <li><a href="./Faveod/GoogleTranslationService.html">Faveod::GoogleTranslationService</a>
+  
+    <li><a href="./Faveod/GraphMaker.html">Faveod::GraphMaker</a>
+  
+    <li><a href="./Faveod/HtmlTruncator.html">Faveod::HtmlTruncator</a>
+  
+    <li><a href="./Faveod/IePdfHeadersMiddleware.html">Faveod::IePdfHeadersMiddleware</a>
+  
+    <li><a href="./Faveod/PoUtils.html">Faveod::PoUtils</a>
+  
+    <li><a href="./Faveod/TranslationServer.html">Faveod::TranslationServer</a>
+  
+    <li><a href="./Faveod/TranslationServicesHelper.html">Faveod::TranslationServicesHelper</a>
+  
+    <li><a href="./Faveod/Validations.html">Faveod::Validations</a>
+  
+    <li><a href="./Faveod/Validations/Syntax.html">Faveod::Validations::Syntax</a>
+  
+    <li><a href="./Faveod/Validations/Syntax/ClassMethods.html">Faveod::Validations::Syntax::ClassMethods</a>
+  
+    <li><a href="./ActiveRecord.html">ActiveRecord</a>
+  
+    <li><a href="./ActiveRecord/Base.html">ActiveRecord::Base</a>
+  
+    <li><a href="./ActiveRecord/Condition.html">ActiveRecord::Condition</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters.html">ActiveRecord::ConnectionAdapters</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters/Column.html">ActiveRecord::ConnectionAdapters::Column</a>
+  
+    <li><a href="./ActiveRecord/Validations.html">ActiveRecord::Validations</a>
+  
+    <li><a href="./ActiveRecord/Validations/ClassMethods.html">ActiveRecord::Validations::ClassMethods</a>
+  
+    <li><a href="./ActionView.html">ActionView</a>
+  
+    <li><a href="./ActionView/Helpers.html">ActionView::Helpers</a>
+  
+    <li><a href="./ActionView/Helpers/FormOptionsHelper.html">ActionView::Helpers::FormOptionsHelper</a>
+  
+    <li><a href="./DefaultFinder.html">DefaultFinder</a>
+  
+    <li><a href="./DefaultFinder/Finder.html">DefaultFinder::Finder</a>
+  
+    <li><a href="./DefaultFinder/Finder/ClassMethods.html">DefaultFinder::Finder::ClassMethods</a>
+  
+    <li><a href="./IrbjaxEngine.html">IrbjaxEngine</a>
+  
+    <li><a href="./IrbjaxEngine/IrbjaxSession.html">IrbjaxEngine::IrbjaxSession</a>
+  
+    <li><a href="./IrbjaxEngine/Output.html">IrbjaxEngine::Output</a>
+  
+    <li><a href="./SymetrieCom.html">SymetrieCom</a>
+  
+    <li><a href="./SymetrieCom/Acts.html">SymetrieCom::Acts</a>
+  
+    <li><a href="./SymetrieCom/Acts/BetterNestedSetHelper.html">SymetrieCom::Acts::BetterNestedSetHelper</a>
+  
+    <li><a href="./GetText.html">GetText</a>
+  
+    <li><a href="./GetText/PoParser.html">GetText::PoParser</a>
+  
+    <li><a href="./Rack.html">Rack</a>
+  
+    <li><a href="./Rack/Utils.html">Rack::Utils</a>
+  
+    <li><a href="./WillPaginate.html">WillPaginate</a>
+  
+    <li><a href="./WillPaginate/ViewHelpers.html">WillPaginate::ViewHelpers</a>
+  
+    <li><a href="./AbstractReport.html">AbstractReport</a>
+  
+    <li><a href="./Access.html">Access</a>
+  
+    <li><a href="./AccessApi.html">AccessApi</a>
+  
+    <li><a href="./AccessReport.html">AccessReport</a>
+  
+    <li><a href="./AccessesController.html">AccessesController</a>
+  
+    <li><a href="./AccessesHelper.html">AccessesHelper</a>
+  
+    <li><a href="./AppLocale.html">AppLocale</a>
+  
+    <li><a href="./AppLocaleApi.html">AppLocaleApi</a>
+  
+    <li><a href="./AppLocalesController.html">AppLocalesController</a>
+  
+    <li><a href="./AppLocalesHelper.html">AppLocalesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BgWorker.html">BgWorker</a>
+  
+    <li><a href="./BgWorkerApi.html">BgWorkerApi</a>
+  
+    <li><a href="./BgWorkerReport.html">BgWorkerReport</a>
+  
+    <li><a href="./BgWorkersController.html">BgWorkersController</a>
+  
+    <li><a href="./BgWorkersHelper.html">BgWorkersHelper</a>
+  
+    <li><a href="./Customer.html">Customer</a>
+  
+    <li><a href="./CustomerApi.html">CustomerApi</a>
+  
+    <li><a href="./CustomersController.html">CustomersController</a>
+  
+    <li><a href="./CustomersHelper.html">CustomersHelper</a>
+  
+    <li><a href="./Date.html">Date</a>
+  
+    <li><a href="./DateHelper.html">DateHelper</a>
+  
+    <li><a href="./DevFeedback.html">DevFeedback</a>
+  
+    <li><a href="./DevFeedbackApi.html">DevFeedbackApi</a>
+  
+    <li><a href="./DevFeedbacksController.html">DevFeedbacksController</a>
+  
+    <li><a href="./DevFeedbacksHelper.html">DevFeedbacksHelper</a>
+  
+    <li><a href="./Enumerable.html">Enumerable</a>
+  
+    <li><a href="./FileImport.html">FileImport</a>
+  
+    <li><a href="./FileImportApi.html">FileImportApi</a>
+  
+    <li><a href="./FileImportReport.html">FileImportReport</a>
+  
+    <li><a href="./FileImportsController.html">FileImportsController</a>
+  
+    <li><a href="./FileImportsHelper.html">FileImportsHelper</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./PdfHandler.html">PdfHandler</a>
+  
+    <li><a href="./Profile.html">Profile</a>
+  
+    <li><a href="./ProfileAccess.html">ProfileAccess</a>
+  
+    <li><a href="./ProfileAccessApi.html">ProfileAccessApi</a>
+  
+    <li><a href="./ProfileAccessesController.html">ProfileAccessesController</a>
+  
+    <li><a href="./ProfileAccessesHelper.html">ProfileAccessesHelper</a>
+  
+    <li><a href="./ProfileApi.html">ProfileApi</a>
+  
+    <li><a href="./ProfilesController.html">ProfilesController</a>
+  
+    <li><a href="./ProfilesHelper.html">ProfilesHelper</a>
+  
+    <li><a href="./RBeautify.html">RBeautify</a>
+  
+    <li><a href="./Range.html">Range</a>
+  
+    <li><a href="./SavedReport.html">SavedReport</a>
+  
+    <li><a href="./SavedReportApi.html">SavedReportApi</a>
+  
+    <li><a href="./SavedReportsController.html">SavedReportsController</a>
+  
+    <li><a href="./SavedReportsHelper.html">SavedReportsHelper</a>
+  
+    <li><a href="./SmartQueriesController.html">SmartQueriesController</a>
+  
+    <li><a href="./SmartQueriesHelper.html">SmartQueriesHelper</a>
+  
+    <li><a href="./SmartQuery.html">SmartQuery</a>
+  
+    <li><a href="./SmartQueryApi.html">SmartQueryApi</a>
+  
+    <li><a href="./SystemSetting.html">SystemSetting</a>
+  
+    <li><a href="./SystemSettingApi.html">SystemSettingApi</a>
+  
+    <li><a href="./SystemSettingsController.html">SystemSettingsController</a>
+  
+    <li><a href="./SystemSettingsHelper.html">SystemSettingsHelper</a>
+  
+    <li><a href="./Thumbnailer.html">Thumbnailer</a>
+  
+    <li><a href="./Translation.html">Translation</a>
+  
+    <li><a href="./TranslationApi.html">TranslationApi</a>
+  
+    <li><a href="./TranslationsController.html">TranslationsController</a>
+  
+    <li><a href="./TranslationsHelper.html">TranslationsHelper</a>
+  
+    <li><a href="./UncatchedException.html">UncatchedException</a>
+  
+    <li><a href="./UncatchedExceptionApi.html">UncatchedExceptionApi</a>
+  
+    <li><a href="./UncatchedExceptionMailer.html">UncatchedExceptionMailer</a>
+  
+    <li><a href="./UncatchedExceptionsController.html">UncatchedExceptionsController</a>
+  
+    <li><a href="./UncatchedExceptionsHelper.html">UncatchedExceptionsHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserAccess.html">UserAccess</a>
+  
+    <li><a href="./UserAccessApi.html">UserAccessApi</a>
+  
+    <li><a href="./UserAccessesController.html">UserAccessesController</a>
+  
+    <li><a href="./UserAccessesHelper.html">UserAccessesHelper</a>
+  
+    <li><a href="./UserApi.html">UserApi</a>
+  
+    <li><a href="./UserMailer.html">UserMailer</a>
+  
+    <li><a href="./UserReport.html">UserReport</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Customer</h1>
+
+  <div id="description" class="description">
+    
+<pre>This file and all its content belong to Faveod S.A.S unless a commercial
+contract signed by a representant of Faveod S.A.S states otherwise.</pre>
+
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</p>
+
+<pre>This has been generated by Faveod Generator on Thu Oct 31 16:40:26 +0100 2013
+It should be placed at 'app/models/customer.rb'
+All manual modifications will be destroyed on next generation</pre>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="COMPARATORS">COMPARATORS
+        
+        <dd class="description">
+        
+      
+        <dt id="FIELDS">FIELDS
+        
+        <dd class="description">
+        
+      
+        <dt id="FILES_DEST">FILES_DEST
+        
+        <dd class="description">
+        
+      
+        <dt id="FILES_DEST_PHOTO">FILES_DEST_PHOTO
+        
+        <dd class="description">
+        
+      
+        <dt id="FILES_DEST_PHOTO__THUMBS">FILES_DEST_PHOTO__THUMBS
+        
+        <dd class="description">
+        
+      
+        <dt id="RESTRICTED_FIELDS">RESTRICTED_FIELDS
+        
+        <dd class="description">
+        
+      
+        <dt id="SEARCHABLE_FIELDS">SEARCHABLE_FIELDS
+        
+        <dd class="description">
+        
+      
+      </dl>
+    </section>
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-user_was" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">user_was</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Associations through specific setters</p>
+
+<p>Virtual Fields</p>
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-assoc_sids_to_columns" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">assoc_sids_to_columns</span><span
+            class="method-args">(attrs)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="assoc_sids_to_columns-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 346</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">assoc_sids_to_columns</span>(<span class="ruby-identifier">attrs</span>)
+<span class="ruby-identifier">h</span> = <span class="ruby-identifier">attrs</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:conditions</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">attrs</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-operator">:</span> <span class="ruby-identifier">attrs</span>
+
+<span class="ruby-identifier">h</span>[<span class="ruby-value">:user_id</span>] = <span class="ruby-identifier">h</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:user</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">h</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:user</span>)
+
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">attrs</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:conditions</span>)
+  <span class="ruby-identifier">attrs</span>[<span class="ruby-value">:conditions</span>] = <span class="ruby-identifier">h</span>
+  <span class="ruby-identifier">attrs</span>
+<span class="ruby-keyword">else</span>
+  <span class="ruby-identifier">h</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- assoc_sids_to_columns-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- assoc_sids_to_columns-method -->
+
+    
+      <div id="method-c-from_kml" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">from_kml</span><span
+            class="method-args">(path)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Import maps elements from KML format.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-10-18 22:14:54 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="from_kml-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 234</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">from_kml</span>(<span class="ruby-identifier">path</span>)
+  <span class="ruby-identifier">doc</span> = <span class="ruby-constant">Nokogiri</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">path</span>))
+  <span class="ruby-identifier">doc</span>.<span class="ruby-identifier">css</span>(<span class="ruby-string">'Placemark'</span>).<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">pi</span> = <span class="ruby-identifier">l</span>.<span class="ruby-identifier">css</span>(<span class="ruby-string">'Data[name=Name] value'</span>)[<span class="ruby-value">0</span>].<span class="ruby-identifier">content</span>.<span class="ruby-identifier">strip</span>
+    <span class="ruby-identifier">country</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">find_by_name</span>(<span class="ruby-identifier">pi</span>)
+    <span class="ruby-identifier">poly</span> = <span class="ruby-identifier">l</span>.<span class="ruby-identifier">css</span>(<span class="ruby-string">'Polygon'</span>).<span class="ruby-identifier">to_a</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">p</span>.<span class="ruby-identifier">content</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r,0\.0/</span>, <span class="ruby-string">','</span>).<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>).<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:to_f</span>)
+    }.<span class="ruby-identifier">flatten</span>
+    (<span class="ruby-identifier">poly</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">/</span> <span class="ruby-value">2</span>).<span class="ruby-identifier">times</span>{
+      <span class="ruby-identifier">country</span>.<span class="ruby-identifier">customer_borders</span>.<span class="ruby-identifier">create</span>(<span class="ruby-value">:lat</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">poly</span>.<span class="ruby-identifier">shift</span>, <span class="ruby-value">:lng</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">poly</span>.<span class="ruby-identifier">shift</span>)
+    }
+  }
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- from_kml-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- from_kml-method -->
+
+    
+      <div id="method-c-load_from_params" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">load_from_params</span><span
+            class="method-args">(att)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Load the matching object with right attributes.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>53</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-09-03 16:56:08 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="load_from_params-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 82</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-identifier">att</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">new</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">att</span>.<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">std_atts</span> = <span class="ruby-identifier">att</span>.<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-node">%w(id user photo photo_tmp photo_name)</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_s</span>) }
+  <span class="ruby-identifier">customer</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">att</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:id</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">att</span>[<span class="ruby-value">:id</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span> <span class="ruby-comment"># Useful for HasOne (ho_assoc)</span>
+    <span class="ruby-identifier">customer</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">att</span>[<span class="ruby-value">:id</span>])
+    <span class="ruby-identifier">customer</span>.<span class="ruby-identifier">attributes</span> = <span class="ruby-identifier">std_atts</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">customer</span> = <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">std_atts</span>)
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment"># clean associations</span>
+
+  <span class="ruby-identifier">customer</span>.<span class="ruby-identifier">user_load_from_params</span>(<span class="ruby-identifier">att</span>[<span class="ruby-value">:user</span>])
+
+  <span class="ruby-comment">#clean binaries</span>
+
+  <span class="ruby-identifier">customer</span>.<span class="ruby-identifier">photo_load_from_params</span>(<span class="ruby-identifier">att</span>)
+
+  <span class="ruby-comment">#clean serialized data</span>
+
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">customer</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- load_from_params-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- load_from_params-method -->
+
+    
+      <div id="method-c-named_scope_active_filter_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">named_scope_active_filter_method</span><span
+            class="method-args">(hash)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>9</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-02-03 20:51:21 UTC</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="named_scope_active_filter_method-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 293</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">named_scope_active_filter_method</span>(<span class="ruby-identifier">hash</span>)
+
+    <span class="ruby-comment">#hash looks like {'field1' =&gt; {'op' =&gt; value}, 'field2' =&gt; ... }</span>
+    <span class="ruby-comment">#op could be =, !=, ^=, $=, =~, !~, &gt;, &lt;, &gt;=, &lt;=, IN, FTS...</span>
+
+    <span class="ruby-identifier">hash</span> <span class="ruby-operator">||=</span> {}
+    <span class="ruby-identifier">values</span> = []
+    <span class="ruby-identifier">joins_fields</span> = []
+    <span class="ruby-identifier">_scopes</span> = <span class="ruby-keyword">nil</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">hash</span>[<span class="ruby-string">'_scopes'</span>].<span class="ruby-identifier">blank?</span>
+      (<span class="ruby-node">%w()</span> &amp; <span class="ruby-identifier">hash</span>[<span class="ruby-string">'_scopes'</span>]).<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">s</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">_scopes</span> = (<span class="ruby-identifier">_scopes</span> <span class="ruby-operator">||</span> <span class="ruby-keyword">self</span>).<span class="ruby-identifier">send</span>(<span class="ruby-identifier">s</span>.<span class="ruby-identifier">to_sym</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">str</span> = <span class="ruby-identifier">hash</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">field</span>, <span class="ruby-identifier">pairs</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">if</span> [<span class="ruby-value">:first_name</span>, <span class="ruby-value">:last_name</span>, <span class="ruby-value">:photo</span>, <span class="ruby-value">:user</span>, <span class="ruby-value">:user_id</span>, <span class="ruby-value">:new_date</span>, <span class="ruby-value">:new_string</span>
+      ].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">field</span>.<span class="ruby-identifier">to_sym</span>)
+      <span class="ruby-constant">Array</span>(<span class="ruby-identifier">pairs</span>).<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">op</span>,<span class="ruby-identifier">val</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-constant">COMPARATORS</span>[<span class="ruby-identifier">field</span>.<span class="ruby-identifier">to_sym</span>][<span class="ruby-identifier">op</span>]
+        <span class="ruby-identifier">values</span> <span class="ruby-operator">&lt;&lt;</span> (<span class="ruby-identifier">cmp</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">val</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">%</span> <span class="ruby-identifier">val</span>)) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">cmp</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">cmp</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-string">''</span>
+        <span class="ruby-identifier">cmp</span>[<span class="ruby-value">0</span>]
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">elsif</span> [
+    ].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">field</span>.<span class="ruby-identifier">to_sym</span>)
+    <span class="ruby-constant">Array</span>(<span class="ruby-identifier">pairs</span>).<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">op</span>,<span class="ruby-identifier">val</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">cmp</span> = <span class="ruby-constant">COMPARATORS</span>[<span class="ruby-identifier">field</span>.<span class="ruby-identifier">to_sym</span>][<span class="ruby-identifier">op</span>]
+      <span class="ruby-identifier">values</span> <span class="ruby-operator">+=</span> <span class="ruby-constant">Array</span>(<span class="ruby-identifier">val</span>)
+      <span class="ruby-string">&quot;(%s)&quot;</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">val</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">cmp</span>[<span class="ruby-value">0</span>] }.<span class="ruby-identifier">join</span>(<span class="ruby-string">' OR '</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+}.<span class="ruby-identifier">compact</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">' AND '</span>)
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">_scopes</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">_scopes</span>.<span class="ruby-identifier">proxy_options</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">values</span>.<span class="ruby-identifier">blank?</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">_scopes</span>.<span class="ruby-identifier">joins</span>(<span class="ruby-identifier">joins_fields</span>).<span class="ruby-identifier">where</span>(<span class="ruby-identifier">values</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">str</span>)).<span class="ruby-identifier">proxy_options</span>
+<span class="ruby-keyword">else</span>
+  <span class="ruby-identifier">res</span> = <span class="ruby-identifier">joins_fields</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> {} <span class="ruby-operator">:</span> {<span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">joins_fields</span>}
+  <span class="ruby-identifier">res</span>[<span class="ruby-value">:conditions</span>] = <span class="ruby-identifier">values</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">str</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">res</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- named_scope_active_filter_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- named_scope_active_filter_method-method -->
+
+    
+      <div id="method-c-named_scope_default_scope_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">named_scope_default_scope_method</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>5</p>
+</dd><dt>Last Update
+<dd>
+<p>2009-11-01 16:01:43 UTC</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="named_scope_default_scope_method-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 281</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">named_scope_default_scope_method</span>
+
+  {}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- named_scope_default_scope_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- named_scope_default_scope_method-method -->
+
+    
+      <div id="method-c-photo_folder" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">photo_folder</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>BINARIES CONSTANTS</p>
+          
+
+          
+          <div class="method-source-code" id="photo_folder-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 660</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo_folder</span>
+
+<span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(*(<span class="ruby-string">'files/photo'</span>).<span class="ruby-identifier">split</span>(<span class="ruby-string">'/'</span>))
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- photo_folder-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- photo_folder-method -->
+
+    
+      <div id="method-c-search" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">search</span><span
+            class="method-args">(values, comps=nil, opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Search</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>23</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-08-09 11:16:42 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="search-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 135</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">search</span>(<span class="ruby-identifier">values</span>, <span class="ruby-identifier">comps</span>=<span class="ruby-keyword">nil</span>, <span class="ruby-identifier">opts</span>={})
+  <span class="ruby-identifier">ar_opts</span> = {}
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">values</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">SmartQuery</span>)
+    <span class="ruby-identifier">ar_opts</span> = <span class="ruby-identifier">values</span>.<span class="ruby-identifier">to_ar_opts</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">cond</span> = {}
+    <span class="ruby-identifier">inc</span> = []
+    <span class="ruby-identifier">string_h</span> = {<span class="ruby-string">'='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'&lt;&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ne</span>, <span class="ruby-string">'=~'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:like</span>, <span class="ruby-string">'!=~'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:not</span>,
+      <span class="ruby-string">'LIKE'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:eq</span>, <span class="ruby-string">'NOT LIKE'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ne</span>, <span class="ruby-string">'STARTS WITH'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:starts_with</span>, <span class="ruby-string">'ENDS WITH'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ends_with</span>,
+    <span class="ruby-string">'IS NULL'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'IN'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-identifier">numb_h</span> = {<span class="ruby-string">'='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'&lt;&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ne</span>, <span class="ruby-string">'&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:gt</span>, <span class="ruby-string">'&lt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lt</span>, <span class="ruby-string">'&gt;='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:gte</span>, <span class="ruby-string">'&lt;='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lte</span>, <span class="ruby-string">'IS NULL'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'IN'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-identifier">date_h</span> = {<span class="ruby-string">'='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'&lt;&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ne</span>, <span class="ruby-string">'&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:gt</span>, <span class="ruby-string">'&lt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lt</span>, <span class="ruby-string">'&gt;='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:gte</span>, <span class="ruby-string">'&lt;='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lte</span>, <span class="ruby-string">'IS NULL'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'IN'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-identifier">bin_h</span> = {<span class="ruby-string">'is named'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:eq</span>, <span class="ruby-string">'size larger than'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:gte</span>, <span class="ruby-string">'size smaller than'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lte</span>, <span class="ruby-string">'is not set'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-identifier">assoc_h</span> = {<span class="ruby-string">'&lt;&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ne</span>, <span class="ruby-string">'='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'IN'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'IS NULL'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">params_to_attributes</span>(<span class="ruby-identifier">values</span>).<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">case</span> <span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_sym</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:first_name</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_first_name&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'STARTS WITH'</span>
+        <span class="ruby-identifier">val</span> = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IN'</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>)
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">string_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:first_name</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;first_name_#{string_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:last_name</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_last_name&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'STARTS WITH'</span>
+        <span class="ruby-identifier">val</span> = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IN'</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>)
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">string_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:last_name</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;last_name_#{string_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:user_id</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_user_id&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'IN'</span>
+        <span class="ruby-identifier">vals</span>  = <span class="ruby-identifier">val</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Enumerable</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>).<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:to_i</span>)
+        <span class="ruby-identifier">val</span>   = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">vals</span>
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">numb_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:user_id</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;user_id_#{numb_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:new_date</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_new_date&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'='</span>
+        <span class="ruby-identifier">val</span> = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IN'</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>)
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">date_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:new_date</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;new_date_#{date_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:new_string</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_new_string&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'STARTS WITH'</span>
+        <span class="ruby-identifier">val</span> = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IN'</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>)
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">string_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:new_string</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;new_string_#{string_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">end</span>
+    }
+    <span class="ruby-identifier">ar_opts</span> = {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">cond</span>}
+    <span class="ruby-identifier">ar_opts</span>[<span class="ruby-value">:include</span>] = <span class="ruby-identifier">inc</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">inc</span>.<span class="ruby-identifier">blank?</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">ar_opts</span>[<span class="ruby-value">:per_page</span>] = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:per_page</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">opts</span>[<span class="ruby-value">:per_page</span>] <span class="ruby-operator">:</span> <span class="ruby-identifier">count</span>(<span class="ruby-value">:all</span>, <span class="ruby-identifier">ar_opts</span>)
+  <span class="ruby-identifier">ar_opts</span>[<span class="ruby-value">:per_page</span>] = <span class="ruby-value">1</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">ar_opts</span>[<span class="ruby-value">:per_page</span>] <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+  <span class="ruby-identifier">ar_opts</span>[<span class="ruby-value">:page</span>]         = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:page</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">opts</span>[<span class="ruby-value">:page</span>] <span class="ruby-operator">:</span> <span class="ruby-value">1</span>
+  <span class="ruby-identifier">paginate</span>(<span class="ruby-identifier">ar_opts</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- search-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- search-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-disp_name" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">disp_name</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>The <a href="Customer.html#method-i-disp_name">#disp_name</a> is how any
+record will appear in most use cases, such as lists of associated records
+during ‘show’, ‘list’…</p>
+
+<p><a href="Faveod.html">Faveod</a> will try to guess the best single field,
+based on SID, usually from fields containing “Title”, “Name” or
+“Label”.</p>
+
+<p>Customized code often will often look like these snippets: Multiple key:
+“#{self.first_name} #{self.last_name}” <a href="Date.html">Date</a> or
+time: “#{self.name} #{self.created_at.strftime(‘%H:%M %y-%m-%d’) if
+self.created_at}” Associations: “#{self.name} #{self.user ?
+self.user.disp_name : _(‘No user’)}”</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-05-31 17:21:54 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="disp_name-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 122</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">disp_name</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">last_name</span> <span class="ruby-operator">||</span> <span class="ruby-string">''</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- disp_name-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- disp_name-method -->
+
+    
+      <div id="method-i-next" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">next</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns next element.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>1</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-04-02 13:10:22 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="next-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 271</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">next</span>
+
+  <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">first</span>(<span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'customers.id'</span>, <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;customers.id &gt; ?&quot;</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">id</span>])
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- next-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- next-method -->
+
+    
+      <div id="method-i-photo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">photo</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Pierre Carrio</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-11-29 17:07:41 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="photo-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 370</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">photo</span>
+
+<span class="ruby-keyword">if</span> <span class="ruby-ivar">@photo_cache</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:tmp</span>]
+  <span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>] = <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">FILES_DEST_PHOTO</span>, <span class="ruby-string">'cache'</span>, <span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:tmp</span>])
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">if</span> <span class="ruby-ivar">@photo_cache</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>])
+  <span class="ruby-keyword">return</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>])
+<span class="ruby-keyword">else</span>
+  <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__path</span>, <span class="ruby-string">'r'</span>).<span class="ruby-identifier">read</span> <span class="ruby-keyword">unless</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">new_record?</span> <span class="ruby-operator">||</span> <span class="ruby-operator">!</span><span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__path</span>)
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- photo-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- photo-method -->
+
+    
+      <div id="method-i-photo-3D" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">photo=</span><span
+            class="method-args">(val)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Sets everything up when saving a file field.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>9</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-07-17 02:09:04 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="photo-3D-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 425</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">photo=</span>(<span class="ruby-identifier">val</span>)
+
+<span class="ruby-comment"># make cache dir</span>
+
+<span class="ruby-identifier">cdir</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">FILES_DEST_PHOTO</span>, <span class="ruby-string">'cache'</span>)
+<span class="ruby-constant">FileUtils</span>.<span class="ruby-identifier">makedirs</span>(<span class="ruby-identifier">cdir</span>) <span class="ruby-keyword">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-identifier">cdir</span>)
+
+<span class="ruby-comment"># remove existing cache file (create) or file (update)</span>
+
+<span class="ruby-constant">File</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>]) <span class="ruby-keyword">if</span> <span class="ruby-ivar">@photo_cache</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>])
+<span class="ruby-constant">File</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__path</span>) <span class="ruby-keyword">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__path</span>)
+
+<span class="ruby-comment">#set cache, prepare for failed validation or after_create trigger</span>
+
+<span class="ruby-ivar">@photo_cache</span> <span class="ruby-operator">||=</span> {}
+<span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:name</span>] = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">attributes</span>[<span class="ruby-string">'photo__name'</span>]
+<span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:tmp</span>] = <span class="ruby-node">&quot;#{UUID.new.generate}--#{@photo_cache[:name]}&quot;</span>
+<span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>] = <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-identifier">cdir</span>, <span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:tmp</span>])
+<span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>], <span class="ruby-string">'wb'</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-identifier">f</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">val</span>) }
+
+<span class="ruby-comment">#TODO</span>
+
+<span class="ruby-keyword">return</span> <span class="ruby-identifier">val</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- photo-3D-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- photo-3D-method -->
+
+    
+      <div id="method-i-photo__after_create_trigger" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">photo__after_create_trigger</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Rename the file correctly on the file system after create.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Pierre Carrio</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-12-03 09:41:10 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="photo__after_create_trigger-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 489</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">photo__after_create_trigger</span>
+
+<span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@photo_cache</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:tmp</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>] = <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">FILES_DEST_PHOTO</span>, <span class="ruby-string">'cache'</span>, <span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:tmp</span>])
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@photo_cache</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>]
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>])
+    <span class="ruby-constant">File</span>.<span class="ruby-identifier">rename</span>(<span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>], <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">FILES_DEST_PHOTO</span>, <span class="ruby-node">&quot;#{self.id}_#{self.photo__name}&quot;</span>))
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">warn</span>(<span class="ruby-node">&quot;Should not happen! cache: #{@photo_cache.inspect} - name: #{self.photo__name}&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-ivar">@photo_cache</span> = {}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- photo__after_create_trigger-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- photo__after_create_trigger-method -->
+
+    
+      <div id="method-i-photo__after_destroy_trigger" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">photo__after_destroy_trigger</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Remove files of destroyed row.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>1</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-01-18 01:12:31 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="photo__after_destroy_trigger-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 542</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">photo__after_destroy_trigger</span>
+
+<span class="ruby-constant">Dir</span>[<span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">FILES_DEST_PHOTO</span>, <span class="ruby-node">&quot;#{self.id}_*&quot;</span>)].<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">f</span>)}
+<span class="ruby-constant">Dir</span>[<span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">FILES_DEST_PHOTO__THUMBS</span>, <span class="ruby-node">&quot;#{self.id}_*&quot;</span>)].<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">f</span>)}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- photo__after_destroy_trigger-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- photo__after_destroy_trigger-method -->
+
+    
+      <div id="method-i-photo__after_update_trigger" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">photo__after_update_trigger</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Rename Files correctly after update.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Pierre Carrio</p>
+</dd><dt>Version
+<dd>
+<p>5</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-12-03 09:40:46 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="photo__after_update_trigger-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 513</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">photo__after_update_trigger</span>
+
+<span class="ruby-constant">Dir</span>[<span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">FILES_DEST_PHOTO__THUMBS</span>, <span class="ruby-node">&quot;#{self.id}_*&quot;</span>)].<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">f</span>); <span class="ruby-keyword">break</span>} <span class="ruby-comment">#will be regenerated</span>
+<span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@photo_cache</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:tmp</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>] = <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">FILES_DEST_PHOTO</span>, <span class="ruby-string">'cache'</span>, <span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:tmp</span>])
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@photo_cache</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>])
+  <span class="ruby-constant">Dir</span>[<span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">FILES_DEST_PHOTO</span>, <span class="ruby-node">&quot;#{self.id}_*&quot;</span>)].<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">f</span>); <span class="ruby-keyword">break</span>}
+  <span class="ruby-identifier">dest</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">FILES_DEST_PHOTO</span>, <span class="ruby-node">&quot;#{self.id}_#{self.photo__name}&quot;</span>)
+  <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;=== CACHE [#{@photo_cache[:path].inspect}] DEST [#{dest.inspect}]&quot;</span>)
+  <span class="ruby-constant">FileUtils</span>.<span class="ruby-identifier">mv</span>(<span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>], <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">FILES_DEST_PHOTO</span>, <span class="ruby-node">&quot;#{self.id}_#{self.photo__name}&quot;</span>))
+<span class="ruby-keyword">else</span>
+  <span class="ruby-identifier">src</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__path</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-constant">File</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-identifier">src</span>) <span class="ruby-comment"># bad name</span>
+    <span class="ruby-constant">Dir</span>[<span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">FILES_DEST_PHOTO</span>, <span class="ruby-node">&quot;#{self.id}_*&quot;</span>)].<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">rename</span>(<span class="ruby-identifier">f</span>, <span class="ruby-identifier">src</span>); <span class="ruby-keyword">break</span>}
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-ivar">@photo_cache</span> = {}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- photo__after_update_trigger-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- photo__after_update_trigger-method -->
+
+    
+      <div id="method-i-photo__cache" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">photo__cache</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>return current cache hash</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>6</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-11-30 10:43:55 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="photo__cache-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 557</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">photo__cache</span>
+<span class="ruby-ivar">@photo_cache</span> <span class="ruby-operator">||=</span> {}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- photo__cache-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- photo__cache-method -->
+
+    
+      <div id="method-i-photo__mime_type" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">photo__mime_type</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the MIME Type of current file (based on its name).</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>1</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-01-18 00:43:35 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="photo__mime_type-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 473</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">photo__mime_type</span>
+<span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__name</span>.<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">mt</span> = <span class="ruby-constant">MIME</span><span class="ruby-operator">::</span><span class="ruby-constant">Types</span>.<span class="ruby-identifier">of</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">extname</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__name</span>)).<span class="ruby-identifier">first</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">mt</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">mt</span>.<span class="ruby-identifier">content_type</span> <span class="ruby-operator">:</span> <span class="ruby-string">&quot;application/octet-stream&quot;</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- photo__mime_type-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- photo__mime_type-method -->
+
+    
+      <div id="method-i-photo__path" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">photo__path</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Gives the file path.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Pierre Carrio</p>
+</dd><dt>Version
+<dd>
+<p>3</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-11-29 17:08:18 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="photo__path-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 391</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">photo__path</span>
+<span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@photo_cache</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-ivar">@photo_cache</span>[<span class="ruby-value">:path</span>]
+<span class="ruby-keyword">else</span>
+  <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">FILES_DEST_PHOTO</span>, <span class="ruby-node">&quot;#{self.id}_#{self.photo__name}&quot;</span>)
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- photo__path-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- photo__path-method -->
+
+    
+      <div id="method-i-photo__size" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">photo__size</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Gives the file size.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>3</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-01-16 14:40:38 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="photo__size-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 408</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">photo__size</span>
+<span class="ruby-keyword">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__path</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">size</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__path</span>)
+<span class="ruby-keyword">else</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">:</span> <span class="ruby-value">0</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- photo__size-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- photo__size-method -->
+
+    
+      <div id="method-i-photo__thumb_path" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">photo__thumb_path</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns thumbnails path for the current data.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>1</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-01-18 00:31:32 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="photo__thumb_path-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 459</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">photo__thumb_path</span>
+
+<span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">FILES_DEST_PHOTO__THUMBS</span>, <span class="ruby-constant">File</span>.<span class="ruby-identifier">basename</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__path</span>))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- photo__thumb_path-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- photo__thumb_path-method -->
+
+    
+      <div id="method-i-photo_load_from_params" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">photo_load_from_params</span><span
+            class="method-args">(att)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Load binary from params.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>1</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-07-17 15:50:35 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="photo_load_from_params-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 570</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">photo_load_from_params</span>(<span class="ruby-identifier">att</span>)
+
+<span class="ruby-identifier">val</span> = <span class="ruby-identifier">att</span>[<span class="ruby-value">:photo</span>]
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">val</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">val</span> <span class="ruby-operator">==</span> <span class="ruby-string">'_destroy'</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__name</span> = <span class="ruby-keyword">nil</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">val</span> <span class="ruby-operator">==</span> <span class="ruby-string">'_forget'</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">val</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+    <span class="ruby-identifier">att</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:photo</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__name</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">basename</span>(<span class="ruby-identifier">val</span>.<span class="ruby-identifier">original_filename</span>).<span class="ruby-identifier">parameterize</span>.<span class="ruby-identifier">sub</span>(<span class="ruby-regexp">%r(-)(\w+)\Z/</span>, <span class="ruby-string">'.\2'</span>)
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo</span> = <span class="ruby-identifier">val</span>.<span class="ruby-identifier">read</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">else</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">att</span>[<span class="ruby-value">:photo_tmp</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">att</span>[<span class="ruby-value">:photo_name</span>].<span class="ruby-identifier">blank?</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__name</span>         = <span class="ruby-identifier">att</span>[<span class="ruby-value">:photo_name</span>]
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__cache</span>[<span class="ruby-value">:name</span>] = <span class="ruby-identifier">att</span>[<span class="ruby-value">:photo_name</span>]
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__cache</span>[<span class="ruby-value">:tmp</span>]  = <span class="ruby-identifier">att</span>[<span class="ruby-value">:photo_tmp</span>]
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- photo_load_from_params-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- photo_load_from_params-method -->
+
+    
+      <div id="method-i-previous" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">previous</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Return the previous element.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>1</p>
+</dd><dt>Last Update
+<dd>
+<p>2009-09-14 14:48:02 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="previous-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 257</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">previous</span>
+
+  <span class="ruby-constant">Customer</span>.<span class="ruby-identifier">first</span>(<span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'customers.id DESC'</span>, <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;customers.id &lt; ?&quot;</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">id</span>])
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- previous-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- previous-method -->
+
+    
+      <div id="method-i-thumbnail" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">thumbnail</span><span
+            class="method-args">(sid, opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Creates the thumbnail and returns it.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>8</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-09-03 16:56:08 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="thumbnail-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 202</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">thumbnail</span>(<span class="ruby-identifier">sid</span>, <span class="ruby-identifier">opts</span>={})
+
+  <span class="ruby-identifier">maxwidth</span>    = (<span class="ruby-identifier">opts</span>[<span class="ruby-value">:maxwidth</span>] <span class="ruby-operator">||</span> <span class="ruby-value">128</span>).<span class="ruby-identifier">to_f</span>
+  <span class="ruby-identifier">maxheight</span>   = (<span class="ruby-identifier">opts</span>[<span class="ruby-value">:maxheight</span>] <span class="ruby-operator">||</span> <span class="ruby-value">128</span>).<span class="ruby-identifier">to_f</span>
+  <span class="ruby-identifier">aspectratio</span> = <span class="ruby-identifier">maxwidth</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">maxheight</span>
+  <span class="ruby-identifier">path</span>                = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">dest_path</span>   = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">pic</span>         = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">sid</span>.<span class="ruby-identifier">to_sym</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:photo</span>
+    <span class="ruby-identifier">path</span>              = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__path</span>
+    <span class="ruby-identifier">dest_path</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo__thumb_path</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">pic</span>    = <span class="ruby-identifier">path</span> <span class="ruby-operator">?</span> <span class="ruby-constant">Magick</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">path</span>).<span class="ruby-identifier">first</span> <span class="ruby-operator">:</span> <span class="ruby-constant">Magick</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">from_blob</span>(<span class="ruby-identifier">pic</span>).<span class="ruby-identifier">first</span>
+  <span class="ruby-identifier">imgwidth</span>  = <span class="ruby-identifier">pic</span>.<span class="ruby-identifier">columns</span>
+  <span class="ruby-identifier">imgheight</span> = <span class="ruby-identifier">pic</span>.<span class="ruby-identifier">rows</span>
+  <span class="ruby-identifier">imgratio</span>  = <span class="ruby-identifier">imgwidth</span>.<span class="ruby-identifier">to_f</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">imgheight</span>.<span class="ruby-identifier">to_f</span>
+  <span class="ruby-identifier">scaleratio</span>= <span class="ruby-identifier">imgratio</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">aspectratio</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">maxwidth</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">imgwidth</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">maxheight</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">imgheight</span>
+  <span class="ruby-identifier">thumb</span>          = <span class="ruby-identifier">pic</span>.<span class="ruby-identifier">thumbnail</span>(<span class="ruby-identifier">scaleratio</span>)
+  <span class="ruby-identifier">thumb</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">dest_path</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">dest_path</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">thumb</span>.<span class="ruby-identifier">to_blob</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- thumbnail-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- thumbnail-method -->
+
+    
+      <div id="method-i-user__potential_values" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">user__potential_values</span><span
+            class="method-args">(options = {})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>3</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-03-19 01:57:30 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="user__potential_values-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 600</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">user__potential_values</span>(<span class="ruby-identifier">options</span> = {})
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">options</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:page</span>)
+  <span class="ruby-constant">User</span>.<span class="ruby-identifier">paginate</span>(<span class="ruby-identifier">options</span>)
+<span class="ruby-keyword">else</span>
+  <span class="ruby-constant">User</span>.<span class="ruby-identifier">all</span>(<span class="ruby-identifier">options</span>)
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- user__potential_values-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- user__potential_values-method -->
+
+    
+      <div id="method-i-user_human_display" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">user_human_display</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>useful method</p>
+          
+
+          
+          <div class="method-source-code" id="user_human_display-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 339</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">user_human_display</span>
+
+<span class="ruby-keyword">return</span> <span class="ruby-identifier">user</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">user</span>.<span class="ruby-identifier">disp_name</span> <span class="ruby-operator">:</span> <span class="ruby-string">&quot;&quot;</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- user_human_display-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- user_human_display-method -->
+
+    
+      <div id="method-i-user_load_from_params" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">user_load_from_params</span><span
+            class="method-args">(val)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Load association from different params formats.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-10-02 15:11:56 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="user_load_from_params-source">
+            <pre><span class="ruby-comment"># File app/models/customer.rb, line 617</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">user_load_from_params</span>(<span class="ruby-identifier">val</span>)
+
+<span class="ruby-keyword">self</span>.<span class="ruby-identifier">user_was</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">user</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">val</span>
+<span class="ruby-keyword">case</span> <span class="ruby-identifier">val</span>
+<span class="ruby-keyword">when</span> <span class="ruby-constant">Hash</span>, <span class="ruby-constant">HashWithIndifferentAccess</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">user</span> = <span class="ruby-identifier">val</span>.<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>, <span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">k</span>[<span class="ruby-regexp">%r\A(_|-)\d+/</span>] <span class="ruby-comment"># CREATE</span>
+      <span class="ruby-identifier">elt</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-identifier">v</span>)
+      <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">elt</span>.<span class="ruby-identifier">valid?</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">:user</span>, <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Invalid user: %{d}&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:d</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">full_messages</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">','</span>)})
+        <span class="ruby-keyword">nil</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">elt</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">String</span> <span class="ruby-comment"># UNCHANGED OR DESTROY</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">v</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;-1&quot;</span> <span class="ruby-comment">#DESTROY</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">user</span>.<span class="ruby-identifier">destroy</span>(<span class="ruby-identifier">k</span>) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+        <span class="ruby-identifier">val</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">k</span>)
+        <span class="ruby-keyword">nil</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-constant">User</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">k</span>) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">elt</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-identifier">v</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">k</span>))
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">valid?</span>
+        <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">save</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">changed?</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">:user</span>, <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Invalid user: %{d}&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:d</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">full_messages</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">','</span>)})
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-identifier">elt</span>
+    <span class="ruby-keyword">end</span>
+  }.<span class="ruby-identifier">compact</span>.<span class="ruby-identifier">first</span>
+<span class="ruby-keyword">when</span> <span class="ruby-constant">String</span>, <span class="ruby-constant">Fixnum</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">user</span> = <span class="ruby-identifier">val</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> <span class="ruby-constant">User</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">val</span>)
+<span class="ruby-keyword">when</span> <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">else</span> <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">warn</span>(<span class="ruby-node">&quot;Unexpected params type for 'user': #{val.class}&quot;</span>)
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- user_load_from_params-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- user_load_from_params-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class AccessesController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/accesses_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-download">#download</a>
+    
+    <li><a href="#method-i-index">#index</a>
+    
+    <li><a href="#method-i-linker">#linker</a>
+    
+    <li><a href="#method-i-list">#list</a>
+    
+    <li><a href="#method-i-permissions">#permissions</a>
+    
+    <li><a href="#method-i-report_check_params">#report_check_params</a>
+    
+    <li><a href="#method-i-report_chooser">#report_chooser</a>
+    
+    <li><a href="#method-i-report_convert_to_html">#report_convert_to_html</a>
+    
+    <li><a href="#method-i-report_convert_to_ofc">#report_convert_to_ofc</a>
+    
+    <li><a href="#method-i-report_generate">#report_generate</a>
+    
+    <li><a href="#method-i-report_load_datasets">#report_load_datasets</a>
+    
+    <li><a href="#method-i-report_load_labels">#report_load_labels</a>
+    
+    <li><a href="#method-i-report_load_title">#report_load_title</a>
+    
+    <li><a href="#method-i-reporting">#reporting</a>
+    
+    <li><a href="#method-i-reporting_data">#reporting_data</a>
+    
+    <li><a href="#method-i-set_access">#set_access</a>
+    
+    <li><a href="#method-i-set_permission">#set_permission</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Faveod.html">Faveod</a>
+  
+    <li><a href="./Faveod/AVBBFTranslationService.html">Faveod::AVBBFTranslationService</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions.html">Faveod::ActiveResourceExtensions</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions/ClassMethods.html">Faveod::ActiveResourceExtensions::ClassMethods</a>
+  
+    <li><a href="./Faveod/DistributedColors.html">Faveod::DistributedColors</a>
+  
+    <li><a href="./Faveod/GoogleTranslationService.html">Faveod::GoogleTranslationService</a>
+  
+    <li><a href="./Faveod/GraphMaker.html">Faveod::GraphMaker</a>
+  
+    <li><a href="./Faveod/HtmlTruncator.html">Faveod::HtmlTruncator</a>
+  
+    <li><a href="./Faveod/IePdfHeadersMiddleware.html">Faveod::IePdfHeadersMiddleware</a>
+  
+    <li><a href="./Faveod/PoUtils.html">Faveod::PoUtils</a>
+  
+    <li><a href="./Faveod/TranslationServer.html">Faveod::TranslationServer</a>
+  
+    <li><a href="./Faveod/TranslationServicesHelper.html">Faveod::TranslationServicesHelper</a>
+  
+    <li><a href="./Faveod/Validations.html">Faveod::Validations</a>
+  
+    <li><a href="./Faveod/Validations/Syntax.html">Faveod::Validations::Syntax</a>
+  
+    <li><a href="./Faveod/Validations/Syntax/ClassMethods.html">Faveod::Validations::Syntax::ClassMethods</a>
+  
+    <li><a href="./ActiveRecord.html">ActiveRecord</a>
+  
+    <li><a href="./ActiveRecord/Base.html">ActiveRecord::Base</a>
+  
+    <li><a href="./ActiveRecord/Condition.html">ActiveRecord::Condition</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters.html">ActiveRecord::ConnectionAdapters</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters/Column.html">ActiveRecord::ConnectionAdapters::Column</a>
+  
+    <li><a href="./ActiveRecord/Validations.html">ActiveRecord::Validations</a>
+  
+    <li><a href="./ActiveRecord/Validations/ClassMethods.html">ActiveRecord::Validations::ClassMethods</a>
+  
+    <li><a href="./ActionView.html">ActionView</a>
+  
+    <li><a href="./ActionView/Helpers.html">ActionView::Helpers</a>
+  
+    <li><a href="./ActionView/Helpers/FormOptionsHelper.html">ActionView::Helpers::FormOptionsHelper</a>
+  
+    <li><a href="./DefaultFinder.html">DefaultFinder</a>
+  
+    <li><a href="./DefaultFinder/Finder.html">DefaultFinder::Finder</a>
+  
+    <li><a href="./DefaultFinder/Finder/ClassMethods.html">DefaultFinder::Finder::ClassMethods</a>
+  
+    <li><a href="./IrbjaxEngine.html">IrbjaxEngine</a>
+  
+    <li><a href="./IrbjaxEngine/IrbjaxSession.html">IrbjaxEngine::IrbjaxSession</a>
+  
+    <li><a href="./IrbjaxEngine/Output.html">IrbjaxEngine::Output</a>
+  
+    <li><a href="./SymetrieCom.html">SymetrieCom</a>
+  
+    <li><a href="./SymetrieCom/Acts.html">SymetrieCom::Acts</a>
+  
+    <li><a href="./SymetrieCom/Acts/BetterNestedSetHelper.html">SymetrieCom::Acts::BetterNestedSetHelper</a>
+  
+    <li><a href="./GetText.html">GetText</a>
+  
+    <li><a href="./GetText/PoParser.html">GetText::PoParser</a>
+  
+    <li><a href="./Rack.html">Rack</a>
+  
+    <li><a href="./Rack/Utils.html">Rack::Utils</a>
+  
+    <li><a href="./WillPaginate.html">WillPaginate</a>
+  
+    <li><a href="./WillPaginate/ViewHelpers.html">WillPaginate::ViewHelpers</a>
+  
+    <li><a href="./AbstractReport.html">AbstractReport</a>
+  
+    <li><a href="./Access.html">Access</a>
+  
+    <li><a href="./AccessApi.html">AccessApi</a>
+  
+    <li><a href="./AccessReport.html">AccessReport</a>
+  
+    <li><a href="./AccessesController.html">AccessesController</a>
+  
+    <li><a href="./AccessesHelper.html">AccessesHelper</a>
+  
+    <li><a href="./AppLocale.html">AppLocale</a>
+  
+    <li><a href="./AppLocaleApi.html">AppLocaleApi</a>
+  
+    <li><a href="./AppLocalesController.html">AppLocalesController</a>
+  
+    <li><a href="./AppLocalesHelper.html">AppLocalesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BgWorker.html">BgWorker</a>
+  
+    <li><a href="./BgWorkerApi.html">BgWorkerApi</a>
+  
+    <li><a href="./BgWorkerReport.html">BgWorkerReport</a>
+  
+    <li><a href="./BgWorkersController.html">BgWorkersController</a>
+  
+    <li><a href="./BgWorkersHelper.html">BgWorkersHelper</a>
+  
+    <li><a href="./Customer.html">Customer</a>
+  
+    <li><a href="./CustomerApi.html">CustomerApi</a>
+  
+    <li><a href="./CustomersController.html">CustomersController</a>
+  
+    <li><a href="./CustomersHelper.html">CustomersHelper</a>
+  
+    <li><a href="./Date.html">Date</a>
+  
+    <li><a href="./DateHelper.html">DateHelper</a>
+  
+    <li><a href="./DevFeedback.html">DevFeedback</a>
+  
+    <li><a href="./DevFeedbackApi.html">DevFeedbackApi</a>
+  
+    <li><a href="./DevFeedbacksController.html">DevFeedbacksController</a>
+  
+    <li><a href="./DevFeedbacksHelper.html">DevFeedbacksHelper</a>
+  
+    <li><a href="./Enumerable.html">Enumerable</a>
+  
+    <li><a href="./FileImport.html">FileImport</a>
+  
+    <li><a href="./FileImportApi.html">FileImportApi</a>
+  
+    <li><a href="./FileImportReport.html">FileImportReport</a>
+  
+    <li><a href="./FileImportsController.html">FileImportsController</a>
+  
+    <li><a href="./FileImportsHelper.html">FileImportsHelper</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./PdfHandler.html">PdfHandler</a>
+  
+    <li><a href="./Profile.html">Profile</a>
+  
+    <li><a href="./ProfileAccess.html">ProfileAccess</a>
+  
+    <li><a href="./ProfileAccessApi.html">ProfileAccessApi</a>
+  
+    <li><a href="./ProfileAccessesController.html">ProfileAccessesController</a>
+  
+    <li><a href="./ProfileAccessesHelper.html">ProfileAccessesHelper</a>
+  
+    <li><a href="./ProfileApi.html">ProfileApi</a>
+  
+    <li><a href="./ProfilesController.html">ProfilesController</a>
+  
+    <li><a href="./ProfilesHelper.html">ProfilesHelper</a>
+  
+    <li><a href="./RBeautify.html">RBeautify</a>
+  
+    <li><a href="./Range.html">Range</a>
+  
+    <li><a href="./SavedReport.html">SavedReport</a>
+  
+    <li><a href="./SavedReportApi.html">SavedReportApi</a>
+  
+    <li><a href="./SavedReportsController.html">SavedReportsController</a>
+  
+    <li><a href="./SavedReportsHelper.html">SavedReportsHelper</a>
+  
+    <li><a href="./SmartQueriesController.html">SmartQueriesController</a>
+  
+    <li><a href="./SmartQueriesHelper.html">SmartQueriesHelper</a>
+  
+    <li><a href="./SmartQuery.html">SmartQuery</a>
+  
+    <li><a href="./SmartQueryApi.html">SmartQueryApi</a>
+  
+    <li><a href="./SystemSetting.html">SystemSetting</a>
+  
+    <li><a href="./SystemSettingApi.html">SystemSettingApi</a>
+  
+    <li><a href="./SystemSettingsController.html">SystemSettingsController</a>
+  
+    <li><a href="./SystemSettingsHelper.html">SystemSettingsHelper</a>
+  
+    <li><a href="./Thumbnailer.html">Thumbnailer</a>
+  
+    <li><a href="./Translation.html">Translation</a>
+  
+    <li><a href="./TranslationApi.html">TranslationApi</a>
+  
+    <li><a href="./TranslationsController.html">TranslationsController</a>
+  
+    <li><a href="./TranslationsHelper.html">TranslationsHelper</a>
+  
+    <li><a href="./UncatchedException.html">UncatchedException</a>
+  
+    <li><a href="./UncatchedExceptionApi.html">UncatchedExceptionApi</a>
+  
+    <li><a href="./UncatchedExceptionMailer.html">UncatchedExceptionMailer</a>
+  
+    <li><a href="./UncatchedExceptionsController.html">UncatchedExceptionsController</a>
+  
+    <li><a href="./UncatchedExceptionsHelper.html">UncatchedExceptionsHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserAccess.html">UserAccess</a>
+  
+    <li><a href="./UserAccessApi.html">UserAccessApi</a>
+  
+    <li><a href="./UserAccessesController.html">UserAccessesController</a>
+  
+    <li><a href="./UserAccessesHelper.html">UserAccessesHelper</a>
+  
+    <li><a href="./UserApi.html">UserApi</a>
+  
+    <li><a href="./UserMailer.html">UserMailer</a>
+  
+    <li><a href="./UserReport.html">UserReport</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class AccessesController</h1>
+
+  <div id="description" class="description">
+    
+<pre>This file and all its content belong to Faveod S.A.S unless a commercial
+contract signed by a representant of Faveod S.A.S states otherwise.</pre>
+
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</p>
+
+<pre>This has been generated by Faveod Generator on Thu Oct 31 16:40:24 +0100 2013
+It should be placed at 'app/controllers/accesses_controller.rb'
+All manual modifications will be destroyed on next generation</pre>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-download" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">download</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Allows download of all or current record in many formats.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>46</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-02-11 07:45:35 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="download-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 534</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">download</span>
+
+  <span class="ruby-ivar">@restricted_fields</span> = []
+  <span class="ruby-ivar">@no_menubar</span> = <span class="ruby-keyword">true</span>
+  <span class="ruby-ivar">@no_links</span>   = <span class="ruby-keyword">true</span>
+  <span class="ruby-ivar">@no_filterbar</span>       = <span class="ruby-keyword">true</span>
+  <span class="ruby-ivar">@no_row_links</span>       = <span class="ruby-keyword">true</span>
+  <span class="ruby-identifier">pagin_opts</span>            = {<span class="ruby-value">:include</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:home_page_profiles</span>,<span class="ruby-value">:user_accesses</span>,<span class="ruby-value">:profile_accesses</span>]}
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:order</span>]    = <span class="ruby-ivar">@default_order</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@default_order</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:order</span>]  <span class="ruby-operator">||=</span> <span class="ruby-node">&quot;accesses.#{params[:sort_by]}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:sort_by</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-operator">||=</span> <span class="ruby-ivar">@default_filter</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:joins</span>]  <span class="ruby-operator">||=</span> <span class="ruby-ivar">@joins_fields</span> <span class="ruby-operator">||</span> []
+
+  <span class="ruby-comment"># pagin_opts[:select]       ||= &quot;`accesses`.`app_sid`,`accesses`.`set_sid`,`accesses`.`table_sid`,`accesses`.`field_sid`,`accesses`.`action_sid`,`accesses`.`type_sid`&quot; unless params[:format] == 'html'</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+    <span class="ruby-ivar">@access</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>], <span class="ruby-identifier">pagin_opts</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@access</span>
+      <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Error: %{obj} not found!&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:obj</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">%q[Access]</span>)}
+      <span class="ruby-keyword">begin</span>
+        <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:back</span>
+      <span class="ruby-keyword">rescue</span>
+        <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:list</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">return</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">f_name</span> = <span class="ruby-ivar">@access</span>.<span class="ruby-identifier">disp_name</span>
+    <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> {
+        <span class="ruby-ivar">@no_menubar</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-ivar">@no_links</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-identifier">data</span> = <span class="ruby-identifier">render_to_string</span>(<span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/accesses/show.html.erb'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'minimal'</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r\ssrc=\&quot;\//</span>, <span class="ruby-node">%Q[ src=&quot;#{request.protocol}#{request.host_with_port}/]</span>)
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">data</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;#{f_name}.html&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'text/html;charset=utf-8'</span>) }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">doc</span> {
+        <span class="ruby-ivar">@no_menubar</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-ivar">@no_links</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-identifier">data</span> = <span class="ruby-identifier">render_to_string</span>(<span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/accesses/show.html.erb'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'minimal'</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r\ssrc=\&quot;\//</span>, <span class="ruby-node">%Q[ src=&quot;#{request.protocol}#{request.host_with_port}/]</span>)
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">data</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;#{f_name}.doc&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'application/msword;charset=utf-8'</span>) }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">pdf</span> {
+        <span class="ruby-ivar">@pdf</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-ivar">@debug_pdf</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>]
+        <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] = <span class="ruby-string">'html'</span>
+        <span class="ruby-identifier">html</span> = <span class="ruby-identifier">render_to_string</span>(<span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/accesses/show.html.erb'</span>, <span class="ruby-value">:format</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:html</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@access</span>.<span class="ruby-identifier">id</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'pdf'</span>)
+        <span class="ruby-identifier">html</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">%r\/images\//</span>, <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'public'</span>, <span class="ruby-string">'images/'</span>)) <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>]
+        <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">html</span>,  <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'pdf'</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>]
+        <span class="ruby-identifier">kit</span> = <span class="ruby-constant">PDFKit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">html</span>, <span class="ruby-value">:encoding</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'UTF-8'</span>)
+        <span class="ruby-identifier">kit</span>.<span class="ruby-identifier">stylesheets</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'public'</span>, <span class="ruby-string">'stylesheets'</span>, <span class="ruby-string">'pdf.css'</span>)
+        <span class="ruby-identifier">pdf</span> = <span class="ruby-identifier">kit</span>.<span class="ruby-identifier">to_pdf</span>
+        <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">pdf</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;#{@access.disp_name}.pdf&quot;</span>) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">pdf</span>.<span class="ruby-identifier">blank?</span>
+
+        <span class="ruby-comment"># send_data(render_to_string(:format =&gt; :html, :layout =&gt; false, :action =&gt; :show, :id =&gt; @access.id), :filename =&gt; &quot;#{f_name}.pdf&quot;, :disposition =&gt; 'attachment', :type =&gt; 'application/pdf;charset=utf-8')</span>
+
+        <span class="ruby-keyword">return</span>
+      }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span> {
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-ivar">@access</span>.<span class="ruby-identifier">to_xml</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;#{f_name}.xml&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'text/xml;charset=utf-8'</span>)}
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> {
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-ivar">@access</span>.<span class="ruby-identifier">to_json</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;#{f_name}.json&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'text/json;charset=utf-8'</span>)}
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xls</span> {
+        <span class="ruby-identifier">book</span> = <span class="ruby-constant">Spreadsheet</span><span class="ruby-operator">::</span><span class="ruby-constant">Workbook</span>.<span class="ruby-identifier">new</span>
+        <span class="ruby-identifier">sheet</span> = <span class="ruby-identifier">book</span>.<span class="ruby-identifier">create_worksheet</span>(<span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;accesses&quot;</span>)
+        <span class="ruby-identifier">sheet</span>.<span class="ruby-identifier">row</span>(<span class="ruby-value">0</span>).<span class="ruby-identifier">concat</span>([<span class="ruby-string">&quot;Application&quot;</span>, <span class="ruby-string">&quot;Set&quot;</span>, <span class="ruby-string">&quot;Table&quot;</span>, <span class="ruby-string">&quot;Field&quot;</span>, <span class="ruby-string">&quot;Action&quot;</span>, <span class="ruby-string">&quot;Type&quot;</span>, <span class="ruby-string">&quot;Home Page Profiles&quot;</span>, <span class="ruby-string">&quot;User Accesses&quot;</span>, <span class="ruby-string">&quot;Profile Accesses&quot;</span>])
+        <span class="ruby-identifier">sheet</span>.<span class="ruby-identifier">row</span>(<span class="ruby-value">1</span>).<span class="ruby-identifier">replace</span>([<span class="ruby-ivar">@access</span>.<span class="ruby-identifier">app_sid</span>, <span class="ruby-ivar">@access</span>.<span class="ruby-identifier">set_sid</span>, <span class="ruby-ivar">@access</span>.<span class="ruby-identifier">table_sid</span>, <span class="ruby-ivar">@access</span>.<span class="ruby-identifier">field_sid</span>, <span class="ruby-ivar">@access</span>.<span class="ruby-identifier">action_sid</span>, <span class="ruby-ivar">@access</span>.<span class="ruby-identifier">type_sid</span>, <span class="ruby-ivar">@access</span>.<span class="ruby-identifier">home_page_profiles</span>.<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:disp_name</span>).<span class="ruby-identifier">to_sentence</span>, <span class="ruby-ivar">@access</span>.<span class="ruby-identifier">user_accesses</span>.<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:disp_name</span>).<span class="ruby-identifier">to_sentence</span>, <span class="ruby-ivar">@access</span>.<span class="ruby-identifier">profile_accesses</span>.<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:disp_name</span>).<span class="ruby-identifier">to_sentence</span>])
+        <span class="ruby-identifier">fname</span> = <span class="ruby-string">&quot;accesses.xls&quot;</span>
+        <span class="ruby-identifier">tmp</span> = <span class="ruby-constant">Tempfile</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">fname</span>)
+        <span class="ruby-identifier">book</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">path</span>)
+        <span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">close</span>
+        <span class="ruby-identifier">send_file</span>(<span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">path</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">fname</span>)
+      }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">csv</span> { <span class="ruby-identifier">row</span> = <span class="ruby-ivar">@access</span>
+        <span class="ruby-ivar">@csv_string</span> = <span class="ruby-constant">FasterCSV</span>.<span class="ruby-identifier">generate</span>({<span class="ruby-value">:encoding</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'UTF-8'</span>, <span class="ruby-value">:col_sep</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-constant">SystemSetting</span>[<span class="ruby-string">'csv_export_separator'</span>] <span class="ruby-operator">||</span> <span class="ruby-string">';'</span>)}) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">csv</span><span class="ruby-operator">|</span>
+          <span class="ruby-identifier">cols</span> = []
+          <span class="ruby-constant">Access</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">cols</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword">if</span> [<span class="ruby-value">:string</span>, <span class="ruby-value">:text</span>, <span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:date</span>, <span class="ruby-value">:time</span>, <span class="ruby-value">:datetime</span>, <span class="ruby-value">:timestamp</span>, <span class="ruby-value">:ho_assoc</span>, <span class="ruby-value">:bt_assoc</span>].<span class="ruby-identifier">include?</span> <span class="ruby-identifier">v</span>}
+          <span class="ruby-identifier">cols</span>.<span class="ruby-identifier">reject!</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span> [<span class="ruby-value">:users</span>, <span class="ruby-value">:profiles</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">c</span>) }
+          <span class="ruby-identifier">csv</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">cols</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span>
+            <span class="ruby-keyword">if</span> [<span class="ruby-value">:ho_assoc</span>, <span class="ruby-value">:bt_assoc</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-constant">Access</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>[<span class="ruby-identifier">c</span>])
+              <span class="ruby-identifier">v</span> = <span class="ruby-identifier">row</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">c</span>) ; <span class="ruby-identifier">v</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">disp_name</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+            <span class="ruby-keyword">else</span>
+              <span class="ruby-identifier">row</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">c</span>)
+            <span class="ruby-keyword">end</span>
+          }
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-ivar">@export_encoding</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">SystemSetting</span>[<span class="ruby-string">'csv_export_encoding'</span>] <span class="ruby-operator">||</span> <span class="ruby-string">'UTF-16LE'</span>
+        <span class="ruby-identifier">conv</span> = <span class="ruby-constant">Iconv</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@export_encoding</span>, <span class="ruby-string">'UTF-8'</span>)
+        <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">conv</span>.<span class="ruby-identifier">iconv</span>(<span class="ruby-ivar">@csv_string</span>), <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;#{f_name}.csv&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;text/csv;charset=#{@export_encoding.downcase}&quot;</span>)
+        <span class="ruby-keyword">return</span>
+      }
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:page</span>] = <span class="ruby-value">1</span>
+    <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:per_page</span>] = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">count</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>
+    <span class="ruby-ivar">@accesses</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">paginate</span>(<span class="ruby-identifier">pagin_opts</span>)
+    <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> {
+        <span class="ruby-ivar">@no_menubar</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-ivar">@no_links</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-identifier">data</span> = <span class="ruby-identifier">render_to_string</span>(<span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/accesses/list.html.erb'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'minimal'</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r\ssrc=\&quot;\//</span>, <span class="ruby-node">%Q[ src=&quot;#{request.protocol}#{request.host_with_port}/]</span>)
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">data</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;accesses.html&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'text/html;charset=utf-8'</span>) }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">doc</span> {
+        <span class="ruby-ivar">@no_menubar</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-ivar">@no_links</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-identifier">data</span> = <span class="ruby-identifier">render_to_string</span>(<span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/accesses/list.html.erb'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'minimal'</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r\ssrc=\&quot;\//</span>, <span class="ruby-node">%Q[ src=&quot;#{request.protocol}#{request.host_with_port}/]</span>)
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">data</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;accesses.doc&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'application/msword;charset=utf-8'</span>) }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">pdf</span> {
+        <span class="ruby-ivar">@pdf</span> = <span class="ruby-keyword">true</span>
+        <span class="ruby-ivar">@debug_pdf</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>]
+        <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] = <span class="ruby-string">'html'</span>
+        <span class="ruby-identifier">html</span> = <span class="ruby-identifier">render_to_string</span>(<span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/accesses/list.html.erb'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'pdf'</span>)
+        <span class="ruby-identifier">html</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">%r\/images\//</span>, <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'public'</span>, <span class="ruby-string">'images/'</span>)) <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>]
+        <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">html</span>,  <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'pdf'</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>]
+        <span class="ruby-identifier">kit</span> = <span class="ruby-constant">PDFKit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">html</span>, <span class="ruby-value">:encoding</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'UTF-8'</span>)
+        <span class="ruby-identifier">kit</span>.<span class="ruby-identifier">stylesheets</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'public'</span>, <span class="ruby-string">'stylesheets'</span>, <span class="ruby-string">'pdf.css'</span>)
+        <span class="ruby-identifier">pdf</span> = <span class="ruby-identifier">kit</span>.<span class="ruby-identifier">to_pdf</span>
+        <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">pdf</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;accesses.pdf&quot;</span>) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:debug_pdf</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">pdf</span>.<span class="ruby-identifier">blank?</span>
+
+        <span class="ruby-comment">#      send_data(render_to_string(:layout =&gt; false, :action =&gt; :list), :filename =&gt; &quot;accesses.pdf&quot;, :disposition =&gt; 'attachment', :type =&gt; 'application/pdf;charset=utf-8')</span>
+
+      }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span> {
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-ivar">@accesses</span>.<span class="ruby-identifier">to_xml</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-string">'accesses.xml'</span>), <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'text/xml;charset=utf-8'</span>)}
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xls</span> {
+        <span class="ruby-identifier">book</span> = <span class="ruby-constant">Spreadsheet</span><span class="ruby-operator">::</span><span class="ruby-constant">Workbook</span>.<span class="ruby-identifier">new</span>
+        <span class="ruby-identifier">sheet</span> = <span class="ruby-identifier">book</span>.<span class="ruby-identifier">create_worksheet</span>(<span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;accesses&quot;</span>)
+        <span class="ruby-identifier">sheet</span>.<span class="ruby-identifier">row</span>(<span class="ruby-value">0</span>).<span class="ruby-identifier">concat</span>([<span class="ruby-string">&quot;Application&quot;</span>, <span class="ruby-string">&quot;Set&quot;</span>, <span class="ruby-string">&quot;Table&quot;</span>, <span class="ruby-string">&quot;Field&quot;</span>, <span class="ruby-string">&quot;Action&quot;</span>, <span class="ruby-string">&quot;Type&quot;</span>, <span class="ruby-string">&quot;Home Page Profiles&quot;</span>, <span class="ruby-string">&quot;User Accesses&quot;</span>, <span class="ruby-string">&quot;Profile Accesses&quot;</span>])
+        <span class="ruby-ivar">@accesses</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">row</span>,<span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+          <span class="ruby-identifier">sheet</span>.<span class="ruby-identifier">row</span>(<span class="ruby-identifier">i</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>).<span class="ruby-identifier">replace</span>([<span class="ruby-identifier">row</span>.<span class="ruby-identifier">app_sid</span>, <span class="ruby-identifier">row</span>.<span class="ruby-identifier">set_sid</span>, <span class="ruby-identifier">row</span>.<span class="ruby-identifier">table_sid</span>, <span class="ruby-identifier">row</span>.<span class="ruby-identifier">field_sid</span>, <span class="ruby-identifier">row</span>.<span class="ruby-identifier">action_sid</span>, <span class="ruby-identifier">row</span>.<span class="ruby-identifier">type_sid</span>, <span class="ruby-identifier">row</span>.<span class="ruby-identifier">home_page_profiles</span>.<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:disp_name</span>).<span class="ruby-identifier">to_sentence</span>, <span class="ruby-identifier">row</span>.<span class="ruby-identifier">user_accesses</span>.<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:disp_name</span>).<span class="ruby-identifier">to_sentence</span>, <span class="ruby-identifier">row</span>.<span class="ruby-identifier">profile_accesses</span>.<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:disp_name</span>).<span class="ruby-identifier">to_sentence</span>])
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-identifier">fname</span> = <span class="ruby-string">&quot;accesses.xls&quot;</span>
+        <span class="ruby-identifier">tmp</span> = <span class="ruby-constant">Tempfile</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">fname</span>)
+        <span class="ruby-identifier">book</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">path</span>)
+        <span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">close</span>
+        <span class="ruby-identifier">send_file</span>(<span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">path</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">fname</span>)
+      }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">csv</span> {
+        <span class="ruby-ivar">@csv_string</span> = <span class="ruby-constant">FasterCSV</span>.<span class="ruby-identifier">generate</span>({<span class="ruby-value">:encoding</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'UTF-8'</span>, <span class="ruby-value">:col_sep</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-constant">SystemSetting</span>[<span class="ruby-string">'csv_export_separator'</span>] <span class="ruby-operator">||</span> <span class="ruby-string">';'</span>)}) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">csv</span><span class="ruby-operator">|</span>
+          <span class="ruby-identifier">cols</span> = []
+          <span class="ruby-constant">Access</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">cols</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword">if</span> [<span class="ruby-value">:string</span>, <span class="ruby-value">:text</span>, <span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:date</span>, <span class="ruby-value">:time</span>, <span class="ruby-value">:datetime</span>, <span class="ruby-value">:timestamp</span>, <span class="ruby-value">:ho_assoc</span>, <span class="ruby-value">:bt_assoc</span>].<span class="ruby-identifier">include?</span> <span class="ruby-identifier">v</span>}
+          <span class="ruby-identifier">cols</span>.<span class="ruby-identifier">reject!</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span> [<span class="ruby-value">:users</span>, <span class="ruby-value">:profiles</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">c</span>) }
+          <span class="ruby-identifier">csv</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">cols</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span> <span class="ruby-identifier">_</span>(<span class="ruby-identifier">c</span>.<span class="ruby-identifier">titleize</span>)}
+          <span class="ruby-ivar">@accesses</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">row</span><span class="ruby-operator">|</span>
+            <span class="ruby-identifier">csv</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">cols</span>.<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span>
+              <span class="ruby-keyword">if</span> [<span class="ruby-value">:ho_assoc</span>, <span class="ruby-value">:bt_assoc</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-constant">Access</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>[<span class="ruby-identifier">c</span>])
+                <span class="ruby-identifier">v</span> = <span class="ruby-identifier">row</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">c</span>) ; <span class="ruby-identifier">v</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">disp_name</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+              <span class="ruby-keyword">else</span>
+                <span class="ruby-identifier">row</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">c</span>)
+              <span class="ruby-keyword">end</span>
+            }
+          }
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-ivar">@export_encoding</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">SystemSetting</span>[<span class="ruby-string">'csv_export_encoding'</span>] <span class="ruby-operator">||</span> <span class="ruby-string">'UTF-16LE'</span>
+        <span class="ruby-identifier">conv</span> = <span class="ruby-constant">Iconv</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@export_encoding</span>, <span class="ruby-string">'UTF-8'</span>)
+        <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">conv</span>.<span class="ruby-identifier">iconv</span>(<span class="ruby-ivar">@csv_string</span>), <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;accesses.csv&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;text/csv;charset=#{@export_encoding.downcase}&quot;</span>)
+      }
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- download-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- download-method -->
+
+    
+      <div id="method-i-index" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">index</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Index of all &lt;%= model.sid %&gt;.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>10</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-05-20 16:26:24 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="index-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 477</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">index</span>
+
+  <span class="ruby-identifier">list</span>
+  <span class="ruby-keyword">unless</span>(<span class="ruby-node">%w(json xml)</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>]))
+    <span class="ruby-identifier">render</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:list</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- index-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- index-method -->
+
+    
+      <div id="method-i-linker" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">linker</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>AJAX association management.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>11</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-06-23 17:57:01 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="linker-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 37</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">linker</span>
+
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">'AJAX only'</span>)) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">'Missing required parameter'</span>)) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>] = <span class="ruby-value">1</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+  <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>] = <span class="ruby-value">15</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@access</span>   = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-ivar">@access</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Access</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>].<span class="ruby-identifier">to_sym</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:home_page_profiles</span>
+    <span class="ruby-identifier">val</span> = <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;home_page_profile&quot;</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;home_page_profile&quot;</span>][<span class="ruby-string">&quot;0&quot;</span>] <span class="ruby-operator">:</span> {}
+    <span class="ruby-ivar">@home_page_profiles</span> = <span class="ruby-constant">Profile</span>.<span class="ruby-identifier">search</span>(<span class="ruby-identifier">val</span>, <span class="ruby-identifier">params</span>.<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-operator">!</span><span class="ruby-identifier">k</span>[<span class="ruby-regexp">%rcomp_/</span>]}, <span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>], <span class="ruby-value">:per_page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>])
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:partial</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/profiles/list_for_linker'</span>, <span class="ruby-value">:locals</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:assoc_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:home_page</span>, <span class="ruby-value">:assoc_type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:has_many</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:user_accesses</span>
+    <span class="ruby-identifier">val</span> = <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;user_access&quot;</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;user_access&quot;</span>][<span class="ruby-string">&quot;0&quot;</span>] <span class="ruby-operator">:</span> {}
+    <span class="ruby-ivar">@user_accesses</span> = <span class="ruby-constant">UserAccess</span>.<span class="ruby-identifier">search</span>(<span class="ruby-identifier">val</span>, <span class="ruby-identifier">params</span>.<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-operator">!</span><span class="ruby-identifier">k</span>[<span class="ruby-regexp">%rcomp_/</span>]}, <span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>], <span class="ruby-value">:per_page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>])
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:partial</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/user_accesses/list_for_linker'</span>, <span class="ruby-value">:locals</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:assoc_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:access</span>, <span class="ruby-value">:assoc_type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:has_many</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:profile_accesses</span>
+    <span class="ruby-identifier">val</span> = <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;profile_access&quot;</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;profile_access&quot;</span>][<span class="ruby-string">&quot;0&quot;</span>] <span class="ruby-operator">:</span> {}
+    <span class="ruby-ivar">@profile_accesses</span> = <span class="ruby-constant">ProfileAccess</span>.<span class="ruby-identifier">search</span>(<span class="ruby-identifier">val</span>, <span class="ruby-identifier">params</span>.<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-operator">!</span><span class="ruby-identifier">k</span>[<span class="ruby-regexp">%rcomp_/</span>]}, <span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>], <span class="ruby-value">:per_page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>])
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:partial</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/profile_accesses/list_for_linker'</span>, <span class="ruby-value">:locals</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:assoc_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:access</span>, <span class="ruby-value">:assoc_type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:has_many</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:users</span>
+    <span class="ruby-identifier">val</span> = <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;user&quot;</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;user&quot;</span>][<span class="ruby-string">&quot;0&quot;</span>] <span class="ruby-operator">:</span> {}
+    <span class="ruby-ivar">@users</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">search</span>(<span class="ruby-identifier">val</span>, <span class="ruby-identifier">params</span>.<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-operator">!</span><span class="ruby-identifier">k</span>[<span class="ruby-regexp">%rcomp_/</span>]}, <span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>], <span class="ruby-value">:per_page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>])
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:partial</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/users/list_for_linker'</span>, <span class="ruby-value">:locals</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:assoc_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:accesses</span>, <span class="ruby-value">:assoc_type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:has_many_through</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:profiles</span>
+    <span class="ruby-identifier">val</span> = <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;profile&quot;</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;profile&quot;</span>][<span class="ruby-string">&quot;0&quot;</span>] <span class="ruby-operator">:</span> {}
+    <span class="ruby-ivar">@profiles</span> = <span class="ruby-constant">Profile</span>.<span class="ruby-identifier">search</span>(<span class="ruby-identifier">val</span>, <span class="ruby-identifier">params</span>.<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-operator">!</span><span class="ruby-identifier">k</span>[<span class="ruby-regexp">%rcomp_/</span>]}, <span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>], <span class="ruby-value">:per_page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>])
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:partial</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/profiles/list_for_linker'</span>, <span class="ruby-value">:locals</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:assoc_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:accesses</span>, <span class="ruby-value">:assoc_type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:has_many_through</span>}
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- linker-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- linker-method -->
+
+    
+      <div id="method-i-list" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">list</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>This gives the list of all records</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>24</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-01-29 17:02:44 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="list-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 494</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">list</span>
+
+  <span class="ruby-ivar">@restricted_fields</span> = []
+  <span class="ruby-identifier">pagin_opts</span> = {<span class="ruby-value">:include</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:home_page_profiles</span>,<span class="ruby-value">:user_accesses</span>,<span class="ruby-value">:profile_accesses</span>]}
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:page</span>]     = <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">:</span> <span class="ruby-value">1</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:per_page</span>]         = (<span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">cookies</span>[<span class="ruby-value">:accesses_per_page</span>] <span class="ruby-operator">||</span> <span class="ruby-value">50</span>).<span class="ruby-identifier">to_i</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:order</span>]    = <span class="ruby-ivar">@default_order</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@default_order</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:order</span>]  <span class="ruby-operator">||=</span> <span class="ruby-string">'accesses.'</span> <span class="ruby-operator">+</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:sort_by</span>] <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:sort_by</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-operator">||=</span> <span class="ruby-ivar">@default_filter</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@default_filter</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-operator">||=</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:conditions</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:joins</span>]  <span class="ruby-operator">||=</span> <span class="ruby-ivar">@joins_fields</span> <span class="ruby-operator">||</span> []
+
+  <span class="ruby-ivar">@accesses</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">paginate</span>(<span class="ruby-identifier">pagin_opts</span>)
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@accesses</span>.<span class="ruby-identifier">to_xml</span>(<span class="ruby-value">:dasherize</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>, <span class="ruby-value">:only</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:id</span>,<span class="ruby-value">:app_sid</span>,<span class="ruby-value">:set_sid</span>,<span class="ruby-value">:table_sid</span>,<span class="ruby-value">:field_sid</span>,<span class="ruby-value">:action_sid</span>,<span class="ruby-value">:type_sid</span>], <span class="ruby-value">:methods</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:home_page_profiles_human_display</span>,<span class="ruby-value">:user_accesses_human_display</span>,<span class="ruby-value">:profile_accesses_human_display</span>,<span class="ruby-value">:users_human_display</span>,<span class="ruby-value">:profiles_human_display</span>])) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'xml'</span>
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@accesses</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'json'</span>
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:pdf</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@accesses</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:list</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'pdf'</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> [<span class="ruby-string">&quot;app_sid&quot;</span>, <span class="ruby-string">&quot;set_sid&quot;</span>, <span class="ruby-string">&quot;table_sid&quot;</span>, <span class="ruby-string">&quot;field_sid&quot;</span>, <span class="ruby-string">&quot;action_sid&quot;</span>, <span class="ruby-string">&quot;type_sid&quot;</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>])
+    <span class="ruby-ivar">@accesses_groups</span> = <span class="ruby-ivar">@accesses</span>.<span class="ruby-identifier">inject</span>({}) { <span class="ruby-operator">|</span><span class="ruby-identifier">acc</span>,<span class="ruby-identifier">elt</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">crit</span> = <span class="ruby-keyword">nil</span>
+      <span class="ruby-keyword">if</span> [].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>])
+        <span class="ruby-identifier">crit</span> = <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>]) <span class="ruby-operator">?</span> <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>]).<span class="ruby-identifier">disp_name</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">crit</span> = <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">attributes</span>[<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>]]
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-identifier">acc</span>[<span class="ruby-identifier">crit</span>] <span class="ruby-operator">||=</span> []
+      <span class="ruby-identifier">acc</span>[<span class="ruby-identifier">crit</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">elt</span>
+      <span class="ruby-identifier">acc</span>
+    }
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- list-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- list-method -->
+
+    
+      <div id="method-i-permissions" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">permissions</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>17</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-03-15 15:34:15 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="permissions-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 787</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">permissions</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'json'</span>
+    <span class="ruby-ivar">@page</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:page_id</span>])
+    <span class="ruby-ivar">@profile</span> = <span class="ruby-constant">Profile</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:profile_id</span>])
+    <span class="ruby-ivar">@users</span> = <span class="ruby-ivar">@profile</span>.<span class="ruby-identifier">users</span>.<span class="ruby-identifier">limit</span>(<span class="ruby-value">200</span>)
+    <span class="ruby-ivar">@user</span> = <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:user_id</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@users</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:user_id</span>]).<span class="ruby-identifier">first</span> <span class="ruby-operator">:</span> <span class="ruby-ivar">@users</span>.<span class="ruby-identifier">first</span>
+    <span class="ruby-ivar">@res</span> = {<span class="ruby-value">:actions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Access</span>.<span class="ruby-identifier">actions</span>(<span class="ruby-ivar">@page</span>.<span class="ruby-identifier">table_sid</span>).<span class="ruby-identifier">select</span>(<span class="ruby-string">'id,action_sid,type_sid'</span>),
+      <span class="ruby-value">:fields</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Access</span>.<span class="ruby-identifier">fields</span>(<span class="ruby-ivar">@page</span>.<span class="ruby-identifier">table_sid</span>).<span class="ruby-identifier">select</span>(<span class="ruby-string">'id,field_sid,type_sid'</span>),
+      <span class="ruby-value">:users</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@users</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">u</span><span class="ruby-operator">|</span> {<span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">u</span>.<span class="ruby-identifier">disp_name</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">u</span>.<span class="ruby-identifier">id</span>} },
+      <span class="ruby-value">:profile_accesses</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@profile</span>.<span class="ruby-identifier">accesses</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:table_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@page</span>.<span class="ruby-identifier">table_sid</span>).<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:id</span>),
+    <span class="ruby-value">:user_accesses</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-ivar">@user</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">accesses</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:table_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@page</span>.<span class="ruby-identifier">table_sid</span>).<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:id</span>) <span class="ruby-operator">:</span> [])}
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@res</span>
+    <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment"># first call</span>
+
+  <span class="ruby-ivar">@pages</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">tables</span>.<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span> <span class="ruby-identifier">p</span>.<span class="ruby-identifier">table_sid</span> <span class="ruby-operator">==</span> <span class="ruby-string">'root_pages'</span>}
+  <span class="ruby-ivar">@page</span> = <span class="ruby-ivar">@pages</span>.<span class="ruby-identifier">first</span>
+  <span class="ruby-ivar">@ps_for_col</span> = {}
+  <span class="ruby-ivar">@pages</span>.<span class="ruby-identifier">group_by</span>(&amp;<span class="ruby-value">:set_sid</span>).<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">k</span> = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;[None]&quot;</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">k</span>.<span class="ruby-identifier">blank?</span>
+    <span class="ruby-ivar">@ps_for_col</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-identifier">v</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span> [<span class="ruby-identifier">_</span>(<span class="ruby-identifier">p</span>.<span class="ruby-identifier">table_sid</span>.<span class="ruby-identifier">titleize</span>), <span class="ruby-identifier">p</span>.<span class="ruby-identifier">id</span>]}
+  }
+  <span class="ruby-ivar">@profiles</span> = <span class="ruby-constant">Profile</span>.<span class="ruby-identifier">limit</span>(<span class="ruby-value">200</span>)
+  <span class="ruby-ivar">@profile</span> = <span class="ruby-ivar">@profiles</span>.<span class="ruby-identifier">first</span>
+  <span class="ruby-ivar">@users</span> = <span class="ruby-ivar">@profile</span>.<span class="ruby-identifier">users</span>.<span class="ruby-identifier">limit</span>(<span class="ruby-value">200</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- permissions-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- permissions-method -->
+
+    
+      <div id="method-i-report_check_params" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">report_check_params</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Reporting: checks sent params for security and consistency.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>5</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 12:23:42 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Could be optimized</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="report_check_params-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 133</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">report_check_params</span>
+
+
+  <span class="ruby-comment"># logger.debug(&quot;BEGIN report_check_params&quot;)</span>
+
+  <span class="ruby-ivar">@report_type</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'html'</span> <span class="ruby-operator">?</span> <span class="ruby-value">:table</span> <span class="ruby-operator">:</span> <span class="ruby-value">:chart</span>
+  <span class="ruby-ivar">@x_type</span> = <span class="ruby-constant">Access</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>[<span class="ruby-identifier">params</span>[<span class="ruby-value">:x_field</span>]]
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;No correct x_field parameter&quot;</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span>[<span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:double</span>, <span class="ruby-value">:boolean</span>, <span class="ruby-value">:static_list</span>, <span class="ruby-value">:date</span>, <span class="ruby-value">:datetime</span>, <span class="ruby-value">:string</span>, <span class="ruby-value">:bt_assoc</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-ivar">@x_type</span>)
+
+  <span class="ruby-comment"># logger.debug(&quot;\t\t x_field: #{params[:x_field]} (#{@x_type})&quot;)</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:y_field</span>]
+    <span class="ruby-ivar">@y_type</span> = <span class="ruby-constant">Access</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>[<span class="ruby-identifier">params</span>[<span class="ruby-value">:y_field</span>]]
+    <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;No correct y_field parameter&quot;</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span>[<span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:double</span>, <span class="ruby-value">:boolean</span>, <span class="ruby-value">:static_list</span>, <span class="ruby-value">:date</span>, <span class="ruby-value">:datetime</span>, <span class="ruby-value">:string</span>, <span class="ruby-value">:bt_assoc</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-ivar">@y_type</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;No correct serie parameter&quot;</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:serie_1</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:serie_1</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>) <span class="ruby-operator">||</span> (<span class="ruby-identifier">params</span>[<span class="ruby-value">:serie_1</span>][<span class="ruby-value">:field</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:serie_1</span>][<span class="ruby-value">:operation</span>].<span class="ruby-identifier">blank?</span>)
+  <span class="ruby-identifier">f</span> = <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;serie_1&quot;</span>][<span class="ruby-value">:field</span>] <span class="ruby-operator">||=</span> <span class="ruby-string">'id'</span>
+  <span class="ruby-identifier">o</span> = <span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;serie_1&quot;</span>][<span class="ruby-value">:operation</span>] <span class="ruby-operator">||=</span> [<span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:double</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-constant">Access</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>[<span class="ruby-identifier">params</span>[<span class="ruby-string">&quot;serie_1&quot;</span>][<span class="ruby-value">:field</span>]]) <span class="ruby-operator">?</span> <span class="ruby-value">:value</span> <span class="ruby-operator">:</span> <span class="ruby-value">:count</span>
+
+  <span class="ruby-comment"># TODO manage field is a model_method</span>
+
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;No correct serie[:field] parameter&quot;</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-constant">Access</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">f</span>) <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">o</span> <span class="ruby-operator">!=</span> <span class="ruby-string">'count'</span>)
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;No correct serie[:operation] parameter&quot;</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> (<span class="ruby-operator">!</span>[<span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:double</span>, <span class="ruby-value">:boolean</span>, <span class="ruby-value">:static_list</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-constant">Access</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>[<span class="ruby-identifier">f</span>]) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:serie_1</span>][<span class="ruby-value">:operation</span>].<span class="ruby-identifier">blank?</span>)
+  (<span class="ruby-value">2</span><span class="ruby-operator">..</span><span class="ruby-value">5</span>).<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">break</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{i}&quot;</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{i}&quot;</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+    <span class="ruby-identifier">f</span> = <span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{i}&quot;</span>][<span class="ruby-value">:field</span>]
+    <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;No correct serie_#{i}[:field] parameter&quot;</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">f</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> <span class="ruby-operator">!</span><span class="ruby-constant">Access</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">f</span>)
+    <span class="ruby-identifier">render</span>(<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;No correct serie_#{i}[:operation] parameter&quot;</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> (<span class="ruby-operator">!</span>[<span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:double</span>, <span class="ruby-value">:boolean</span>, <span class="ruby-value">:static_list</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-constant">Access</span><span class="ruby-operator">::</span><span class="ruby-constant">FIELDS</span>[<span class="ruby-identifier">f</span>]) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{i}&quot;</span>][<span class="ruby-value">:operation</span>].<span class="ruby-identifier">blank?</span>)
+  }
+  <span class="ruby-ivar">@x_field</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:x_field</span>]
+  <span class="ruby-ivar">@y_field</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:y_field</span>] <span class="ruby-keyword">unless</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:y_field</span>].<span class="ruby-identifier">blank?</span>
+
+  <span class="ruby-comment"># logger.debug(&quot;END report_check_params&quot;)</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- report_check_params-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- report_check_params-method -->
+
+    
+      <div id="method-i-report_chooser" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">report_chooser</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Reporting: displays preset reports.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>6</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 19:23:13 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="report_chooser-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 78</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">report_chooser</span>
+
+  <span class="ruby-ivar">@data_sets</span> = <span class="ruby-constant">SmartQuery</span>.<span class="ruby-identifier">all</span>(<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:table_sid</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">'accesses'</span>, <span class="ruby-string">''</span>]})
+  <span class="ruby-identifier">m_par</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:accesses</span>] <span class="ruby-operator">||</span> {}
+  <span class="ruby-ivar">@data_set</span> = <span class="ruby-constant">SmartQuery</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">m_par</span>[<span class="ruby-value">:data_set</span>]) <span class="ruby-operator">||</span> <span class="ruby-ivar">@data_sets</span>.<span class="ruby-identifier">first</span>
+  <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;m_par #{m_par.inspect}&quot;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- report_chooser-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- report_chooser-method -->
+
+    
+      <div id="method-i-report_convert_to_html" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">report_convert_to_html</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Reporting: renders data in HTML tables.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>5</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 12:18:50 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Could be optimized</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="report_convert_to_html-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 393</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">report_convert_to_html</span>
+
+  <span class="ruby-identifier">title</span> = <span class="ruby-node">&quot;&lt;caption&gt;#{@title}&lt;/caption&gt;&quot;</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@y_labels</span> <span class="ruby-comment"># matrix</span>
+    <span class="ruby-ivar">@report</span> = <span class="ruby-ivar">@datasets</span>.<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">ds</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;ds: #{ds.inspect}&quot;</span>)
+      <span class="ruby-identifier">trs</span> = [[<span class="ruby-string">'&lt;th&gt;&lt;/th&gt;'</span>] <span class="ruby-operator">+</span> <span class="ruby-ivar">@x_labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span>
+        <span class="ruby-keyword">case</span> <span class="ruby-ivar">@x_type</span>
+        <span class="ruby-keyword">when</span> <span class="ruby-value">:date</span>, <span class="ruby-value">:datetime</span>
+          <span class="ruby-node">&quot;&lt;th&gt;#{l.strftime(&quot;%D&quot;)}&lt;/th&gt;&quot;</span>
+        <span class="ruby-keyword">when</span> <span class="ruby-value">:bt_assoc</span>
+          <span class="ruby-node">&quot;&lt;th&gt;#{l ? l.disp_name : ''}&lt;/th&gt;&quot;</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-node">&quot;&lt;th&gt;#{l}&lt;/th&gt;&quot;</span>
+        <span class="ruby-keyword">end</span>
+      }]
+      <span class="ruby-keyword">case</span> <span class="ruby-ivar">@y_type</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:ho_assoc</span>, <span class="ruby-value">:bt_assoc</span>
+        <span class="ruby-identifier">trs</span> <span class="ruby-operator">+=</span> <span class="ruby-ivar">@y_labels</span>.<span class="ruby-identifier">uniq</span>.<span class="ruby-identifier">map</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">?</span> ([<span class="ruby-node">&quot;&lt;th&gt;#{l.disp_name}&lt;/th&gt;&quot;</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">ds</span>[<span class="ruby-node">&quot;values_for_#{l.id}&quot;</span>].<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-node">&quot;&lt;td&gt;#{v}&lt;/td&gt;&quot;</span> }) <span class="ruby-operator">:</span> [] }
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">trs</span> <span class="ruby-operator">+=</span> <span class="ruby-ivar">@y_labels</span>.<span class="ruby-identifier">uniq</span>.<span class="ruby-identifier">map</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> [<span class="ruby-node">&quot;&lt;th&gt;#{l}&lt;/th&gt;&quot;</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">ds</span>[<span class="ruby-node">&quot;values_for_#{l}&quot;</span>].<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-node">&quot;&lt;td&gt;#{v}&lt;/td&gt;&quot;</span> } }
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-node">&quot;&lt;table&gt;#{title}%s&lt;/table&gt;&quot;</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">trs</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">t</span><span class="ruby-operator">|</span> <span class="ruby-node">&quot;&lt;tr&gt;#{t}&lt;/tr&gt;&quot;</span>}.<span class="ruby-identifier">join</span>
+    }
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@report</span> = <span class="ruby-ivar">@datasets</span>.<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">ds</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">trs</span> = [<span class="ruby-ivar">@x_labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span>
+        <span class="ruby-keyword">case</span> <span class="ruby-ivar">@x_type</span>
+        <span class="ruby-keyword">when</span> <span class="ruby-value">:date</span>, <span class="ruby-value">:datetime</span>
+          <span class="ruby-node">&quot;&lt;th&gt;#{l.strftime(&quot;%D&quot;)}&lt;/th&gt;&quot;</span>
+        <span class="ruby-keyword">when</span> <span class="ruby-value">:bt_assoc</span>
+          <span class="ruby-node">&quot;&lt;th&gt;#{l ? l.disp_name : ''}&lt;/th&gt;&quot;</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-node">&quot;&lt;th&gt;#{l}&lt;/th&gt;&quot;</span>
+        <span class="ruby-keyword">end</span>
+      }]
+      <span class="ruby-identifier">trs</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">ds</span>[<span class="ruby-value">:values</span>].<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-node">&quot;&lt;td&gt;#{v}&lt;/td&gt;&quot;</span> }
+      <span class="ruby-node">&quot;&lt;table&gt;#{title}#{trs.map{|t| &quot;&lt;tr&gt;#{t}&lt;/tr&gt;&quot;}}&lt;/table&gt;&quot;</span>
+    }
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">render</span> <span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- report_convert_to_html-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- report_convert_to_html-method -->
+
+    
+      <div id="method-i-report_convert_to_ofc" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">report_convert_to_ofc</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Reporting: adds OFC styles and renders appropriate JSON.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>11</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 12:18:04 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Could be optimized</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="report_convert_to_ofc-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 445</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">report_convert_to_ofc</span>
+
+  <span class="ruby-identifier">colors</span> = <span class="ruby-node">%w(2222FF 7FFFD4 D2691E A9A9A9 BDB76B DCDCDC ADFF2F F4A460 F5DEB3)</span>
+  <span class="ruby-ivar">@datasets</span>.<span class="ruby-identifier">each_with_index</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">d</span>,<span class="ruby-identifier">idx</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">d</span>[<span class="ruby-value">:type</span>] <span class="ruby-operator">||=</span> <span class="ruby-string">&quot;bar&quot;</span>
+    <span class="ruby-identifier">d</span>[<span class="ruby-value">:colour</span>] <span class="ruby-operator">||=</span> <span class="ruby-identifier">colors</span>[<span class="ruby-identifier">idx</span>]
+  }
+  <span class="ruby-ivar">@report</span> = {<span class="ruby-value">:elements</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@datasets</span>, <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@title</span>}, <span class="ruby-value">:bg_colour</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;#FFFFFF&quot;</span>}
+  <span class="ruby-keyword">case</span> <span class="ruby-ivar">@x_type</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:date</span>, <span class="ruby-value">:datetime</span>
+    <span class="ruby-ivar">@report</span>[<span class="ruby-value">:x_axis</span>] = {<span class="ruby-value">:labels</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:labels</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@x_labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">d</span><span class="ruby-operator">|</span> <span class="ruby-identifier">l</span>(<span class="ruby-identifier">d</span>, <span class="ruby-value">:format</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:short</span>)}, <span class="ruby-value">:rotate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'45'</span> }}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:datetime</span>
+    <span class="ruby-ivar">@report</span>[<span class="ruby-value">:x_axis</span>] = {<span class="ruby-value">:labels</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:labels</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@x_labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">d</span><span class="ruby-operator">|</span> <span class="ruby-identifier">l</span>(<span class="ruby-identifier">d</span>.<span class="ruby-identifier">to_date</span>, <span class="ruby-value">:format</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:short</span>)}, <span class="ruby-value">:rotate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'45'</span> }}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:decimal</span>, <span class="ruby-value">:static_list</span>
+    <span class="ruby-ivar">@report</span>[<span class="ruby-value">:x_axis</span>] = {<span class="ruby-value">:labels</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:labels</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@x_labels</span>, <span class="ruby-value">:rotate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'45'</span>} }
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:bt_assoc</span>
+    <span class="ruby-ivar">@report</span>[<span class="ruby-value">:x_axis</span>] = {<span class="ruby-value">:labels</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:labels</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@x_labels</span>.<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:disp_name</span>), <span class="ruby-value">:rotate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'45'</span>} }
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@report</span>[<span class="ruby-value">:y_axis</span>] = {<span class="ruby-value">:min</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@y_min</span>, <span class="ruby-value">:max</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@y_max</span>}
+  <span class="ruby-ivar">@report</span>[<span class="ruby-value">:y_axis</span>][<span class="ruby-value">:steps</span>] = <span class="ruby-ivar">@y_step</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@y_step</span>
+  <span class="ruby-identifier">render</span> <span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- report_convert_to_ofc-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- report_convert_to_ofc-method -->
+
+    
+      <div id="method-i-report_generate" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">report_generate</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Reporting: global steps to rendering reports.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 12:24:32 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Could be optimized</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="report_generate-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 95</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">report_generate</span>
+
+  <span class="ruby-identifier">report_check_params</span>
+
+  <span class="ruby-comment">#logger.debug(&quot;BEGIN report_load_labels&quot;)</span>
+
+  <span class="ruby-identifier">report_load_labels</span>
+
+  <span class="ruby-comment">#logger.debug(&quot;END report_load_labels&quot;)</span>
+  <span class="ruby-comment">#logger.debug(&quot;BEGIN report_load_datasets&quot;)</span>
+
+  <span class="ruby-identifier">report_load_datasets</span>
+
+  <span class="ruby-comment">#logger.debug(&quot;END report_load_datasets&quot;)</span>
+  <span class="ruby-comment">#logger.debug(&quot;BEGIN report_load_title&quot;)</span>
+
+  <span class="ruby-identifier">report_load_title</span>
+
+  <span class="ruby-comment">#logger.debug(&quot;END report_load_title&quot;)</span>
+
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> {<span class="ruby-identifier">report_convert_to_html</span>}
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> {<span class="ruby-identifier">report_convert_to_ofc</span>}
+
+    <span class="ruby-comment">#  format.pdf {report_convert_to_pdf }</span>
+
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- report_generate-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- report_generate-method -->
+
+    
+      <div id="method-i-report_load_datasets" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">report_load_datasets</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Reporting: loads datasets.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>5</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 12:20:49 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Could be optimized</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="report_load_datasets-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 284</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">report_load_datasets</span>
+
+  <span class="ruby-ivar">@datasets</span> = []
+  <span class="ruby-identifier">i</span> = <span class="ruby-value">1</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@y_field</span>
+    <span class="ruby-keyword">case</span> <span class="ruby-ivar">@y_type</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:string</span>
+      <span class="ruby-ivar">@y_labels</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">all</span>(<span class="ruby-value">:select</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Access</span>.<span class="ruby-identifier">connection</span>.<span class="ruby-identifier">distinct</span>(<span class="ruby-ivar">@y_field</span>, <span class="ruby-keyword">nil</span>)).<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">r</span><span class="ruby-operator">|</span> <span class="ruby-identifier">r</span>.<span class="ruby-identifier">send</span>(<span class="ruby-ivar">@y_field</span>)}
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:static_list</span>
+      <span class="ruby-ivar">@y_labels</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">const_get</span>(<span class="ruby-ivar">@y_field</span>.<span class="ruby-identifier">pluralize</span>.<span class="ruby-identifier">upcase</span>)
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:ho_assoc</span>, <span class="ruby-value">:bt_assoc</span>, <span class="ruby-value">:habtm_assoc</span>
+      <span class="ruby-ivar">@y_labels</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">all</span>(<span class="ruby-value">:include</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@y_field</span>).<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">r</span><span class="ruby-operator">|</span> <span class="ruby-identifier">r</span>.<span class="ruby-identifier">send</span>(<span class="ruby-ivar">@y_field</span>)}
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">while</span>(<span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{i}&quot;</span>]) <span class="ruby-keyword">do</span>
+      <span class="ruby-identifier">ds</span> = {}
+      <span class="ruby-ivar">@y_labels</span>.<span class="ruby-identifier">each_with_index</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">l</span>,<span class="ruby-identifier">idx</span><span class="ruby-operator">|</span>
+        <span class="ruby-keyword">next</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">l</span>.<span class="ruby-identifier">nil?</span>
+        <span class="ruby-keyword">case</span> <span class="ruby-ivar">@y_type</span>
+        <span class="ruby-keyword">when</span> <span class="ruby-value">:string</span>
+          <span class="ruby-identifier">ds</span>[<span class="ruby-node">&quot;values_for_#{l}&quot;</span>] = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">report_calculation</span>(<span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{i}&quot;</span>][<span class="ruby-value">:operation</span>],
+          <span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{i}&quot;</span>][<span class="ruby-value">:field</span>],
+          <span class="ruby-value">:labels</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@x_labels</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@x_field</span>, <span class="ruby-value">:scope</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-ivar">@y_field</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">l</span>}, <span class="ruby-value">:data_set</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@data_set</span>)
+        <span class="ruby-keyword">when</span> <span class="ruby-value">:static_list</span>
+          <span class="ruby-identifier">ds</span>[<span class="ruby-node">&quot;values_for_#{l}&quot;</span>] = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">report_calculation</span>(<span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{i}&quot;</span>][<span class="ruby-value">:operation</span>],
+          <span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{i}&quot;</span>][<span class="ruby-value">:field</span>],
+          <span class="ruby-value">:labels</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@x_labels</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@x_field</span>, <span class="ruby-value">:scope</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-ivar">@y_field</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-ivar">@y_labels</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">l</span>)<span class="ruby-operator">+</span><span class="ruby-value">1</span>)}, <span class="ruby-value">:data_set</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@data_set</span>)
+        <span class="ruby-keyword">when</span> <span class="ruby-value">:bt_assoc</span>
+          <span class="ruby-identifier">fk</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">reflect_on_association</span>(<span class="ruby-ivar">@y_field</span>.<span class="ruby-identifier">to_sym</span>).<span class="ruby-identifier">primary_key_name</span>
+
+          <span class="ruby-comment">#        Access.send(:with_scope, :find =&gt; {:conditions =&gt; {fk =&gt; l.id}}) {</span>
+          <span class="ruby-comment">#        ds[&quot;values_for_#{l.id}&quot;] = report_retrieve_data(params[&quot;serie_#{i}&quot;][:operation].to_s, params[&quot;serie_#{i}&quot;][:field])</span>
+
+          <span class="ruby-identifier">ds</span>[<span class="ruby-node">&quot;values_for_#{l.id}&quot;</span>] = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">report_calculation</span>(<span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{i}&quot;</span>][<span class="ruby-value">:operation</span>],
+          <span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{i}&quot;</span>][<span class="ruby-value">:field</span>],
+          <span class="ruby-value">:labels</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@x_labels</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@x_field</span>, <span class="ruby-value">:scope</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-identifier">fk</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">l</span>.<span class="ruby-identifier">id</span>}, <span class="ruby-value">:data_set</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@data_set</span>)
+
+          <span class="ruby-comment">#        }</span>
+
+        <span class="ruby-keyword">end</span>
+      }
+      <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span> ; <span class="ruby-ivar">@datasets</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">ds</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">while</span>(<span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{i}&quot;</span>]) <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">ds</span> = {<span class="ruby-value">:values</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Access</span>.<span class="ruby-identifier">report_calculation</span>(<span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{i}&quot;</span>][<span class="ruby-value">:operation</span>],
+      <span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{i}&quot;</span>][<span class="ruby-value">:field</span>],
+    <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@x_field</span>, <span class="ruby-value">:labels</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@x_labels</span>, <span class="ruby-value">:data_set</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@data_set</span>)}
+    <span class="ruby-identifier">ds</span>[<span class="ruby-value">:type</span>] = <span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{i}&quot;</span>][<span class="ruby-value">:type</span>] <span class="ruby-operator">||</span> <span class="ruby-string">'bar'</span>
+    <span class="ruby-ivar">@y_min</span> = <span class="ruby-value">0</span>
+    <span class="ruby-identifier">y_min</span> = <span class="ruby-identifier">ds</span>[<span class="ruby-value">:values</span>].<span class="ruby-identifier">min</span> <span class="ruby-operator">||</span> <span class="ruby-value">0</span>
+    <span class="ruby-ivar">@y_min</span> = <span class="ruby-identifier">y_min</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">y_min</span> <span class="ruby-operator">&lt;</span> <span class="ruby-ivar">@y_min</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@y_max</span>
+      <span class="ruby-ivar">@y_max</span> = <span class="ruby-identifier">ds</span>[<span class="ruby-value">:values</span>].<span class="ruby-identifier">max</span> <span class="ruby-operator">||</span> <span class="ruby-value">0</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">y_max</span> = <span class="ruby-identifier">ds</span>[<span class="ruby-value">:values</span>].<span class="ruby-identifier">max</span> <span class="ruby-operator">||</span> <span class="ruby-value">0</span>
+      <span class="ruby-ivar">@y_max</span> = <span class="ruby-identifier">y_max</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">y_max</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@y_max</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span> ; <span class="ruby-ivar">@datasets</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">ds</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-ivar">@y_max</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-value">5</span> <span class="ruby-keyword">then</span> <span class="ruby-ivar">@y_max</span> = <span class="ruby-value">5</span> ; <span class="ruby-ivar">@y_step</span> = <span class="ruby-value">1</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">5</span><span class="ruby-operator">..</span><span class="ruby-value">10</span> <span class="ruby-keyword">then</span> <span class="ruby-ivar">@y_max</span> = <span class="ruby-value">10</span> ; <span class="ruby-ivar">@y_step</span> = <span class="ruby-value">1</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">10</span><span class="ruby-operator">..</span><span class="ruby-value">50</span> <span class="ruby-keyword">then</span> <span class="ruby-ivar">@y_max</span> = <span class="ruby-value">50</span> ; <span class="ruby-ivar">@y_step</span> = <span class="ruby-value">5</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">50</span><span class="ruby-operator">..</span><span class="ruby-value">100</span> <span class="ruby-keyword">then</span> <span class="ruby-ivar">@y_max</span> = <span class="ruby-value">100</span> ; <span class="ruby-ivar">@y_step</span> = <span class="ruby-value">10</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">100</span><span class="ruby-operator">..</span><span class="ruby-value">500</span> <span class="ruby-keyword">then</span> <span class="ruby-ivar">@y_max</span> = <span class="ruby-value">500</span> ; <span class="ruby-ivar">@y_step</span> = <span class="ruby-value">50</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">500</span><span class="ruby-operator">..</span><span class="ruby-value">1000</span> <span class="ruby-keyword">then</span> <span class="ruby-ivar">@y_max</span> = <span class="ruby-value">1000</span> ; <span class="ruby-ivar">@y_step</span> = <span class="ruby-value">50</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">1000</span><span class="ruby-operator">..</span><span class="ruby-value">5000</span> <span class="ruby-keyword">then</span> <span class="ruby-ivar">@y_max</span> = <span class="ruby-value">5000</span> ; <span class="ruby-ivar">@y_step</span> = <span class="ruby-value">100</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- report_load_datasets-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- report_load_datasets-method -->
+
+    
+      <div id="method-i-report_load_labels" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">report_load_labels</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Reporting: extracts labels and categories to display axes.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>6</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-01-22 17:12:57 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Could be optimized</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="report_load_labels-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 178</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">report_load_labels</span>
+
+  <span class="ruby-keyword">case</span> <span class="ruby-ivar">@x_type</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:string</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-ivar">@x_labels</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">all</span>(<span class="ruby-value">:select</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;DISTINCT(`#{@x_field}`)&quot;</span>).<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">r</span><span class="ruby-operator">|</span> <span class="ruby-identifier">r</span>.<span class="ruby-identifier">send</span>(<span class="ruby-ivar">@x_field</span>)}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:static_list</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-ivar">@x_labels</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">const_get</span>(<span class="ruby-ivar">@x_field</span>.<span class="ruby-identifier">pluralize</span>.<span class="ruby-identifier">upcase</span>)
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:bt_assoc</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-ivar">@x_labels</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">reflect_on_association</span>(<span class="ruby-ivar">@x_field</span>.<span class="ruby-identifier">to_sym</span>).<span class="ruby-identifier">klass</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@x_range</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:x_range</span>] <span class="ruby-comment"># range is given</span>
+    <span class="ruby-keyword">case</span> <span class="ruby-ivar">@x_type</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:integer</span>
+      <span class="ruby-identifier">params</span>[<span class="ruby-value">:x_range</span>].<span class="ruby-identifier">split</span>(<span class="ruby-string">'..'</span>).<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:to_i</span>)
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:float</span>, <span class="ruby-value">:double</span>
+      <span class="ruby-identifier">params</span>[<span class="ruby-value">:x_range</span>].<span class="ruby-identifier">split</span>(<span class="ruby-string">'..'</span>).<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:to_f</span>)
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:date</span>, <span class="ruby-value">:datetime</span>
+      <span class="ruby-identifier">rg</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:x_range</span>].<span class="ruby-identifier">split</span>(<span class="ruby-string">'..'</span>).<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:to_i</span>)
+      <span class="ruby-ivar">@x_min</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">rg</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">days</span>
+      <span class="ruby-ivar">@x_max</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">rg</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">days</span>
+      <span class="ruby-identifier">rg</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@x_min</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">minimum</span>(<span class="ruby-ivar">@x_field</span>)
+    <span class="ruby-ivar">@x_max</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">maximum</span>(<span class="ruby-ivar">@x_field</span>)
+    <span class="ruby-keyword">case</span> <span class="ruby-ivar">@x_type</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:double</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:date</span>, <span class="ruby-value">:datetime</span>
+      [((<span class="ruby-ivar">@x_min</span> <span class="ruby-operator">-</span> <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span>) <span class="ruby-operator">/</span> <span class="ruby-value">86400</span>).<span class="ruby-identifier">round</span>, ((<span class="ruby-ivar">@x_max</span> <span class="ruby-operator">-</span> <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span>) <span class="ruby-operator">/</span> <span class="ruby-value">86400</span>).<span class="ruby-identifier">round</span>]
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-keyword">true</span>
+    <span class="ruby-keyword">case</span> <span class="ruby-ivar">@x_type</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:double</span>
+      <span class="ruby-ivar">@x_min</span>, <span class="ruby-ivar">@x_max</span> = <span class="ruby-ivar">@x_range</span>
+      <span class="ruby-identifier">params</span>[<span class="ruby-value">:x_steps</span>] <span class="ruby-operator">||=</span> (<span class="ruby-ivar">@x_max</span>.<span class="ruby-identifier">to_f</span> <span class="ruby-operator">-</span> <span class="ruby-ivar">@x_min</span>.<span class="ruby-identifier">to_f</span>) <span class="ruby-operator">/</span> <span class="ruby-value">10.0</span>
+      <span class="ruby-ivar">@x_steps</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:x_steps</span>].<span class="ruby-identifier">to_f</span>
+      <span class="ruby-ivar">@x_steps</span> = <span class="ruby-value">0.1</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@x_steps</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+      <span class="ruby-ivar">@x_labels</span> = [<span class="ruby-ivar">@x_min</span>]
+      <span class="ruby-keyword">while</span>(<span class="ruby-ivar">@x_labels</span>.<span class="ruby-identifier">last</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-ivar">@x_max</span>) <span class="ruby-keyword">do</span>
+        <span class="ruby-ivar">@x_labels</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@x_labels</span>.<span class="ruby-identifier">last</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@x_steps</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:date</span>, <span class="ruby-value">:datetime</span>
+      <span class="ruby-ivar">@x_steps</span> = <span class="ruby-keyword">case</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:x_steps</span>]
+      <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;month&quot;</span>
+        <span class="ruby-value">30</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;week&quot;</span>
+        <span class="ruby-value">7</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:x_steps</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:x_steps</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+          (<span class="ruby-ivar">@x_range</span>.<span class="ruby-identifier">last</span> <span class="ruby-operator">-</span> <span class="ruby-ivar">@x_range</span>.<span class="ruby-identifier">first</span>).<span class="ruby-identifier">round</span> <span class="ruby-operator">/</span> <span class="ruby-value">10.0</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-identifier">params</span>[<span class="ruby-value">:x_steps</span>].<span class="ruby-identifier">to_i</span>
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-ivar">@x_steps</span> = <span class="ruby-value">1</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@x_steps</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+      <span class="ruby-ivar">@x_min</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@x_range</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">days</span>
+      <span class="ruby-ivar">@x_max</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@x_range</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">days</span>
+      <span class="ruby-ivar">@x_labels</span> = [<span class="ruby-ivar">@x_min</span>]
+      <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;\t (#{@x_min})..(#{@x_max}) - #{@x_steps} days step&quot;</span>)
+      <span class="ruby-value">200</span>.<span class="ruby-identifier">times</span> {
+        <span class="ruby-keyword">break</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@x_labels</span>.<span class="ruby-identifier">last</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@x_max</span>
+        <span class="ruby-ivar">@x_labels</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@x_labels</span>.<span class="ruby-identifier">last</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@x_steps</span>.<span class="ruby-identifier">days</span>
+      }
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>  <span class="ruby-comment"># no params[:x_range] =&gt; need to guess range</span>
+    <span class="ruby-keyword">case</span> <span class="ruby-ivar">@x_type</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:double</span>
+      <span class="ruby-ivar">@datasets</span>.<span class="ruby-identifier">each_with_index</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">h</span>,<span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">d</span> = <span class="ruby-identifier">h</span>[<span class="ruby-value">:values</span>]
+        <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@x_min</span>
+          <span class="ruby-ivar">@x_min</span> = <span class="ruby-identifier">d</span>.<span class="ruby-identifier">min</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-identifier">d_min</span> = <span class="ruby-identifier">d</span>.<span class="ruby-identifier">min</span>
+          <span class="ruby-ivar">@x_min</span> = <span class="ruby-identifier">d_min</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">d_min</span> <span class="ruby-operator">&lt;</span> <span class="ruby-ivar">@x_min</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@x_max</span>
+          <span class="ruby-ivar">@x_max</span> = <span class="ruby-identifier">d</span>.<span class="ruby-identifier">max</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-identifier">d_max</span> = <span class="ruby-identifier">d</span>.<span class="ruby-identifier">max</span>
+          <span class="ruby-ivar">@x_max</span> = <span class="ruby-identifier">d_max</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">d_max</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@x_max</span>
+        <span class="ruby-keyword">end</span>
+      }
+      <span class="ruby-identifier">params</span>[<span class="ruby-value">:x_steps</span>] <span class="ruby-operator">||=</span> (<span class="ruby-ivar">@x_max</span>.<span class="ruby-identifier">to_f</span> <span class="ruby-operator">-</span> <span class="ruby-ivar">@x_min</span>.<span class="ruby-identifier">to_f</span>) <span class="ruby-operator">/</span> <span class="ruby-value">10</span>
+      <span class="ruby-ivar">@x_steps</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:x_steps</span>].<span class="ruby-identifier">to_f</span>
+      <span class="ruby-ivar">@x_steps</span> = <span class="ruby-value">0.1</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@x_steps</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">case</span> <span class="ruby-ivar">@x_type</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:integer</span>, <span class="ruby-value">:float</span>, <span class="ruby-value">:double</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:x_ticks</span>]
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:static_list</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:date</span>, <span class="ruby-value">:datetime</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- report_load_labels-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- report_load_labels-method -->
+
+    
+      <div id="method-i-report_load_title" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">report_load_title</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Reporting: displays selected title or guess an appropriate one.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 12:19:56 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Could be optimized</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="report_load_title-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 364</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">report_load_title</span>
+
+  <span class="ruby-ivar">@title</span> = <span class="ruby-identifier">_</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:title</span>]) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:title</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">op_nm</span> = <span class="ruby-keyword">case</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:serie_1</span>][<span class="ruby-value">:operation</span>].<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;avg&quot;</span> <span class="ruby-keyword">then</span> <span class="ruby-string">&quot;Average&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;min&quot;</span> <span class="ruby-keyword">then</span> <span class="ruby-string">&quot;Minimum&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;max&quot;</span> <span class="ruby-keyword">then</span> <span class="ruby-string">&quot;Maximum&quot;</span>
+  <span class="ruby-keyword">else</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:serie_1</span>][<span class="ruby-value">:operation</span>].<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">titleize</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@title</span> = <span class="ruby-node">&quot;#{op_nm} of &quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">params</span>[<span class="ruby-value">:serie_1</span>][<span class="ruby-value">:operation</span>].<span class="ruby-identifier">to_s</span> <span class="ruby-operator">==</span> <span class="ruby-string">'count'</span> <span class="ruby-operator">?</span> <span class="ruby-string">'records'</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:serie_1</span>][<span class="ruby-value">:field</span>].<span class="ruby-identifier">to_s</span>)
+  <span class="ruby-ivar">@title</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot; by &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@x_field</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-ivar">@x_type</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:date</span>, <span class="ruby-value">:datetime</span>
+    <span class="ruby-ivar">@title</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot; from &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@x_labels</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-string">&quot;%D&quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-string">&quot; to &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@x_labels</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-string">&quot;%D&quot;</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@datasets</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">ds</span>,<span class="ruby-identifier">idx</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">ds</span>[<span class="ruby-value">:text</span>] <span class="ruby-operator">||=</span> <span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{idx+1}&quot;</span>][<span class="ruby-value">:operation</span>].<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">titleize</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; of &quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{idx+1}&quot;</span>][<span class="ruby-value">:operation</span>].<span class="ruby-identifier">to_s</span> <span class="ruby-operator">==</span> <span class="ruby-string">'count'</span> <span class="ruby-operator">?</span> <span class="ruby-string">'records'</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">params</span>[<span class="ruby-node">&quot;serie_#{idx+1}&quot;</span>][<span class="ruby-value">:field</span>].<span class="ruby-identifier">to_s</span>)
+  <span class="ruby-keyword">end</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@report_type</span> <span class="ruby-operator">==</span> <span class="ruby-value">:chart</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- report_load_title-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- report_load_title-method -->
+
+    
+      <div id="method-i-reporting" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">reporting</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Load requested report.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>11</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 17:49:09 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="reporting-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 750</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">reporting</span>
+
+  <span class="ruby-identifier">params</span>[<span class="ruby-value">:report</span>] = <span class="ruby-string">&quot;count_of_table_sid_by_field_sid&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:report</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-ivar">@report</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:report</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- reporting-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- reporting-method -->
+
+    
+      <div id="method-i-reporting_data" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">reporting_data</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Responds Report data in any format.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>15</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-18 18:06:28 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="reporting_data-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 765</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">reporting_data</span>
+
+  <span class="ruby-identifier">report_sid</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:report</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-string">&quot;count_of_table_sid_by_field_sid&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:report</span>]
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:nothing</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">report_sid</span>.<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">opts</span> = (<span class="ruby-identifier">params</span>[<span class="ruby-value">:report_options</span>] <span class="ruby-operator">||</span> {}).<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">blank?</span>}
+  <span class="ruby-identifier">opts</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">||=</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>]
+  <span class="ruby-identifier">r</span> = <span class="ruby-constant">AccessReport</span>.<span class="ruby-identifier">make_report</span>(<span class="ruby-identifier">report_sid</span>, <span class="ruby-identifier">opts</span>)
+  <span class="ruby-identifier">r</span>[<span class="ruby-value">:title</span>][<span class="ruby-value">:style</span>] = <span class="ruby-identifier">r</span>[<span class="ruby-value">:title</span>][<span class="ruby-value">:style</span>].<span class="ruby-identifier">tr</span>(<span class="ruby-string">','</span>, <span class="ruby-string">';'</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-string">'colour'</span>, <span class="ruby-string">'color'</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">r</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">r</span>[<span class="ruby-value">:title</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">r</span>[<span class="ruby-value">:title</span>][<span class="ruby-value">:style</span>]
+  <span class="ruby-ivar">@report</span> = <span class="ruby-identifier">r</span>
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report</span> }
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report</span> }
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- reporting_data-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- reporting_data-method -->
+
+    
+      <div id="method-i-set_access" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_access</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>9</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-01-12 17:55:35 UTC</p>
+</dd><dt>Status
+<dd>
+<p>In Progress</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="set_access-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 824</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_access</span>
+
+  <span class="ruby-ivar">@access</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:page_id</span>])
+  <span class="ruby-ivar">@accesses</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-identifier">table_sid</span> = <span class="ruby-ivar">@access</span>.<span class="ruby-identifier">table_sid</span>
+  <span class="ruby-ivar">@profile</span> = <span class="ruby-constant">Profile</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:profile_id</span>]) <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:profile_id</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-ivar">@user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:user_id</span>]) <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:user_id</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@profile</span>
+    <span class="ruby-identifier">to_create</span> = <span class="ruby-ivar">@accesses</span> <span class="ruby-operator">-</span> <span class="ruby-ivar">@profile</span>.<span class="ruby-identifier">accesses</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:table_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">table_sid</span>)
+    <span class="ruby-ivar">@profile</span>.<span class="ruby-identifier">accesses</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">to_create</span>
+    <span class="ruby-identifier">to_delete</span> = <span class="ruby-ivar">@profile</span>.<span class="ruby-identifier">accesses</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:table_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">table_sid</span>) <span class="ruby-operator">-</span> <span class="ruby-ivar">@accesses</span>
+    <span class="ruby-ivar">@profile</span>.<span class="ruby-identifier">profile_accesses</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:access_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">to_delete</span>.<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:id</span>)).<span class="ruby-identifier">destroy_all</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-ivar">@user</span>
+    <span class="ruby-identifier">to_create</span> = <span class="ruby-ivar">@accesses</span> <span class="ruby-operator">-</span> <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">accesses</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:table_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">table_sid</span>)
+    <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">accesses</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">to_create</span>
+    <span class="ruby-identifier">to_delete</span> = <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">accesses</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:table_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">table_sid</span>) <span class="ruby-operator">-</span> <span class="ruby-ivar">@accesses</span>
+    <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">user_accesses</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:access_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">to_delete</span>.<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:id</span>)).<span class="ruby-identifier">destroy_all</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">render</span> <span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set_access-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set_access-method -->
+
+    
+      <div id="method-i-set_permission" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_permission</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Adds or removes an access right in the Rights Management panel.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Ali Krikeb</p>
+</dd><dt>Version
+<dd>
+<p>6</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-02-20 09:53:55 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="set_permission-source">
+            <pre><span class="ruby-comment"># File app/controllers/accesses_controller.rb, line 700</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_permission</span>
+
+  <span class="ruby-identifier">render</span> <span class="ruby-value">:nothing</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:access_id</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:set</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-ivar">@access</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:access_id</span>])
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@access</span>.<span class="ruby-identifier">nil?</span>
+  <span class="ruby-ivar">@set</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:set</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'true'</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:user_id</span>]
+    <span class="ruby-ivar">@user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:user_id</span>])
+    <span class="ruby-identifier">h</span> = {<span class="ruby-value">:user_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">id</span>, <span class="ruby-value">:access_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@access</span>.<span class="ruby-identifier">id</span>}
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:prop</span>]
+      <span class="ruby-ivar">@ua</span> = <span class="ruby-constant">UserAccess</span>.<span class="ruby-identifier">first</span>(<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">h</span>) <span class="ruby-operator">||</span> <span class="ruby-constant">UserAccess</span>.<span class="ruby-identifier">create</span>(<span class="ruby-identifier">h</span>)
+      <span class="ruby-ivar">@ua</span>.<span class="ruby-identifier">read</span> = <span class="ruby-ivar">@set</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:prop</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'read'</span>
+      <span class="ruby-ivar">@ua</span>.<span class="ruby-identifier">write</span> = <span class="ruby-ivar">@set</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:prop</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'write'</span>
+      <span class="ruby-ivar">@ua</span>.<span class="ruby-identifier">save</span>
+    <span class="ruby-keyword">else</span> <span class="ruby-comment"># aktion</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-ivar">@set</span>
+        <span class="ruby-constant">UserAccess</span>.<span class="ruby-identifier">create</span>(<span class="ruby-identifier">h</span>) <span class="ruby-keyword">unless</span> <span class="ruby-constant">UserAccess</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-identifier">h</span>)
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-constant">UserAccess</span>.<span class="ruby-identifier">delete_all</span>(<span class="ruby-identifier">h</span>) <span class="ruby-keyword">if</span> <span class="ruby-constant">UserAccess</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-identifier">h</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:profile_id</span>]
+    <span class="ruby-ivar">@profile</span> = <span class="ruby-constant">Profile</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:profile_id</span>])
+    <span class="ruby-identifier">h</span> = {<span class="ruby-value">:profile_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@profile</span>.<span class="ruby-identifier">id</span>, <span class="ruby-value">:access_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@access</span>.<span class="ruby-identifier">id</span>}
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:prop</span>]
+      <span class="ruby-ivar">@pa</span> = <span class="ruby-constant">ProfileAccess</span>.<span class="ruby-identifier">first</span>(<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">h</span>) <span class="ruby-operator">||</span> <span class="ruby-constant">ProfileAccess</span>.<span class="ruby-identifier">create</span>(<span class="ruby-identifier">h</span>)
+      <span class="ruby-ivar">@pa</span>.<span class="ruby-identifier">read</span> = <span class="ruby-ivar">@set</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:prop</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'read'</span>
+      <span class="ruby-ivar">@pa</span>.<span class="ruby-identifier">write</span> = <span class="ruby-ivar">@set</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:prop</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'write'</span>
+      <span class="ruby-ivar">@pa</span>.<span class="ruby-identifier">save</span>
+    <span class="ruby-keyword">else</span>  <span class="ruby-comment"># aktion</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-ivar">@set</span>
+        <span class="ruby-constant">ProfileAccess</span>.<span class="ruby-identifier">create</span>(<span class="ruby-identifier">h</span>) <span class="ruby-keyword">unless</span> <span class="ruby-constant">ProfileAccess</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-identifier">h</span>)
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-constant">ProfileAccess</span>.<span class="ruby-identifier">delete_all</span>(<span class="ruby-identifier">h</span>) <span class="ruby-keyword">if</span> <span class="ruby-constant">ProfileAccess</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-identifier">h</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set_permission-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set_permission-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

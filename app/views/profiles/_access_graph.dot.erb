@@ -1,0 +1,27 @@
+
+digraph G {
+  "<%= @profile.name %>" [
+		label="{<%= _(@profile.name) + '|' + @profile.users.map{|u| %Q(<#{u.id}> #{u.disp_name}) }.join('|') %>}"
+		shape="record"
+	];
+
+<% @accesses.group_by(&:table_sid).each do |t, pas| %>
+	table_<%= t %> [
+		label="{<%= _(t.titleize) + '|' + pas.map{|a| %Q(<#{a.id}> #{a.disp_name}) }.join('|') %>}"
+		shape="record"
+		color=darkgreen
+	];
+<% end %>
+
+<% @accesses.each do |a| %>
+	"<%= @profile.name %>" -> table_<%= a.table_sid %>:<%= a.id %>;<% end %>
+
+  bgcolor = "transparent";
+
+  node [
+    shape = "record"
+    style = "filled"
+    fontname = "Verdana"
+    fontsize = 9
+  ]
+}

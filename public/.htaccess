@@ -1,0 +1,9 @@
+order allow,deny
+allow from localhost 127.0.0.1 91.199.0.179
+
+AuthName "Password Require"
+AuthType Basic
+AuthUserFile /solutions/demo_dev/.htpasswd
+
+require valid-user
+satisfy any

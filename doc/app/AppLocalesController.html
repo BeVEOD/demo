@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class AppLocalesController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/app_locales_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-auto_translate">#auto_translate</a>
+    
+    <li><a href="#method-i-auto_translate_all">#auto_translate_all</a>
+    
+    <li><a href="#method-i-create">#create</a>
+    
+    <li><a href="#method-i-destroy">#destroy</a>
+    
+    <li><a href="#method-i-edit">#edit</a>
+    
+    <li><a href="#method-i-feed">#feed</a>
+    
+    <li><a href="#method-i-get_empty_msgstr">#get_empty_msgstr</a>
+    
+    <li><a href="#method-i-get_file">#get_file</a>
+    
+    <li><a href="#method-i-get_file_size">#get_file_size</a>
+    
+    <li><a href="#method-i-get_file_thumb">#get_file_thumb</a>
+    
+    <li><a href="#method-i-get_po_file">#get_po_file</a>
+    
+    <li><a href="#method-i-help">#help</a>
+    
+    <li><a href="#method-i-index">#index</a>
+    
+    <li><a href="#method-i-list">#list</a>
+    
+    <li><a href="#method-i-make_mo">#make_mo</a>
+    
+    <li><a href="#method-i-new">#new</a>
+    
+    <li><a href="#method-i-po_files">#po_files</a>
+    
+    <li><a href="#method-i-show">#show</a>
+    
+    <li><a href="#method-i-submit">#submit</a>
+    
+    <li><a href="#method-i-translate_deprecated">#translate_deprecated</a>
+    
+    <li><a href="#method-i-update">#update</a>
+    
+    <li><a href="#method-i-update_po">#update_po</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Faveod.html">Faveod</a>
+  
+    <li><a href="./Faveod/AVBBFTranslationService.html">Faveod::AVBBFTranslationService</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions.html">Faveod::ActiveResourceExtensions</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions/ClassMethods.html">Faveod::ActiveResourceExtensions::ClassMethods</a>
+  
+    <li><a href="./Faveod/DistributedColors.html">Faveod::DistributedColors</a>
+  
+    <li><a href="./Faveod/GoogleTranslationService.html">Faveod::GoogleTranslationService</a>
+  
+    <li><a href="./Faveod/GraphMaker.html">Faveod::GraphMaker</a>
+  
+    <li><a href="./Faveod/HtmlTruncator.html">Faveod::HtmlTruncator</a>
+  
+    <li><a href="./Faveod/IePdfHeadersMiddleware.html">Faveod::IePdfHeadersMiddleware</a>
+  
+    <li><a href="./Faveod/PoUtils.html">Faveod::PoUtils</a>
+  
+    <li><a href="./Faveod/TranslationServer.html">Faveod::TranslationServer</a>
+  
+    <li><a href="./Faveod/TranslationServicesHelper.html">Faveod::TranslationServicesHelper</a>
+  
+    <li><a href="./Faveod/Validations.html">Faveod::Validations</a>
+  
+    <li><a href="./Faveod/Validations/Syntax.html">Faveod::Validations::Syntax</a>
+  
+    <li><a href="./Faveod/Validations/Syntax/ClassMethods.html">Faveod::Validations::Syntax::ClassMethods</a>
+  
+    <li><a href="./ActiveRecord.html">ActiveRecord</a>
+  
+    <li><a href="./ActiveRecord/Base.html">ActiveRecord::Base</a>
+  
+    <li><a href="./ActiveRecord/Condition.html">ActiveRecord::Condition</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters.html">ActiveRecord::ConnectionAdapters</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters/Column.html">ActiveRecord::ConnectionAdapters::Column</a>
+  
+    <li><a href="./ActiveRecord/Validations.html">ActiveRecord::Validations</a>
+  
+    <li><a href="./ActiveRecord/Validations/ClassMethods.html">ActiveRecord::Validations::ClassMethods</a>
+  
+    <li><a href="./ActionView.html">ActionView</a>
+  
+    <li><a href="./ActionView/Helpers.html">ActionView::Helpers</a>
+  
+    <li><a href="./ActionView/Helpers/FormOptionsHelper.html">ActionView::Helpers::FormOptionsHelper</a>
+  
+    <li><a href="./DefaultFinder.html">DefaultFinder</a>
+  
+    <li><a href="./DefaultFinder/Finder.html">DefaultFinder::Finder</a>
+  
+    <li><a href="./DefaultFinder/Finder/ClassMethods.html">DefaultFinder::Finder::ClassMethods</a>
+  
+    <li><a href="./IrbjaxEngine.html">IrbjaxEngine</a>
+  
+    <li><a href="./IrbjaxEngine/IrbjaxSession.html">IrbjaxEngine::IrbjaxSession</a>
+  
+    <li><a href="./IrbjaxEngine/Output.html">IrbjaxEngine::Output</a>
+  
+    <li><a href="./SymetrieCom.html">SymetrieCom</a>
+  
+    <li><a href="./SymetrieCom/Acts.html">SymetrieCom::Acts</a>
+  
+    <li><a href="./SymetrieCom/Acts/BetterNestedSetHelper.html">SymetrieCom::Acts::BetterNestedSetHelper</a>
+  
+    <li><a href="./GetText.html">GetText</a>
+  
+    <li><a href="./GetText/PoParser.html">GetText::PoParser</a>
+  
+    <li><a href="./Rack.html">Rack</a>
+  
+    <li><a href="./Rack/Utils.html">Rack::Utils</a>
+  
+    <li><a href="./WillPaginate.html">WillPaginate</a>
+  
+    <li><a href="./WillPaginate/ViewHelpers.html">WillPaginate::ViewHelpers</a>
+  
+    <li><a href="./AbstractReport.html">AbstractReport</a>
+  
+    <li><a href="./Access.html">Access</a>
+  
+    <li><a href="./AccessApi.html">AccessApi</a>
+  
+    <li><a href="./AccessReport.html">AccessReport</a>
+  
+    <li><a href="./AccessesController.html">AccessesController</a>
+  
+    <li><a href="./AccessesHelper.html">AccessesHelper</a>
+  
+    <li><a href="./AppLocale.html">AppLocale</a>
+  
+    <li><a href="./AppLocaleApi.html">AppLocaleApi</a>
+  
+    <li><a href="./AppLocalesController.html">AppLocalesController</a>
+  
+    <li><a href="./AppLocalesHelper.html">AppLocalesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BgWorker.html">BgWorker</a>
+  
+    <li><a href="./BgWorkerApi.html">BgWorkerApi</a>
+  
+    <li><a href="./BgWorkerReport.html">BgWorkerReport</a>
+  
+    <li><a href="./BgWorkersController.html">BgWorkersController</a>
+  
+    <li><a href="./BgWorkersHelper.html">BgWorkersHelper</a>
+  
+    <li><a href="./Customer.html">Customer</a>
+  
+    <li><a href="./CustomerApi.html">CustomerApi</a>
+  
+    <li><a href="./CustomersController.html">CustomersController</a>
+  
+    <li><a href="./CustomersHelper.html">CustomersHelper</a>
+  
+    <li><a href="./Date.html">Date</a>
+  
+    <li><a href="./DateHelper.html">DateHelper</a>
+  
+    <li><a href="./DevFeedback.html">DevFeedback</a>
+  
+    <li><a href="./DevFeedbackApi.html">DevFeedbackApi</a>
+  
+    <li><a href="./DevFeedbacksController.html">DevFeedbacksController</a>
+  
+    <li><a href="./DevFeedbacksHelper.html">DevFeedbacksHelper</a>
+  
+    <li><a href="./Enumerable.html">Enumerable</a>
+  
+    <li><a href="./FileImport.html">FileImport</a>
+  
+    <li><a href="./FileImportApi.html">FileImportApi</a>
+  
+    <li><a href="./FileImportReport.html">FileImportReport</a>
+  
+    <li><a href="./FileImportsController.html">FileImportsController</a>
+  
+    <li><a href="./FileImportsHelper.html">FileImportsHelper</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./PdfHandler.html">PdfHandler</a>
+  
+    <li><a href="./Profile.html">Profile</a>
+  
+    <li><a href="./ProfileAccess.html">ProfileAccess</a>
+  
+    <li><a href="./ProfileAccessApi.html">ProfileAccessApi</a>
+  
+    <li><a href="./ProfileAccessesController.html">ProfileAccessesController</a>
+  
+    <li><a href="./ProfileAccessesHelper.html">ProfileAccessesHelper</a>
+  
+    <li><a href="./ProfileApi.html">ProfileApi</a>
+  
+    <li><a href="./ProfilesController.html">ProfilesController</a>
+  
+    <li><a href="./ProfilesHelper.html">ProfilesHelper</a>
+  
+    <li><a href="./RBeautify.html">RBeautify</a>
+  
+    <li><a href="./Range.html">Range</a>
+  
+    <li><a href="./SavedReport.html">SavedReport</a>
+  
+    <li><a href="./SavedReportApi.html">SavedReportApi</a>
+  
+    <li><a href="./SavedReportsController.html">SavedReportsController</a>
+  
+    <li><a href="./SavedReportsHelper.html">SavedReportsHelper</a>
+  
+    <li><a href="./SmartQueriesController.html">SmartQueriesController</a>
+  
+    <li><a href="./SmartQueriesHelper.html">SmartQueriesHelper</a>
+  
+    <li><a href="./SmartQuery.html">SmartQuery</a>
+  
+    <li><a href="./SmartQueryApi.html">SmartQueryApi</a>
+  
+    <li><a href="./SystemSetting.html">SystemSetting</a>
+  
+    <li><a href="./SystemSettingApi.html">SystemSettingApi</a>
+  
+    <li><a href="./SystemSettingsController.html">SystemSettingsController</a>
+  
+    <li><a href="./SystemSettingsHelper.html">SystemSettingsHelper</a>
+  
+    <li><a href="./Thumbnailer.html">Thumbnailer</a>
+  
+    <li><a href="./Translation.html">Translation</a>
+  
+    <li><a href="./TranslationApi.html">TranslationApi</a>
+  
+    <li><a href="./TranslationsController.html">TranslationsController</a>
+  
+    <li><a href="./TranslationsHelper.html">TranslationsHelper</a>
+  
+    <li><a href="./UncatchedException.html">UncatchedException</a>
+  
+    <li><a href="./UncatchedExceptionApi.html">UncatchedExceptionApi</a>
+  
+    <li><a href="./UncatchedExceptionMailer.html">UncatchedExceptionMailer</a>
+  
+    <li><a href="./UncatchedExceptionsController.html">UncatchedExceptionsController</a>
+  
+    <li><a href="./UncatchedExceptionsHelper.html">UncatchedExceptionsHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserAccess.html">UserAccess</a>
+  
+    <li><a href="./UserAccessApi.html">UserAccessApi</a>
+  
+    <li><a href="./UserAccessesController.html">UserAccessesController</a>
+  
+    <li><a href="./UserAccessesHelper.html">UserAccessesHelper</a>
+  
+    <li><a href="./UserApi.html">UserApi</a>
+  
+    <li><a href="./UserMailer.html">UserMailer</a>
+  
+    <li><a href="./UserReport.html">UserReport</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class AppLocalesController</h1>
+
+  <div id="description" class="description">
+    
+<pre>This file and all its content belong to Faveod S.A.S unless a commercial
+contract signed by a representant of Faveod S.A.S states otherwise.</pre>
+
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</p>
+
+<pre>This has been generated by Faveod Generator on Thu Oct 31 16:38:01 +0100 2013
+It should be placed at 'app/controllers/app_locales_controller.rb'
+All manual modifications will be destroyed on next generation</pre>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-auto_translate" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">auto_translate</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Translations: auto-translation AJAX call.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>3</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 14:09:26 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Should be optimized</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="auto_translate-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 707</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">auto_translate</span>
+
+  <span class="ruby-ivar">@res</span> <span class="ruby-operator">||=</span> <span class="ruby-string">&quot;&quot;</span>
+  <span class="ruby-ivar">@app_locale</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]) <span class="ruby-operator">||</span> <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">find_by_locale_code</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">working?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@app_locale</span>
+    <span class="ruby-ivar">@lang_file</span> = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">locale_code</span>
+    <span class="ruby-identifier">msgid</span> = {}
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:msgid</span>]
+      <span class="ruby-ivar">@translation</span> = {}
+      <span class="ruby-identifier">params</span>[<span class="ruby-value">:msgid</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f</span>, <span class="ruby-identifier">fdata</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">file</span> = <span class="ruby-constant">Base64</span>.<span class="ruby-identifier">decode64</span>(<span class="ruby-identifier">f</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r!/</span>,<span class="ruby-string">'='</span>) <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&quot;</span>)
+        <span class="ruby-identifier">msgid</span>[<span class="ruby-identifier">file</span>] = {}
+        <span class="ruby-identifier">fdata</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">l</span>, <span class="ruby-identifier">ldata</span><span class="ruby-operator">|</span>
+          <span class="ruby-identifier">mmsgid</span> = <span class="ruby-constant">Base64</span>.<span class="ruby-identifier">decode64</span>(<span class="ruby-identifier">l</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r!/</span>,<span class="ruby-string">'='</span>) <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&quot;</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r\r/</span>,<span class="ruby-string">''</span>)
+          <span class="ruby-identifier">msgid</span>[<span class="ruby-identifier">file</span>][<span class="ruby-identifier">mmsgid</span>] = <span class="ruby-identifier">ldata</span>[<span class="ruby-string">&quot;0&quot;</span>].<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r\r/</span>,<span class="ruby-string">''</span>)
+          <span class="ruby-identifier">i</span> = <span class="ruby-value">1</span>
+          <span class="ruby-keyword">while</span> <span class="ruby-identifier">ldata</span>[<span class="ruby-node">&quot;#{i}&quot;</span>]
+            <span class="ruby-identifier">msgid</span>[<span class="ruby-identifier">file</span>][<span class="ruby-identifier">mmsgid</span>] <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;\0000&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">ldata</span>[<span class="ruby-node">&quot;#{i}&quot;</span>].<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r\r/</span>,<span class="ruby-string">''</span>)
+            <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+          <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-identifier">msgid</span>[<span class="ruby-identifier">file</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">mmsgid</span>, <span class="ruby-identifier">msgstr</span><span class="ruby-operator">|</span>
+          <span class="ruby-ivar">@res</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">get_translation</span>(<span class="ruby-identifier">mmsgid</span>, <span class="ruby-ivar">@lang_file</span>)
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- auto_translate-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- auto_translate-method -->
+
+    
+      <div id="method-i-auto_translate_all" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">auto_translate_all</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Translations: auto-translate all remaining parts.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 14:05:08 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="auto_translate_all-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 629</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">auto_translate_all</span>
+
+  <span class="ruby-identifier">res</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">start</span>(<span class="ruby-value">:auto_translate</span>) <span class="ruby-keyword">unless</span> <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">working?</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">res</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:error</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Cannot launch tasks!&quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-string">': '</span> <span class="ruby-operator">+</span>
+    <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{task} running in background&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:task</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Translator&quot;</span>)}
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{task} running in background&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:task</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Automatic Translator&quot;</span>)}
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- auto_translate_all-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- auto_translate_all-method -->
+
+    
+      <div id="method-i-create" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Inserts the record in the database.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>23</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-10-31 16:38:41 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="create-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 219</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create</span>
+
+  <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">post?</span>
+  <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:app_locale</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:app_locale</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+  <span class="ruby-ivar">@app_locale_attributes</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:app_locale</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:app_locale</span>][<span class="ruby-string">'0'</span>].<span class="ruby-identifier">clone</span> <span class="ruby-operator">:</span> {}
+
+  <span class="ruby-ivar">@app_locale</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-ivar">@app_locale_attributes</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">save</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{page} was successfully created.&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;App Locale&quot;</span>)}
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span> <span class="ruby-comment"># &amp;&amp; params[:format] == 'json'</span>
+      <span class="ruby-identifier">render</span>(<span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">id</span>}.<span class="ruby-identifier">merge</span>(<span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">attributes</span>).<span class="ruby-identifier">to_json</span>)
+      <span class="ruby-keyword">return</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span> <span class="ruby-comment"># &amp;&amp; params[:format] == 'json'</span>
+      <span class="ruby-identifier">render</span>(<span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> ({<span class="ruby-value">:errors</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">full_messages</span>}.<span class="ruby-identifier">merge</span>(<span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">attributes</span>)).<span class="ruby-identifier">to_json</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">render</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:new</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:go_to</span>].<span class="ruby-identifier">blank?</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-identifier">params</span>[<span class="ruby-value">:commit_and_new</span>] <span class="ruby-operator">?</span> <span class="ruby-value">:new</span> <span class="ruby-operator">:</span> <span class="ruby-value">:index</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">redirect_to</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:go_to</span>])
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create-method -->
+
+    
+      <div id="method-i-destroy" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">destroy</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Deletes an object or list of objects from the database.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>9</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-03-08 15:34:31 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="destroy-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 332</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">destroy</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Array</span>)
+    <span class="ruby-ivar">@success</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">destroy</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@app_locale</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+    <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">destroy</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-ivar">@success</span> = <span class="ruby-ivar">@app_locale</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">destroyed?</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@success</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{model} %{name} successfully deleted.&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:model</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;App Locale&quot;</span>), <span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">disp_name</span>}
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{model} %{name} could not be deleted.&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:model</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;App Locale&quot;</span>), <span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:name</span>]}
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">!=</span> <span class="ruby-string">&quot;json&quot;</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+      <span class="ruby-identifier">render</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'ajax_update'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:go_to</span>].<span class="ruby-identifier">blank?</span>
+        <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">redirect_to</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:go_to</span>])
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">resp</span> = {}
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@success</span>
+      <span class="ruby-identifier">resp</span>[<span class="ruby-value">:success</span>] = <span class="ruby-keyword">true</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">resp</span>[<span class="ruby-value">:success</span>] = <span class="ruby-keyword">false</span>
+      <span class="ruby-identifier">resp</span>[<span class="ruby-value">:error</span>] = <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>]
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">resp</span>.<span class="ruby-identifier">to_json</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- destroy-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- destroy-method -->
+
+    
+      <div id="method-i-edit" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">edit</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Translations: updating translations.</p>
+<ul><li>
+<p>single or batch editing</p>
+</li><li>
+<p>manual or automatically-retrieved content</p>
+</li></ul>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>5</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 12:36:46 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="edit-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 544</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">edit</span>
+
+  <span class="ruby-ivar">@app_locale</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]) <span class="ruby-operator">||</span> <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">find_by_locale_code</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Warning: %{obj} with ID %{id} does not exist!&quot;</span> ) <span class="ruby-operator">%</span> {<span class="ruby-value">:obj</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'app_locale'</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]}
+    <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:list</span>)
+    <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-ivar">@filter</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:filters</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:filters</span>][<span class="ruby-value">:msgid</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:filters</span>][<span class="ruby-value">:msgid</span>] <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">params</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:filters</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:filters</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:filters</span>][<span class="ruby-value">:msgid</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:tab</span>]
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;trans&quot;</span>
+    <span class="ruby-ivar">@gettext_trans</span> = <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;untrans&quot;</span>
+    <span class="ruby-ivar">@gettext_untrans</span> = <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;obsol&quot;</span>
+    <span class="ruby-ivar">@gettext_obsol</span> = <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;fuzzy&quot;</span>
+    <span class="ruby-ivar">@gettext_fuzzy</span> = <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@gettext_fuzzy</span> = <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@lang_file</span> = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">locale_code</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@gettext_obsol</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;-1&quot;</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;-1&quot;</span>
+    <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">delete_obsol</span>
+    <span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>] = <span class="ruby-string">&quot;50&quot;</span>
+    <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>] = <span class="ruby-string">&quot;1&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">tab</span> = (<span class="ruby-identifier">params</span>[<span class="ruby-value">:tab</span>] <span class="ruby-operator">||</span> <span class="ruby-string">&quot;fuzzy&quot;</span>)
+  <span class="ruby-identifier">res</span> = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">gettext_fct_from_yml</span>(<span class="ruby-identifier">tab</span>, <span class="ruby-identifier">params</span>)
+  <span class="ruby-ivar">@translation</span> = <span class="ruby-identifier">res</span>[<span class="ruby-value">:translation</span>]
+  <span class="ruby-ivar">@md5</span> = <span class="ruby-identifier">res</span>[<span class="ruby-value">:md5</span>]
+  <span class="ruby-ivar">@nb_trans</span> = (<span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>] <span class="ruby-operator">||</span> <span class="ruby-value">50</span>).<span class="ruby-identifier">to_i</span>
+  <span class="ruby-ivar">@current_page</span> = <span class="ruby-identifier">pages</span> = (<span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>] <span class="ruby-operator">||</span> <span class="ruby-value">1</span>).<span class="ruby-identifier">to_i</span>
+  <span class="ruby-ivar">@nb_trans</span> = <span class="ruby-value">50</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@nb_trans</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">1</span>
+  <span class="ruby-ivar">@current_page</span> = <span class="ruby-value">1</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@current_page</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">1</span>
+  <span class="ruby-ivar">@total_trans</span> = <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@app_locales</span> = {}
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@translation</span>
+    <span class="ruby-ivar">@translation</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">sort</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-ivar">@translation</span>[<span class="ruby-identifier">f</span>]
+        <span class="ruby-ivar">@app_locales</span>[<span class="ruby-identifier">f</span>] = <span class="ruby-ivar">@translation</span>[<span class="ruby-identifier">f</span>].<span class="ruby-identifier">sort</span>.<span class="ruby-identifier">paginate</span>(<span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@current_page</span> , <span class="ruby-value">:per_page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@nb_trans</span>)
+        <span class="ruby-ivar">@total_trans</span> <span class="ruby-operator">+=</span> <span class="ruby-ivar">@translation</span>[<span class="ruby-identifier">f</span>].<span class="ruby-identifier">length</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">filter</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:filters</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:filters</span>][<span class="ruby-value">:msgid</span>] <span class="ruby-operator">?</span> <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:filters</span>][<span class="ruby-value">:msgid</span>]) <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+  <span class="ruby-ivar">@count_fuzzy</span>   = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">count_total_element</span>(<span class="ruby-string">&quot;fuzzy&quot;</span>,   <span class="ruby-identifier">filter</span>)
+  <span class="ruby-ivar">@count_trans</span>   = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">count_total_element</span>(<span class="ruby-string">&quot;trans&quot;</span>,   <span class="ruby-identifier">filter</span>)
+  <span class="ruby-ivar">@count_obsol</span>   = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">count_total_element</span>(<span class="ruby-string">&quot;obsol&quot;</span>,   <span class="ruby-identifier">filter</span>)
+  <span class="ruby-ivar">@count_untrans</span> = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">count_total_element</span>(<span class="ruby-string">&quot;untrans&quot;</span>, <span class="ruby-identifier">filter</span>)
+  <span class="ruby-identifier">render</span> <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- edit-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- edit-method -->
+
+    
+      <div id="method-i-feed" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">feed</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Exports RSS, XML and ATOM feeds.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>6</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 12:11:11 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="feed-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 377</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">feed</span>
+
+  <span class="ruby-ivar">@app_locales</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">all</span>(<span class="ruby-value">:limit</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">50</span>)
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">rss</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'app_locales/rss'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>}
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'app_locales/rss'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>}
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'app_locales/rss'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>}
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">atom</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:template</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'app_locales/atom'</span>, <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>}
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- feed-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- feed-method -->
+
+    
+      <div id="method-i-get_file" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_file</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Load the entire file.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>8</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-09-11 00:06:47 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="get_file-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 129</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_file</span>
+
+  <span class="ruby-ivar">@app_locale</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-identifier">filename</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">filepath</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">document</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>].<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;po&quot;</span>
+    <span class="ruby-identifier">filename</span> = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">po__name</span>
+    <span class="ruby-identifier">filepath</span> = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">po__path</span>
+    <span class="ruby-identifier">document</span> = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">po</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">document</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-identifier">filepath</span>)
+    <span class="ruby-identifier">mime</span> = <span class="ruby-constant">MIME</span><span class="ruby-operator">::</span><span class="ruby-constant">Types</span>.<span class="ruby-identifier">type_for</span>(<span class="ruby-identifier">filename</span>)
+    <span class="ruby-identifier">file_type</span> = <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">content_type</span> <span class="ruby-operator">:</span> <span class="ruby-string">'application/octet-stream'</span>
+    <span class="ruby-identifier">disposition</span>       = <span class="ruby-string">'inline'</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span> <span class="ruby-operator">&amp;&amp;</span> [<span class="ruby-string">'text'</span>, <span class="ruby-string">'image'</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">media_type</span>)
+    <span class="ruby-identifier">disposition</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'attachment'</span>
+    <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">document</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">filename</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">file_type</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">disposition</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:nothing</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_file-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_file-method -->
+
+    
+      <div id="method-i-get_file_size" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_file_size</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>File management: gets files’ size.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 12:23:12 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="get_file_size-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 101</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_file_size</span>
+
+  <span class="ruby-identifier">size</span>          = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">filename</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">document</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-ivar">@app_locale</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>].<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;po&quot;</span>
+    <span class="ruby-identifier">filename</span>  = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">po__path</span>
+    <span class="ruby-identifier">document</span>  = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">po</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">columns</span>.<span class="ruby-identifier">find</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">name</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>]} <span class="ruby-comment"># binary in db</span>
+    <span class="ruby-identifier">size</span> = <span class="ruby-identifier">document</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">document</span>.<span class="ruby-identifier">length</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">size</span> = <span class="ruby-identifier">filename</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">size</span>(<span class="ruby-identifier">filename</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">render</span> <span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">size</span>.<span class="ruby-identifier">to_s</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_file_size-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_file_size-method -->
+
+    
+      <div id="method-i-get_file_thumb" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_file_thumb</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Retrieve the thumbnail of a file (icon or image).</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>14</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-02-04 15:20:42 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="get_file_thumb-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 44</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_file_thumb</span>
+
+  <span class="ruby-ivar">@app_locale</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-identifier">filename</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">document</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">mime</span>         = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>].<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;po&quot;</span>
+    <span class="ruby-identifier">filename</span>   = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">po__thumb_path</span>
+    <span class="ruby-identifier">filename</span> <span class="ruby-operator">||=</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">po__name</span>
+    <span class="ruby-identifier">document</span>   = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">po</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">filename</span>
+    <span class="ruby-identifier">mime</span> = <span class="ruby-constant">MIME</span><span class="ruby-operator">::</span><span class="ruby-constant">Types</span>.<span class="ruby-identifier">type_for</span>(<span class="ruby-identifier">filename</span>)
+    <span class="ruby-identifier">file_type</span> = <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">content_type</span> <span class="ruby-operator">:</span> <span class="ruby-string">'application/octet-stream'</span>
+    <span class="ruby-identifier">disposition</span>       = <span class="ruby-string">'inline'</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span> <span class="ruby-operator">&amp;&amp;</span> [<span class="ruby-string">'text'</span>, <span class="ruby-string">'image'</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">media_type</span>)
+    <span class="ruby-identifier">disposition</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'attachment'</span>
+    <span class="ruby-identifier">extension</span> = <span class="ruby-identifier">filename</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">'.'</span>).<span class="ruby-identifier">last</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">mime</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">media_type</span> <span class="ruby-operator">!=</span> <span class="ruby-string">'image'</span>
+      <span class="ruby-identifier">icon</span> = <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'public'</span>, <span class="ruby-string">'images'</span>, <span class="ruby-string">'file_icons'</span>, <span class="ruby-node">&quot;#{extension}.png&quot;</span>).<span class="ruby-identifier">to_s</span>
+      <span class="ruby-identifier">icon</span> = <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'public'</span>, <span class="ruby-string">'images'</span>, <span class="ruby-string">'file_icons'</span>, <span class="ruby-string">&quot;defaut.png&quot;</span>).<span class="ruby-identifier">to_s</span> <span class="ruby-keyword">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-identifier">icon</span>)
+
+      <span class="ruby-comment"># sends thumbnail file</span>
+
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">icon</span>).<span class="ruby-identifier">read</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">basename</span>(<span class="ruby-identifier">icon</span>), <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'image/png'</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'inline'</span>)
+      <span class="ruby-keyword">return</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">document</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">columns</span>.<span class="ruby-identifier">find</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">name</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>]}
+
+      <span class="ruby-comment"># sends thumbnail blob in the database</span>
+
+      <span class="ruby-identifier">send_data</span>(<span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">thumbnail</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>]), <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">filename</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">file_type</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'inline'</span>)
+    <span class="ruby-keyword">else</span>
+
+      <span class="ruby-comment"># makes thumbnail and send</span>
+
+      <span class="ruby-identifier">thmb</span> = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">thumbnail</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:sid</span>])
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">thmb</span>
+        <span class="ruby-identifier">send_data</span>(<span class="ruby-identifier">thmb</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">filename</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">file_type</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'inline'</span>)
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">render</span> <span class="ruby-value">:nothing</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:nothing</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_file_thumb-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_file_thumb-method -->
+
+    
+      <div id="method-i-get_po_file" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_po_file</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Translations: downloading PO file.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-04-22 01:51:48 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="get_po_file-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 450</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_po_file</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">app_locales</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+    <span class="ruby-identifier">path</span> = <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'po'</span>, <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>], <span class="ruby-constant">APP_SID</span> <span class="ruby-operator">+</span> <span class="ruby-string">'.po'</span>)
+    <span class="ruby-identifier">send_data</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">path</span>, <span class="ruby-string">'r'</span>).<span class="ruby-identifier">read</span>, <span class="ruby-value">:filename</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;#{APP_SID}_#{params[:id]}.po&quot;</span>, <span class="ruby-value">:disposition</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'attachment'</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:nothing</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_po_file-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_po_file-method -->
+
+    
+      <div id="method-i-help" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">help</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Gives help about current module.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>17</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-05-19 23:29:44 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="help-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 397</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">help</span>
+
+  <span class="ruby-ivar">@user_actions</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:table_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;app_locales&quot;</span>, <span class="ruby-value">:action_sid</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;list&quot;</span>, <span class="ruby-string">&quot;new&quot;</span>, <span class="ruby-string">&quot;create&quot;</span>, <span class="ruby-string">&quot;show&quot;</span>, <span class="ruby-string">&quot;update&quot;</span>, <span class="ruby-string">&quot;destroy&quot;</span>, <span class="ruby-string">&quot;feed&quot;</span>, <span class="ruby-string">&quot;help&quot;</span>, <span class="ruby-string">&quot;update_po&quot;</span>, <span class="ruby-string">&quot;po_files&quot;</span>, <span class="ruby-string">&quot;get_po_file&quot;</span>, <span class="ruby-string">&quot;translate_deprecated&quot;</span>, <span class="ruby-string">&quot;index&quot;</span>, <span class="ruby-string">&quot;edit&quot;</span>, <span class="ruby-string">&quot;make_mo&quot;</span>, <span class="ruby-string">&quot;auto_translate_all&quot;</span>, <span class="ruby-string">&quot;submit&quot;</span>, <span class="ruby-string">&quot;auto_translate&quot;</span>]).<span class="ruby-identifier">includes</span>([<span class="ruby-value">:user_accesses</span>, <span class="ruby-value">:profile_accesses</span>]).<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">a</span><span class="ruby-operator">|</span> <span class="ruby-ivar">@current_user</span>.<span class="ruby-identifier">can_run?</span>(<span class="ruby-identifier">a</span>) }
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- help-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- help-method -->
+
+    
+      <div id="method-i-index" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">index</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Translations: main screen (listing PO files and translations).</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>9</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-04-22 01:51:37 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="index-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 525</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">index</span>
+
+  <span class="ruby-identifier">list</span>
+  <span class="ruby-identifier">po_files</span>
+  <span class="ruby-ivar">@menu_lg</span> = <span class="ruby-constant">Dir</span>[<span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'po'</span>, <span class="ruby-string">'*'</span>, <span class="ruby-string">'*.po'</span>)].<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span>
+  <span class="ruby-identifier">f</span>.<span class="ruby-identifier">tr</span>(<span class="ruby-string">&quot;\\&quot;</span>, <span class="ruby-string">'/'</span>).<span class="ruby-identifier">split</span>(<span class="ruby-string">'/'</span>)[<span class="ruby-value">-2</span>] }
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- index-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- index-method -->
+
+    
+      <div id="method-i-list" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">list</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>This gives the list of all records</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>24</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-01-29 17:02:44 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="list-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 161</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">list</span>
+
+  <span class="ruby-ivar">@restricted_fields</span> = []
+  <span class="ruby-identifier">pagin_opts</span> = {<span class="ruby-value">:include</span> =<span class="ruby-operator">&gt;</span> []}
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:page</span>]     = <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">:</span> <span class="ruby-value">1</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:per_page</span>]         = (<span class="ruby-identifier">params</span>[<span class="ruby-value">:per_page</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">cookies</span>[<span class="ruby-value">:app_locales_per_page</span>] <span class="ruby-operator">||</span> <span class="ruby-value">50</span>).<span class="ruby-identifier">to_i</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:order</span>]    = <span class="ruby-ivar">@default_order</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@default_order</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:order</span>]  <span class="ruby-operator">||=</span> <span class="ruby-string">'app_locales.'</span> <span class="ruby-operator">+</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:sort_by</span>] <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:sort_by</span>].<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-operator">||=</span> <span class="ruby-ivar">@default_filter</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@default_filter</span>
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-operator">||=</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:conditions</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+  <span class="ruby-identifier">pagin_opts</span>[<span class="ruby-value">:joins</span>]  <span class="ruby-operator">||=</span> <span class="ruby-ivar">@joins_fields</span> <span class="ruby-operator">||</span> []
+
+  <span class="ruby-ivar">@app_locales</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">paginate</span>(<span class="ruby-identifier">pagin_opts</span>)
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@app_locales</span>.<span class="ruby-identifier">to_xml</span>(<span class="ruby-value">:dasherize</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>, <span class="ruby-value">:only</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:id</span>,<span class="ruby-value">:locale_code</span>,<span class="ruby-value">:po__name</span>,<span class="ruby-value">:updated_at</span>])) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'xml'</span>
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@app_locales</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'json'</span>
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:pdf</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@app_locales</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:list</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:format</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'pdf'</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> [<span class="ruby-string">&quot;locale_code&quot;</span>, <span class="ruby-string">&quot;updated_at&quot;</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>])
+    <span class="ruby-ivar">@app_locales_groups</span> = <span class="ruby-ivar">@app_locales</span>.<span class="ruby-identifier">inject</span>({}) { <span class="ruby-operator">|</span><span class="ruby-identifier">acc</span>,<span class="ruby-identifier">elt</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">crit</span> = <span class="ruby-keyword">nil</span>
+      <span class="ruby-keyword">if</span> [].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>])
+        <span class="ruby-identifier">crit</span> = <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>]) <span class="ruby-operator">?</span> <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>]).<span class="ruby-identifier">disp_name</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">crit</span> = <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">attributes</span>[<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_by</span>]]
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-identifier">acc</span>[<span class="ruby-identifier">crit</span>] <span class="ruby-operator">||=</span> []
+      <span class="ruby-identifier">acc</span>[<span class="ruby-identifier">crit</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">elt</span>
+      <span class="ruby-identifier">acc</span>
+    }
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- list-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- list-method -->
+
+    
+      <div id="method-i-make_mo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">make_mo</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Translations: publishing changes.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>6</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 14:04:38 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="make_mo-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 608</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">make_mo</span>
+
+  <span class="ruby-identifier">res</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">start</span>(<span class="ruby-value">:make_mo</span>) <span class="ruby-keyword">unless</span> <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">working?</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">res</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:error</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Cannot launch tasks!&quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-string">': '</span> <span class="ruby-operator">+</span>
+    <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{task} running in background&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:task</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Translator&quot;</span>)}
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{task} running in background&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:task</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;'Make MO'&quot;</span>}
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- make_mo-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- make_mo-method -->
+
+    
+      <div id="method-i-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Loads a new record.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-03-25 18:26:30 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 201</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">new</span>
+
+  <span class="ruby-ivar">@app_locale_attributes</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:app_locale</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:app_locale</span>][<span class="ruby-string">'0'</span>].<span class="ruby-identifier">clone</span> <span class="ruby-operator">:</span> {}
+
+  <span class="ruby-ivar">@app_locale</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-ivar">@app_locale_attributes</span>)
+
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+      <div id="method-i-po_files" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">po_files</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Translations: listing PO files.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-04-22 01:51:20 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="po_files-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 433</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">po_files</span>
+
+  <span class="ruby-ivar">@po_files</span> = {}
+  <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">app_locales</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span>
+    <span class="ruby-ivar">@po_files</span>[<span class="ruby-identifier">l</span>] = <span class="ruby-constant">APP_SID</span> <span class="ruby-operator">+</span> <span class="ruby-string">'.po'</span> <span class="ruby-keyword">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'po'</span>, <span class="ruby-identifier">l</span>, <span class="ruby-constant">APP_SID</span> <span class="ruby-operator">+</span> <span class="ruby-string">'.po'</span>))
+  }
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- po_files-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- po_files-method -->
+
+    
+      <div id="method-i-show" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">show</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Display the record.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>14</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-03-26 04:12:53 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="show-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 256</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">show</span>
+
+  <span class="ruby-ivar">@app_locale_attributes</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:app_locale</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:app_locale</span>][<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]].<span class="ruby-identifier">clone</span> <span class="ruby-operator">:</span> {}
+  <span class="ruby-ivar">@app_locale_attributes</span>.<span class="ruby-identifier">merge!</span>(<span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]) <span class="ruby-keyword">if</span> <span class="ruby-ivar">@app_locale_attributes</span>
+
+  <span class="ruby-ivar">@app_locale</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-ivar">@app_locale_attributes</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] <span class="ruby-operator">||=</span> []
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Warning: %{obj} with ID %{id} does not exist!&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:obj</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'app_locale'</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]}
+    <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>)
+    <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> {
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span> }
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">pdf</span> {
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span> }
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span> {
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">to_xml</span> }
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> {
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">to_json</span> }
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- show-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- show-method -->
+
+    
+      <div id="method-i-submit" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">submit</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Translations: submit translations batch.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>6</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-04-22 01:54:06 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Should be optimized</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="submit-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 650</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">submit</span>
+
+  <span class="ruby-ivar">@app_locale</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]) <span class="ruby-operator">||</span> <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">find_by_locale_code</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">working?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:tab</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;untrans&quot;</span>
+    <span class="ruby-ivar">@lang_file</span> = <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">locale_code</span>
+    <span class="ruby-identifier">msgid</span> = {}
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:msgid</span>]
+      <span class="ruby-ivar">@translation</span> = {}
+      <span class="ruby-identifier">params</span>[<span class="ruby-value">:msgid</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f</span>, <span class="ruby-identifier">fdata</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">file</span> = <span class="ruby-constant">Base64</span>.<span class="ruby-identifier">decode64</span>(<span class="ruby-identifier">f</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r!/</span>,<span class="ruby-string">'='</span>) <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&quot;</span>)
+        <span class="ruby-identifier">msgid</span>[<span class="ruby-identifier">file</span>] = {}
+        <span class="ruby-identifier">fdata</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">l</span>, <span class="ruby-identifier">ldata</span><span class="ruby-operator">|</span>
+          <span class="ruby-identifier">mmsgid</span> = <span class="ruby-constant">Base64</span>.<span class="ruby-identifier">decode64</span>(<span class="ruby-identifier">l</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r!/</span>,<span class="ruby-string">'='</span>) <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&quot;</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r\r/</span>,<span class="ruby-string">''</span>)
+          <span class="ruby-identifier">msgid</span>[<span class="ruby-identifier">file</span>][<span class="ruby-identifier">mmsgid</span>] = <span class="ruby-identifier">ldata</span>[<span class="ruby-string">&quot;0&quot;</span>].<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r\r/</span>,<span class="ruby-string">''</span>)
+          <span class="ruby-identifier">i</span> = <span class="ruby-value">1</span>
+          <span class="ruby-keyword">while</span> <span class="ruby-identifier">ldata</span>[<span class="ruby-node">&quot;#{i}&quot;</span>]
+            <span class="ruby-identifier">msgid</span>[<span class="ruby-identifier">file</span>][<span class="ruby-identifier">mmsgid</span>] <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;\0000&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">ldata</span>[<span class="ruby-node">&quot;#{i}&quot;</span>].<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r\r/</span>,<span class="ruby-string">''</span>)
+            <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+          <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-identifier">my_file</span> = <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'po'</span>, <span class="ruby-ivar">@lang_file</span>, <span class="ruby-identifier">file</span>)
+        <span class="ruby-ivar">@translation</span>[<span class="ruby-identifier">file</span>] = <span class="ruby-constant">YAML</span>.<span class="ruby-identifier">load</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">my_file</span>, <span class="ruby-string">'r'</span>))
+        <span class="ruby-identifier">msgid</span>[<span class="ruby-identifier">file</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">mmsgid</span>, <span class="ruby-identifier">msgstr</span><span class="ruby-operator">|</span>
+          <span class="ruby-ivar">@translation</span>[<span class="ruby-identifier">file</span>].<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">mmsgid</span>)
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">my_file</span>, <span class="ruby-string">&quot;w+&quot;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span>
+          <span class="ruby-constant">YAML</span>.<span class="ruby-identifier">dump</span>(<span class="ruby-ivar">@translation</span>[<span class="ruby-identifier">file</span>].<span class="ruby-identifier">inject</span>({}) {<span class="ruby-operator">|</span><span class="ruby-identifier">acc</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">acc</span>[<span class="ruby-identifier">v</span>[<span class="ruby-value">0</span>]] = <span class="ruby-identifier">v</span>[<span class="ruby-value">1</span>] ; <span class="ruby-identifier">acc</span>}, <span class="ruby-identifier">f</span>)
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-identifier">my_file</span> = <span class="ruby-identifier">my_file</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r_fuzzy.yml/</span>, <span class="ruby-string">&quot;_trans.yml&quot;</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r_untrans.yml/</span>, <span class="ruby-string">&quot;_trans.yml&quot;</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r_obsol.yml/</span>, <span class="ruby-string">&quot;_trans.yml&quot;</span>)
+        <span class="ruby-ivar">@translation</span>[<span class="ruby-identifier">file</span>] = <span class="ruby-constant">YAML</span>.<span class="ruby-identifier">load</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">my_file</span>, <span class="ruby-string">'r'</span>))
+        <span class="ruby-identifier">msgid</span>[<span class="ruby-identifier">file</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">mmsgid</span>, <span class="ruby-identifier">msgstr</span><span class="ruby-operator">|</span>
+          <span class="ruby-ivar">@translation</span>[<span class="ruby-identifier">file</span>][<span class="ruby-identifier">mmsgid</span>] = <span class="ruby-identifier">msgstr</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">my_file</span>, <span class="ruby-string">&quot;w+&quot;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span>
+          <span class="ruby-constant">YAML</span>.<span class="ruby-identifier">dump</span>(<span class="ruby-ivar">@translation</span>[<span class="ruby-identifier">file</span>].<span class="ruby-identifier">inject</span>({}) {<span class="ruby-operator">|</span><span class="ruby-identifier">acc</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">acc</span>[<span class="ruby-identifier">v</span>[<span class="ruby-value">0</span>]] = <span class="ruby-identifier">v</span>[<span class="ruby-value">1</span>] ; <span class="ruby-identifier">acc</span>}, <span class="ruby-identifier">f</span>)
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@translation</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{page} was successfully updated.&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;App Locale&quot;</span>)}
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:error</span>]  = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Cannot launch task!&quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-string">': '</span> <span class="ruby-operator">+</span>
+    <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{task} running in background&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:task</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Translator&quot;</span>)}
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- submit-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- submit-method -->
+
+    
+      <div id="method-i-translate_deprecated" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">translate_deprecated</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>WARNING: DEPRECATED! Translations: threaded auto-translation using Google
+Services.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>5</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-04-22 01:53:27 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="translate_deprecated-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 473</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">translate_deprecated</span>
+
+  <span class="ruby-identifier">render</span> <span class="ruby-value">:nothing</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span> <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+  <span class="ruby-identifier">require</span> <span class="ruby-string">'open-uri'</span>
+  <span class="ruby-identifier">require</span> <span class="ruby-string">'hpricot'</span>
+  <span class="ruby-constant">Thread</span>.<span class="ruby-identifier">start</span> {
+    <span class="ruby-constant">Thread</span>.<span class="ruby-identifier">current</span>[<span class="ruby-value">:task</span>] = <span class="ruby-string">'updatepo'</span>
+    <span class="ruby-constant">Thread</span>.<span class="ruby-identifier">current</span>[<span class="ruby-value">:start_time</span>] = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span>
+    <span class="ruby-identifier">google_en_dest</span> = [<span class="ruby-string">'ar'</span>, <span class="ruby-string">'zh-CN'</span>, <span class="ruby-string">'zh-TW'</span>, <span class="ruby-string">'fr'</span>, <span class="ruby-string">'de'</span>, <span class="ruby-string">'it'</span>, <span class="ruby-string">'ja'</span>, <span class="ruby-string">'ko'</span>, <span class="ruby-string">'pt'</span>, <span class="ruby-string">'ru'</span>, <span class="ruby-string">'es'</span>]
+    <span class="ruby-identifier">uri</span> = <span class="ruby-constant">URI</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-string">&quot;http://translate.google.com/translate_t&quot;</span>)
+    <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Thread launched for #{AppLocale.app_locales.inspect}&quot;</span>)
+    <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">app_locales</span>.<span class="ruby-identifier">select</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">loc</span><span class="ruby-operator">|</span> <span class="ruby-identifier">google_en_dest</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">loc</span>) }.<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">loc</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">path</span> = <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">'po'</span>, <span class="ruby-identifier">loc</span>, <span class="ruby-constant">APP_SID</span> <span class="ruby-operator">+</span> <span class="ruby-string">'.po'</span>)
+      <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">info</span>(<span class="ruby-node">&quot;Beginning Auto-Translation for #{loc} (#{path})&quot;</span>)
+      <span class="ruby-ivar">@todo</span> = {}; <span class="ruby-identifier">pmsgid</span> = <span class="ruby-keyword">nil</span>
+
+      <span class="ruby-comment">## GET ALL MSGIDS TO TRANSLATE IN @todo</span>
+
+      <span class="ruby-ivar">@todo</span> = <span class="ruby-identifier">get_empty_msgstr</span>(<span class="ruby-identifier">path</span>)
+      <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;MSGSTR TO TRANSLATE for #{loc}: #{@todo.size}&quot;</span>)
+
+      <span class="ruby-comment">## TRANSLATE ALL MSGIDS</span>
+      <span class="ruby-comment">#       logger.debug(&quot;MSGID to Translate: #{@todo.keys}&quot;)</span>
+
+      <span class="ruby-identifier">msgids</span> = <span class="ruby-ivar">@todo</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">mi</span><span class="ruby-operator">|</span>
+
+        <span class="ruby-comment">#mi = @todo.keys.join(&quot;[````]&quot;)</span>
+
+        <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Working on: #{mi}&quot;</span>)
+        <span class="ruby-identifier">uri</span>.<span class="ruby-identifier">query</span> = <span class="ruby-constant">URI</span>.<span class="ruby-identifier">encode</span>(<span class="ruby-node">&quot;langpair=en|#{loc}&amp;text=#{mi}&quot;</span>)
+        <span class="ruby-identifier">doc</span> = <span class="ruby-identifier">uri</span>.<span class="ruby-identifier">open</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-constant">Hpricot</span>(<span class="ruby-identifier">f</span>) }
+        <span class="ruby-identifier">texts</span> = (<span class="ruby-identifier">doc</span><span class="ruby-operator">/</span><span class="ruby-node">&quot;#result_box&quot;</span>).<span class="ruby-identifier">inner_text</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot;[````]&quot;</span>)
+        <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;Google can't translate more&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">texts</span>.<span class="ruby-identifier">empty?</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">texts</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@todo</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">size</span>
+          <span class="ruby-ivar">@todo</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">each_with_index</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-ivar">@todo</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-identifier">texts</span>[<span class="ruby-identifier">i</span>]}
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">info</span>(<span class="ruby-node">&quot;TRANSLATION (#{loc}): #{mi} -&gt; #{texts.inspect}&quot;</span>)
+      }
+    }
+  } <span class="ruby-keyword">if</span> <span class="ruby-constant">Thread</span>.<span class="ruby-identifier">list</span>.<span class="ruby-identifier">select</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">t</span><span class="ruby-operator">|</span> <span class="ruby-identifier">t</span>[<span class="ruby-value">:task</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'updatepo'</span> }.<span class="ruby-identifier">empty?</span>
+  <span class="ruby-identifier">render</span> <span class="ruby-value">:nothing</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- translate_deprecated-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- translate_deprecated-method -->
+
+    
+      <div id="method-i-update" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Updates the current row in database from the sent form.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>14</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-12-13 11:53:56 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="update-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 290</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update</span>
+
+  <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">put?</span>
+  <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:app_locale</span>].<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>[<span class="ruby-value">:app_locale</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+  <span class="ruby-ivar">@app_locale_attributes</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:app_locale</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:app_locale</span>][<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]].<span class="ruby-identifier">clone</span> <span class="ruby-operator">:</span> {}
+  <span class="ruby-ivar">@app_locale_attributes</span>.<span class="ruby-identifier">merge!</span>(<span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]) <span class="ruby-keyword">if</span> <span class="ruby-ivar">@app_locale_attributes</span>
+
+  <span class="ruby-ivar">@app_locale</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-ivar">@app_locale_attributes</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] <span class="ruby-operator">||=</span> []
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Warning: %{obj} with ID %{id} does not exist!&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:obj</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'app_locale'</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]}
+    <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>)
+    <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">save</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{page} was successfully updated.&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;App Locale&quot;</span>)}
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+      <span class="ruby-identifier">render</span>(<span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:errors</span> =<span class="ruby-operator">&gt;</span>
+      <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">full_messages</span>})
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">render</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:edit</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">id</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">render</span>(<span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;OK&quot;</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">xhr?</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:app_locale</span>].<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span> <span class="ruby-comment"># single edit</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:show</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@app_locale</span>.<span class="ruby-identifier">id</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update-method -->
+
+    
+      <div id="method-i-update_po" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update_po</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Translations: updating PO files.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>9</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 12:29:20 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="update_po-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 412</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update_po</span>
+
+  <span class="ruby-identifier">res</span> = <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">start</span>(<span class="ruby-value">:update_po</span>) <span class="ruby-keyword">unless</span> <span class="ruby-constant">AppLocale</span>.<span class="ruby-identifier">working?</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">res</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:error</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Cannot launch tasks!&quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-string">': '</span> <span class="ruby-operator">+</span>
+    <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{task} running in background&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:task</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Translator&quot;</span>)}
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;%{task} running in background&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:task</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;'Update PO'&quot;</span>}
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">redirect_to</span>(<span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:index</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update_po-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update_po-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+     <section id="protected-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Protected Instance Methods</h3>
+
+    
+      <div id="method-i-get_empty_msgstr" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_empty_msgstr</span><span
+            class="method-args">(path)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Translations: findind untranslated strings.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>5</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-02-27 11:09:13 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="get_empty_msgstr-source">
+            <pre><span class="ruby-comment"># File app/controllers/app_locales_controller.rb, line 747</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_empty_msgstr</span>(<span class="ruby-identifier">path</span>)
+  <span class="ruby-identifier">todo</span> = {}
+  <span class="ruby-identifier">pmsgid</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">path</span>, <span class="ruby-string">'r'</span>).<span class="ruby-identifier">readlines</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">next</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">%r\Amsg/</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">%r\Amsgid/</span>
+      <span class="ruby-identifier">pmsgid</span> = <span class="ruby-identifier">l</span>.<span class="ruby-identifier">sub</span>(<span class="ruby-regexp">%r\Amsgid\ &quot;(.*)&quot;\n/</span>, <span class="ruby-string">'\1'</span>)
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">==</span> <span class="ruby-string">%Q{msgstr &quot;&quot;\n}</span>
+      <span class="ruby-identifier">todo</span>[<span class="ruby-identifier">pmsgid</span>] = <span class="ruby-keyword">nil</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">pmsgid</span>.<span class="ruby-identifier">blank?</span>
+    <span class="ruby-keyword">end</span>
+  }
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">todo</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_empty_msgstr-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_empty_msgstr-method -->
+
+    
+    </section><!-- protected-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

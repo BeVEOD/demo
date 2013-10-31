@@ -1,0 +1,4049 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: demo 1.0\n"
+"POT-Creation-Date: 2010-03-14 23:33+0100\n"
+"PO-Revision-Date: 2010-03-14 23:41+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: app/helpers/control_tests_helper.rb:23
+#: app/helpers/control_tests_helper.rb:95
+#: app/helpers/saved_reports_helper.rb:30
+#: app/helpers/saved_reports_helper.rb:113
+#: app/helpers/profile_accesses_helper.rb:30
+#: app/helpers/profile_accesses_helper.rb:85
+#: app/helpers/bg_workers_helper.rb:30 app/helpers/bg_workers_helper.rb:109
+#: app/helpers/app_locales_helper.rb:30 app/helpers/app_locales_helper.rb:113
+#: app/helpers/profiles_helper.rb:30 app/helpers/profiles_helper.rb:113
+#: app/helpers/smart_queries_helper.rb:30
+#: app/helpers/smart_queries_helper.rb:113
+#: app/helpers/user_accesses_helper.rb:30
+#: app/helpers/user_accesses_helper.rb:85 app/helpers/application_helper.rb:30
+#: app/helpers/application_helper.rb:85
+#: app/helpers/system_settings_helper.rb:30
+#: app/helpers/system_settings_helper.rb:113 app/helpers/users_helper.rb:30
+#: app/helpers/users_helper.rb:113 app/helpers/accesses_helper.rb:30
+#: app/helpers/accesses_helper.rb:89 app/helpers/customers_helper.rb:30
+#: app/helpers/customers_helper.rb:113 app/views/profiles/show.html.erb:18
+#: app/views/profiles/edit.html.erb:27 app/views/users/show.html.erb:18
+#: app/views/users/edit.html.erb:28 app/views/system_settings/show.html.erb:18
+#: app/views/system_settings/edit.html.erb:28
+#: app/views/app_locales/show.html.erb:18
+#: app/views/app_locales/edit.html.erb:27
+#: app/views/saved_reports/show.html.erb:18
+#: app/views/saved_reports/edit.html.erb:28
+#: app/views/bg_workers/show.html.erb:18 app/views/customers/show.html.erb:18
+#: app/views/customers/edit.html.erb:28
+#: app/views/smart_queries/show.html.erb:18
+#: app/views/smart_queries/edit.html.erb:28
+msgid "Show"
+msgstr "Montrer"
+
+#: app/helpers/control_tests_helper.rb:26
+#: app/helpers/control_tests_helper.rb:48
+#: app/helpers/saved_reports_helper.rb:33
+#: app/helpers/saved_reports_helper.rb:61
+#: app/helpers/profile_accesses_helper.rb:33
+#: app/helpers/profile_accesses_helper.rb:53
+#: app/helpers/bg_workers_helper.rb:33 app/helpers/bg_workers_helper.rb:61
+#: app/helpers/app_locales_helper.rb:33 app/helpers/app_locales_helper.rb:61
+#: app/helpers/profiles_helper.rb:33 app/helpers/profiles_helper.rb:61
+#: app/helpers/smart_queries_helper.rb:33
+#: app/helpers/smart_queries_helper.rb:61
+#: app/helpers/user_accesses_helper.rb:33
+#: app/helpers/user_accesses_helper.rb:53 app/helpers/application_helper.rb:33
+#: app/helpers/application_helper.rb:53
+#: app/helpers/system_settings_helper.rb:33
+#: app/helpers/system_settings_helper.rb:61 app/helpers/users_helper.rb:33
+#: app/helpers/users_helper.rb:61 app/helpers/accesses_helper.rb:33
+#: app/helpers/accesses_helper.rb:53 app/helpers/customers_helper.rb:33
+#: app/helpers/customers_helper.rb:61 app/views/profiles/show.html.erb:21
+#: app/views/profiles/show.html.erb:27 app/views/profiles/edit.html.erb:18
+#: app/views/profiles/edit.html.erb:21 app/views/profiles/list.html.erb:21
+#: app/views/profiles/search.html.erb:21 app/views/users/show.html.erb:22
+#: app/views/users/show.html.erb:28 app/views/users/edit.html.erb:18
+#: app/views/users/edit.html.erb:22 app/views/users/list.html.erb:22
+#: app/views/users/search.html.erb:22
+#: app/views/system_settings/show.html.erb:22
+#: app/views/system_settings/show.html.erb:28
+#: app/views/system_settings/edit.html.erb:18
+#: app/views/system_settings/edit.html.erb:22
+#: app/views/system_settings/list.html.erb:22
+#: app/views/system_settings/search.html.erb:22
+#: app/views/app_locales/index.html.erb:23
+#: app/views/app_locales/show.html.erb:21
+#: app/views/app_locales/show.html.erb:27
+#: app/views/app_locales/edit.html.erb:18
+#: app/views/app_locales/edit.html.erb:21
+#: app/views/app_locales/list.html.erb:21
+#: app/views/app_locales/search.html.erb:21
+#: app/views/saved_reports/show.html.erb:22
+#: app/views/saved_reports/show.html.erb:28
+#: app/views/saved_reports/edit.html.erb:18
+#: app/views/saved_reports/edit.html.erb:22
+#: app/views/saved_reports/list.html.erb:22
+#: app/views/saved_reports/search.html.erb:22
+#: app/views/bg_workers/show.html.erb:21 app/views/bg_workers/show.html.erb:27
+#: app/views/bg_workers/edit.html.erb:18 app/views/bg_workers/list.html.erb:21
+#: app/views/bg_workers/search.html.erb:21
+#: app/views/customers/show.html.erb:22 app/views/customers/show.html.erb:28
+#: app/views/customers/edit.html.erb:18 app/views/customers/edit.html.erb:22
+#: app/views/customers/list.html.erb:22 app/views/customers/search.html.erb:22
+#: app/views/accesses/list.html.erb:22
+#: app/views/smart_queries/show.html.erb:22
+#: app/views/smart_queries/show.html.erb:28
+#: app/views/smart_queries/edit.html.erb:18
+#: app/views/smart_queries/edit.html.erb:22
+#: app/views/smart_queries/list.html.erb:22
+#: app/views/smart_queries/search.html.erb:22
+msgid "Edit"
+msgstr "Édition"
+
+#: app/helpers/control_tests_helper.rb:41
+#: app/helpers/saved_reports_helper.rb:49
+#: app/helpers/profile_accesses_helper.rb:41
+#: app/helpers/bg_workers_helper.rb:49 app/helpers/app_locales_helper.rb:49
+#: app/helpers/profiles_helper.rb:49 app/helpers/smart_queries_helper.rb:49
+#: app/helpers/user_accesses_helper.rb:41 app/helpers/application_helper.rb:41
+#: app/helpers/system_settings_helper.rb:49 app/helpers/users_helper.rb:49
+#: app/helpers/accesses_helper.rb:41 app/helpers/customers_helper.rb:49
+#: app/views/system_settings/public_files.html.erb:168
+msgid "Delete"
+msgstr "Supprimer"
+
+#: app/helpers/control_tests_helper.rb:41
+#: app/helpers/saved_reports_helper.rb:49
+#: app/helpers/profile_accesses_helper.rb:41
+#: app/helpers/bg_workers_helper.rb:49 app/helpers/app_locales_helper.rb:49
+#: app/helpers/profiles_helper.rb:49 app/helpers/smart_queries_helper.rb:49
+#: app/helpers/user_accesses_helper.rb:41 app/helpers/application_helper.rb:41
+#: app/helpers/system_settings_helper.rb:49 app/helpers/users_helper.rb:49
+#: app/helpers/accesses_helper.rb:41 app/helpers/customers_helper.rb:49
+msgid "Are you sure that you want to delete %{record}?"
+msgstr "Êtes-vous sûr de vouloir supprimer %{record} ?"
+
+#: app/helpers/control_tests_helper.rb:70
+#: app/helpers/control_tests_helper.rb:116
+#: app/helpers/saved_reports_helper.rb:83
+#: app/helpers/saved_reports_helper.rb:134
+#: app/helpers/profile_accesses_helper.rb:63
+#: app/helpers/profile_accesses_helper.rb:94
+#: app/helpers/bg_workers_helper.rb:79 app/helpers/bg_workers_helper.rb:126
+#: app/helpers/app_locales_helper.rb:83 app/helpers/app_locales_helper.rb:134
+#: app/helpers/profiles_helper.rb:83 app/helpers/profiles_helper.rb:134
+#: app/helpers/smart_queries_helper.rb:83
+#: app/helpers/smart_queries_helper.rb:134
+#: app/helpers/user_accesses_helper.rb:63
+#: app/helpers/user_accesses_helper.rb:94 app/helpers/application_helper.rb:63
+#: app/helpers/application_helper.rb:94
+#: app/helpers/system_settings_helper.rb:83
+#: app/helpers/system_settings_helper.rb:134 app/helpers/users_helper.rb:83
+#: app/helpers/users_helper.rb:134 app/helpers/accesses_helper.rb:67
+#: app/helpers/accesses_helper.rb:102 app/helpers/customers_helper.rb:83
+#: app/helpers/customers_helper.rb:134
+msgid "Previous"
+msgstr "Précédent"
+
+#: app/helpers/control_tests_helper.rb:71
+#: app/helpers/control_tests_helper.rb:117
+#: app/helpers/saved_reports_helper.rb:84
+#: app/helpers/saved_reports_helper.rb:135
+#: app/helpers/profile_accesses_helper.rb:64
+#: app/helpers/profile_accesses_helper.rb:95
+#: app/helpers/bg_workers_helper.rb:80 app/helpers/bg_workers_helper.rb:127
+#: app/helpers/app_locales_helper.rb:84 app/helpers/app_locales_helper.rb:135
+#: app/helpers/profiles_helper.rb:84 app/helpers/profiles_helper.rb:135
+#: app/helpers/smart_queries_helper.rb:84
+#: app/helpers/smart_queries_helper.rb:135
+#: app/helpers/user_accesses_helper.rb:64
+#: app/helpers/user_accesses_helper.rb:95 app/helpers/application_helper.rb:64
+#: app/helpers/application_helper.rb:95
+#: app/helpers/system_settings_helper.rb:84
+#: app/helpers/system_settings_helper.rb:135 app/helpers/users_helper.rb:84
+#: app/helpers/users_helper.rb:135 app/helpers/accesses_helper.rb:68
+#: app/helpers/accesses_helper.rb:103 app/helpers/customers_helper.rb:84
+#: app/helpers/customers_helper.rb:135
+msgid "Next"
+msgstr "Suivant"
+
+#: app/helpers/smart_queries_helper.rb:164
+#: app/helpers/smart_queries_helper.rb:176
+#: app/views/profiles/search.html.erb:40 app/views/users/search.html.erb:41
+#: app/views/users/search.html.erb:47 app/views/users/search.html.erb:53
+#: app/views/users/search.html.erb:59 app/views/users/search.html.erb:65
+#: app/views/system_settings/search.html.erb:41
+#: app/views/system_settings/search.html.erb:47
+#: app/views/app_locales/search.html.erb:40
+#: app/views/saved_reports/search.html.erb:41
+#: app/views/saved_reports/search.html.erb:54
+#: app/views/saved_reports/search.html.erb:60
+#: app/views/bg_workers/search.html.erb:42
+#: app/views/bg_workers/search.html.erb:69
+#: app/views/bg_workers/search.html.erb:75
+#: app/views/customers/search.html.erb:41
+#: app/views/customers/search.html.erb:47
+#: app/views/smart_queries/search.html.erb:41
+#: app/views/smart_queries/search.html.erb:47
+msgid "does not contain"
+msgstr "ne contient pas"
+
+#: app/helpers/smart_queries_helper.rb:164
+#: app/helpers/smart_queries_helper.rb:174
+#: app/helpers/smart_queries_helper.rb:176
+#: app/views/profiles/search.html.erb:41 app/views/profiles/search.html.erb:45
+#: app/views/profiles/search.html.erb:52 app/views/users/search.html.erb:42
+#: app/views/users/search.html.erb:48 app/views/users/search.html.erb:54
+#: app/views/users/search.html.erb:60 app/views/users/search.html.erb:66
+#: app/views/users/search.html.erb:70 app/views/users/search.html.erb:77
+#: app/views/user_accesses/_filter_bar.html.erb:24
+#: app/views/user_accesses/_filter_bar.html.erb:31
+#: app/views/system_settings/search.html.erb:42
+#: app/views/system_settings/search.html.erb:48
+#: app/views/app_locales/search.html.erb:41
+#: app/views/saved_reports/search.html.erb:42
+#: app/views/saved_reports/search.html.erb:55
+#: app/views/saved_reports/search.html.erb:61
+#: app/views/bg_workers/_filter_bar.html.erb:24
+#: app/views/bg_workers/_filter_bar.html.erb:33
+#: app/views/bg_workers/list.html.erb:37 app/views/bg_workers/list.html.erb:46
+#: app/views/bg_workers/search.html.erb:43
+#: app/views/bg_workers/search.html.erb:51
+#: app/views/bg_workers/search.html.erb:58
+#: app/views/bg_workers/search.html.erb:70
+#: app/views/bg_workers/search.html.erb:76
+#: app/views/customers/search.html.erb:42
+#: app/views/customers/search.html.erb:48
+#: app/views/smart_queries/_filter_bar.html.erb:24
+#: app/views/smart_queries/list.html.erb:38
+#: app/views/smart_queries/search.html.erb:42
+#: app/views/smart_queries/search.html.erb:48
+#: app/views/smart_queries/search.html.erb:52
+msgid "is"
+msgstr "est"
+
+#: app/helpers/smart_queries_helper.rb:164
+#: app/helpers/smart_queries_helper.rb:174
+#: app/helpers/smart_queries_helper.rb:176
+#: app/views/profiles/search.html.erb:42 app/views/profiles/search.html.erb:46
+#: app/views/profiles/search.html.erb:53 app/views/users/search.html.erb:43
+#: app/views/users/search.html.erb:49 app/views/users/search.html.erb:55
+#: app/views/users/search.html.erb:61 app/views/users/search.html.erb:67
+#: app/views/users/search.html.erb:71 app/views/users/search.html.erb:78
+#: app/views/user_accesses/_filter_bar.html.erb:25
+#: app/views/user_accesses/_filter_bar.html.erb:32
+#: app/views/system_settings/search.html.erb:43
+#: app/views/system_settings/search.html.erb:49
+#: app/views/app_locales/search.html.erb:42
+#: app/views/saved_reports/search.html.erb:43
+#: app/views/saved_reports/search.html.erb:56
+#: app/views/saved_reports/search.html.erb:62
+#: app/views/bg_workers/_filter_bar.html.erb:25
+#: app/views/bg_workers/_filter_bar.html.erb:34
+#: app/views/bg_workers/list.html.erb:38 app/views/bg_workers/list.html.erb:47
+#: app/views/bg_workers/search.html.erb:44
+#: app/views/bg_workers/search.html.erb:52
+#: app/views/bg_workers/search.html.erb:59
+#: app/views/bg_workers/search.html.erb:71
+#: app/views/bg_workers/search.html.erb:77
+#: app/views/customers/search.html.erb:43
+#: app/views/customers/search.html.erb:49
+#: app/views/smart_queries/_filter_bar.html.erb:25
+#: app/views/smart_queries/list.html.erb:39
+#: app/views/smart_queries/search.html.erb:43
+#: app/views/smart_queries/search.html.erb:49
+#: app/views/smart_queries/search.html.erb:53
+msgid "is not"
+msgstr "n'est pas"
+
+#: app/helpers/smart_queries_helper.rb:164
+#: app/helpers/smart_queries_helper.rb:166
+#: app/helpers/smart_queries_helper.rb:168
+#: app/helpers/smart_queries_helper.rb:174
+#: app/helpers/smart_queries_helper.rb:176
+#: app/views/profiles/search.html.erb:43 app/views/profiles/search.html.erb:47
+#: app/views/profiles/search.html.erb:54 app/views/users/search.html.erb:44
+#: app/views/users/search.html.erb:50 app/views/users/search.html.erb:56
+#: app/views/users/search.html.erb:62 app/views/users/search.html.erb:68
+#: app/views/users/search.html.erb:72 app/views/users/search.html.erb:79
+#: app/views/user_accesses/_filter_bar.html.erb:26
+#: app/views/user_accesses/_filter_bar.html.erb:33
+#: app/views/system_settings/search.html.erb:44
+#: app/views/system_settings/search.html.erb:50
+#: app/views/app_locales/search.html.erb:43
+#: app/views/app_locales/search.html.erb:48
+#: app/views/app_locales/search.html.erb:55
+#: app/views/saved_reports/search.html.erb:44
+#: app/views/saved_reports/search.html.erb:52
+#: app/views/saved_reports/search.html.erb:57
+#: app/views/saved_reports/search.html.erb:63
+#: app/views/bg_workers/_filter_bar.html.erb:26
+#: app/views/bg_workers/_filter_bar.html.erb:35
+#: app/views/bg_workers/list.html.erb:39 app/views/bg_workers/list.html.erb:48
+#: app/views/bg_workers/search.html.erb:45
+#: app/views/bg_workers/search.html.erb:53
+#: app/views/bg_workers/search.html.erb:60
+#: app/views/bg_workers/search.html.erb:72
+#: app/views/bg_workers/search.html.erb:78
+#: app/views/customers/search.html.erb:44
+#: app/views/customers/search.html.erb:50
+#: app/views/smart_queries/_filter_bar.html.erb:26
+#: app/views/smart_queries/list.html.erb:40
+#: app/views/smart_queries/search.html.erb:44
+#: app/views/smart_queries/search.html.erb:50
+#: app/views/smart_queries/search.html.erb:54
+msgid "is not set"
+msgstr ""
+
+#: app/helpers/smart_queries_helper.rb:164
+#: app/helpers/smart_queries_helper.rb:174
+#: app/helpers/smart_queries_helper.rb:176
+#: app/views/profiles/search.html.erb:44 app/views/profiles/search.html.erb:48
+#: app/views/users/search.html.erb:45 app/views/users/search.html.erb:51
+#: app/views/users/search.html.erb:57 app/views/users/search.html.erb:63
+#: app/views/users/search.html.erb:69 app/views/users/search.html.erb:80
+#: app/views/system_settings/search.html.erb:45
+#: app/views/system_settings/search.html.erb:51
+#: app/views/app_locales/search.html.erb:44
+#: app/views/saved_reports/search.html.erb:45
+#: app/views/saved_reports/search.html.erb:58
+#: app/views/saved_reports/search.html.erb:64
+#: app/views/bg_workers/_filter_bar.html.erb:27
+#: app/views/bg_workers/_filter_bar.html.erb:36
+#: app/views/bg_workers/list.html.erb:40 app/views/bg_workers/list.html.erb:49
+#: app/views/bg_workers/search.html.erb:46
+#: app/views/bg_workers/search.html.erb:54
+#: app/views/bg_workers/search.html.erb:61
+#: app/views/bg_workers/search.html.erb:73
+#: app/views/bg_workers/search.html.erb:79
+#: app/views/customers/search.html.erb:45
+#: app/views/customers/search.html.erb:51
+#: app/views/smart_queries/_filter_bar.html.erb:27
+#: app/views/smart_queries/list.html.erb:41
+#: app/views/smart_queries/search.html.erb:45
+#: app/views/smart_queries/search.html.erb:51
+#: app/views/smart_queries/search.html.erb:55
+msgid "in"
+msgstr "parmi"
+
+#: app/helpers/smart_queries_helper.rb:166
+#: app/helpers/smart_queries_helper.rb:168
+#: app/views/app_locales/search.html.erb:53
+#: app/views/saved_reports/search.html.erb:50
+msgid "> or ="
+msgstr ""
+
+#: app/helpers/smart_queries_helper.rb:166
+#: app/helpers/smart_queries_helper.rb:168
+#: app/views/app_locales/search.html.erb:54
+#: app/views/saved_reports/search.html.erb:51
+msgid "< or ="
+msgstr "< ou ="
+
+#: app/helpers/smart_queries_helper.rb:176
+#: app/views/profiles/search.html.erb:39 app/views/users/search.html.erb:40
+#: app/views/users/search.html.erb:46 app/views/users/search.html.erb:52
+#: app/views/users/search.html.erb:58 app/views/users/search.html.erb:64
+#: app/views/system_settings/search.html.erb:40
+#: app/views/system_settings/search.html.erb:46
+#: app/views/app_locales/search.html.erb:39
+#: app/views/saved_reports/search.html.erb:40
+#: app/views/saved_reports/search.html.erb:53
+#: app/views/saved_reports/search.html.erb:59
+#: app/views/bg_workers/search.html.erb:41
+#: app/views/bg_workers/search.html.erb:68
+#: app/views/bg_workers/search.html.erb:74
+#: app/views/customers/search.html.erb:40
+#: app/views/customers/search.html.erb:46
+#: app/views/smart_queries/search.html.erb:40
+#: app/views/smart_queries/search.html.erb:46
+msgid "contains"
+msgstr "contient"
+
+#: app/helpers/smart_queries_helper.rb:196 app/views/users/search.html.erb:73
+#: app/views/user_accesses/_filter_bar.html.erb:27
+#: app/views/user_accesses/_filter_bar.html.erb:34
+msgid "true"
+msgstr ""
+
+#: app/helpers/smart_queries_helper.rb:196 app/views/users/search.html.erb:74
+#: app/views/user_accesses/_filter_bar.html.erb:28
+#: app/views/user_accesses/_filter_bar.html.erb:35
+#, fuzzy
+msgid "false"
+msgstr "Valeur"
+
+#: app/controllers/profiles_controller.rb:32
+#: app/controllers/profile_accesses_controller.rb:28
+#: app/controllers/accesses_controller.rb:29
+#: app/controllers/user_accesses_controller.rb:28
+#: app/controllers/users_controller.rb:33
+msgid "AJAX only"
+msgstr ""
+
+#: app/controllers/profiles_controller.rb:33
+#: app/controllers/profile_accesses_controller.rb:29
+#: app/controllers/accesses_controller.rb:30
+#: app/controllers/user_accesses_controller.rb:29
+#: app/controllers/users_controller.rb:34
+msgid "Missing required parameter"
+msgstr "Des paramètres nécessaires sont manquants"
+
+#: app/controllers/profiles_controller.rb:123
+#: app/controllers/smart_queries_controller.rb:79
+#: app/controllers/bg_workers_controller.rb:113
+#: app/controllers/app_locales_controller.rb:159
+#: app/controllers/saved_reports_controller.rb:95
+#: app/controllers/system_settings_controller.rb:81
+#: app/controllers/users_controller.rb:504
+#: app/controllers/customers_controller.rb:920
+msgid "%{page} was successfully created."
+msgstr "%{page} a été créé avec succès."
+
+#: app/controllers/profiles_controller.rb:123
+#: app/controllers/profiles_controller.rb:206
+#: app/controllers/profiles_controller.rb:231
+#: app/controllers/profiles_controller.rb:233
+#: app/views/profiles/edit.html.erb:18 app/views/profiles/search.html.erb:18
+#: app/views/accesses/permissions.html.erb:70
+msgid "Profile"
+msgstr ""
+
+#: app/controllers/profiles_controller.rb:148
+#: app/controllers/profiles_controller.rb:178
+#: app/controllers/profiles_controller.rb:201
+#: app/controllers/smart_queries_controller.rb:104
+#: app/controllers/smart_queries_controller.rb:136
+#: app/controllers/smart_queries_controller.rb:484
+#: app/controllers/bg_workers_controller.rb:138
+#: app/controllers/bg_workers_controller.rb:168
+#: app/controllers/bg_workers_controller.rb:191
+#: app/controllers/app_locales_controller.rb:183
+#: app/controllers/app_locales_controller.rb:214
+#: app/controllers/app_locales_controller.rb:416
+#: app/controllers/saved_reports_controller.rb:120
+#: app/controllers/saved_reports_controller.rb:150
+#: app/controllers/saved_reports_controller.rb:173
+#: app/controllers/system_settings_controller.rb:106
+#: app/controllers/system_settings_controller.rb:136
+#: app/controllers/system_settings_controller.rb:159
+#: app/controllers/users_controller.rb:537
+#: app/controllers/users_controller.rb:575
+#: app/controllers/users_controller.rb:606
+#: app/controllers/users_controller.rb:954
+#: app/controllers/customers_controller.rb:945
+#: app/controllers/customers_controller.rb:975
+#: app/controllers/customers_controller.rb:998
+msgid "Warning: %{obj} with ID %{id} does not exist!"
+msgstr ""
+
+#: app/controllers/profiles_controller.rb:206
+#: app/controllers/smart_queries_controller.rb:142
+#: app/controllers/bg_workers_controller.rb:196
+#: app/controllers/app_locales_controller.rb:219
+#: app/controllers/saved_reports_controller.rb:178
+#: app/controllers/saved_reports_controller.rb:449
+#: app/controllers/saved_reports_controller.rb:477
+#: app/controllers/system_settings_controller.rb:164
+#: app/controllers/users_controller.rb:611
+#: app/controllers/customers_controller.rb:1003
+msgid "%{page} was successfully updated."
+msgstr ""
+
+#: app/controllers/profiles_controller.rb:231
+#: app/controllers/smart_queries_controller.rb:167
+#: app/controllers/app_locales_controller.rb:244
+#: app/controllers/saved_reports_controller.rb:203
+#: app/controllers/system_settings_controller.rb:189
+#: app/controllers/users_controller.rb:636
+#: app/controllers/customers_controller.rb:1028
+msgid "%{model} %{name} could not be deleted."
+msgstr ""
+
+#: app/controllers/profiles_controller.rb:233
+#: app/controllers/smart_queries_controller.rb:169
+#: app/controllers/app_locales_controller.rb:246
+#: app/controllers/saved_reports_controller.rb:205
+#: app/controllers/system_settings_controller.rb:191
+#: app/controllers/users_controller.rb:638
+#: app/controllers/customers_controller.rb:1030
+#, fuzzy
+msgid "%{model} %{name} successfully deleted."
+msgstr "%{page} a été créé avec succès."
+
+#: app/controllers/smart_queries_controller.rb:79
+#: app/controllers/smart_queries_controller.rb:142
+#: app/controllers/smart_queries_controller.rb:167
+#: app/controllers/smart_queries_controller.rb:169
+#: app/views/smart_queries/help.html.erb:18
+#: app/views/smart_queries/help.html.erb:22
+#: app/views/smart_queries/help.html.erb:30
+#: app/views/smart_queries/edit.html.erb:18
+#: app/views/smart_queries/search.html.erb:18
+msgid "Smart Query"
+msgstr ""
+
+#: app/controllers/smart_queries_controller.rb:571
+msgid "Invalid query. Data could not be recovered."
+msgstr ""
+
+#: app/controllers/accesses_controller.rb:473
+#: app/controllers/customers_controller.rb:442
+msgid "File not found!"
+msgstr ""
+
+#: app/controllers/accesses_controller.rb:493
+#: app/controllers/accesses_controller.rb:517
+#: app/controllers/customers_controller.rb:462
+#: app/controllers/customers_controller.rb:486
+msgid "Error: file invalid!"
+msgstr ""
+
+#: app/controllers/accesses_controller.rb:514
+#: app/controllers/customers_controller.rb:483
+msgid "Error: data source empty!"
+msgstr ""
+
+#: app/controllers/accesses_controller.rb:520
+#: app/controllers/customers_controller.rb:489
+msgid "Error: file type unknown!"
+msgstr ""
+
+#: app/controllers/accesses_controller.rb:523
+#: app/controllers/customers_controller.rb:492
+#, fuzzy
+msgid "File empty!"
+msgstr "Fichier"
+
+#: app/controllers/accesses_controller.rb:697
+#: app/controllers/customers_controller.rb:682
+msgid "Server error!"
+msgstr ""
+
+#: app/controllers/accesses_controller.rb:697
+#: app/controllers/customers_controller.rb:682
+msgid "Please retry"
+msgstr ""
+
+#: app/controllers/accesses_controller.rb:727
+#: app/controllers/customers_controller.rb:712
+msgid "semicolon"
+msgstr ""
+
+#: app/controllers/accesses_controller.rb:727
+#: app/controllers/customers_controller.rb:712
+msgid "comma"
+msgstr ""
+
+#: app/controllers/accesses_controller.rb:727
+#: app/controllers/customers_controller.rb:712
+msgid "tab"
+msgstr ""
+
+#: app/controllers/accesses_controller.rb:789
+#: app/controllers/customers_controller.rb:775
+msgid "Deleted %{file}"
+msgstr ""
+
+#: app/controllers/accesses_controller.rb:792
+#: app/controllers/customers_controller.rb:778
+msgid "Could not delete %{file}"
+msgstr ""
+
+#: app/controllers/accesses_controller.rb:818
+#: app/controllers/customers_controller.rb:804
+msgid "Wrong file format"
+msgstr ""
+
+#: app/controllers/accesses_controller.rb:826
+#: app/controllers/customers_controller.rb:812
+msgid "Uploaded %{old_name} as %{new_name}"
+msgstr ""
+
+#: app/controllers/accesses_controller.rb:828
+#: app/controllers/customers_controller.rb:814
+msgid "File could not be uploaded (%{error_msg})"
+msgstr ""
+
+#: app/controllers/accesses_controller.rb:956
+#: app/views/profiles/edit.html.erb:35 app/views/profiles/edit.html.erb:39
+#: app/views/profiles/new.html.erb:26 app/views/profiles/new.html.erb:29
+#: app/views/users/edit.html.erb:43 app/views/users/new.html.erb:28
+#: app/views/bg_workers/_filter_bar.html.erb:28
+#: app/views/bg_workers/edit.html.erb:32 app/views/bg_workers/list.html.erb:41
+#: app/views/bg_workers/search.html.erb:55
+msgid "[None]"
+msgstr "[Aucun]"
+
+#: app/controllers/bg_workers_controller.rb:113
+#: app/controllers/bg_workers_controller.rb:196
+#: app/views/bg_workers/help.html.erb:18 app/views/bg_workers/help.html.erb:22
+#: app/views/bg_workers/help.html.erb:30 app/views/bg_workers/edit.html.erb:18
+#: app/views/bg_workers/search.html.erb:18
+msgid "Bg Worker"
+msgstr ""
+
+#: app/controllers/app_locales_controller.rb:159
+#: app/controllers/app_locales_controller.rb:219
+#: app/controllers/app_locales_controller.rb:244
+#: app/controllers/app_locales_controller.rb:246
+#: app/views/app_locales/edit.html.erb:18
+#: app/views/app_locales/search.html.erb:18
+msgid "App Locale"
+msgstr ""
+
+#: app/controllers/saved_reports_controller.rb:95
+#: app/controllers/saved_reports_controller.rb:178
+#: app/controllers/saved_reports_controller.rb:203
+#: app/controllers/saved_reports_controller.rb:205
+#: app/controllers/saved_reports_controller.rb:449
+#: app/controllers/saved_reports_controller.rb:477
+#: app/views/saved_reports/help.html.erb:18
+#: app/views/saved_reports/help.html.erb:22
+#: app/views/saved_reports/help.html.erb:30
+#: app/views/saved_reports/edit.html.erb:18
+#: app/views/saved_reports/search.html.erb:18
+msgid "Saved Report"
+msgstr ""
+
+#: app/controllers/saved_reports_controller.rb:439
+#: app/controllers/saved_reports_controller.rb:467
+msgid "Error: ill-formed request"
+msgstr ""
+
+#: app/controllers/saved_reports_controller.rb:444
+#: app/controllers/saved_reports_controller.rb:472
+msgid "Error: %{obj} not found!"
+msgstr ""
+
+#: app/controllers/saved_reports_controller.rb:451
+#: app/controllers/saved_reports_controller.rb:479
+msgid "Warning: invalid data"
+msgstr ""
+
+#: app/controllers/system_settings_controller.rb:81
+#: app/controllers/system_settings_controller.rb:164
+#: app/controllers/system_settings_controller.rb:189
+#: app/controllers/system_settings_controller.rb:191
+#: app/views/system_settings/edit.html.erb:18
+#: app/views/system_settings/search.html.erb:18
+msgid "System Setting"
+msgstr ""
+
+#: app/controllers/system_settings_controller.rb:464
+msgid "Generating Documentation"
+msgstr ""
+
+#: app/controllers/system_settings_controller.rb:652
+msgid "Log cleared"
+msgstr ""
+
+#: app/controllers/system_settings_controller.rb:746
+msgid "File %{file} already exist"
+msgstr ""
+
+#: app/controllers/system_settings_controller.rb:752
+msgid "File %{file} can't be uploaded"
+msgstr ""
+
+#: app/controllers/users_controller.rb:504
+#: app/controllers/users_controller.rb:611
+#: app/controllers/users_controller.rb:636
+#: app/controllers/users_controller.rb:638 app/views/users/edit.html.erb:18
+#: app/views/users/search.html.erb:18
+#: app/views/accesses/permissions.html.erb:71
+msgid "User"
+msgstr "Utilisateur"
+
+#: app/controllers/users_controller.rb:864
+msgid "You're now logged as %{login}"
+msgstr "Vous êtes désormais connecté en tant que %{login}"
+
+#: app/controllers/users_controller.rb:875
+msgid "Connection failed - wrong login or password"
+msgstr ""
+
+#: app/controllers/users_controller.rb:891
+msgid "Logged out"
+msgstr ""
+
+#: app/controllers/users_controller.rb:960
+msgid "Password changed"
+msgstr "Mot de passe modifié"
+
+#: app/controllers/application_controller.rb:150
+msgid "Please login to continue."
+msgstr ""
+
+#: app/controllers/application_controller.rb:206
+msgid "Anonymous"
+msgstr "Anonyme"
+
+#: app/controllers/customers_controller.rb:920
+#: app/controllers/customers_controller.rb:1003
+#: app/controllers/customers_controller.rb:1028
+#: app/controllers/customers_controller.rb:1030
+#: app/views/customers/help.html.erb:18 app/views/customers/help.html.erb:22
+#: app/views/customers/help.html.erb:30 app/views/customers/edit.html.erb:18
+#: app/views/customers/search.html.erb:18
+msgid "Customer"
+msgstr "Client"
+
+#: app/reports/invoice_report.rb:387
+msgid "Week %{w}"
+msgstr ""
+
+#: app/reports/access_report.rb:34
+msgid "L9"
+msgstr ""
+
+#: app/reports/access_report.rb:35
+msgid "Legend9"
+msgstr ""
+
+#: app/reports/fav_proposal_report.rb:255
+msgid "People"
+msgstr ""
+
+#: app/models/profile.rb:226 app/models/profile.rb:238
+#: app/models/access.rb:699 app/models/access.rb:706 app/models/access.rb:713
+#: app/models/user.rb:658 app/models/user.rb:665
+msgid "and"
+msgstr "et"
+
+#: app/views/layouts/_account_menu_element.html.erb:18
+msgid "Account"
+msgstr "Compte"
+
+#: app/views/layouts/_account_menu_element.html.erb:21
+msgid "Logged in as %{user}"
+msgstr "Connecté en tant que %{user}"
+
+#: app/views/layouts/_account_menu_element.html.erb:22
+#: app/views/saved_reports/help.html.erb:24
+#: app/views/bg_workers/help.html.erb:24 app/views/customers/help.html.erb:24
+#: app/views/smart_queries/help.html.erb:24
+msgid "Not logged"
+msgstr ""
+
+#: app/views/layouts/_account_menu_element.html.erb:24
+#: app/views/layouts/application.html.erb:65
+#: app/views/profiles/new.html.erb:39 app/views/profiles/search.html.erb:66
+#: app/views/users/new.html.erb:40 app/views/users/search.html.erb:94
+#: app/views/system_settings/index.html.erb:26
+#: app/views/system_settings/index.html.erb:50
+#: app/views/system_settings/new.html.erb:33
+#: app/views/system_settings/search.html.erb:60
+#: app/views/saved_reports/help.html.erb:20
+#: app/views/saved_reports/help.html.erb:38
+#: app/views/saved_reports/new.html.erb:33
+#: app/views/saved_reports/search.html.erb:73
+#: app/views/application/new.html.erb:13 app/views/bg_workers/help.html.erb:20
+#: app/views/bg_workers/help.html.erb:38 app/views/bg_workers/new.html.erb:62
+#: app/views/bg_workers/search.html.erb:92
+#: app/views/customers/help.html.erb:20 app/views/customers/help.html.erb:38
+#: app/views/customers/new.html.erb:41 app/views/customers/search.html.erb:60
+#: app/views/smart_queries/help.html.erb:20
+#: app/views/smart_queries/help.html.erb:38
+#: app/views/smart_queries/new.html.erb:50
+#: app/views/smart_queries/search.html.erb:66
+msgid "Default controller action."
+msgstr ""
+
+#: app/views/layouts/_account_menu_element.html.erb:24
+msgid "Administration Panel"
+msgstr "Panneau d'Administration"
+
+#: app/views/layouts/_account_menu_element.html.erb:27
+msgid "Logout"
+msgstr "Se Déconnecter"
+
+#: app/views/layouts/_account_menu_element.html.erb:27
+msgid "Log Out"
+msgstr "Se Déconnecter"
+
+#: app/views/layouts/_account_menu_element.html.erb:29
+#: app/views/users/show.html.erb:19 app/views/users/edit.html.erb:19
+#: app/views/users/list.html.erb:19 app/views/users/list.html.erb:26
+#: app/views/users/list.html.erb:36 app/views/users/list.html.erb:44
+#: app/views/users/search.html.erb:19 app/views/users/search.html.erb:26
+msgid "Login"
+msgstr "Se Connecter"
+
+#: app/views/layouts/_account_menu_element.html.erb:29
+msgid "Log In"
+msgstr "Se connecter"
+
+#: app/views/layouts/application.html.erb:19
+msgid "%{app_name} - %{controller} : %{action}"
+msgstr ""
+
+#: app/views/layouts/application.html.erb:47
+#: app/views/layouts/extjs_layout.html.erb:92
+#: app/views/layouts/wp_layout_tester.html.erb:94
+msgid "Global Search:"
+msgstr "Recherche :"
+
+#: app/views/layouts/application.html.erb:49
+#: app/views/layouts/extjs_layout.html.erb:97
+#: app/views/layouts/wp_layout_tester.html.erb:96
+#: app/views/saved_reports/adv_search.html.erb:18
+#: app/views/customers/adv_search.html.erb:18
+#: app/views/smart_queries/adv_search.html.erb:18
+msgid "Advanced Search"
+msgstr "Recherche Avancée"
+
+#: app/views/layouts/application.html.erb:50
+#: app/views/layouts/extjs_layout.html.erb:94
+msgid "French"
+msgstr "Français"
+
+#: app/views/layouts/application.html.erb:51
+#: app/views/layouts/extjs_layout.html.erb:95
+msgid "English"
+msgstr "Anglais"
+
+#: app/views/layouts/application.html.erb:52
+#: app/views/layouts/extjs_layout.html.erb:96
+msgid "Arabic"
+msgstr ""
+
+#: app/views/layouts/application.html.erb:55
+#: app/views/layouts/extjs_layout.html.erb:99
+#: app/views/layouts/wp_layout_tester.html.erb:97
+msgid "No Result"
+msgstr "Pas de résultat"
+
+#: app/views/layouts/application.html.erb:63
+#: app/views/layouts/extjs_layout.html.erb:67
+#: app/views/layouts/wp_layout_tester.html.erb:89
+msgid "Menu"
+msgstr ""
+
+#: app/views/layouts/application.html.erb:65
+#: app/views/customers/importer.html.erb:19
+#: app/views/customers/help.html.erb:38 app/views/customers/show.html.erb:18
+#: app/views/customers/list.html.erb:18 app/views/customers/rss.xml.builder:5
+#: app/views/customers/atom.xml.builder:4
+msgid "Customers"
+msgstr "Clients"
+
+#: app/views/layouts/login.html.erb:19
+msgid "Faveod - Application Connection"
+msgstr ""
+
+#: app/views/layouts/login.html.erb:66
+msgid "Cookies have to be allowed to sign in."
+msgstr ""
+
+#: app/views/layouts/documentation.html.erb:19
+msgid "%{app_name} - Developer Documentation"
+msgstr "%{app_name} - Documentation Développeur"
+
+#: app/views/layouts/documentation.html.erb:43
+msgid "Home"
+msgstr ""
+
+#: app/views/layouts/extjs_layout.html.erb:23
+#: app/views/layouts/wp_layout_tester.html.erb:19
+#, fuzzy
+msgid "%{app_name} - %{controller}: %{action}"
+msgstr "%{app_name} - Documentation Développeur"
+
+#: app/views/layouts/extjs_layout.html.erb:92
+#, fuzzy
+msgid "Global Search..."
+msgstr "Recherche :"
+
+#: app/views/layouts/extjs_layout.html.erb:105
+#, fuzzy
+msgid "Main"
+msgstr "parmi"
+
+#: app/views/layouts/minimal.html.erb:19
+msgid "%{app_name} - %{controller}"
+msgstr ""
+
+#: app/views/profiles/importer.html.erb:18
+#: app/views/users/importer.html.erb:18
+#: app/views/user_accesses/importer.html.erb:18
+#: app/views/system_settings/importer.html.erb:19
+#: app/views/app_locales/importer.html.erb:18
+#: app/views/application/importer.html.erb:18
+#: app/views/customers/importer.html.erb:19
+#: app/views/accesses/importer.html.erb:18
+#: app/views/smart_queries/importer.html.erb:18
+msgid "Importing %{records}"
+msgstr ""
+
+#: app/views/profiles/importer.html.erb:18 app/views/profiles/show.html.erb:18
+#: app/views/profiles/list.html.erb:18 app/views/users/list.html.erb:26
+#: app/views/users/list.html.erb:36 app/views/users/list.html.erb:44
+#: app/views/users/search.html.erb:26
+#: app/views/system_settings/index.html.erb:26
+#: app/views/accesses/list.html.erb:26 app/views/accesses/list.html.erb:42
+#: app/views/accesses/list.html.erb:64 app/views/profiles/rss.xml.builder:5
+#: app/views/profiles/atom.xml.builder:4
+msgid "Profiles"
+msgstr ""
+
+#: app/views/profiles/show.html.erb:18 app/views/users/show.html.erb:18
+#: app/views/system_settings/show.html.erb:18
+#: app/views/app_locales/show.html.erb:18
+#: app/views/saved_reports/show.html.erb:18
+#: app/views/bg_workers/show.html.erb:18 app/views/customers/show.html.erb:18
+#: app/views/smart_queries/show.html.erb:18
+msgid "Showing %{record} from %{records}"
+msgstr "Zoom sur %{record} de %{records}"
+
+#: app/views/profiles/show.html.erb:19 app/views/profiles/edit.html.erb:19
+#: app/views/profiles/list.html.erb:19 app/views/profiles/search.html.erb:19
+#: app/views/users/show.html.erb:19 app/views/users/edit.html.erb:19
+#: app/views/users/list.html.erb:19 app/views/users/search.html.erb:19
+#: app/views/system_settings/show.html.erb:19
+#: app/views/system_settings/edit.html.erb:19
+#: app/views/system_settings/list.html.erb:19
+#: app/views/system_settings/search.html.erb:19
+#: app/views/system_settings/public_files.html.erb:171
+#: app/views/app_locales/index.html.erb:21
+#: app/views/app_locales/show.html.erb:19
+#: app/views/app_locales/edit.html.erb:19
+#: app/views/app_locales/list.html.erb:19
+#: app/views/app_locales/search.html.erb:19
+#: app/views/saved_reports/show.html.erb:19
+#: app/views/saved_reports/edit.html.erb:19
+#: app/views/saved_reports/list.html.erb:19
+#: app/views/saved_reports/search.html.erb:19
+#: app/views/bg_workers/show.html.erb:19 app/views/bg_workers/list.html.erb:19
+#: app/views/bg_workers/search.html.erb:19
+#: app/views/customers/show.html.erb:19 app/views/customers/edit.html.erb:19
+#: app/views/customers/list.html.erb:19 app/views/customers/search.html.erb:19
+#: app/views/accesses/list.html.erb:19
+#: app/views/smart_queries/show.html.erb:19
+#: app/views/smart_queries/edit.html.erb:19
+#: app/views/smart_queries/list.html.erb:19
+#: app/views/smart_queries/search.html.erb:19
+msgid "File"
+msgstr "Fichier"
+
+#: app/views/profiles/show.html.erb:19 app/views/profiles/edit.html.erb:19
+#: app/views/profiles/edit.html.erb:38 app/views/profiles/list.html.erb:19
+#: app/views/profiles/list.html.erb:55 app/views/profiles/search.html.erb:19
+#: app/views/users/show.html.erb:19 app/views/users/edit.html.erb:19
+#: app/views/users/edit.html.erb:46 app/views/users/list.html.erb:19
+#: app/views/users/list.html.erb:56 app/views/users/search.html.erb:19
+#: app/views/system_settings/show.html.erb:19
+#: app/views/system_settings/edit.html.erb:19
+#: app/views/system_settings/list.html.erb:19
+#: app/views/system_settings/list.html.erb:56
+#: app/views/system_settings/search.html.erb:19
+#: app/views/app_locales/index.html.erb:21
+#: app/views/app_locales/show.html.erb:19
+#: app/views/app_locales/edit.html.erb:19
+#: app/views/app_locales/list.html.erb:19
+#: app/views/app_locales/list.html.erb:67
+#: app/views/app_locales/search.html.erb:19
+#: app/views/saved_reports/help.html.erb:20
+#: app/views/saved_reports/show.html.erb:19
+#: app/views/saved_reports/edit.html.erb:19
+#: app/views/saved_reports/list.html.erb:19
+#: app/views/saved_reports/list.html.erb:60
+#: app/views/saved_reports/search.html.erb:19
+#: app/views/bg_workers/help.html.erb:20 app/views/bg_workers/show.html.erb:19
+#: app/views/bg_workers/list.html.erb:19 app/views/bg_workers/list.html.erb:80
+#: app/views/bg_workers/search.html.erb:19
+#: app/views/customers/help.html.erb:20 app/views/customers/show.html.erb:19
+#: app/views/customers/edit.html.erb:19 app/views/customers/list.html.erb:19
+#: app/views/customers/list.html.erb:60 app/views/customers/search.html.erb:19
+msgid "Loads a new record."
+msgstr ""
+
+#: app/views/profiles/show.html.erb:19 app/views/profiles/edit.html.erb:19
+#: app/views/profiles/edit.html.erb:38 app/views/profiles/new.html.erb:18
+#: app/views/profiles/list.html.erb:19 app/views/profiles/list.html.erb:55
+#: app/views/profiles/search.html.erb:19 app/views/users/show.html.erb:19
+#: app/views/users/edit.html.erb:19 app/views/users/edit.html.erb:46
+#: app/views/users/new.html.erb:18 app/views/users/list.html.erb:19
+#: app/views/users/list.html.erb:56 app/views/users/search.html.erb:19
+#: app/views/system_settings/show.html.erb:19
+#: app/views/system_settings/edit.html.erb:19
+#: app/views/system_settings/new.html.erb:18
+#: app/views/system_settings/list.html.erb:19
+#: app/views/system_settings/list.html.erb:56
+#: app/views/system_settings/search.html.erb:19
+#: app/views/app_locales/index.html.erb:21
+#: app/views/app_locales/show.html.erb:19
+#: app/views/app_locales/edit.html.erb:19
+#: app/views/app_locales/new.html.erb:18
+#: app/views/app_locales/list.html.erb:19
+#: app/views/app_locales/list.html.erb:67
+#: app/views/app_locales/search.html.erb:19
+#: app/views/saved_reports/show.html.erb:19
+#: app/views/saved_reports/edit.html.erb:19
+#: app/views/saved_reports/new.html.erb:18
+#: app/views/saved_reports/list.html.erb:19
+#: app/views/saved_reports/list.html.erb:60
+#: app/views/saved_reports/search.html.erb:19
+#: app/views/bg_workers/show.html.erb:19 app/views/bg_workers/new.html.erb:18
+#: app/views/bg_workers/list.html.erb:19 app/views/bg_workers/list.html.erb:80
+#: app/views/bg_workers/search.html.erb:19
+#: app/views/customers/show.html.erb:19 app/views/customers/edit.html.erb:19
+#: app/views/customers/new.html.erb:18 app/views/customers/list.html.erb:19
+#: app/views/customers/list.html.erb:60 app/views/customers/search.html.erb:19
+#: app/views/smart_queries/show.html.erb:19
+#: app/views/smart_queries/edit.html.erb:19
+#: app/views/smart_queries/new.html.erb:18
+#: app/views/smart_queries/list.html.erb:19
+#: app/views/smart_queries/list.html.erb:78
+#: app/views/smart_queries/search.html.erb:19
+msgid "New"
+msgstr "Nouveau"
+
+#: app/views/profiles/show.html.erb:19 app/views/profiles/show.html.erb:27
+#: app/views/profiles/edit.html.erb:19 app/views/profiles/edit.html.erb:27
+#: app/views/profiles/list.html.erb:18 app/views/profiles/list.html.erb:19
+#: app/views/profiles/list.html.erb:25 app/views/profiles/list.html.erb:26
+#: app/views/profiles/list.html.erb:29 app/views/profiles/search.html.erb:19
+#: app/views/profiles/search.html.erb:25 app/views/profiles/search.html.erb:26
+#: app/views/profiles/search.html.erb:29 app/views/users/show.html.erb:20
+#: app/views/users/show.html.erb:28 app/views/users/edit.html.erb:20
+#: app/views/users/edit.html.erb:28 app/views/users/list.html.erb:18
+#: app/views/users/list.html.erb:20 app/views/users/list.html.erb:26
+#: app/views/users/list.html.erb:27 app/views/users/list.html.erb:30
+#: app/views/users/search.html.erb:20 app/views/users/search.html.erb:26
+#: app/views/users/search.html.erb:27 app/views/users/search.html.erb:30
+#: app/views/system_settings/index.html.erb:48
+#: app/views/system_settings/index.html.erb:49
+#: app/views/system_settings/show.html.erb:20
+#: app/views/system_settings/show.html.erb:28
+#: app/views/system_settings/edit.html.erb:20
+#: app/views/system_settings/edit.html.erb:28
+#: app/views/system_settings/list.html.erb:18
+#: app/views/system_settings/list.html.erb:20
+#: app/views/system_settings/list.html.erb:26
+#: app/views/system_settings/list.html.erb:27
+#: app/views/system_settings/list.html.erb:30
+#: app/views/system_settings/search.html.erb:20
+#: app/views/system_settings/search.html.erb:26
+#: app/views/system_settings/search.html.erb:27
+#: app/views/system_settings/search.html.erb:30
+#: app/views/app_locales/index.html.erb:21
+#: app/views/app_locales/index.html.erb:27
+#: app/views/app_locales/index.html.erb:28
+#: app/views/app_locales/index.html.erb:31
+#: app/views/app_locales/show.html.erb:19
+#: app/views/app_locales/show.html.erb:27
+#: app/views/app_locales/edit.html.erb:19
+#: app/views/app_locales/edit.html.erb:27
+#: app/views/app_locales/list.html.erb:18
+#: app/views/app_locales/list.html.erb:19
+#: app/views/app_locales/list.html.erb:25
+#: app/views/app_locales/list.html.erb:26
+#: app/views/app_locales/list.html.erb:29
+#: app/views/app_locales/search.html.erb:19
+#: app/views/app_locales/search.html.erb:25
+#: app/views/app_locales/search.html.erb:26
+#: app/views/app_locales/search.html.erb:29
+#: app/views/saved_reports/show.html.erb:20
+#: app/views/saved_reports/show.html.erb:28
+#: app/views/saved_reports/edit.html.erb:20
+#: app/views/saved_reports/edit.html.erb:28
+#: app/views/saved_reports/list.html.erb:18
+#: app/views/saved_reports/list.html.erb:20
+#: app/views/saved_reports/list.html.erb:26
+#: app/views/saved_reports/list.html.erb:27
+#: app/views/saved_reports/list.html.erb:30
+#: app/views/saved_reports/search.html.erb:20
+#: app/views/saved_reports/search.html.erb:26
+#: app/views/saved_reports/search.html.erb:27
+#: app/views/saved_reports/search.html.erb:30
+#: app/views/bg_workers/show.html.erb:19 app/views/bg_workers/show.html.erb:27
+#: app/views/bg_workers/list.html.erb:18 app/views/bg_workers/list.html.erb:19
+#: app/views/bg_workers/list.html.erb:25 app/views/bg_workers/list.html.erb:26
+#: app/views/bg_workers/list.html.erb:29
+#: app/views/bg_workers/search.html.erb:19
+#: app/views/bg_workers/search.html.erb:25
+#: app/views/bg_workers/search.html.erb:26
+#: app/views/bg_workers/search.html.erb:29
+#: app/views/customers/show.html.erb:20 app/views/customers/show.html.erb:28
+#: app/views/customers/edit.html.erb:20 app/views/customers/edit.html.erb:28
+#: app/views/customers/list.html.erb:18 app/views/customers/list.html.erb:20
+#: app/views/customers/list.html.erb:26 app/views/customers/list.html.erb:27
+#: app/views/customers/list.html.erb:30 app/views/customers/search.html.erb:20
+#: app/views/customers/search.html.erb:26
+#: app/views/customers/search.html.erb:27
+#: app/views/customers/search.html.erb:30 app/views/accesses/list.html.erb:18
+#: app/views/accesses/list.html.erb:20 app/views/accesses/list.html.erb:26
+#: app/views/accesses/list.html.erb:27 app/views/accesses/list.html.erb:30
+#: app/views/smart_queries/show.html.erb:20
+#: app/views/smart_queries/show.html.erb:28
+#: app/views/smart_queries/edit.html.erb:20
+#: app/views/smart_queries/edit.html.erb:28
+#: app/views/smart_queries/list.html.erb:18
+#: app/views/smart_queries/list.html.erb:20
+#: app/views/smart_queries/list.html.erb:26
+#: app/views/smart_queries/list.html.erb:27
+#: app/views/smart_queries/list.html.erb:30
+#: app/views/smart_queries/search.html.erb:20
+#: app/views/smart_queries/search.html.erb:26
+#: app/views/smart_queries/search.html.erb:27
+#: app/views/smart_queries/search.html.erb:30
+msgid "List"
+msgstr "Liste"
+
+#: app/views/profiles/show.html.erb:19 app/views/profiles/edit.html.erb:19
+#: app/views/profiles/list.html.erb:19 app/views/profiles/search.html.erb:19
+#: app/views/users/show.html.erb:20 app/views/users/edit.html.erb:20
+#: app/views/users/list.html.erb:20 app/views/users/search.html.erb:20
+#: app/views/system_settings/show.html.erb:20
+#: app/views/system_settings/edit.html.erb:20
+#: app/views/system_settings/list.html.erb:20
+#: app/views/system_settings/search.html.erb:20
+#: app/views/app_locales/index.html.erb:21
+#: app/views/app_locales/show.html.erb:19
+#: app/views/app_locales/edit.html.erb:19
+#: app/views/app_locales/list.html.erb:19
+#: app/views/app_locales/search.html.erb:19
+#: app/views/saved_reports/show.html.erb:20
+#: app/views/saved_reports/edit.html.erb:20
+#: app/views/saved_reports/list.html.erb:20
+#: app/views/saved_reports/search.html.erb:20
+#: app/views/bg_workers/show.html.erb:19 app/views/bg_workers/list.html.erb:19
+#: app/views/bg_workers/search.html.erb:19
+#: app/views/customers/show.html.erb:20 app/views/customers/edit.html.erb:20
+#: app/views/customers/list.html.erb:20 app/views/customers/search.html.erb:20
+#: app/views/accesses/list.html.erb:20
+#: app/views/smart_queries/show.html.erb:20
+#: app/views/smart_queries/edit.html.erb:20
+#: app/views/smart_queries/list.html.erb:20
+#: app/views/smart_queries/search.html.erb:20
+msgid "Print..."
+msgstr "Imprimer..."
+
+#: app/views/profiles/show.html.erb:22 app/views/profiles/edit.html.erb:22
+#: app/views/profiles/list.html.erb:22 app/views/profiles/search.html.erb:22
+#: app/views/users/show.html.erb:23 app/views/users/edit.html.erb:23
+#: app/views/users/list.html.erb:23 app/views/users/search.html.erb:23
+#: app/views/system_settings/show.html.erb:23
+#: app/views/system_settings/edit.html.erb:23
+#: app/views/system_settings/list.html.erb:23
+#: app/views/system_settings/search.html.erb:23
+#: app/views/saved_reports/help.html.erb:20
+#: app/views/saved_reports/show.html.erb:23
+#: app/views/saved_reports/edit.html.erb:23
+#: app/views/saved_reports/list.html.erb:23
+#: app/views/saved_reports/search.html.erb:23
+#: app/views/bg_workers/help.html.erb:20 app/views/bg_workers/show.html.erb:22
+#: app/views/bg_workers/list.html.erb:22
+#: app/views/bg_workers/search.html.erb:22
+#: app/views/customers/help.html.erb:20 app/views/customers/show.html.erb:23
+#: app/views/customers/edit.html.erb:23 app/views/customers/list.html.erb:23
+#: app/views/customers/search.html.erb:23
+#: app/views/smart_queries/help.html.erb:20
+#: app/views/smart_queries/show.html.erb:23
+#: app/views/smart_queries/edit.html.erb:23
+#: app/views/smart_queries/list.html.erb:23
+#: app/views/smart_queries/search.html.erb:23
+msgid "Search and filter data."
+msgstr ""
+
+#: app/views/profiles/show.html.erb:22 app/views/profiles/edit.html.erb:22
+#: app/views/profiles/list.html.erb:22 app/views/profiles/search.html.erb:18
+#: app/views/profiles/search.html.erb:22 app/views/profiles/search.html.erb:60
+#: app/views/users/show.html.erb:23 app/views/users/edit.html.erb:23
+#: app/views/users/list.html.erb:23 app/views/users/search.html.erb:18
+#: app/views/users/search.html.erb:23 app/views/users/search.html.erb:88
+#: app/views/system_settings/show.html.erb:23
+#: app/views/system_settings/edit.html.erb:23
+#: app/views/system_settings/list.html.erb:23
+#: app/views/system_settings/search.html.erb:18
+#: app/views/system_settings/search.html.erb:23
+#: app/views/system_settings/search.html.erb:54
+#: app/views/app_locales/search.html.erb:58
+#: app/views/saved_reports/show.html.erb:23
+#: app/views/saved_reports/edit.html.erb:23
+#: app/views/saved_reports/list.html.erb:23
+#: app/views/saved_reports/search.html.erb:18
+#: app/views/saved_reports/search.html.erb:23
+#: app/views/saved_reports/search.html.erb:67
+#: app/views/bg_workers/show.html.erb:22 app/views/bg_workers/list.html.erb:22
+#: app/views/bg_workers/search.html.erb:18
+#: app/views/bg_workers/search.html.erb:22
+#: app/views/bg_workers/search.html.erb:86
+#: app/views/customers/show.html.erb:23 app/views/customers/edit.html.erb:23
+#: app/views/customers/list.html.erb:23 app/views/customers/search.html.erb:18
+#: app/views/customers/search.html.erb:23
+#: app/views/customers/search.html.erb:54
+#: app/views/smart_queries/show.html.erb:23
+#: app/views/smart_queries/edit.html.erb:23
+#: app/views/smart_queries/list.html.erb:23
+#: app/views/smart_queries/search.html.erb:18
+#: app/views/smart_queries/search.html.erb:23
+#: app/views/smart_queries/search.html.erb:60
+msgid "Search"
+msgstr "Recherche"
+
+#: app/views/profiles/show.html.erb:24 app/views/profiles/edit.html.erb:24
+#: app/views/profiles/list.html.erb:24 app/views/profiles/search.html.erb:24
+#: app/views/users/show.html.erb:25 app/views/users/edit.html.erb:25
+#: app/views/users/list.html.erb:25 app/views/users/search.html.erb:25
+#: app/views/system_settings/show.html.erb:25
+#: app/views/system_settings/edit.html.erb:25
+#: app/views/system_settings/list.html.erb:25
+#: app/views/system_settings/search.html.erb:25
+#: app/views/app_locales/index.html.erb:26
+#: app/views/app_locales/show.html.erb:24
+#: app/views/app_locales/edit.html.erb:24
+#: app/views/app_locales/list.html.erb:24
+#: app/views/app_locales/search.html.erb:24
+#: app/views/saved_reports/show.html.erb:25
+#: app/views/saved_reports/edit.html.erb:25
+#: app/views/saved_reports/list.html.erb:25
+#: app/views/saved_reports/search.html.erb:25
+#: app/views/bg_workers/show.html.erb:24 app/views/bg_workers/list.html.erb:24
+#: app/views/bg_workers/search.html.erb:24
+#: app/views/customers/show.html.erb:25 app/views/customers/edit.html.erb:25
+#: app/views/customers/list.html.erb:25 app/views/customers/search.html.erb:25
+#: app/views/accesses/list.html.erb:25
+#: app/views/smart_queries/show.html.erb:25
+#: app/views/smart_queries/edit.html.erb:25
+#: app/views/smart_queries/list.html.erb:25
+#: app/views/smart_queries/search.html.erb:25
+msgid "Presentation"
+msgstr "Présentation"
+
+#: app/views/profiles/show.html.erb:25 app/views/profiles/edit.html.erb:25
+#: app/views/profiles/list.html.erb:25 app/views/profiles/search.html.erb:25
+#: app/views/users/show.html.erb:26 app/views/users/edit.html.erb:26
+#: app/views/users/list.html.erb:26 app/views/users/search.html.erb:26
+#: app/views/system_settings/show.html.erb:26
+#: app/views/system_settings/edit.html.erb:26
+#: app/views/system_settings/list.html.erb:26
+#: app/views/system_settings/search.html.erb:26
+#: app/views/app_locales/index.html.erb:27
+#: app/views/app_locales/show.html.erb:25
+#: app/views/app_locales/edit.html.erb:25
+#: app/views/app_locales/list.html.erb:25
+#: app/views/app_locales/search.html.erb:25
+#: app/views/saved_reports/show.html.erb:26
+#: app/views/saved_reports/edit.html.erb:26
+#: app/views/saved_reports/list.html.erb:26
+#: app/views/saved_reports/search.html.erb:26
+#: app/views/bg_workers/show.html.erb:25 app/views/bg_workers/list.html.erb:25
+#: app/views/bg_workers/search.html.erb:25
+#: app/views/customers/show.html.erb:26 app/views/customers/edit.html.erb:26
+#: app/views/customers/list.html.erb:26 app/views/customers/search.html.erb:26
+#: app/views/accesses/list.html.erb:26
+#: app/views/smart_queries/show.html.erb:26
+#: app/views/smart_queries/edit.html.erb:26
+#: app/views/smart_queries/list.html.erb:26
+#: app/views/smart_queries/search.html.erb:26
+msgid "Presentation Mode"
+msgstr "Mode de Présentation"
+
+#: app/views/profiles/show.html.erb:25 app/views/profiles/edit.html.erb:25
+#: app/views/profiles/list.html.erb:25 app/views/profiles/search.html.erb:25
+#: app/views/users/show.html.erb:26 app/views/users/edit.html.erb:26
+#: app/views/users/list.html.erb:26 app/views/users/search.html.erb:26
+#: app/views/system_settings/show.html.erb:26
+#: app/views/system_settings/edit.html.erb:26
+#: app/views/system_settings/list.html.erb:26
+#: app/views/system_settings/search.html.erb:26
+#: app/views/app_locales/index.html.erb:27
+#: app/views/app_locales/show.html.erb:25
+#: app/views/app_locales/edit.html.erb:25
+#: app/views/app_locales/list.html.erb:25
+#: app/views/app_locales/search.html.erb:25
+#: app/views/saved_reports/show.html.erb:26
+#: app/views/saved_reports/edit.html.erb:26
+#: app/views/saved_reports/list.html.erb:26
+#: app/views/saved_reports/search.html.erb:26
+#: app/views/bg_workers/show.html.erb:25 app/views/bg_workers/list.html.erb:25
+#: app/views/bg_workers/search.html.erb:25
+#: app/views/customers/show.html.erb:26 app/views/customers/edit.html.erb:26
+#: app/views/customers/list.html.erb:26 app/views/customers/search.html.erb:26
+#: app/views/accesses/list.html.erb:26
+#: app/views/smart_queries/show.html.erb:26
+#: app/views/smart_queries/edit.html.erb:26
+#: app/views/smart_queries/list.html.erb:26
+#: app/views/smart_queries/search.html.erb:26
+msgid "Zoom only"
+msgstr "Zoom Seulement"
+
+#: app/views/profiles/show.html.erb:25 app/views/profiles/edit.html.erb:25
+#: app/views/profiles/list.html.erb:25 app/views/profiles/search.html.erb:25
+#: app/views/users/show.html.erb:26 app/views/users/edit.html.erb:26
+#: app/views/users/list.html.erb:26 app/views/users/search.html.erb:26
+#: app/views/system_settings/show.html.erb:26
+#: app/views/system_settings/edit.html.erb:26
+#: app/views/system_settings/list.html.erb:26
+#: app/views/system_settings/search.html.erb:26
+#: app/views/app_locales/index.html.erb:27
+#: app/views/app_locales/show.html.erb:25
+#: app/views/app_locales/edit.html.erb:25
+#: app/views/app_locales/list.html.erb:25
+#: app/views/app_locales/search.html.erb:25
+#: app/views/saved_reports/show.html.erb:26
+#: app/views/saved_reports/edit.html.erb:26
+#: app/views/saved_reports/list.html.erb:26
+#: app/views/saved_reports/search.html.erb:26
+#: app/views/bg_workers/show.html.erb:25 app/views/bg_workers/list.html.erb:25
+#: app/views/bg_workers/search.html.erb:25
+#: app/views/customers/show.html.erb:26 app/views/customers/edit.html.erb:26
+#: app/views/customers/list.html.erb:26 app/views/customers/search.html.erb:26
+#: app/views/accesses/list.html.erb:26
+#: app/views/smart_queries/show.html.erb:26
+#: app/views/smart_queries/edit.html.erb:26
+#: app/views/smart_queries/list.html.erb:26
+#: app/views/smart_queries/search.html.erb:26
+msgid "List and Zoom"
+msgstr ""
+
+#: app/views/profiles/show.html.erb:27 app/views/profiles/edit.html.erb:27
+#: app/views/profiles/list.html.erb:29 app/views/profiles/search.html.erb:29
+#: app/views/users/show.html.erb:28 app/views/users/edit.html.erb:28
+#: app/views/users/list.html.erb:30 app/views/users/search.html.erb:30
+#: app/views/system_settings/show.html.erb:28
+#: app/views/system_settings/edit.html.erb:28
+#: app/views/system_settings/list.html.erb:30
+#: app/views/system_settings/search.html.erb:30
+#: app/views/app_locales/index.html.erb:31
+#: app/views/app_locales/show.html.erb:27
+#: app/views/app_locales/edit.html.erb:27
+#: app/views/app_locales/list.html.erb:29
+#: app/views/app_locales/search.html.erb:29
+#: app/views/saved_reports/show.html.erb:28
+#: app/views/saved_reports/edit.html.erb:28
+#: app/views/saved_reports/list.html.erb:30
+#: app/views/saved_reports/search.html.erb:30
+#: app/views/bg_workers/show.html.erb:27 app/views/bg_workers/list.html.erb:29
+#: app/views/bg_workers/search.html.erb:29
+#: app/views/customers/show.html.erb:28 app/views/customers/edit.html.erb:28
+#: app/views/customers/list.html.erb:30 app/views/customers/search.html.erb:30
+#: app/views/accesses/list.html.erb:30
+#: app/views/smart_queries/show.html.erb:28
+#: app/views/smart_queries/edit.html.erb:28
+#: app/views/smart_queries/list.html.erb:30
+#: app/views/smart_queries/search.html.erb:30
+msgid "Browsing"
+msgstr "Navigation"
+
+#: app/views/profiles/show.html.erb:27 app/views/profiles/edit.html.erb:27
+#: app/views/profiles/list.html.erb:25 app/views/profiles/list.html.erb:26
+#: app/views/profiles/list.html.erb:29 app/views/profiles/search.html.erb:25
+#: app/views/profiles/search.html.erb:26 app/views/profiles/search.html.erb:29
+#: app/views/users/show.html.erb:28 app/views/users/edit.html.erb:28
+#: app/views/users/list.html.erb:26 app/views/users/list.html.erb:27
+#: app/views/users/list.html.erb:30 app/views/users/search.html.erb:26
+#: app/views/users/search.html.erb:27 app/views/users/search.html.erb:30
+#: app/views/system_settings/index.html.erb:48
+#: app/views/system_settings/index.html.erb:49
+#: app/views/system_settings/show.html.erb:28
+#: app/views/system_settings/edit.html.erb:28
+#: app/views/system_settings/list.html.erb:26
+#: app/views/system_settings/list.html.erb:27
+#: app/views/system_settings/list.html.erb:30
+#: app/views/system_settings/search.html.erb:26
+#: app/views/system_settings/search.html.erb:27
+#: app/views/system_settings/search.html.erb:30
+#: app/views/app_locales/index.html.erb:27
+#: app/views/app_locales/index.html.erb:28
+#: app/views/app_locales/index.html.erb:31
+#: app/views/app_locales/show.html.erb:27
+#: app/views/app_locales/edit.html.erb:27
+#: app/views/app_locales/list.html.erb:25
+#: app/views/app_locales/list.html.erb:26
+#: app/views/app_locales/list.html.erb:29
+#: app/views/app_locales/search.html.erb:25
+#: app/views/app_locales/search.html.erb:26
+#: app/views/app_locales/search.html.erb:29
+#: app/views/saved_reports/help.html.erb:20
+#: app/views/saved_reports/show.html.erb:28
+#: app/views/saved_reports/edit.html.erb:28
+#: app/views/saved_reports/list.html.erb:26
+#: app/views/saved_reports/list.html.erb:27
+#: app/views/saved_reports/list.html.erb:30
+#: app/views/saved_reports/search.html.erb:26
+#: app/views/saved_reports/search.html.erb:27
+#: app/views/saved_reports/search.html.erb:30
+#: app/views/bg_workers/help.html.erb:20 app/views/bg_workers/show.html.erb:27
+#: app/views/bg_workers/list.html.erb:25 app/views/bg_workers/list.html.erb:26
+#: app/views/bg_workers/list.html.erb:29
+#: app/views/bg_workers/search.html.erb:25
+#: app/views/bg_workers/search.html.erb:26
+#: app/views/bg_workers/search.html.erb:29
+#: app/views/customers/help.html.erb:20 app/views/customers/show.html.erb:28
+#: app/views/customers/edit.html.erb:28 app/views/customers/list.html.erb:26
+#: app/views/customers/list.html.erb:27 app/views/customers/list.html.erb:30
+#: app/views/customers/search.html.erb:26
+#: app/views/customers/search.html.erb:27
+#: app/views/customers/search.html.erb:30 app/views/accesses/list.html.erb:26
+#: app/views/accesses/list.html.erb:27 app/views/accesses/list.html.erb:30
+#: app/views/smart_queries/help.html.erb:20
+#: app/views/smart_queries/show.html.erb:28
+#: app/views/smart_queries/edit.html.erb:28
+#: app/views/smart_queries/list.html.erb:26
+#: app/views/smart_queries/list.html.erb:27
+#: app/views/smart_queries/list.html.erb:30
+#: app/views/smart_queries/search.html.erb:26
+#: app/views/smart_queries/search.html.erb:27
+#: app/views/smart_queries/search.html.erb:30
+msgid "This gives the list of all records"
+msgstr ""
+
+#: app/views/profiles/show.html.erb:27 app/views/profiles/edit.html.erb:27
+#: app/views/profiles/list.html.erb:29 app/views/profiles/search.html.erb:29
+#: app/views/users/show.html.erb:28 app/views/users/edit.html.erb:28
+#: app/views/users/list.html.erb:30 app/views/users/search.html.erb:30
+#: app/views/system_settings/show.html.erb:28
+#: app/views/system_settings/edit.html.erb:28
+#: app/views/system_settings/list.html.erb:30
+#: app/views/system_settings/search.html.erb:30
+#: app/views/app_locales/index.html.erb:31
+#: app/views/app_locales/show.html.erb:27
+#: app/views/app_locales/edit.html.erb:27
+#: app/views/app_locales/list.html.erb:29
+#: app/views/app_locales/search.html.erb:29
+#: app/views/saved_reports/help.html.erb:18
+#: app/views/saved_reports/show.html.erb:28
+#: app/views/saved_reports/edit.html.erb:28
+#: app/views/saved_reports/list.html.erb:30
+#: app/views/saved_reports/search.html.erb:30
+#: app/views/bg_workers/help.html.erb:18 app/views/bg_workers/show.html.erb:27
+#: app/views/bg_workers/list.html.erb:29
+#: app/views/bg_workers/search.html.erb:29
+#: app/views/customers/help.html.erb:18 app/views/customers/show.html.erb:28
+#: app/views/customers/edit.html.erb:28 app/views/customers/list.html.erb:30
+#: app/views/customers/search.html.erb:30 app/views/accesses/list.html.erb:30
+#: app/views/smart_queries/help.html.erb:18
+#: app/views/smart_queries/show.html.erb:28
+#: app/views/smart_queries/edit.html.erb:28
+#: app/views/smart_queries/list.html.erb:30
+#: app/views/smart_queries/search.html.erb:30
+msgid "Help"
+msgstr "Aide"
+
+#: app/views/profiles/show.html.erb:27 app/views/users/show.html.erb:28
+#: app/views/system_settings/show.html.erb:28
+#: app/views/saved_reports/help.html.erb:20
+#: app/views/saved_reports/show.html.erb:28
+#: app/views/bg_workers/help.html.erb:20 app/views/bg_workers/show.html.erb:27
+#: app/views/customers/help.html.erb:20 app/views/customers/show.html.erb:28
+#: app/views/smart_queries/help.html.erb:20
+#: app/views/smart_queries/show.html.erb:28
+msgid "Load the data to fill the edit form."
+msgstr ""
+
+#: app/views/profiles/show.html.erb:27 app/views/users/show.html.erb:28
+#: app/views/system_settings/show.html.erb:28
+#: app/views/app_locales/show.html.erb:27
+#: app/views/saved_reports/show.html.erb:28
+#: app/views/bg_workers/show.html.erb:27 app/views/customers/show.html.erb:28
+#: app/views/smart_queries/show.html.erb:28
+msgid "Edit current"
+msgstr "Modifier fiche courante"
+
+#: app/views/profiles/show.html.erb:32 app/views/profiles/edit.html.erb:34
+#: app/views/profiles/new.html.erb:25 app/views/profiles/search.html.erb:38
+#: app/views/system_settings/show.html.erb:33
+#: app/views/system_settings/edit.html.erb:35
+#: app/views/system_settings/new.html.erb:25
+#: app/views/system_settings/search.html.erb:39
+#: app/views/saved_reports/show.html.erb:33
+#: app/views/saved_reports/edit.html.erb:35
+#: app/views/saved_reports/new.html.erb:25
+#: app/views/saved_reports/search.html.erb:39
+#: app/views/bg_workers/show.html.erb:34 app/views/bg_workers/edit.html.erb:27
+#: app/views/bg_workers/new.html.erb:27
+#: app/views/bg_workers/search.html.erb:40
+#: app/views/customers/show.html.erb:33 app/views/customers/edit.html.erb:35
+#: app/views/customers/new.html.erb:25 app/views/customers/search.html.erb:39
+#: app/views/smart_queries/show.html.erb:33
+#: app/views/smart_queries/edit.html.erb:35
+#: app/views/smart_queries/new.html.erb:25
+#: app/views/smart_queries/search.html.erb:39
+msgid "Name: "
+msgstr "Nom : "
+
+#: app/views/profiles/show.html.erb:32 app/views/profiles/edit.html.erb:34
+#: app/views/profiles/new.html.erb:25 app/views/profiles/search.html.erb:44
+msgid "Users: "
+msgstr "Utilisateurs : "
+
+#: app/views/profiles/show.html.erb:33 app/views/profiles/show.html.erb:39
+#: app/views/profiles/show.html.erb:41 app/views/users/show.html.erb:41
+msgid "None"
+msgstr "Aucun"
+
+#: app/views/profiles/show.html.erb:38 app/views/profiles/edit.html.erb:38
+#: app/views/profiles/new.html.erb:28 app/views/profiles/search.html.erb:51
+msgid "Home Page: "
+msgstr ""
+
+#: app/views/profiles/access_graph.html.erb:18
+#: app/views/users/access_graph.html.erb:18
+#: app/views/accesses/permissions.html.erb:78
+#: app/views/accesses/permissions.html.erb:83
+#, fuzzy
+msgid "Access Graph"
+msgstr "Accès"
+
+#: app/views/profiles/access_graph.html.erb:18
+msgid "Access Graph for Profile %{record}"
+msgstr ""
+
+#: app/views/profiles/access_graph.html.erb:23
+#: app/views/profiles/field_access_graph.html.erb:22
+#: app/views/users/access_graph.html.erb:23
+#: app/views/users/field_access_graph.html.erb:22
+#: app/views/system_settings/index.html.erb:24
+msgid "Manage all accesses permissions, by profile and user."
+msgstr ""
+
+#: app/views/profiles/access_graph.html.erb:23
+#: app/views/profiles/field_access_graph.html.erb:22
+#: app/views/users/access_graph.html.erb:23
+#: app/views/users/field_access_graph.html.erb:22
+#: app/views/system_settings/index.html.erb:23
+#: app/views/system_settings/index.html.erb:24
+#: app/views/accesses/permissions.html.erb:18
+msgid "Permissions"
+msgstr ""
+
+#: app/views/profiles/_importer_results.html.erb:22
+#: app/views/users/_importer_results.html.erb:22
+#: app/views/user_accesses/_importer_results.html.erb:22
+#: app/views/system_settings/_importer_results.html.erb:22
+#: app/views/app_locales/_importer_results.html.erb:22
+#: app/views/application/_importer_results.html.erb:22
+#: app/views/customers/_importer_results.html.erb:22
+#: app/views/accesses/_importer_results.html.erb:22
+#: app/views/smart_queries/_importer_results.html.erb:22
+msgid "Successfully imported %{ok}/%{tot}"
+msgstr ""
+
+#: app/views/profiles/_importer_results.html.erb:24
+#: app/views/users/_importer_results.html.erb:24
+#: app/views/user_accesses/_importer_results.html.erb:24
+#: app/views/system_settings/_importer_results.html.erb:24
+#: app/views/app_locales/_importer_results.html.erb:24
+#: app/views/application/_importer_results.html.erb:24
+#: app/views/customers/_importer_results.html.erb:24
+#: app/views/accesses/_importer_results.html.erb:24
+#: app/views/smart_queries/_importer_results.html.erb:24
+msgid "%{n} errors"
+msgstr "%{n} erreurs"
+
+#: app/views/profiles/edit.html.erb:18 app/views/users/edit.html.erb:18
+#: app/views/system_settings/edit.html.erb:18
+#: app/views/app_locales/edit.html.erb:18
+#: app/views/saved_reports/edit.html.erb:18
+#: app/views/bg_workers/edit.html.erb:18 app/views/customers/edit.html.erb:18
+#: app/views/smart_queries/edit.html.erb:18
+msgid "Editing %{model} %{record}"
+msgstr ""
+
+#: app/views/profiles/edit.html.erb:27 app/views/users/edit.html.erb:28
+#: app/views/system_settings/edit.html.erb:28
+#: app/views/app_locales/edit.html.erb:27
+#: app/views/saved_reports/help.html.erb:20
+#: app/views/saved_reports/edit.html.erb:28
+#: app/views/bg_workers/help.html.erb:20 app/views/customers/help.html.erb:20
+#: app/views/customers/edit.html.erb:28
+#: app/views/smart_queries/help.html.erb:20
+#: app/views/smart_queries/edit.html.erb:28
+msgid "Display the record."
+msgstr ""
+
+#: app/views/profiles/edit.html.erb:27 app/views/users/edit.html.erb:28
+#: app/views/system_settings/edit.html.erb:28
+#: app/views/app_locales/edit.html.erb:27
+#: app/views/saved_reports/edit.html.erb:28
+#: app/views/customers/edit.html.erb:28
+#: app/views/smart_queries/edit.html.erb:28
+#, fuzzy
+msgid "Show current"
+msgstr "Modifier fiche courante"
+
+#: app/views/profiles/edit.html.erb:45 app/views/users/edit.html.erb:52
+#: app/views/users/change_password.html.erb:32
+#: app/views/system_settings/edit.html.erb:38
+#: app/views/app_locales/edit.html.erb:36
+#: app/views/saved_reports/edit.html.erb:38
+#: app/views/bg_workers/edit.html.erb:45 app/views/customers/edit.html.erb:46
+#: app/views/smart_queries/edit.html.erb:55
+msgid "Saving..."
+msgstr "En cours d'enregistrement..."
+
+#: app/views/profiles/edit.html.erb:45 app/views/users/edit.html.erb:52
+#: app/views/system_settings/edit.html.erb:38
+#: app/views/app_locales/edit.html.erb:36
+#: app/views/saved_reports/edit.html.erb:38
+#: app/views/bg_workers/edit.html.erb:45 app/views/customers/edit.html.erb:46
+#: app/views/smart_queries/edit.html.erb:55
+msgid "Save"
+msgstr "Enregistrer"
+
+#: app/views/profiles/new.html.erb:18 app/views/profiles/list.html.erb:55
+msgid "New Profile"
+msgstr ""
+
+#: app/views/profiles/new.html.erb:34 app/views/users/new.html.erb:35
+#: app/views/system_settings/new.html.erb:28
+#: app/views/app_locales/new.html.erb:28
+#: app/views/saved_reports/new.html.erb:28
+#: app/views/application/new.html.erb:10 app/views/bg_workers/new.html.erb:57
+#: app/views/customers/new.html.erb:36 app/views/smart_queries/new.html.erb:45
+msgid "Creating..."
+msgstr "En Création..."
+
+#: app/views/profiles/new.html.erb:34 app/views/users/new.html.erb:35
+#: app/views/system_settings/new.html.erb:28
+#: app/views/app_locales/new.html.erb:28
+#: app/views/saved_reports/new.html.erb:28
+#: app/views/application/new.html.erb:10 app/views/bg_workers/new.html.erb:57
+#: app/views/customers/new.html.erb:36 app/views/smart_queries/new.html.erb:45
+msgid "Create"
+msgstr "Créer"
+
+#: app/views/profiles/new.html.erb:35 app/views/users/new.html.erb:36
+#: app/views/system_settings/new.html.erb:29
+#: app/views/app_locales/new.html.erb:29
+#: app/views/saved_reports/new.html.erb:29
+#: app/views/application/new.html.erb:10 app/views/bg_workers/new.html.erb:58
+#: app/views/customers/new.html.erb:37 app/views/smart_queries/new.html.erb:46
+msgid "Create and New"
+msgstr "Créer et Nouveau"
+
+#: app/views/profiles/new.html.erb:39 app/views/profiles/search.html.erb:66
+#: app/views/users/new.html.erb:40 app/views/users/search.html.erb:94
+#: app/views/system_settings/new.html.erb:33
+#: app/views/system_settings/search.html.erb:60
+#: app/views/app_locales/new.html.erb:33
+#: app/views/app_locales/search.html.erb:64
+#: app/views/saved_reports/new.html.erb:33
+#: app/views/saved_reports/search.html.erb:73
+#: app/views/application/new.html.erb:13 app/views/bg_workers/new.html.erb:62
+#: app/views/bg_workers/search.html.erb:92 app/views/customers/new.html.erb:41
+#: app/views/customers/search.html.erb:60
+#: app/views/smart_queries/new.html.erb:50
+#: app/views/smart_queries/search.html.erb:66
+msgid "Back"
+msgstr "Retour"
+
+#: app/views/profiles/list.html.erb:18 app/views/users/list.html.erb:18
+#: app/views/system_settings/list.html.erb:18
+#: app/views/app_locales/list.html.erb:18
+#: app/views/saved_reports/list.html.erb:18
+#: app/views/application/list.html.erb:18
+#: app/views/bg_workers/list.html.erb:18 app/views/customers/list.html.erb:18
+#: app/views/accesses/list.html.erb:18
+#: app/views/smart_queries/list.html.erb:18
+msgid "Listing %{records} (%{count})"
+msgstr "Liste des %{records} (%{count})"
+
+#: app/views/profiles/list.html.erb:25 app/views/profiles/search.html.erb:25
+#: app/views/users/list.html.erb:26 app/views/users/search.html.erb:26
+#: app/views/system_settings/list.html.erb:26
+#: app/views/system_settings/search.html.erb:26
+#: app/views/app_locales/index.html.erb:27
+#: app/views/app_locales/list.html.erb:25
+#: app/views/app_locales/search.html.erb:25
+#: app/views/saved_reports/list.html.erb:26
+#: app/views/saved_reports/search.html.erb:26
+#: app/views/bg_workers/list.html.erb:25
+#: app/views/bg_workers/search.html.erb:25
+#: app/views/customers/list.html.erb:26 app/views/customers/search.html.erb:26
+#: app/views/accesses/list.html.erb:26
+#: app/views/smart_queries/list.html.erb:26
+#: app/views/smart_queries/search.html.erb:26
+msgid "Sort By"
+msgstr "Trier Par"
+
+#: app/views/profiles/list.html.erb:25 app/views/profiles/list.html.erb:35
+#: app/views/profiles/list.html.erb:43 app/views/profiles/search.html.erb:25
+#: app/views/system_settings/list.html.erb:26
+#: app/views/system_settings/list.html.erb:36
+#: app/views/system_settings/list.html.erb:44
+#: app/views/system_settings/search.html.erb:26
+#: app/views/system_settings/_result_list.html.erb:30
+#: app/views/saved_reports/help.html.erb:32
+#: app/views/saved_reports/list.html.erb:26
+#: app/views/saved_reports/list.html.erb:36
+#: app/views/saved_reports/list.html.erb:46
+#: app/views/saved_reports/search.html.erb:26
+#: app/views/saved_reports/_result_list.html.erb:30
+#: app/views/bg_workers/help.html.erb:32 app/views/bg_workers/list.html.erb:25
+#: app/views/bg_workers/list.html.erb:60 app/views/bg_workers/list.html.erb:68
+#: app/views/bg_workers/search.html.erb:25
+#: app/views/customers/help.html.erb:32 app/views/customers/list.html.erb:26
+#: app/views/customers/list.html.erb:36 app/views/customers/list.html.erb:46
+#: app/views/customers/search.html.erb:26
+#: app/views/customers/_result_list.html.erb:30
+#: app/views/smart_queries/help.html.erb:32
+#: app/views/smart_queries/list.html.erb:26
+#: app/views/smart_queries/list.html.erb:52
+#: app/views/smart_queries/list.html.erb:63
+#: app/views/smart_queries/search.html.erb:26
+#: app/views/smart_queries/_result_list.html.erb:30
+msgid "Name"
+msgstr "Nom"
+
+#: app/views/profiles/list.html.erb:25 app/views/profiles/search.html.erb:25
+#: app/views/users/list.html.erb:26 app/views/users/search.html.erb:26
+#: app/views/system_settings/list.html.erb:26
+#: app/views/system_settings/search.html.erb:26
+#: app/views/app_locales/index.html.erb:27
+#: app/views/app_locales/list.html.erb:25
+#: app/views/app_locales/search.html.erb:25
+#: app/views/saved_reports/list.html.erb:26
+#: app/views/saved_reports/search.html.erb:26
+#: app/views/bg_workers/list.html.erb:25
+#: app/views/bg_workers/search.html.erb:25
+#: app/views/customers/list.html.erb:26 app/views/customers/search.html.erb:26
+#: app/views/accesses/list.html.erb:26
+#: app/views/smart_queries/list.html.erb:26
+#: app/views/smart_queries/search.html.erb:26
+msgid "Group By"
+msgstr "Grouper Par"
+
+#: app/views/profiles/list.html.erb:25 app/views/profiles/list.html.erb:35
+#: app/views/profiles/list.html.erb:43 app/views/profiles/search.html.erb:25
+#: app/views/users/importer.html.erb:18 app/views/users/show.html.erb:18
+#: app/views/users/list.html.erb:18
+#: app/views/system_settings/index.html.erb:25
+#: app/views/accesses/list.html.erb:26 app/views/accesses/list.html.erb:42
+#: app/views/accesses/list.html.erb:64 app/views/users/rss.xml.builder:5
+#: app/views/users/atom.xml.builder:4
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: app/views/profiles/list.html.erb:25 app/views/profiles/list.html.erb:35
+#: app/views/profiles/list.html.erb:43 app/views/profiles/search.html.erb:25
+msgid "Home Page"
+msgstr "Page d'Accueil"
+
+#: app/views/profiles/list.html.erb:25 app/views/profiles/search.html.erb:25
+#: app/views/users/list.html.erb:26 app/views/users/search.html.erb:26
+#: app/views/system_settings/index.html.erb:24
+#: app/views/accesses/importer.html.erb:18 app/views/accesses/list.html.erb:18
+msgid "Accesses"
+msgstr "Accès"
+
+#: app/views/profiles/list.html.erb:25 app/views/profiles/search.html.erb:25
+#: app/views/accesses/list.html.erb:26 app/views/accesses/list.html.erb:42
+#: app/views/accesses/list.html.erb:64
+msgid "Profile Accesses"
+msgstr ""
+
+#: app/views/profiles/list.html.erb:26 app/views/profiles/search.html.erb:26
+#: app/views/users/list.html.erb:27 app/views/users/search.html.erb:27
+#: app/views/system_settings/list.html.erb:27
+#: app/views/system_settings/search.html.erb:27
+#: app/views/app_locales/index.html.erb:28
+#: app/views/app_locales/list.html.erb:26
+#: app/views/app_locales/search.html.erb:26
+#: app/views/saved_reports/list.html.erb:27
+#: app/views/saved_reports/search.html.erb:27
+#: app/views/bg_workers/list.html.erb:26
+#: app/views/bg_workers/search.html.erb:26
+#: app/views/customers/list.html.erb:27 app/views/customers/search.html.erb:27
+#: app/views/accesses/list.html.erb:27
+#: app/views/smart_queries/list.html.erb:27
+#: app/views/smart_queries/search.html.erb:27
+msgid "Per Page"
+msgstr "Par Page"
+
+#: app/views/profiles/list.html.erb:26 app/views/profiles/search.html.erb:26
+#: app/views/users/list.html.erb:27 app/views/users/search.html.erb:27
+#: app/views/system_settings/list.html.erb:27
+#: app/views/system_settings/search.html.erb:27
+#: app/views/app_locales/index.html.erb:28
+#: app/views/app_locales/list.html.erb:26
+#: app/views/app_locales/search.html.erb:26
+#: app/views/saved_reports/list.html.erb:27
+#: app/views/saved_reports/search.html.erb:27
+#: app/views/bg_workers/list.html.erb:26
+#: app/views/bg_workers/search.html.erb:26
+#: app/views/customers/list.html.erb:27 app/views/customers/search.html.erb:27
+#: app/views/accesses/list.html.erb:27
+#: app/views/smart_queries/list.html.erb:27
+#: app/views/smart_queries/search.html.erb:27
+msgid "10"
+msgstr ""
+
+#: app/views/profiles/list.html.erb:26 app/views/profiles/search.html.erb:26
+#: app/views/users/list.html.erb:27 app/views/users/search.html.erb:27
+#: app/views/system_settings/list.html.erb:27
+#: app/views/system_settings/search.html.erb:27
+#: app/views/app_locales/index.html.erb:28
+#: app/views/app_locales/list.html.erb:26
+#: app/views/app_locales/search.html.erb:26
+#: app/views/saved_reports/list.html.erb:27
+#: app/views/saved_reports/search.html.erb:27
+#: app/views/bg_workers/list.html.erb:26
+#: app/views/bg_workers/search.html.erb:26
+#: app/views/customers/list.html.erb:27 app/views/customers/search.html.erb:27
+#: app/views/accesses/list.html.erb:27
+#: app/views/smart_queries/list.html.erb:27
+#: app/views/smart_queries/search.html.erb:27
+msgid "20"
+msgstr ""
+
+#: app/views/profiles/list.html.erb:26 app/views/profiles/search.html.erb:26
+#: app/views/users/list.html.erb:27 app/views/users/search.html.erb:27
+#: app/views/system_settings/list.html.erb:27
+#: app/views/system_settings/search.html.erb:27
+#: app/views/app_locales/index.html.erb:28
+#: app/views/app_locales/list.html.erb:26
+#: app/views/app_locales/search.html.erb:26
+#: app/views/saved_reports/list.html.erb:27
+#: app/views/saved_reports/search.html.erb:27
+#: app/views/bg_workers/list.html.erb:26
+#: app/views/bg_workers/search.html.erb:26
+#: app/views/customers/list.html.erb:27 app/views/customers/search.html.erb:27
+#: app/views/accesses/list.html.erb:27
+#: app/views/smart_queries/list.html.erb:27
+#: app/views/smart_queries/search.html.erb:27
+msgid "30"
+msgstr ""
+
+#: app/views/profiles/list.html.erb:26 app/views/profiles/search.html.erb:26
+#: app/views/users/list.html.erb:27 app/views/users/search.html.erb:27
+#: app/views/system_settings/list.html.erb:27
+#: app/views/system_settings/search.html.erb:27
+#: app/views/app_locales/index.html.erb:28
+#: app/views/app_locales/list.html.erb:26
+#: app/views/app_locales/search.html.erb:26
+#: app/views/saved_reports/list.html.erb:27
+#: app/views/saved_reports/search.html.erb:27
+#: app/views/bg_workers/list.html.erb:26
+#: app/views/bg_workers/search.html.erb:26
+#: app/views/customers/list.html.erb:27 app/views/customers/search.html.erb:27
+#: app/views/accesses/list.html.erb:27
+#: app/views/smart_queries/list.html.erb:27
+#: app/views/smart_queries/search.html.erb:27
+msgid "50"
+msgstr ""
+
+#: app/views/profiles/list.html.erb:26 app/views/profiles/search.html.erb:26
+#: app/views/users/list.html.erb:27 app/views/users/search.html.erb:27
+#: app/views/system_settings/list.html.erb:27
+#: app/views/system_settings/search.html.erb:27
+#: app/views/app_locales/index.html.erb:28
+#: app/views/app_locales/list.html.erb:26
+#: app/views/app_locales/search.html.erb:26
+#: app/views/saved_reports/list.html.erb:27
+#: app/views/saved_reports/search.html.erb:27
+#: app/views/bg_workers/list.html.erb:26
+#: app/views/bg_workers/search.html.erb:26
+#: app/views/customers/list.html.erb:27 app/views/customers/search.html.erb:27
+#: app/views/accesses/list.html.erb:27
+#: app/views/smart_queries/list.html.erb:27
+#: app/views/smart_queries/search.html.erb:27
+msgid "100"
+msgstr ""
+
+#: app/views/profiles/list.html.erb:26 app/views/profiles/search.html.erb:26
+#: app/views/users/list.html.erb:27 app/views/users/search.html.erb:27
+#: app/views/system_settings/list.html.erb:27
+#: app/views/system_settings/search.html.erb:27
+#: app/views/app_locales/index.html.erb:28
+#: app/views/app_locales/list.html.erb:26
+#: app/views/app_locales/search.html.erb:26
+#: app/views/saved_reports/list.html.erb:27
+#: app/views/saved_reports/search.html.erb:27
+#: app/views/bg_workers/list.html.erb:26
+#: app/views/bg_workers/search.html.erb:26
+#: app/views/customers/list.html.erb:27 app/views/customers/search.html.erb:27
+#: app/views/accesses/list.html.erb:27
+#: app/views/smart_queries/list.html.erb:27
+#: app/views/smart_queries/search.html.erb:27
+msgid "200"
+msgstr ""
+
+#: app/views/profiles/list.html.erb:37 app/views/users/list.html.erb:38
+#: app/views/system_settings/list.html.erb:38
+#: app/views/app_locales/list.html.erb:43
+#: app/views/saved_reports/list.html.erb:38
+#: app/views/application/list.html.erb:25
+#: app/views/bg_workers/list.html.erb:62 app/views/customers/list.html.erb:38
+#: app/views/accesses/list.html.erb:44
+#: app/views/smart_queries/list.html.erb:54
+msgid "not set"
+msgstr ""
+
+#: app/views/profiles/list.html.erb:56 app/views/users/list.html.erb:57
+#: app/views/system_settings/list.html.erb:57
+#: app/views/app_locales/list.html.erb:68
+#: app/views/app_locales/_gettext.html.erb:23
+#: app/views/saved_reports/list.html.erb:61
+#: app/views/application/list.html.erb:41
+#: app/views/bg_workers/list.html.erb:81 app/views/customers/list.html.erb:61
+#: app/views/accesses/list.html.erb:91
+#: app/views/smart_queries/list.html.erb:79
+msgid "Previous page"
+msgstr "Page Précédente"
+
+#: app/views/profiles/list.html.erb:56 app/views/users/list.html.erb:57
+#: app/views/system_settings/list.html.erb:57
+#: app/views/app_locales/list.html.erb:68
+#: app/views/app_locales/_gettext.html.erb:24
+#: app/views/saved_reports/list.html.erb:61
+#: app/views/application/list.html.erb:41
+#: app/views/bg_workers/list.html.erb:81 app/views/customers/list.html.erb:61
+#: app/views/accesses/list.html.erb:91
+#: app/views/smart_queries/list.html.erb:79
+msgid "Next page"
+msgstr "Page Suivante"
+
+#: app/views/profiles/_importer_data_source.html.erb:19
+msgid "%{n} Profiles"
+msgstr ""
+
+#: app/views/profiles/_importer_data_source.html.erb:33
+#: app/views/users/_importer_data_source.html.erb:33
+#: app/views/user_accesses/_importer_data_source.html.erb:33
+#: app/views/system_settings/_importer_data_source.html.erb:33
+#: app/views/app_locales/_importer_data_source.html.erb:33
+#: app/views/application/_importer_data_source.html.erb:33
+#: app/views/customers/_importer_data_source.html.erb:33
+#: app/views/accesses/_importer_data_source.html.erb:33
+#: app/views/smart_queries/_importer_data_source.html.erb:33
+msgid "at"
+msgstr "à"
+
+#: app/views/profiles/_importer_data_source.html.erb:34
+#: app/views/users/_importer_data_source.html.erb:34
+#: app/views/user_accesses/_importer_data_source.html.erb:34
+#: app/views/system_settings/_importer_data_source.html.erb:34
+#: app/views/app_locales/_importer_data_source.html.erb:34
+#: app/views/application/_importer_data_source.html.erb:34
+#: app/views/customers/_importer_data_source.html.erb:34
+#: app/views/accesses/_importer_data_source.html.erb:34
+#: app/views/smart_queries/_importer_data_source.html.erb:34
+msgid "on"
+msgstr ""
+
+#: app/views/profiles/_importer_data_source.html.erb:50
+#: app/views/users/_importer_data_source.html.erb:50
+#: app/views/user_accesses/_importer_data_source.html.erb:50
+#: app/views/system_settings/_importer_data_source.html.erb:50
+#: app/views/app_locales/_importer_data_source.html.erb:50
+#: app/views/application/_importer_data_source.html.erb:50
+#: app/views/customers/_importer_data_source.html.erb:50
+#: app/views/accesses/_importer_data_source.html.erb:50
+#: app/views/smart_queries/_importer_data_source.html.erb:50
+msgid "Are you sure that you want to remove this file?"
+msgstr ""
+
+#: app/views/profiles/search.html.erb:18 app/views/users/search.html.erb:18
+#: app/views/system_settings/search.html.erb:18
+#: app/views/app_locales/search.html.erb:18
+#: app/views/saved_reports/search.html.erb:18
+#: app/views/bg_workers/search.html.erb:18
+#: app/views/customers/search.html.erb:18
+#: app/views/smart_queries/search.html.erb:18
+msgid "Searching %{page}"
+msgstr ""
+
+#: app/views/profiles/search.html.erb:49 app/views/profiles/search.html.erb:55
+#: app/views/users/search.html.erb:81
+msgid "[All]"
+msgstr ""
+
+#: app/views/profiles/field_access_graph.html.erb:18
+#: app/views/users/field_access_graph.html.erb:18
+#: app/views/accesses/permissions.html.erb:113
+#: app/views/accesses/permissions.html.erb:115
+msgid "Field Access Graph"
+msgstr ""
+
+#: app/views/profiles/field_access_graph.html.erb:18
+msgid "Field Access Graph for Profile %{record}"
+msgstr ""
+
+#: app/views/profiles/_importer_preview.html.erb:21
+#: app/views/users/_importer_preview.html.erb:21
+#: app/views/user_accesses/_importer_preview.html.erb:21
+#: app/views/system_settings/_importer_preview.html.erb:21
+#: app/views/app_locales/_importer_preview.html.erb:21
+#: app/views/application/_importer_preview.html.erb:21
+#: app/views/customers/_importer_preview.html.erb:21
+#: app/views/accesses/_importer_preview.html.erb:21
+#: app/views/smart_queries/_importer_preview.html.erb:21
+msgid "Create Only"
+msgstr ""
+
+#: app/views/profiles/_importer_preview.html.erb:27
+#: app/views/users/_importer_preview.html.erb:27
+#: app/views/user_accesses/_importer_preview.html.erb:27
+#: app/views/system_settings/_importer_preview.html.erb:27
+#: app/views/app_locales/_importer_preview.html.erb:27
+#: app/views/application/_importer_preview.html.erb:27
+#: app/views/customers/_importer_preview.html.erb:27
+#: app/views/accesses/_importer_preview.html.erb:27
+#: app/views/smart_queries/_importer_preview.html.erb:27
+msgid "Update Only"
+msgstr ""
+
+#: app/views/profiles/_importer_preview.html.erb:51
+#: app/views/users/_importer_preview.html.erb:47
+#: app/views/users/_importer_preview.html.erb:51
+#: app/views/user_accesses/_importer_preview.html.erb:51
+#: app/views/system_settings/_importer_preview.html.erb:48
+#: app/views/system_settings/_importer_preview.html.erb:52
+#: app/views/app_locales/_importer_preview.html.erb:51
+#: app/views/application/_importer_preview.html.erb:51
+#: app/views/customers/_importer_preview.html.erb:48
+#: app/views/customers/_importer_preview.html.erb:52
+#: app/views/accesses/_importer_preview.html.erb:47
+#: app/views/accesses/_importer_preview.html.erb:51
+#: app/views/smart_queries/_importer_preview.html.erb:51
+msgid "Skip"
+msgstr ""
+
+#: app/views/users/importer.html.erb:22
+#: app/views/system_settings/importer.html.erb:29
+#: app/views/customers/importer.html.erb:29
+#: app/views/accesses/importer.html.erb:22
+msgid "Import data from CSV and XLS files in 4 easy steps"
+msgstr ""
+
+#: app/views/users/importer.html.erb:32
+#: app/views/system_settings/importer.html.erb:23
+#: app/views/system_settings/list_logs.html.erb:23
+#: app/views/customers/importer.html.erb:23
+#: app/views/accesses/importer.html.erb:32
+msgid "Processing..."
+msgstr "En cours..."
+
+#: app/views/users/importer.html.erb:32
+#: app/views/system_settings/importer.html.erb:23
+#: app/views/customers/importer.html.erb:23
+#: app/views/accesses/importer.html.erb:32
+msgid "Please wait"
+msgstr ""
+
+#: app/views/users/_importer_threads.html.erb:22
+#: app/views/system_settings/_importer_threads.html.erb:22
+#: app/views/customers/_importer_threads.html.erb:22
+#: app/views/accesses/_importer_threads.html.erb:22
+msgid "Importer currently running..."
+msgstr ""
+
+#: app/views/users/show.html.erb:19 app/views/users/edit.html.erb:19
+#: app/views/users/list.html.erb:19 app/views/users/search.html.erb:19
+#: app/views/system_settings/show.html.erb:19
+#: app/views/system_settings/edit.html.erb:19
+#: app/views/system_settings/list.html.erb:19
+#: app/views/system_settings/search.html.erb:19
+#: app/views/saved_reports/show.html.erb:19
+#: app/views/saved_reports/edit.html.erb:19
+#: app/views/saved_reports/list.html.erb:19
+#: app/views/saved_reports/search.html.erb:19
+#: app/views/customers/show.html.erb:19 app/views/customers/edit.html.erb:19
+#: app/views/customers/list.html.erb:19 app/views/customers/search.html.erb:19
+#: app/views/accesses/list.html.erb:19
+#: app/views/smart_queries/show.html.erb:19
+#: app/views/smart_queries/edit.html.erb:19
+#: app/views/smart_queries/list.html.erb:19
+#: app/views/smart_queries/search.html.erb:19
+msgid "Download as"
+msgstr "Télécharger en"
+
+#: app/views/users/show.html.erb:19 app/views/users/edit.html.erb:19
+#: app/views/users/list.html.erb:19 app/views/users/search.html.erb:19
+#: app/views/system_settings/show.html.erb:19
+#: app/views/system_settings/edit.html.erb:19
+#: app/views/system_settings/list.html.erb:19
+#: app/views/system_settings/search.html.erb:19
+#: app/views/saved_reports/help.html.erb:20
+#: app/views/saved_reports/show.html.erb:19
+#: app/views/saved_reports/edit.html.erb:19
+#: app/views/saved_reports/list.html.erb:19
+#: app/views/saved_reports/search.html.erb:19
+#: app/views/customers/help.html.erb:20 app/views/customers/show.html.erb:19
+#: app/views/customers/edit.html.erb:19 app/views/customers/list.html.erb:19
+#: app/views/customers/search.html.erb:19 app/views/accesses/list.html.erb:19
+#: app/views/smart_queries/help.html.erb:20
+#: app/views/smart_queries/show.html.erb:19
+#: app/views/smart_queries/edit.html.erb:19
+#: app/views/smart_queries/list.html.erb:19
+#: app/views/smart_queries/search.html.erb:19
+msgid "Allows download of all or current record in many formats."
+msgstr ""
+
+#: app/views/users/show.html.erb:19 app/views/users/edit.html.erb:19
+#: app/views/users/list.html.erb:19 app/views/users/search.html.erb:19
+#: app/views/system_settings/node_details.html.erb:21
+#: app/views/system_settings/show.html.erb:19
+#: app/views/system_settings/edit.html.erb:19
+#: app/views/system_settings/list.html.erb:19
+#: app/views/system_settings/search.html.erb:19
+#: app/views/saved_reports/show.html.erb:19
+#: app/views/saved_reports/edit.html.erb:19
+#: app/views/saved_reports/list.html.erb:19
+#: app/views/saved_reports/search.html.erb:19
+#: app/views/customers/show.html.erb:19 app/views/customers/edit.html.erb:19
+#: app/views/customers/list.html.erb:19 app/views/customers/search.html.erb:19
+#: app/views/accesses/list.html.erb:19
+#: app/views/smart_queries/show.html.erb:19
+#: app/views/smart_queries/edit.html.erb:19
+#: app/views/smart_queries/list.html.erb:19
+#: app/views/smart_queries/search.html.erb:19
+msgid "Download"
+msgstr "Télécharger"
+
+#: app/views/users/show.html.erb:19 app/views/users/edit.html.erb:19
+#: app/views/users/list.html.erb:19 app/views/users/search.html.erb:19
+#: app/views/system_settings/show.html.erb:19
+#: app/views/system_settings/edit.html.erb:19
+#: app/views/system_settings/list.html.erb:19
+#: app/views/system_settings/search.html.erb:19
+#: app/views/saved_reports/show.html.erb:19
+#: app/views/saved_reports/edit.html.erb:19
+#: app/views/saved_reports/list.html.erb:19
+#: app/views/saved_reports/search.html.erb:19
+#: app/views/customers/show.html.erb:19 app/views/customers/edit.html.erb:19
+#: app/views/customers/list.html.erb:19 app/views/customers/search.html.erb:19
+#: app/views/accesses/list.html.erb:19
+#: app/views/smart_queries/show.html.erb:19
+#: app/views/smart_queries/edit.html.erb:19
+#: app/views/smart_queries/list.html.erb:19
+#: app/views/smart_queries/search.html.erb:19
+msgid "HTML"
+msgstr ""
+
+#: app/views/users/show.html.erb:19 app/views/users/edit.html.erb:19
+#: app/views/users/list.html.erb:19 app/views/users/search.html.erb:19
+#: app/views/system_settings/show.html.erb:19
+#: app/views/system_settings/edit.html.erb:19
+#: app/views/system_settings/list.html.erb:19
+#: app/views/system_settings/search.html.erb:19
+#: app/views/saved_reports/show.html.erb:19
+#: app/views/saved_reports/edit.html.erb:19
+#: app/views/saved_reports/list.html.erb:19
+#: app/views/saved_reports/search.html.erb:19
+#: app/views/customers/show.html.erb:19 app/views/customers/edit.html.erb:19
+#: app/views/customers/list.html.erb:19 app/views/customers/search.html.erb:19
+#: app/views/accesses/list.html.erb:19
+#: app/views/smart_queries/show.html.erb:19
+#: app/views/smart_queries/edit.html.erb:19
+#: app/views/smart_queries/list.html.erb:19
+#: app/views/smart_queries/search.html.erb:19
+msgid "CSV"
+msgstr ""
+
+#: app/views/users/show.html.erb:19 app/views/users/edit.html.erb:19
+#: app/views/users/list.html.erb:19 app/views/users/search.html.erb:19
+#: app/views/system_settings/show.html.erb:19
+#: app/views/system_settings/edit.html.erb:19
+#: app/views/system_settings/list.html.erb:19
+#: app/views/system_settings/search.html.erb:19
+#: app/views/saved_reports/show.html.erb:19
+#: app/views/saved_reports/edit.html.erb:19
+#: app/views/saved_reports/list.html.erb:19
+#: app/views/saved_reports/search.html.erb:19
+#: app/views/customers/show.html.erb:19 app/views/customers/edit.html.erb:19
+#: app/views/customers/list.html.erb:19 app/views/customers/search.html.erb:19
+#: app/views/smart_queries/show.html.erb:19
+#: app/views/smart_queries/edit.html.erb:19
+#: app/views/smart_queries/list.html.erb:19
+#: app/views/smart_queries/search.html.erb:19
+msgid "XLS"
+msgstr ""
+
+#: app/views/users/show.html.erb:19 app/views/users/edit.html.erb:19
+#: app/views/users/list.html.erb:19 app/views/users/search.html.erb:19
+#: app/views/system_settings/show.html.erb:19
+#: app/views/system_settings/edit.html.erb:19
+#: app/views/system_settings/list.html.erb:19
+#: app/views/system_settings/search.html.erb:19
+#: app/views/saved_reports/show.html.erb:19
+#: app/views/saved_reports/edit.html.erb:19
+#: app/views/saved_reports/list.html.erb:19
+#: app/views/saved_reports/search.html.erb:19
+#: app/views/customers/show.html.erb:19 app/views/customers/edit.html.erb:19
+#: app/views/customers/list.html.erb:19 app/views/customers/search.html.erb:19
+#: app/views/accesses/list.html.erb:19
+#: app/views/smart_queries/show.html.erb:19
+#: app/views/smart_queries/edit.html.erb:19
+#: app/views/smart_queries/list.html.erb:19
+#: app/views/smart_queries/search.html.erb:19
+msgid "XML"
+msgstr ""
+
+#: app/views/users/show.html.erb:19 app/views/users/edit.html.erb:19
+#: app/views/users/list.html.erb:19 app/views/users/search.html.erb:19
+#: app/views/system_settings/show.html.erb:19
+#: app/views/system_settings/edit.html.erb:19
+#: app/views/system_settings/list.html.erb:19
+#: app/views/system_settings/search.html.erb:19
+#: app/views/saved_reports/show.html.erb:19
+#: app/views/saved_reports/edit.html.erb:19
+#: app/views/saved_reports/list.html.erb:19
+#: app/views/saved_reports/search.html.erb:19
+#: app/views/customers/show.html.erb:19 app/views/customers/edit.html.erb:19
+#: app/views/customers/list.html.erb:19 app/views/customers/search.html.erb:19
+#: app/views/accesses/list.html.erb:19
+#: app/views/smart_queries/show.html.erb:19
+#: app/views/smart_queries/edit.html.erb:19
+#: app/views/smart_queries/list.html.erb:19
+#: app/views/smart_queries/search.html.erb:19
+msgid "PDF"
+msgstr ""
+
+#: app/views/users/show.html.erb:28 app/views/users/edit.html.erb:28
+#: app/views/users/report_chooser.html.erb:19 app/views/users/list.html.erb:30
+#: app/views/users/search.html.erb:30
+#: app/views/system_settings/report_chooser.html.erb:19
+#: app/views/app_locales/report_chooser.html.erb:19
+#: app/views/bg_workers/report_chooser.html.erb:19
+#: app/views/customers/show.html.erb:28 app/views/customers/edit.html.erb:28
+#: app/views/customers/report_chooser.html.erb:19
+#: app/views/customers/list.html.erb:30 app/views/customers/search.html.erb:30
+#: app/views/accesses/report_chooser.html.erb:19
+#: app/views/accesses/list.html.erb:30
+msgid "Report Chooser"
+msgstr "Sélecteur de Rapport"
+
+#: app/views/users/show.html.erb:28 app/views/users/edit.html.erb:28
+#: app/views/users/list.html.erb:30 app/views/users/search.html.erb:30
+#: app/views/customers/show.html.erb:28 app/views/customers/edit.html.erb:28
+#: app/views/customers/list.html.erb:30 app/views/customers/search.html.erb:30
+#: app/views/accesses/list.html.erb:30
+msgid "Load requested report."
+msgstr ""
+
+#: app/views/users/show.html.erb:28 app/views/users/edit.html.erb:28
+#: app/views/users/list.html.erb:30 app/views/users/search.html.erb:30
+#: app/views/customers/show.html.erb:28 app/views/customers/edit.html.erb:28
+#: app/views/customers/list.html.erb:30 app/views/customers/search.html.erb:30
+#: app/views/accesses/reporting.html.erb:18
+#: app/views/accesses/list.html.erb:30
+#, fuzzy
+msgid "Reporting"
+msgstr "Rapports..."
+
+#: app/views/users/show.html.erb:28 app/views/users/edit.html.erb:28
+#: app/views/users/list.html.erb:30 app/views/users/search.html.erb:30
+#: app/views/system_settings/show.html.erb:28
+#: app/views/system_settings/edit.html.erb:28
+#: app/views/system_settings/list.html.erb:30
+#: app/views/system_settings/search.html.erb:30
+#: app/views/app_locales/index.html.erb:31
+#: app/views/app_locales/show.html.erb:27
+#: app/views/app_locales/edit.html.erb:27
+#: app/views/app_locales/list.html.erb:29
+#: app/views/app_locales/search.html.erb:29
+#: app/views/saved_reports/help.html.erb:20
+#: app/views/saved_reports/show.html.erb:28
+#: app/views/saved_reports/edit.html.erb:28
+#: app/views/saved_reports/list.html.erb:30
+#: app/views/saved_reports/search.html.erb:30
+#: app/views/bg_workers/help.html.erb:20 app/views/bg_workers/show.html.erb:27
+#: app/views/bg_workers/list.html.erb:29
+#: app/views/bg_workers/search.html.erb:29
+#: app/views/customers/help.html.erb:20 app/views/customers/show.html.erb:28
+#: app/views/customers/edit.html.erb:28 app/views/customers/list.html.erb:30
+#: app/views/customers/search.html.erb:30
+#: app/views/smart_queries/help.html.erb:20
+#: app/views/smart_queries/show.html.erb:28
+#: app/views/smart_queries/edit.html.erb:28
+#: app/views/smart_queries/list.html.erb:30
+#: app/views/smart_queries/search.html.erb:30
+msgid "Gives help about current module."
+msgstr ""
+
+#: app/views/users/show.html.erb:33 app/views/users/edit.html.erb:35
+#: app/views/users/new.html.erb:25 app/views/users/search.html.erb:39
+#, fuzzy
+msgid "Login: "
+msgstr "Login :"
+
+#: app/views/users/show.html.erb:33 app/views/users/edit.html.erb:35
+#: app/views/users/new.html.erb:25 app/views/users/search.html.erb:45
+#, fuzzy
+msgid "First Name: "
+msgstr "Nom : "
+
+#: app/views/users/show.html.erb:33 app/views/users/edit.html.erb:35
+#: app/views/users/new.html.erb:25 app/views/users/search.html.erb:51
+#, fuzzy
+msgid "Last Name: "
+msgstr "Nom : "
+
+#: app/views/users/show.html.erb:33 app/views/users/edit.html.erb:35
+#: app/views/users/new.html.erb:25 app/views/users/search.html.erb:57
+msgid "Email: "
+msgstr "Email : "
+
+#: app/views/users/show.html.erb:33 app/views/users/edit.html.erb:35
+#: app/views/users/new.html.erb:25 app/views/users/search.html.erb:63
+msgid "Language: "
+msgstr ""
+
+#: app/views/users/show.html.erb:34 app/views/users/edit.html.erb:36
+#: app/views/users/new.html.erb:25 app/views/users/search.html.erb:69
+msgid "Active: "
+msgstr ""
+
+#: app/views/users/show.html.erb:38 app/views/users/edit.html.erb:40
+#: app/views/users/new.html.erb:26 app/views/users/list.html.erb:36
+#: app/views/users/list.html.erb:44 app/views/users/search.html.erb:75
+#, fuzzy
+msgid "Access Management"
+msgstr "Gestion des Données"
+
+#: app/views/users/show.html.erb:40 app/views/users/edit.html.erb:42
+#: app/views/users/new.html.erb:27 app/views/users/search.html.erb:76
+msgid "Profiles: "
+msgstr ""
+
+#: app/views/users/reporting.html.erb:18
+#: app/views/system_settings/reporting.html.erb:18
+#: app/views/bg_workers/reporting.html.erb:18
+#: app/views/customers/reporting.html.erb:18
+#: app/views/accesses/report_test.html.erb:18
+#: app/views/accesses/reporting.html.erb:18
+msgid "Test Report"
+msgstr ""
+
+#: app/views/users/login.html.erb:18
+msgid "%{app} - Connection"
+msgstr ""
+
+#: app/views/users/login.html.erb:27
+msgid "Sign into your application"
+msgstr ""
+
+#: app/views/users/login.html.erb:29
+msgid "Login:"
+msgstr "Login :"
+
+#: app/views/users/login.html.erb:31
+msgid "Password:"
+msgstr "Mot de passe :"
+
+#: app/views/users/login.html.erb:32
+msgid "Sign in"
+msgstr ""
+
+#: app/views/users/_report_options.html.erb:21
+#: app/views/system_settings/_report_options.html.erb:21
+#: app/views/bg_workers/_report_options.html.erb:21
+#: app/views/customers/_report_options.html.erb:21
+#: app/views/accesses/_report_options.html.erb:21
+#, fuzzy
+msgid "Report options"
+msgstr "Options de Rapport"
+
+#: app/views/users/_report_options.html.erb:24
+#: app/views/system_settings/_report_options.html.erb:24
+#: app/views/bg_workers/_report_options.html.erb:24
+#: app/views/customers/_report_options.html.erb:24
+#: app/views/accesses/_report_options.html.erb:24
+msgid "Extract image"
+msgstr ""
+
+#: app/views/users/_report_options.html.erb:24
+#: app/views/system_settings/_report_options.html.erb:24
+#: app/views/bg_workers/_report_options.html.erb:24
+#: app/views/customers/_report_options.html.erb:24
+#: app/views/accesses/_report_options.html.erb:24
+msgid "(to print or save)"
+msgstr ""
+
+#: app/views/users/_report_options.html.erb:26
+#: app/views/system_settings/_report_options.html.erb:26
+#: app/views/bg_workers/_report_options.html.erb:26
+#: app/views/customers/_report_options.html.erb:26
+#: app/views/accesses/_report_options.html.erb:26
+msgid "Save report"
+msgstr ""
+
+#: app/views/users/_report_options.html.erb:26
+#: app/views/system_settings/_report_options.html.erb:26
+#: app/views/bg_workers/_report_options.html.erb:26
+#: app/views/customers/_report_options.html.erb:26
+#: app/views/accesses/_report_options.html.erb:26
+msgid "(for archive or comparison)"
+msgstr ""
+
+#: app/views/users/_report_options.html.erb:28
+#: app/views/system_settings/_report_options.html.erb:28
+#: app/views/bg_workers/_report_options.html.erb:28
+#: app/views/customers/_report_options.html.erb:28
+#: app/views/accesses/_report_options.html.erb:28
+msgid "Choose preset"
+msgstr ""
+
+#: app/views/users/_report_options.html.erb:34
+#: app/views/system_settings/index.html.erb:50
+#: app/views/system_settings/_report_options.html.erb:34
+#: app/views/saved_reports/help.html.erb:38
+#: app/views/saved_reports/show.html.erb:18
+#: app/views/saved_reports/list.html.erb:18
+#: app/views/bg_workers/_report_options.html.erb:34
+#: app/views/customers/_report_options.html.erb:34
+#: app/views/accesses/_report_options.html.erb:66
+#: app/views/saved_reports/rss.xml.builder:5
+#: app/views/saved_reports/atom.xml.builder:4
+msgid "Saved Reports"
+msgstr ""
+
+#: app/views/users/_report_options.html.erb:44
+#: app/views/system_settings/_report_options.html.erb:44
+#: app/views/bg_workers/_report_options.html.erb:44
+#: app/views/customers/_report_options.html.erb:44
+#: app/views/accesses/_report_options.html.erb:76
+msgid "Data Sets"
+msgstr ""
+
+#: app/views/users/_report_options.html.erb:54
+#: app/views/system_settings/_report_options.html.erb:54
+#: app/views/bg_workers/help.html.erb:32
+#: app/views/bg_workers/_report_options.html.erb:54
+#: app/views/bg_workers/list.html.erb:25 app/views/bg_workers/list.html.erb:60
+#: app/views/bg_workers/list.html.erb:68
+#: app/views/bg_workers/search.html.erb:25
+#: app/views/customers/_report_options.html.erb:54
+#: app/views/accesses/_report_options.html.erb:86
+msgid "Options"
+msgstr ""
+
+#: app/views/users/_report_options.html.erb:57
+#: app/views/system_settings/_report_options.html.erb:57
+#: app/views/bg_workers/_report_options.html.erb:57
+#: app/views/customers/_report_options.html.erb:57
+#: app/views/accesses/_report_options.html.erb:89
+#, fuzzy
+msgid "Title"
+msgstr "Fichier"
+
+#: app/views/users/_report_options.html.erb:58
+#: app/views/system_settings/_report_options.html.erb:58
+#: app/views/bg_workers/_report_options.html.erb:58
+#: app/views/customers/_report_options.html.erb:58
+#: app/views/accesses/_report_options.html.erb:90
+msgid "Background color"
+msgstr ""
+
+#: app/views/users/access_graph.html.erb:18
+msgid "Access Graph for User %{record}"
+msgstr ""
+
+#: app/views/users/_importer_results.html.erb:19
+#: app/views/system_settings/_importer_results.html.erb:19
+#: app/views/customers/_importer_results.html.erb:19
+#: app/views/accesses/_importer_results.html.erb:19
+msgid "Results"
+msgstr "Résultats"
+
+#: app/views/users/_importer_results.html.erb:20
+#: app/views/system_settings/_importer_results.html.erb:20
+#: app/views/customers/_importer_results.html.erb:20
+#: app/views/accesses/_importer_results.html.erb:20
+msgid "Summary"
+msgstr ""
+
+#: app/views/users/_importer_results.html.erb:29
+#: app/views/system_settings/_importer_results.html.erb:29
+#: app/views/customers/_importer_results.html.erb:29
+#: app/views/accesses/_importer_results.html.erb:29
+msgid "Error report"
+msgstr ""
+
+#: app/views/users/_importer_results.html.erb:35
+#: app/views/system_settings/_importer_results.html.erb:35
+#: app/views/customers/_importer_results.html.erb:35
+#: app/views/accesses/_importer_results.html.erb:35
+msgid "Error CSV"
+msgstr ""
+
+#: app/views/users/_importer_results.html.erb:36
+#: app/views/system_settings/_importer_results.html.erb:36
+#: app/views/customers/_importer_results.html.erb:36
+#: app/views/accesses/_importer_results.html.erb:36
+msgid "You can save this text as CSV to fix the invalid records, then retry."
+msgstr ""
+
+#: app/views/users/_importer_results.html.erb:41
+#: app/views/system_settings/_importer_results.html.erb:41
+#: app/views/customers/_importer_results.html.erb:41
+#: app/views/accesses/_importer_results.html.erb:41
+msgid "Click 'reupload' to upload this CSV as the latest file"
+msgstr ""
+
+#: app/views/users/edit.html.erb:39
+#: app/views/users/change_password.html.erb:18
+#: app/views/users/change_password.html.erb:32
+#, fuzzy
+msgid "Change Password"
+msgstr "Mot de passe :"
+
+#: app/views/users/report_chooser.html.erb:63
+#: app/views/system_settings/report_chooser.html.erb:63
+#: app/views/app_locales/report_chooser.html.erb:63
+#: app/views/bg_workers/report_chooser.html.erb:118
+#: app/views/customers/report_chooser.html.erb:63
+#: app/views/accesses/report_chooser.html.erb:63
+msgid "Report Options"
+msgstr "Options de Rapport"
+
+#: app/views/users/report_chooser.html.erb:64
+#: app/views/system_settings/report_chooser.html.erb:64
+#: app/views/app_locales/report_chooser.html.erb:64
+#: app/views/bg_workers/report_chooser.html.erb:119
+#: app/views/customers/report_chooser.html.erb:64
+#: app/views/accesses/report_chooser.html.erb:64
+msgid "Data Sets: "
+msgstr ""
+
+#: app/views/users/report_chooser.html.erb:70
+#: app/views/system_settings/report_chooser.html.erb:70
+#: app/views/app_locales/report_chooser.html.erb:70
+#: app/views/bg_workers/report_chooser.html.erb:124
+#: app/views/bg_workers/report_chooser.html.erb:126
+#: app/views/bg_workers/report_chooser.html.erb:128
+#: app/views/customers/report_chooser.html.erb:70
+#: app/views/accesses/report_chooser.html.erb:70
+msgid "New Data Set"
+msgstr ""
+
+#: app/views/users/new.html.erb:18 app/views/users/list.html.erb:56
+#, fuzzy
+msgid "New User"
+msgstr "Nouveau Client"
+
+#: app/views/users/list.html.erb:26 app/views/users/list.html.erb:36
+#: app/views/users/list.html.erb:44 app/views/users/search.html.erb:26
+#, fuzzy
+msgid "First Name"
+msgstr "Prénom"
+
+#: app/views/users/list.html.erb:26 app/views/users/list.html.erb:36
+#: app/views/users/list.html.erb:44 app/views/users/search.html.erb:26
+#, fuzzy
+msgid "Last Name"
+msgstr "Prénom"
+
+#: app/views/users/list.html.erb:26 app/views/users/list.html.erb:36
+#: app/views/users/list.html.erb:44 app/views/users/search.html.erb:26
+msgid "Email"
+msgstr "Email"
+
+#: app/views/users/list.html.erb:26 app/views/users/list.html.erb:36
+#: app/views/users/list.html.erb:44 app/views/users/search.html.erb:26
+msgid "Language"
+msgstr ""
+
+#: app/views/users/list.html.erb:26 app/views/users/list.html.erb:36
+#: app/views/users/list.html.erb:44 app/views/users/search.html.erb:26
+msgid "Active"
+msgstr ""
+
+#: app/views/users/list.html.erb:26 app/views/users/search.html.erb:26
+#, fuzzy
+msgid "Hashed Password"
+msgstr "Mot de passe :"
+
+#: app/views/users/list.html.erb:26 app/views/users/search.html.erb:26
+#, fuzzy
+msgid "Salt"
+msgstr "à"
+
+#: app/views/users/list.html.erb:26 app/views/users/search.html.erb:26
+#, fuzzy
+msgid "Last Login"
+msgstr "Se Connecter"
+
+#: app/views/users/list.html.erb:26 app/views/users/search.html.erb:26
+msgid "Last Session Id"
+msgstr ""
+
+#: app/views/users/list.html.erb:26 app/views/users/search.html.erb:26
+#, fuzzy
+msgid "Password"
+msgstr "Mot de passe :"
+
+#: app/views/users/list.html.erb:26 app/views/users/search.html.erb:26
+#: app/views/user_accesses/importer.html.erb:18
+#: app/views/accesses/list.html.erb:26 app/views/accesses/list.html.erb:42
+#: app/views/accesses/list.html.erb:64
+msgid "User Accesses"
+msgstr ""
+
+#: app/views/users/_importer_data_source.html.erb:18
+#: app/views/system_settings/_importer_data_source.html.erb:18
+#: app/views/customers/_importer_data_source.html.erb:18
+#: app/views/accesses/_importer_data_source.html.erb:18
+msgid "Your database currently holds"
+msgstr ""
+
+#: app/views/users/_importer_data_source.html.erb:19
+msgid "%{n} Users"
+msgstr ""
+
+#: app/views/users/_importer_data_source.html.erb:23
+#: app/views/system_settings/_importer_data_source.html.erb:23
+#: app/views/customers/_importer_data_source.html.erb:23
+#: app/views/accesses/_importer_data_source.html.erb:23
+msgid "Data Source"
+msgstr ""
+
+#: app/views/users/_importer_data_source.html.erb:26
+#: app/views/system_settings/_importer_data_source.html.erb:26
+#: app/views/customers/_importer_data_source.html.erb:26
+#: app/views/accesses/_importer_data_source.html.erb:26
+msgid "Choose a file or upload a new one"
+msgstr ""
+
+#: app/views/users/_importer_data_source.html.erb:53
+#: app/views/system_settings/_importer_data_source.html.erb:53
+#: app/views/customers/_importer_data_source.html.erb:53
+#: app/views/accesses/_importer_data_source.html.erb:53
+msgid "File Encoding"
+msgstr ""
+
+#: app/views/users/_importer_data_source.html.erb:57
+#: app/views/system_settings/_importer_data_source.html.erb:57
+#: app/views/customers/_importer_data_source.html.erb:57
+#: app/views/accesses/_importer_data_source.html.erb:57
+msgid "Upload"
+msgstr ""
+
+#: app/views/users/_importer_data_source.html.erb:62
+#: app/views/system_settings/_importer_data_source.html.erb:62
+#: app/views/customers/_importer_data_source.html.erb:62
+#: app/views/accesses/_importer_data_source.html.erb:62
+msgid "Importer options"
+msgstr ""
+
+#: app/views/users/_importer_data_source.html.erb:64
+#: app/views/system_settings/_importer_data_source.html.erb:64
+#: app/views/customers/_importer_data_source.html.erb:64
+#: app/views/accesses/_importer_data_source.html.erb:64
+msgid "Data source"
+msgstr ""
+
+#: app/views/users/_importer_data_source.html.erb:66
+#: app/views/system_settings/_importer_data_source.html.erb:66
+#: app/views/customers/_importer_data_source.html.erb:66
+#: app/views/accesses/_importer_data_source.html.erb:66
+msgid "CSV separator"
+msgstr ""
+
+#: app/views/users/_importer_data_source.html.erb:71
+#: app/views/system_settings/_importer_data_source.html.erb:71
+#: app/views/customers/_importer_data_source.html.erb:71
+#: app/views/accesses/_importer_data_source.html.erb:71
+msgid "don't cancel import if an error is found"
+msgstr ""
+
+#: app/views/users/_importer_data_source.html.erb:74
+#: app/views/system_settings/_importer_data_source.html.erb:74
+#: app/views/customers/_importer_data_source.html.erb:74
+#: app/views/accesses/_importer_data_source.html.erb:74
+msgid "don't skip first line"
+msgstr ""
+
+#: app/views/users/_importer_data_source.html.erb:76
+#: app/views/system_settings/_importer_data_source.html.erb:76
+#: app/views/customers/_importer_data_source.html.erb:76
+#: app/views/accesses/_importer_data_source.html.erb:76
+msgid "Filter the data from your file"
+msgstr ""
+
+#: app/views/users/_importer_data_source.html.erb:78
+#: app/views/system_settings/_importer_data_source.html.erb:78
+#: app/views/customers/_importer_data_source.html.erb:78
+#: app/views/accesses/_importer_data_source.html.erb:78
+#, fuzzy
+msgid "Import"
+msgstr "Import de données..."
+
+#: app/views/users/_importer_data_source.html.erb:80
+#: app/views/users/_importer_preview.html.erb:34
+#: app/views/system_settings/_importer_data_source.html.erb:80
+#: app/views/system_settings/_importer_preview.html.erb:34
+#: app/views/customers/_importer_data_source.html.erb:80
+#: app/views/customers/_importer_preview.html.erb:34
+#: app/views/accesses/_importer_data_source.html.erb:80
+#: app/views/accesses/_importer_preview.html.erb:34
+#, fuzzy
+msgid "Preview"
+msgstr "Précédent"
+
+#: app/views/users/_importer_data_source.html.erb:81
+#: app/views/system_settings/_importer_data_source.html.erb:81
+#: app/views/customers/_importer_data_source.html.erb:81
+#: app/views/accesses/_importer_data_source.html.erb:81
+msgid "Start at"
+msgstr ""
+
+#: app/views/users/field_access_graph.html.erb:18
+msgid "Field Access Graph for User %{record}"
+msgstr ""
+
+#: app/views/users/_importer_preview.html.erb:36
+#: app/views/system_settings/_importer_preview.html.erb:36
+#: app/views/customers/_importer_preview.html.erb:36
+#: app/views/accesses/_importer_preview.html.erb:36
+msgid "Match the columns in your files to the column in your database."
+msgstr ""
+
+#: app/views/users/_importer_preview.html.erb:37
+#: app/views/system_settings/_importer_preview.html.erb:37
+#: app/views/customers/_importer_preview.html.erb:37
+#: app/views/accesses/_importer_preview.html.erb:37
+msgid ""
+"If you choose to update records, tick the 'Find Key' box under the columns "
+"used to find the appropriate record based on these values."
+msgstr ""
+
+#: app/views/users/_importer_preview.html.erb:38
+#: app/views/system_settings/_importer_preview.html.erb:38
+#: app/views/customers/_importer_preview.html.erb:38
+#: app/views/accesses/_importer_preview.html.erb:38
+msgid ""
+"The other columns will override existing values in the other fields from the "
+"matching records."
+msgstr ""
+
+#: app/views/users/_importer_preview.html.erb:44
+#: app/views/system_settings/_importer_preview.html.erb:45
+#: app/views/customers/_importer_preview.html.erb:45
+#: app/views/accesses/_importer_preview.html.erb:44
+#, fuzzy
+msgid "Match"
+msgstr "Mois"
+
+#: app/views/users/_importer_preview.html.erb:45
+#: app/views/system_settings/_importer_preview.html.erb:46
+#: app/views/customers/_importer_preview.html.erb:46
+#: app/views/accesses/_importer_preview.html.erb:45
+msgid "Find Key"
+msgstr ""
+
+#: app/views/user_accesses/_filter_bar.html.erb:21
+#: app/views/app_locales/list.html.erb:33
+#: app/views/bg_workers/_filter_bar.html.erb:21
+#: app/views/bg_workers/list.html.erb:34 app/views/accesses/list.html.erb:34
+#: app/views/smart_queries/_filter_bar.html.erb:21
+#: app/views/smart_queries/list.html.erb:35
+#, fuzzy
+msgid "Filters"
+msgstr "Fichiers"
+
+#: app/views/user_accesses/_filter_bar.html.erb:23
+msgid "Read: "
+msgstr ""
+
+#: app/views/user_accesses/_filter_bar.html.erb:30
+msgid "Write: "
+msgstr ""
+
+#: app/views/user_accesses/db_table.html.erb:18
+#: app/views/smart_queries/db_table.html.erb:18
+msgid "Db Table"
+msgstr ""
+
+#: app/views/user_accesses/db_table.html.erb:18
+#: app/views/accesses/db_table.html.erb:18
+#: app/views/smart_queries/db_table.html.erb:18
+msgid "Data Base Maintenance Operations"
+msgstr ""
+
+#: app/views/user_accesses/db_table.html.erb:21
+#: app/views/smart_queries/db_table.html.erb:21
+msgid "Table infos"
+msgstr ""
+
+#: app/views/user_accesses/db_table.html.erb:28
+#: app/views/accesses/db_table.html.erb:28
+#: app/views/smart_queries/db_table.html.erb:28
+msgid "Purge All With Triggers"
+msgstr ""
+
+#: app/views/user_accesses/db_table.html.erb:28
+#: app/views/user_accesses/db_table.html.erb:29
+#: app/views/user_accesses/db_table.html.erb:31
+#: app/views/user_accesses/db_table.html.erb:32
+#: app/views/user_accesses/db_table.html.erb:33
+#: app/views/user_accesses/db_table.html.erb:34
+#: app/views/system_settings/public_files.html.erb:167
+#: app/views/accesses/db_table.html.erb:28
+#: app/views/accesses/db_table.html.erb:29
+#: app/views/accesses/db_table.html.erb:31
+#: app/views/accesses/db_table.html.erb:32
+#: app/views/accesses/db_table.html.erb:33
+#: app/views/accesses/db_table.html.erb:34
+#: app/views/smart_queries/db_table.html.erb:28
+#: app/views/smart_queries/db_table.html.erb:29
+#: app/views/smart_queries/db_table.html.erb:31
+#: app/views/smart_queries/db_table.html.erb:32
+#: app/views/smart_queries/db_table.html.erb:33
+#: app/views/smart_queries/db_table.html.erb:34
+msgid "Are you sure?"
+msgstr ""
+
+#: app/views/user_accesses/db_table.html.erb:29
+#: app/views/accesses/db_table.html.erb:29
+#: app/views/smart_queries/db_table.html.erb:29
+msgid "Purge All Without Triggers"
+msgstr ""
+
+#: app/views/user_accesses/db_table.html.erb:31
+#: app/views/accesses/db_table.html.erb:31
+#: app/views/smart_queries/db_table.html.erb:31
+msgid "Generate Random data (1)"
+msgstr ""
+
+#: app/views/user_accesses/db_table.html.erb:32
+#: app/views/accesses/db_table.html.erb:32
+#: app/views/smart_queries/db_table.html.erb:32
+msgid "Generate Random data (10)"
+msgstr ""
+
+#: app/views/user_accesses/db_table.html.erb:33
+#: app/views/accesses/db_table.html.erb:33
+#: app/views/smart_queries/db_table.html.erb:33
+msgid "Generate Random data (100)"
+msgstr ""
+
+#: app/views/user_accesses/db_table.html.erb:34
+#: app/views/accesses/db_table.html.erb:34
+#: app/views/smart_queries/db_table.html.erb:34
+msgid "Generate Random data (1000)"
+msgstr ""
+
+#: app/views/user_accesses/db_table.html.erb:36
+#: app/views/accesses/db_table.html.erb:36
+#: app/views/smart_queries/db_table.html.erb:36
+msgid "Check Foreign Keys"
+msgstr ""
+
+#: app/views/user_accesses/db_table.html.erb:37
+#: app/views/accesses/db_table.html.erb:37
+#: app/views/smart_queries/db_table.html.erb:37
+msgid "Check Validations"
+msgstr ""
+
+#: app/views/user_accesses/db_table.html.erb:38
+#: app/views/accesses/db_table.html.erb:38
+#: app/views/smart_queries/db_table.html.erb:38
+msgid "Optimize"
+msgstr ""
+
+#: app/views/user_accesses/_importer_data_source.html.erb:19
+msgid "%{n} User Accesses"
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:18
+#: app/views/application/new.html.erb:13
+msgid "Index"
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:18
+msgid "Administrator Panel"
+msgstr "Panneau d'administration"
+
+#: app/views/system_settings/index.html.erb:28
+msgid "Ressources"
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:29
+msgid "Public Files"
+msgstr "Fichiers publics"
+
+#: app/views/system_settings/index.html.erb:30
+msgid "Localizations"
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:31
+#: app/views/system_settings/dev_doc.html.erb:18
+msgid "Dev Doc"
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:31
+msgid "Maintenance Documentation"
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:33
+msgid "Data Management"
+msgstr "Gestion des Données"
+
+#: app/views/system_settings/index.html.erb:34
+msgid "Importers: "
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:35
+msgid "Exporters: "
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:36
+msgid "Maintenance: "
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:40
+#: app/views/system_settings/index.html.erb:41
+#: app/views/system_settings/monitoring.html.erb:18
+msgid "Monitoring"
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:41
+msgid "Gives some information about current running application."
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:41
+msgid "Informations"
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:42
+#: app/views/system_settings/requests_times.html.erb:18
+msgid "Requests Times"
+msgstr "Temps des Requêtes"
+
+#: app/views/system_settings/index.html.erb:43
+#: app/views/system_settings/show.html.erb:28
+#: app/views/system_settings/edit.html.erb:28
+#: app/views/system_settings/list.html.erb:30
+#: app/views/system_settings/list_logs.html.erb:21
+#: app/views/system_settings/search.html.erb:30
+msgid "List Logs"
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:43
+msgid "Watch logs"
+msgstr "Consulter les logs"
+
+#: app/views/system_settings/index.html.erb:44
+#: app/views/system_settings/routes.html.erb:18
+msgid "Routes"
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:44
+msgid "Routing Rules"
+msgstr "Règles de Routage"
+
+#: app/views/system_settings/index.html.erb:47
+msgid "Standard Settings"
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:48
+msgid "Settings"
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:49
+msgid "Background Processes"
+msgstr ""
+
+#: app/views/system_settings/index.html.erb:52
+msgid "Specific Settings"
+msgstr ""
+
+#: app/views/system_settings/importer.html.erb:19
+#: app/views/system_settings/show.html.erb:18
+#: app/views/system_settings/list.html.erb:18
+#: app/views/system_settings/rss.xml.builder:5
+#: app/views/system_settings/atom.xml.builder:4
+#: app/views/system_settings/show.pdf.prawn:7
+msgid "System Settings"
+msgstr ""
+
+#: app/views/system_settings/routes.html.erb:18
+msgid "Available Routes"
+msgstr ""
+
+#: app/views/system_settings/routes.html.erb:22
+#, fuzzy
+msgid "Route Name"
+msgstr "Prénom"
+
+#: app/views/system_settings/routes.html.erb:22
+msgid "Verb"
+msgstr ""
+
+#: app/views/system_settings/routes.html.erb:22
+msgid "Segments"
+msgstr ""
+
+#: app/views/system_settings/routes.html.erb:22
+msgid "Requirements"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:19
+msgid "Solution properties:"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:21
+msgid "Name: %{sid}"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:22
+#: app/views/system_settings/monitoring.html.erb:42
+msgid "Version: %{vers}"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:23
+msgid "Available languages: %{lg}, current: %{cur}"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:24
+msgid "Number of pages: %{count}"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:25
+msgid "Number of fields: %{count}"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:26
+msgid "Number of actions: %{count}"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:32
+msgid "Application Server properties"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:34
+#: app/views/system_settings/monitoring.html.erb:35
+#: app/views/system_settings/monitoring.html.erb:36
+msgid "Reload or restart Application"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:34
+#: app/views/system_settings/monitoring.html.erb:35
+#: app/views/system_settings/monitoring.html.erb:36
+msgid "Reload"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:34
+msgid "Reload Application"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:35
+msgid "Reload Only Routes"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:36
+msgid "Restart Application"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:39
+msgid "Platform: %{name}"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:40
+msgid "Interpreter: %{name}"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:41
+msgid "Environment: %{name}"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:48
+msgid "Database Server properties"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:50
+msgid "Main database: %{name}"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:56
+msgid "Loaded Gems"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:57
+#, fuzzy
+msgid "Gem Name"
+msgstr "Nom"
+
+#: app/views/system_settings/monitoring.html.erb:57
+msgid "Version"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:57
+#: app/views/customers/help.html.erb:32 app/views/customers/list.html.erb:36
+#: app/views/customers/list.html.erb:46
+#: app/views/customers/_result_list.html.erb:30
+msgid "Description"
+msgstr ""
+
+#: app/views/system_settings/monitoring.html.erb:57
+msgid "Authors"
+msgstr "Auteurs"
+
+#: app/views/system_settings/monitoring.html.erb:57
+msgid "Dependencies"
+msgstr "Dépendances"
+
+#: app/views/system_settings/show.html.erb:23
+#: app/views/system_settings/edit.html.erb:23
+#: app/views/system_settings/list.html.erb:23
+#: app/views/system_settings/search.html.erb:23
+#: app/views/saved_reports/help.html.erb:20
+#: app/views/saved_reports/show.html.erb:23
+#: app/views/saved_reports/edit.html.erb:23
+#: app/views/saved_reports/list.html.erb:23
+#: app/views/saved_reports/search.html.erb:23
+#: app/views/customers/help.html.erb:20 app/views/customers/show.html.erb:23
+#: app/views/customers/edit.html.erb:23 app/views/customers/list.html.erb:23
+#: app/views/customers/search.html.erb:23
+#: app/views/smart_queries/help.html.erb:20
+#: app/views/smart_queries/show.html.erb:23
+#: app/views/smart_queries/edit.html.erb:23
+#: app/views/smart_queries/list.html.erb:23
+#: app/views/smart_queries/search.html.erb:23
+msgid "Make complex queries."
+msgstr ""
+
+#: app/views/system_settings/show.html.erb:23
+#: app/views/system_settings/edit.html.erb:23
+#: app/views/system_settings/list.html.erb:23
+#: app/views/system_settings/search.html.erb:23
+#: app/views/saved_reports/show.html.erb:23
+#: app/views/saved_reports/edit.html.erb:23
+#: app/views/saved_reports/adv_search.html.erb:18
+#: app/views/saved_reports/list.html.erb:23
+#: app/views/saved_reports/search.html.erb:23
+#: app/views/customers/show.html.erb:23 app/views/customers/edit.html.erb:23
+#: app/views/customers/adv_search.html.erb:18
+#: app/views/customers/list.html.erb:23 app/views/customers/search.html.erb:23
+#: app/views/smart_queries/show.html.erb:23
+#: app/views/smart_queries/edit.html.erb:23
+#: app/views/smart_queries/adv_search.html.erb:18
+#: app/views/smart_queries/list.html.erb:23
+#: app/views/smart_queries/search.html.erb:23
+msgid "Adv Search"
+msgstr "Recherche Avancée"
+
+#: app/views/system_settings/show.html.erb:33
+#: app/views/system_settings/edit.html.erb:35
+#: app/views/system_settings/new.html.erb:25
+#: app/views/system_settings/search.html.erb:45
+msgid "Value: "
+msgstr "Valeur : "
+
+#: app/views/system_settings/dev_doc.html.erb:18
+msgid "Developer Documentation"
+msgstr "Documentation Développeur"
+
+#: app/views/system_settings/dev_doc.html.erb:20
+msgid "Last Update: %{date}"
+msgstr ""
+
+#: app/views/system_settings/dev_doc.html.erb:136
+msgid "No documentation"
+msgstr "Pas de Documentation"
+
+#: app/views/system_settings/new.html.erb:18
+#: app/views/system_settings/list.html.erb:56
+msgid "New System Setting"
+msgstr ""
+
+#: app/views/system_settings/list.html.erb:36
+#: app/views/system_settings/list.html.erb:44
+#: app/views/system_settings/_result_list.html.erb:30
+msgid "Value"
+msgstr "Valeur"
+
+#: app/views/system_settings/_importer_data_source.html.erb:19
+msgid "%{n} System Settings"
+msgstr ""
+
+#: app/views/system_settings/list_logs.html.erb:21
+#: app/views/system_settings/requests_times.html.erb:18
+msgid "%{top} Most Recent Requests from the %{lines} last lines"
+msgstr ""
+
+#: app/views/system_settings/list_logs.html.erb:22
+msgid "The size of %{file} log file is: %{size}"
+msgstr ""
+
+#: app/views/system_settings/list_logs.html.erb:23
+msgid "Clear Logs"
+msgstr ""
+
+#: app/views/system_settings/list_logs.html.erb:25
+msgid "Top: "
+msgstr ""
+
+#: app/views/system_settings/list_logs.html.erb:28
+msgid "Mode: "
+msgstr ""
+
+#: app/views/system_settings/list_logs.html.erb:31
+msgid "Show SQL: "
+msgstr ""
+
+#: app/views/system_settings/requests_times.html.erb:19
+msgid "Lines:"
+msgstr ""
+
+#: app/views/system_settings/requests_times.html.erb:22
+msgid "Top:"
+msgstr ""
+
+#: app/views/system_settings/requests_times.html.erb:25
+msgid "Mode:"
+msgstr ""
+
+#: app/views/system_settings/requests_times.html.erb:29
+msgid "Total Time"
+msgstr ""
+
+#: app/views/system_settings/requests_times.html.erb:29
+msgid "Render Time"
+msgstr ""
+
+#: app/views/system_settings/requests_times.html.erb:29
+msgid "DB Time"
+msgstr ""
+
+#: app/views/system_settings/requests_times.html.erb:29
+msgid "Other"
+msgstr ""
+
+#: app/views/system_settings/requests_times.html.erb:29
+msgid "Request"
+msgstr ""
+
+#: app/views/system_settings/_result_list.html.erb:20
+#: app/views/saved_reports/_result_list.html.erb:20
+#: app/views/customers/_result_list.html.erb:20
+#: app/views/smart_queries/_result_list.html.erb:20
+msgid "No entry match criteria"
+msgstr ""
+
+#: app/views/system_settings/_result_list.html.erb:22
+#: app/views/saved_reports/_result_list.html.erb:22
+#: app/views/customers/_result_list.html.erb:22
+#: app/views/smart_queries/_result_list.html.erb:22
+msgid "%{count} Results:"
+msgstr ""
+
+#: app/views/system_settings/_result_list.html.erb:23
+#: app/views/saved_reports/_result_list.html.erb:23
+#: app/views/customers/_result_list.html.erb:23
+#: app/views/smart_queries/_result_list.html.erb:23
+msgid "Download as CSV"
+msgstr ""
+
+#: app/views/system_settings/_result_list.html.erb:24
+#: app/views/saved_reports/_result_list.html.erb:24
+#: app/views/customers/_result_list.html.erb:24
+#: app/views/smart_queries/_result_list.html.erb:24
+#, fuzzy
+msgid "Download as Excel"
+msgstr "Télécharger en"
+
+#: app/views/system_settings/_result_list.html.erb:25
+#: app/views/saved_reports/_result_list.html.erb:25
+#: app/views/customers/_result_list.html.erb:25
+#: app/views/smart_queries/_result_list.html.erb:25
+msgid "Download as XML"
+msgstr ""
+
+#: app/views/system_settings/_result_list.html.erb:28
+#: app/views/saved_reports/_result_list.html.erb:28
+#: app/views/customers/_result_list.html.erb:28
+#: app/views/smart_queries/_result_list.html.erb:28
+msgid "Previous Page"
+msgstr "Page Précédente"
+
+#: app/views/system_settings/_result_list.html.erb:28
+#: app/views/saved_reports/_result_list.html.erb:28
+#: app/views/customers/_result_list.html.erb:28
+#: app/views/smart_queries/_result_list.html.erb:28
+msgid "Go Left"
+msgstr ""
+
+#: app/views/system_settings/_result_list.html.erb:29
+#: app/views/saved_reports/_result_list.html.erb:29
+#: app/views/customers/_result_list.html.erb:29
+#: app/views/smart_queries/_result_list.html.erb:29
+msgid "Next Page"
+msgstr "Page Suivante"
+
+#: app/views/system_settings/_result_list.html.erb:29
+#: app/views/saved_reports/_result_list.html.erb:29
+#: app/views/customers/_result_list.html.erb:29
+#: app/views/smart_queries/_result_list.html.erb:29
+msgid "Go Right"
+msgstr ""
+
+#: app/views/system_settings/public_files.html.erb:79
+msgid "Public Files Manager"
+msgstr ""
+
+#: app/views/system_settings/public_files.html.erb:80
+msgid "These files are public, so they can be accessed by any user."
+msgstr ""
+
+#: app/views/system_settings/public_files.html.erb:169
+msgid "Error"
+msgstr ""
+
+#: app/views/system_settings/public_files.html.erb:170
+msgid "File already exists"
+msgstr ""
+
+#: app/views/system_settings/public_files.html.erb:172
+#: app/views/bg_workers/report_chooser.html.erb:127
+msgid "Loading..."
+msgstr "En cours de chargement..."
+
+#: app/views/system_settings/public_files.html.erb:173
+msgid "New Directory..."
+msgstr ""
+
+#: app/views/system_settings/public_files.html.erb:174
+msgid "Overwrite?"
+msgstr ""
+
+#: app/views/system_settings/public_files.html.erb:175
+msgid "Do you really want to"
+msgstr ""
+
+#: app/views/system_settings/public_files.html.erb:176
+#, fuzzy
+msgid "File tree"
+msgstr "Fichier"
+
+#: app/views/system_settings/public_files.html.erb:210
+msgid "Files"
+msgstr "Fichiers"
+
+#: app/views/user_mailer/account_infos.text.plain.erb:17
+#: app/views/user_mailer/account_infos.text.html.erb:23
+msgid "Welcome to %{app}, %{firstname} %{lastname}!"
+msgstr ""
+
+#: app/views/user_mailer/account_infos.text.plain.erb:20
+#: app/views/user_mailer/account_infos.text.html.erb:26
+msgid ""
+"You can now use your %{app} Member login %{login} and password %{pass} to "
+"login at %{url}."
+msgstr ""
+
+#: app/views/user_mailer/account_infos.text.plain.erb:23
+#: app/views/user_mailer/account_infos.text.html.erb:30
+msgid "Faveod Support Team"
+msgstr ""
+
+#: app/views/app_locales/index.html.erb:18
+#, fuzzy
+msgid "Listing Locales Files (%{count})"
+msgstr "Liste des %{records} (%{count})"
+
+#: app/views/app_locales/index.html.erb:20
+msgid "Auto Translate %{lg}"
+msgstr ""
+
+#: app/views/app_locales/index.html.erb:27
+#: app/views/app_locales/show.html.erb:25
+#: app/views/app_locales/edit.html.erb:25
+#: app/views/app_locales/list.html.erb:25
+#: app/views/app_locales/search.html.erb:25
+msgid "Gallery"
+msgstr "Gallerie"
+
+#: app/views/app_locales/index.html.erb:27
+#: app/views/app_locales/index.html.erb:34
+#: app/views/app_locales/list.html.erb:25
+#: app/views/app_locales/list.html.erb:41
+#: app/views/app_locales/list.html.erb:52
+#: app/views/app_locales/search.html.erb:25
+msgid "Locale"
+msgstr ""
+
+#: app/views/app_locales/index.html.erb:27
+#: app/views/app_locales/index.html.erb:34
+#: app/views/app_locales/list.html.erb:25
+#: app/views/app_locales/list.html.erb:41
+#: app/views/app_locales/list.html.erb:52
+#: app/views/app_locales/search.html.erb:25
+msgid "Po File"
+msgstr ""
+
+#: app/views/app_locales/index.html.erb:27
+#: app/views/app_locales/index.html.erb:34
+#: app/views/app_locales/list.html.erb:25
+#: app/views/app_locales/list.html.erb:41
+#: app/views/app_locales/list.html.erb:52
+#: app/views/app_locales/search.html.erb:25
+msgid "Updated At"
+msgstr "Mise à jour à"
+
+#: app/views/app_locales/index.html.erb:45
+msgid "New PO File"
+msgstr ""
+
+#: app/views/app_locales/index.html.erb:49
+msgid "Current localizations files"
+msgstr ""
+
+#: app/views/app_locales/index.html.erb:55
+msgid "You can download POEdit here: "
+msgstr ""
+
+#: app/views/app_locales/index.html.erb:59
+msgid "Update localizations files"
+msgstr ""
+
+#: app/views/app_locales/index.html.erb:60
+msgid "This could be very long... (5 to 20 minutes)"
+msgstr ""
+
+#: app/views/app_locales/index.html.erb:63
+msgid "Files are currently being updated. %{message}"
+msgstr ""
+
+#: app/views/app_locales/importer.html.erb:18
+#: app/views/app_locales/show.html.erb:18
+#: app/views/app_locales/rss.xml.builder:5
+#: app/views/app_locales/atom.xml.builder:4
+msgid "App Locales"
+msgstr ""
+
+#: app/views/app_locales/show.html.erb:32
+#: app/views/app_locales/edit.html.erb:33
+#: app/views/app_locales/new.html.erb:25
+#: app/views/app_locales/search.html.erb:38
+msgid "Locale: "
+msgstr ""
+
+#: app/views/app_locales/show.html.erb:36
+#: app/views/app_locales/search.html.erb:48
+msgid "Updated At: "
+msgstr "Mise à jour à : "
+
+#: app/views/app_locales/edit.html.erb:33
+#: app/views/app_locales/new.html.erb:25
+#: app/views/app_locales/search.html.erb:44
+msgid "Po File: "
+msgstr ""
+
+#: app/views/app_locales/edit.html.erb:55
+msgid "Current translation"
+msgstr ""
+
+#: app/views/app_locales/edit.html.erb:59
+msgid "Search Message ID: "
+msgstr ""
+
+#: app/views/app_locales/edit.html.erb:60
+#, fuzzy
+msgid "Find"
+msgstr "parmi"
+
+#: app/views/app_locales/new.html.erb:18
+#: app/views/app_locales/list.html.erb:67
+msgid "New App Locale"
+msgstr ""
+
+#: app/views/app_locales/list.html.erb:18
+msgid "Application Locales"
+msgstr ""
+
+#: app/views/app_locales/_importer_data_source.html.erb:19
+msgid "%{n} App Locales"
+msgstr ""
+
+#: app/views/app_locales/_gettext.html.erb:27
+#, fuzzy
+msgid "File:"
+msgstr "Fichier"
+
+#: app/views/app_locales/_gettext.html.erb:31
+msgid "Delete Obsolete"
+msgstr ""
+
+#: app/views/app_locales/search.html.erb:45
+msgid "is named"
+msgstr ""
+
+#: app/views/app_locales/search.html.erb:46
+msgid "size larger than"
+msgstr ""
+
+#: app/views/app_locales/search.html.erb:47
+msgid "size smaller than"
+msgstr ""
+
+#: app/views/app_locales/search.html.erb:50
+#: app/views/saved_reports/search.html.erb:47
+msgid "<>"
+msgstr ""
+
+#: app/views/saved_reports/help.html.erb:18
+#: app/views/bg_workers/help.html.erb:18 app/views/customers/help.html.erb:18
+#: app/views/smart_queries/help.html.erb:18
+msgid "Help for Page %{page}"
+msgstr ""
+
+#: app/views/saved_reports/help.html.erb:20
+#: app/views/bg_workers/help.html.erb:20 app/views/customers/help.html.erb:20
+#: app/views/smart_queries/help.html.erb:20
+msgid "Inserts the record in the database."
+msgstr ""
+
+#: app/views/saved_reports/help.html.erb:20
+#: app/views/bg_workers/help.html.erb:20 app/views/customers/help.html.erb:20
+#: app/views/smart_queries/help.html.erb:20
+msgid "Updates the current row in database from the sent form."
+msgstr ""
+
+#: app/views/saved_reports/help.html.erb:22
+#: app/views/bg_workers/help.html.erb:22 app/views/customers/help.html.erb:22
+#: app/views/smart_queries/help.html.erb:22
+msgid "%{page} Actions"
+msgstr ""
+
+#: app/views/saved_reports/help.html.erb:24
+#: app/views/bg_workers/help.html.erb:24 app/views/customers/help.html.erb:24
+#: app/views/smart_queries/help.html.erb:24
+msgid "Because you are %{profiles} you can do:"
+msgstr ""
+
+#: app/views/saved_reports/help.html.erb:30
+#: app/views/bg_workers/help.html.erb:30 app/views/customers/help.html.erb:30
+#: app/views/smart_queries/help.html.erb:30
+msgid "%{page} Fields"
+msgstr "%{page} Champs"
+
+#: app/views/saved_reports/help.html.erb:32
+#: app/views/saved_reports/list.html.erb:26
+#: app/views/saved_reports/list.html.erb:36
+#: app/views/saved_reports/list.html.erb:46
+#: app/views/saved_reports/search.html.erb:26
+#: app/views/saved_reports/_result_list.html.erb:30
+msgid "Created At"
+msgstr "Créé à"
+
+#: app/views/saved_reports/help.html.erb:32
+#: app/views/saved_reports/list.html.erb:26
+#: app/views/saved_reports/list.html.erb:36
+#: app/views/saved_reports/list.html.erb:46
+#: app/views/saved_reports/search.html.erb:26
+#: app/views/saved_reports/_result_list.html.erb:30
+msgid "URL"
+msgstr ""
+
+#: app/views/saved_reports/help.html.erb:32
+#, fuzzy
+msgid "Data"
+msgstr "à"
+
+#: app/views/saved_reports/show.html.erb:33
+#: app/views/saved_reports/search.html.erb:45
+msgid "Created At: "
+msgstr "Créé à : "
+
+#: app/views/saved_reports/edit.html.erb:35
+#: app/views/saved_reports/new.html.erb:25
+#: app/views/saved_reports/search.html.erb:52
+msgid "URL: "
+msgstr ""
+
+#: app/views/saved_reports/edit.html.erb:35
+#: app/views/saved_reports/new.html.erb:25
+#: app/views/saved_reports/search.html.erb:58
+msgid "Data: "
+msgstr ""
+
+#: app/views/saved_reports/new.html.erb:18
+#: app/views/saved_reports/list.html.erb:60
+msgid "New Saved Report"
+msgstr ""
+
+#: app/views/application/importer.html.erb:18
+#: app/views/application/list.html.erb:18
+msgid "Root Maveocs"
+msgstr ""
+
+#: app/views/application/new.html.erb:2
+msgid "New Root Maveoc"
+msgstr ""
+
+#: app/views/application/_importer_data_source.html.erb:19
+msgid "%{n} Root Maveocs"
+msgstr ""
+
+#: app/views/bg_workers/help.html.erb:32 app/views/bg_workers/show.html.erb:33
+#: app/views/bg_workers/edit.html.erb:26 app/views/bg_workers/new.html.erb:26
+#: app/views/bg_workers/list.html.erb:60 app/views/bg_workers/list.html.erb:68
+#: app/views/bg_workers/search.html.erb:39
+msgid "Worker"
+msgstr ""
+
+#: app/views/bg_workers/help.html.erb:32 app/views/bg_workers/show.html.erb:37
+#: app/views/bg_workers/edit.html.erb:30 app/views/bg_workers/new.html.erb:36
+#: app/views/bg_workers/list.html.erb:60 app/views/bg_workers/list.html.erb:68
+#: app/views/bg_workers/search.html.erb:49
+msgid "Table Container"
+msgstr ""
+
+#: app/views/bg_workers/help.html.erb:32 app/views/bg_workers/list.html.erb:25
+#: app/views/bg_workers/list.html.erb:60 app/views/bg_workers/list.html.erb:68
+#: app/views/bg_workers/search.html.erb:25
+msgid "Days"
+msgstr ""
+
+#: app/views/bg_workers/help.html.erb:32 app/views/bg_workers/list.html.erb:25
+#: app/views/bg_workers/list.html.erb:60 app/views/bg_workers/list.html.erb:68
+#: app/views/bg_workers/search.html.erb:25
+msgid "Month"
+msgstr "Mois"
+
+#: app/views/bg_workers/help.html.erb:32 app/views/bg_workers/show.html.erb:41
+#: app/views/bg_workers/edit.html.erb:39 app/views/bg_workers/new.html.erb:49
+#: app/views/bg_workers/list.html.erb:60 app/views/bg_workers/list.html.erb:68
+#: app/views/bg_workers/search.html.erb:66
+msgid "Code"
+msgstr ""
+
+#: app/views/bg_workers/help.html.erb:32 app/views/bg_workers/list.html.erb:60
+#: app/views/bg_workers/list.html.erb:68
+msgid "Launch"
+msgstr ""
+
+#: app/views/bg_workers/help.html.erb:32 app/views/bg_workers/list.html.erb:60
+#: app/views/bg_workers/list.html.erb:68
+msgid "Task"
+msgstr "Tâche"
+
+#: app/views/bg_workers/help.html.erb:32 app/views/bg_workers/list.html.erb:25
+#: app/views/bg_workers/list.html.erb:60 app/views/bg_workers/list.html.erb:68
+#: app/views/bg_workers/search.html.erb:25
+msgid "Position"
+msgstr "Position"
+
+#: app/views/bg_workers/help.html.erb:38 app/views/bg_workers/show.html.erb:18
+#: app/views/bg_workers/rss.xml.builder:5
+#: app/views/bg_workers/atom.xml.builder:4
+msgid "Bg Workers"
+msgstr ""
+
+#: app/views/bg_workers/_filter_bar.html.erb:23
+#: app/views/bg_workers/show.html.erb:38 app/views/bg_workers/edit.html.erb:31
+#: app/views/bg_workers/new.html.erb:37 app/views/bg_workers/list.html.erb:36
+#: app/views/bg_workers/search.html.erb:50
+msgid "Days: "
+msgstr ""
+
+#: app/views/bg_workers/_filter_bar.html.erb:32
+#: app/views/bg_workers/show.html.erb:38 app/views/bg_workers/edit.html.erb:34
+#: app/views/bg_workers/new.html.erb:44 app/views/bg_workers/list.html.erb:45
+#: app/views/bg_workers/search.html.erb:57
+#, fuzzy
+msgid "Month: "
+msgstr "Mois"
+
+#: app/views/bg_workers/show.html.erb:34 app/views/bg_workers/new.html.erb:29
+msgid "Options: "
+msgstr "Options : "
+
+#: app/views/bg_workers/show.html.erb:42 app/views/bg_workers/edit.html.erb:40
+#: app/views/bg_workers/new.html.erb:50
+#: app/views/bg_workers/search.html.erb:67
+msgid "Launch: "
+msgstr ""
+
+#: app/views/bg_workers/show.html.erb:42 app/views/bg_workers/edit.html.erb:40
+#: app/views/bg_workers/new.html.erb:50
+#: app/views/bg_workers/search.html.erb:73
+#, fuzzy
+msgid "Task: "
+msgstr "Tâche"
+
+#: app/views/bg_workers/show.html.erb:44 app/views/bg_workers/edit.html.erb:42
+#: app/views/bg_workers/new.html.erb:54
+#: app/views/bg_workers/search.html.erb:81
+msgid "Position: "
+msgstr "Position : "
+
+#: app/views/bg_workers/report_chooser.html.erb:68
+#, fuzzy
+msgid "Reports for Days"
+msgstr "Sélecteur de Rapport"
+
+#: app/views/bg_workers/report_chooser.html.erb:70
+msgid "Sum of Position by Days"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:72
+msgid "Count of records by Days"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:74
+msgid "Minimums of Position by Days"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:76
+msgid "Average of Position by Days"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:78
+msgid "Maximums of Position by Days"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:81
+msgid "Sum of Position by Days and Month"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:83
+msgid "Count of Position by Days and Month"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:85
+msgid "Sum of Position by Days and Name"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:87
+msgid "Count of Position by Days and Name"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:92
+msgid "Reports for Month"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:94
+msgid "Average of Position by Month"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:96
+msgid "Minimums of Position by Month"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:98
+msgid "Count of records by Month"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:100
+msgid "Sum of Position by Month"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:102
+msgid "Maximums of Position by Month"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:105
+msgid "Count of Position by Month and Name"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:107
+msgid "Sum of Position by Month and Days"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:109
+msgid "Sum of Position by Month and Name"
+msgstr ""
+
+#: app/views/bg_workers/report_chooser.html.erb:111
+msgid "Count of Position by Month and Days"
+msgstr ""
+
+#: app/views/bg_workers/new.html.erb:18 app/views/bg_workers/list.html.erb:80
+msgid "New Bg Worker"
+msgstr ""
+
+#: app/views/bg_workers/new.html.erb:37
+msgid "Lundi"
+msgstr ""
+
+#: app/views/bg_workers/new.html.erb:38
+msgid "Mardi"
+msgstr ""
+
+#: app/views/bg_workers/new.html.erb:39
+msgid "Mercredi"
+msgstr ""
+
+#: app/views/bg_workers/new.html.erb:40
+msgid "Jeudi"
+msgstr ""
+
+#: app/views/bg_workers/new.html.erb:41
+msgid "Vendredi"
+msgstr ""
+
+#: app/views/bg_workers/new.html.erb:42
+#, fuzzy
+msgid "Samedi"
+msgstr "Enregistrer"
+
+#: app/views/bg_workers/new.html.erb:43
+msgid "Dimanche"
+msgstr ""
+
+#: app/views/bg_workers/list.html.erb:18
+msgid "Background Workers"
+msgstr ""
+
+#: app/views/bg_workers/list.html.erb:65 app/views/bg_workers/list.html.erb:71
+msgid "Move Higher"
+msgstr ""
+
+#: app/views/bg_workers/list.html.erb:65 app/views/bg_workers/list.html.erb:71
+msgid "Move Lower"
+msgstr ""
+
+#: app/views/bg_workers/search.html.erb:82
+msgid "is before"
+msgstr ""
+
+#: app/views/bg_workers/search.html.erb:83
+msgid "is after"
+msgstr ""
+
+#: app/views/customers/show.html.erb:19 app/views/customers/edit.html.erb:19
+#: app/views/customers/list.html.erb:19 app/views/customers/search.html.erb:19
+#: app/views/accesses/list.html.erb:19
+#, fuzzy
+msgid "Importer"
+msgstr "Import de données..."
+
+#: app/views/customers/show.html.erb:33 app/views/customers/edit.html.erb:36
+#: app/views/customers/new.html.erb:26 app/views/customers/search.html.erb:45
+msgid "Description: "
+msgstr "Description : "
+
+#: app/views/customers/new.html.erb:18 app/views/customers/list.html.erb:60
+msgid "New Customer"
+msgstr "Nouveau Client"
+
+#: app/views/customers/_importer_data_source.html.erb:19
+msgid "%{n} Customers"
+msgstr "%{n} Clients"
+
+#: app/views/accesses/permissions.html.erb:18
+msgid "Permissions of %{page}"
+msgstr ""
+
+#: app/views/accesses/permissions.html.erb:61
+msgid "Page: "
+msgstr ""
+
+#: app/views/accesses/permissions.html.erb:68
+msgid "Actions"
+msgstr ""
+
+#: app/views/accesses/permissions.html.erb:70
+#: app/views/accesses/permissions.html.erb:71
+#: app/views/accesses/permissions.html.erb:108
+#: app/views/accesses/permissions.html.erb:109
+msgid "Select [All]"
+msgstr "Sélectionner [Tous]"
+
+#: app/views/accesses/permissions.html.erb:70
+#: app/views/accesses/permissions.html.erb:71
+#: app/views/accesses/permissions.html.erb:108
+#: app/views/accesses/permissions.html.erb:109
+msgid "Select [None]"
+msgstr "Sélectionner [Aucun]"
+
+#: app/views/accesses/permissions.html.erb:72
+#: app/views/accesses/permissions.html.erb:110
+msgid "Effective"
+msgstr ""
+
+#: app/views/accesses/permissions.html.erb:107
+msgid "Fields"
+msgstr ""
+
+#: app/views/accesses/permissions.html.erb:114
+#: app/views/accesses/permissions.html.erb:116
+msgid "Read | Write"
+msgstr ""
+
+#: app/views/accesses/list.html.erb:26 app/views/accesses/list.html.erb:42
+#: app/views/accesses/list.html.erb:64
+msgid "Application"
+msgstr ""
+
+#: app/views/accesses/list.html.erb:26 app/views/accesses/list.html.erb:42
+#: app/views/accesses/list.html.erb:64
+#: app/views/smart_queries/help.html.erb:32
+#: app/views/smart_queries/edit.html.erb:35
+#: app/views/smart_queries/new.html.erb:25
+#: app/views/smart_queries/list.html.erb:26
+#: app/views/smart_queries/list.html.erb:52
+#: app/views/smart_queries/list.html.erb:63
+#: app/views/smart_queries/search.html.erb:26
+#: app/views/smart_queries/_result_list.html.erb:30
+msgid "Table"
+msgstr ""
+
+#: app/views/accesses/list.html.erb:26 app/views/accesses/list.html.erb:42
+#: app/views/accesses/list.html.erb:64
+msgid "Field"
+msgstr ""
+
+#: app/views/accesses/list.html.erb:26 app/views/accesses/list.html.erb:42
+#: app/views/accesses/list.html.erb:64
+msgid "Action"
+msgstr ""
+
+#: app/views/accesses/list.html.erb:26 app/views/accesses/list.html.erb:42
+#: app/views/accesses/list.html.erb:64
+msgid "Home Page Profiles"
+msgstr ""
+
+#: app/views/accesses/_importer_data_source.html.erb:19
+msgid "%{n} Accesses"
+msgstr ""
+
+#: app/views/smart_queries/importer.html.erb:18
+#: app/views/smart_queries/help.html.erb:38
+#: app/views/smart_queries/show.html.erb:18
+#: app/views/smart_queries/list.html.erb:18
+#: app/views/smart_queries/rss.xml.builder:5
+#: app/views/smart_queries/atom.xml.builder:4
+msgid "Smart Queries"
+msgstr ""
+
+#: app/views/smart_queries/help.html.erb:20
+msgid "Many maintenance and technical tasks."
+msgstr ""
+
+#: app/views/smart_queries/help.html.erb:32
+#: app/views/smart_queries/list.html.erb:26
+#: app/views/smart_queries/list.html.erb:52
+#: app/views/smart_queries/list.html.erb:63
+#: app/views/smart_queries/search.html.erb:26
+#: app/views/smart_queries/_result_list.html.erb:30
+msgid "Joining Criteria"
+msgstr ""
+
+#: app/views/smart_queries/help.html.erb:32
+#: app/views/smart_queries/list.html.erb:26
+#: app/views/smart_queries/list.html.erb:52
+#: app/views/smart_queries/list.html.erb:63
+#: app/views/smart_queries/search.html.erb:26
+#: app/views/smart_queries/_result_list.html.erb:30
+msgid "Criteria"
+msgstr ""
+
+#: app/views/smart_queries/_filter_bar.html.erb:23
+#: app/views/smart_queries/show.html.erb:33
+#: app/views/smart_queries/edit.html.erb:45
+#: app/views/smart_queries/new.html.erb:35
+#: app/views/smart_queries/list.html.erb:37
+#: app/views/smart_queries/search.html.erb:51
+msgid "Joining Criteria: "
+msgstr ""
+
+#: app/views/smart_queries/show.html.erb:33
+#: app/views/smart_queries/search.html.erb:45
+msgid "Table: "
+msgstr ""
+
+#: app/views/smart_queries/_field_conditions.html.erb:20
+msgid "Fields for %{table}"
+msgstr ""
+
+#: app/views/smart_queries/new.html.erb:18
+#: app/views/smart_queries/list.html.erb:78
+msgid "New Smart Query"
+msgstr ""
+
+#: app/views/smart_queries/_importer_data_source.html.erb:19
+msgid "%{n} Smart Queries"
+msgstr ""
+
+#: app/views/system_settings/show.pdf.prawn:7
+#, fuzzy
+msgid "%{record} from %{records}"
+msgstr "Zoom sur %{record} de %{records}"
+
+#, fuzzy
+#~ msgid "Situation: "
+#~ msgstr "Position : "
+
+#, fuzzy
+#~ msgid "Mars"
+#~ msgstr "Utilisateur"
+
+#, fuzzy
+#~ msgid "Juin"
+#~ msgstr "parmi"
+
+#, fuzzy
+#~ msgid "Nom"
+#~ msgstr "Nouveau"
+
+#~ msgid "New Personne Physique"
+#~ msgstr "Nouvelle Personne Physique"
+
+#, fuzzy
+#~ msgid "Sales"
+#~ msgstr "Enregistrer"
+
+#, fuzzy
+#~ msgid "Products"
+#~ msgstr "Précédent"
+
+#, fuzzy
+#~ msgid "Commandes"
+#~ msgstr "Entreprise"
+
+#, fuzzy
+#~ msgid "Customers:"
+#~ msgstr "Clients : "
+
+#~ msgid "Comment"
+#~ msgstr "Commentaire"
+
+#~ msgid "Photo"
+#~ msgstr "Photo"
+
+#~ msgid "Customers: "
+#~ msgstr "Clients : "
+
+#~ msgid "Destroy"
+#~ msgstr "Supprimer"
+
+#~ msgid "New Company"
+#~ msgstr "Nouvelle Entreprise"
+
+#~ msgid "Import data..."
+#~ msgstr "Import de données..."
+
+#~ msgid "Comment: "
+#~ msgstr "Commentaire : "
+
+#~ msgid "Company: "
+#~ msgstr "Entreprise : "
+
+#~ msgid "Version: "
+#~ msgstr "Version : "
+
+#~ msgid "Previous Versions"
+#~ msgstr "Versions Précédentes"
+
+#, fuzzy
+#~ msgid "Photo: "
+#~ msgstr "Description : "
+
+#, fuzzy
+#~ msgid "Tree List"
+#~ msgstr "Liste"
+
+#, fuzzy
+#~ msgid "Master: "
+#~ msgstr "Utilisateurs : "
+
+#~ msgid "Parent: "
+#~ msgstr "Parent : "

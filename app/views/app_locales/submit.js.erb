@@ -1,0 +1,10 @@
+
+<% params[:msgid].each do |f, fdata|
+    fdata.each do |k, kdata|
+      kdata.each do |j, jdata|
+        msgid = "msgid_#{f}_#{k}_#{j}" %>
+$("<%= msgid %>").setStyle('font-style:italic')
+<%     end
+    end
+  end %>
+

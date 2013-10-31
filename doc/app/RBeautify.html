@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>module RBeautify - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/faveod_extensions/lib/rbeautify.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-beautify_file">::beautify_file</a>
+    
+    <li><a href="#method-c-beautify_string">::beautify_string</a>
+    
+    <li><a href="#method-c-main">::main</a>
+    
+    <li><a href="#method-c-rb_add_line">::rb_add_line</a>
+    
+    <li><a href="#method-c-rb_make_tab">::rb_make_tab</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Faveod.html">Faveod</a>
+  
+    <li><a href="./Faveod/AVBBFTranslationService.html">Faveod::AVBBFTranslationService</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions.html">Faveod::ActiveResourceExtensions</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions/ClassMethods.html">Faveod::ActiveResourceExtensions::ClassMethods</a>
+  
+    <li><a href="./Faveod/DistributedColors.html">Faveod::DistributedColors</a>
+  
+    <li><a href="./Faveod/GoogleTranslationService.html">Faveod::GoogleTranslationService</a>
+  
+    <li><a href="./Faveod/GraphMaker.html">Faveod::GraphMaker</a>
+  
+    <li><a href="./Faveod/HtmlTruncator.html">Faveod::HtmlTruncator</a>
+  
+    <li><a href="./Faveod/IePdfHeadersMiddleware.html">Faveod::IePdfHeadersMiddleware</a>
+  
+    <li><a href="./Faveod/PoUtils.html">Faveod::PoUtils</a>
+  
+    <li><a href="./Faveod/TranslationServer.html">Faveod::TranslationServer</a>
+  
+    <li><a href="./Faveod/TranslationServicesHelper.html">Faveod::TranslationServicesHelper</a>
+  
+    <li><a href="./Faveod/Validations.html">Faveod::Validations</a>
+  
+    <li><a href="./Faveod/Validations/Syntax.html">Faveod::Validations::Syntax</a>
+  
+    <li><a href="./Faveod/Validations/Syntax/ClassMethods.html">Faveod::Validations::Syntax::ClassMethods</a>
+  
+    <li><a href="./ActiveRecord.html">ActiveRecord</a>
+  
+    <li><a href="./ActiveRecord/Base.html">ActiveRecord::Base</a>
+  
+    <li><a href="./ActiveRecord/Condition.html">ActiveRecord::Condition</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters.html">ActiveRecord::ConnectionAdapters</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters/Column.html">ActiveRecord::ConnectionAdapters::Column</a>
+  
+    <li><a href="./ActiveRecord/Validations.html">ActiveRecord::Validations</a>
+  
+    <li><a href="./ActiveRecord/Validations/ClassMethods.html">ActiveRecord::Validations::ClassMethods</a>
+  
+    <li><a href="./ActionView.html">ActionView</a>
+  
+    <li><a href="./ActionView/Helpers.html">ActionView::Helpers</a>
+  
+    <li><a href="./ActionView/Helpers/FormOptionsHelper.html">ActionView::Helpers::FormOptionsHelper</a>
+  
+    <li><a href="./DefaultFinder.html">DefaultFinder</a>
+  
+    <li><a href="./DefaultFinder/Finder.html">DefaultFinder::Finder</a>
+  
+    <li><a href="./DefaultFinder/Finder/ClassMethods.html">DefaultFinder::Finder::ClassMethods</a>
+  
+    <li><a href="./IrbjaxEngine.html">IrbjaxEngine</a>
+  
+    <li><a href="./IrbjaxEngine/IrbjaxSession.html">IrbjaxEngine::IrbjaxSession</a>
+  
+    <li><a href="./IrbjaxEngine/Output.html">IrbjaxEngine::Output</a>
+  
+    <li><a href="./SymetrieCom.html">SymetrieCom</a>
+  
+    <li><a href="./SymetrieCom/Acts.html">SymetrieCom::Acts</a>
+  
+    <li><a href="./SymetrieCom/Acts/BetterNestedSetHelper.html">SymetrieCom::Acts::BetterNestedSetHelper</a>
+  
+    <li><a href="./GetText.html">GetText</a>
+  
+    <li><a href="./GetText/PoParser.html">GetText::PoParser</a>
+  
+    <li><a href="./Rack.html">Rack</a>
+  
+    <li><a href="./Rack/Utils.html">Rack::Utils</a>
+  
+    <li><a href="./WillPaginate.html">WillPaginate</a>
+  
+    <li><a href="./WillPaginate/ViewHelpers.html">WillPaginate::ViewHelpers</a>
+  
+    <li><a href="./AbstractReport.html">AbstractReport</a>
+  
+    <li><a href="./Access.html">Access</a>
+  
+    <li><a href="./AccessApi.html">AccessApi</a>
+  
+    <li><a href="./AccessReport.html">AccessReport</a>
+  
+    <li><a href="./AccessesController.html">AccessesController</a>
+  
+    <li><a href="./AccessesHelper.html">AccessesHelper</a>
+  
+    <li><a href="./AppLocale.html">AppLocale</a>
+  
+    <li><a href="./AppLocaleApi.html">AppLocaleApi</a>
+  
+    <li><a href="./AppLocalesController.html">AppLocalesController</a>
+  
+    <li><a href="./AppLocalesHelper.html">AppLocalesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BgWorker.html">BgWorker</a>
+  
+    <li><a href="./BgWorkerApi.html">BgWorkerApi</a>
+  
+    <li><a href="./BgWorkerReport.html">BgWorkerReport</a>
+  
+    <li><a href="./BgWorkersController.html">BgWorkersController</a>
+  
+    <li><a href="./BgWorkersHelper.html">BgWorkersHelper</a>
+  
+    <li><a href="./Customer.html">Customer</a>
+  
+    <li><a href="./CustomerApi.html">CustomerApi</a>
+  
+    <li><a href="./CustomersController.html">CustomersController</a>
+  
+    <li><a href="./CustomersHelper.html">CustomersHelper</a>
+  
+    <li><a href="./Date.html">Date</a>
+  
+    <li><a href="./DateHelper.html">DateHelper</a>
+  
+    <li><a href="./DevFeedback.html">DevFeedback</a>
+  
+    <li><a href="./DevFeedbackApi.html">DevFeedbackApi</a>
+  
+    <li><a href="./DevFeedbacksController.html">DevFeedbacksController</a>
+  
+    <li><a href="./DevFeedbacksHelper.html">DevFeedbacksHelper</a>
+  
+    <li><a href="./Enumerable.html">Enumerable</a>
+  
+    <li><a href="./FileImport.html">FileImport</a>
+  
+    <li><a href="./FileImportApi.html">FileImportApi</a>
+  
+    <li><a href="./FileImportReport.html">FileImportReport</a>
+  
+    <li><a href="./FileImportsController.html">FileImportsController</a>
+  
+    <li><a href="./FileImportsHelper.html">FileImportsHelper</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./PdfHandler.html">PdfHandler</a>
+  
+    <li><a href="./Profile.html">Profile</a>
+  
+    <li><a href="./ProfileAccess.html">ProfileAccess</a>
+  
+    <li><a href="./ProfileAccessApi.html">ProfileAccessApi</a>
+  
+    <li><a href="./ProfileAccessesController.html">ProfileAccessesController</a>
+  
+    <li><a href="./ProfileAccessesHelper.html">ProfileAccessesHelper</a>
+  
+    <li><a href="./ProfileApi.html">ProfileApi</a>
+  
+    <li><a href="./ProfilesController.html">ProfilesController</a>
+  
+    <li><a href="./ProfilesHelper.html">ProfilesHelper</a>
+  
+    <li><a href="./RBeautify.html">RBeautify</a>
+  
+    <li><a href="./Range.html">Range</a>
+  
+    <li><a href="./SavedReport.html">SavedReport</a>
+  
+    <li><a href="./SavedReportApi.html">SavedReportApi</a>
+  
+    <li><a href="./SavedReportsController.html">SavedReportsController</a>
+  
+    <li><a href="./SavedReportsHelper.html">SavedReportsHelper</a>
+  
+    <li><a href="./SmartQueriesController.html">SmartQueriesController</a>
+  
+    <li><a href="./SmartQueriesHelper.html">SmartQueriesHelper</a>
+  
+    <li><a href="./SmartQuery.html">SmartQuery</a>
+  
+    <li><a href="./SmartQueryApi.html">SmartQueryApi</a>
+  
+    <li><a href="./SystemSetting.html">SystemSetting</a>
+  
+    <li><a href="./SystemSettingApi.html">SystemSettingApi</a>
+  
+    <li><a href="./SystemSettingsController.html">SystemSettingsController</a>
+  
+    <li><a href="./SystemSettingsHelper.html">SystemSettingsHelper</a>
+  
+    <li><a href="./Thumbnailer.html">Thumbnailer</a>
+  
+    <li><a href="./Translation.html">Translation</a>
+  
+    <li><a href="./TranslationApi.html">TranslationApi</a>
+  
+    <li><a href="./TranslationsController.html">TranslationsController</a>
+  
+    <li><a href="./TranslationsHelper.html">TranslationsHelper</a>
+  
+    <li><a href="./UncatchedException.html">UncatchedException</a>
+  
+    <li><a href="./UncatchedExceptionApi.html">UncatchedExceptionApi</a>
+  
+    <li><a href="./UncatchedExceptionMailer.html">UncatchedExceptionMailer</a>
+  
+    <li><a href="./UncatchedExceptionsController.html">UncatchedExceptionsController</a>
+  
+    <li><a href="./UncatchedExceptionsHelper.html">UncatchedExceptionsHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserAccess.html">UserAccess</a>
+  
+    <li><a href="./UserAccessApi.html">UserAccessApi</a>
+  
+    <li><a href="./UserAccessesController.html">UserAccessesController</a>
+  
+    <li><a href="./UserAccessesHelper.html">UserAccessesHelper</a>
+  
+    <li><a href="./UserApi.html">UserApi</a>
+  
+    <li><a href="./UserMailer.html">UserMailer</a>
+  
+    <li><a href="./UserReport.html">UserReport</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module RBeautify</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="IndentExp">IndentExp
+        
+        <dd class="description"><p>indent regexp tests</p>
+        
+      
+        <dt id="OutdentExp">OutdentExp
+        
+        <dd class="description"><p>outdent regexp tests</p>
+        
+      
+        <dt id="TabSize">TabSize
+        
+        <dd class="description">
+        
+      
+        <dt id="TabStr">TabStr
+        
+        <dd class="description"><p>tab character and size</p>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-beautify_file" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">beautify_file</span><span
+            class="method-args">(path)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="beautify_file-source">
+            <pre><span class="ruby-comment"># File lib/faveod_extensions/lib/rbeautify.rb, line 173</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">RBeautify</span>.<span class="ruby-identifier">beautify_file</span>(<span class="ruby-identifier">path</span>)
+   <span class="ruby-keyword">if</span>(<span class="ruby-identifier">path</span> <span class="ruby-operator">==</span> <span class="ruby-string">'-'</span>) <span class="ruby-comment"># stdin source</span>
+      <span class="ruby-identifier">source</span> = <span class="ruby-constant">STDIN</span>.<span class="ruby-identifier">read</span>
+      <span class="ruby-identifier">print</span> <span class="ruby-identifier">beautify_string</span>(<span class="ruby-identifier">source</span>,<span class="ruby-string">&quot;stdin&quot;</span>)
+   <span class="ruby-keyword">else</span> <span class="ruby-comment"># named file source</span>
+      <span class="ruby-identifier">source</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">path</span>)
+      <span class="ruby-identifier">dest</span> = <span class="ruby-identifier">beautify_string</span>(<span class="ruby-identifier">source</span>,<span class="ruby-identifier">path</span>)
+      <span class="ruby-keyword">if</span>(<span class="ruby-identifier">source</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">dest</span>)
+         <span class="ruby-comment"># make a backup copy</span>
+        <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">path</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;~&quot;</span>,<span class="ruby-string">&quot;w&quot;</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-identifier">f</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">source</span>) }
+         <span class="ruby-comment"># overwrite the original</span>
+        <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">path</span>,<span class="ruby-string">&quot;w&quot;</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-identifier">f</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">dest</span>) }
+      <span class="ruby-keyword">end</span>
+   <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- beautify_file-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- beautify_file-method -->
+
+    
+      <div id="method-c-beautify_string" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">beautify_string</span><span
+            class="method-args">(source, path = "")</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="beautify_string-source">
+            <pre><span class="ruby-comment"># File lib/faveod_extensions/lib/rbeautify.rb, line 78</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">RBeautify</span>.<span class="ruby-identifier">beautify_string</span>(<span class="ruby-identifier">source</span>, <span class="ruby-identifier">path</span> = <span class="ruby-string">&quot;&quot;</span>)
+   <span class="ruby-identifier">comment_block</span> = <span class="ruby-keyword">false</span>
+   <span class="ruby-identifier">program_end</span> = <span class="ruby-keyword">false</span>
+   <span class="ruby-identifier">multiLine_array</span> = []
+   <span class="ruby-identifier">multiLine_str</span> = <span class="ruby-string">&quot;&quot;</span>
+   <span class="ruby-identifier">tab</span> = <span class="ruby-value">0</span>
+   <span class="ruby-identifier">dest</span> = <span class="ruby-string">&quot;&quot;</span>
+   <span class="ruby-identifier">source</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot;\n&quot;</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">line</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">if</span>(<span class="ruby-operator">!</span><span class="ruby-identifier">program_end</span>)
+         <span class="ruby-comment"># detect program end mark</span>
+         <span class="ruby-keyword">if</span>(<span class="ruby-identifier">line</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">%r^__END__$/</span>)
+            <span class="ruby-identifier">program_end</span> = <span class="ruby-keyword">true</span>
+         <span class="ruby-keyword">else</span>
+            <span class="ruby-comment"># combine continuing lines</span>
+            <span class="ruby-keyword">if</span>(<span class="ruby-operator">!</span>(<span class="ruby-identifier">line</span> <span class="ruby-operator">=~</span> <span class="ruby-node">%r^\s*#/</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">line</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">%r[^\\]\\\s*$/</span>)
+               <span class="ruby-identifier">multiLine_array</span>.<span class="ruby-identifier">push</span> <span class="ruby-identifier">line</span>
+               <span class="ruby-identifier">multiLine_str</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">line</span>.<span class="ruby-identifier">sub</span>(<span class="ruby-regexp">%r^(.*)\\\s*$/</span>,<span class="ruby-string">&quot;\\1&quot;</span>)
+               <span class="ruby-keyword">next</span>
+            <span class="ruby-keyword">end</span>
+
+            <span class="ruby-comment"># add final line</span>
+            <span class="ruby-keyword">if</span>(<span class="ruby-identifier">multiLine_str</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>)
+               <span class="ruby-identifier">multiLine_array</span>.<span class="ruby-identifier">push</span> <span class="ruby-identifier">line</span>
+               <span class="ruby-identifier">multiLine_str</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">line</span>.<span class="ruby-identifier">sub</span>(<span class="ruby-regexp">%r^(.*)\\\s*$/</span>,<span class="ruby-string">&quot;\\1&quot;</span>)
+            <span class="ruby-keyword">end</span>
+
+            <span class="ruby-identifier">tline</span> = ((<span class="ruby-identifier">multiLine_str</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>)<span class="ruby-operator">?</span><span class="ruby-identifier">multiLine_str</span><span class="ruby-value">:line</span>).<span class="ruby-identifier">strip</span>
+            <span class="ruby-keyword">if</span>(<span class="ruby-identifier">tline</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">%r^=begin/</span>)
+               <span class="ruby-identifier">comment_block</span> = <span class="ruby-keyword">true</span>
+            <span class="ruby-keyword">end</span>
+         <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+     <span class="ruby-keyword">if</span>(<span class="ruby-identifier">comment_block</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">program_end</span>)
+         <span class="ruby-comment"># add the line unchanged</span>
+         <span class="ruby-identifier">dest</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">line</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&quot;</span>
+      <span class="ruby-keyword">else</span>
+         <span class="ruby-identifier">comment_line</span> = (<span class="ruby-identifier">tline</span> <span class="ruby-operator">=~</span> <span class="ruby-node">%r^#/</span>)
+         <span class="ruby-keyword">if</span>(<span class="ruby-operator">!</span><span class="ruby-identifier">comment_line</span>)
+            <span class="ruby-comment"># throw out sequences that will</span>
+            <span class="ruby-comment"># only sow confusion</span>
+           <span class="ruby-keyword">while</span> <span class="ruby-identifier">tline</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">%r\{[^\{]*?\}/</span>,<span class="ruby-string">&quot;&quot;</span>)
+            <span class="ruby-keyword">end</span>
+            <span class="ruby-keyword">while</span> <span class="ruby-identifier">tline</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">%r\[[^\[]*?\]/</span>,<span class="ruby-string">&quot;&quot;</span>)
+            <span class="ruby-keyword">end</span>
+            <span class="ruby-keyword">while</span> <span class="ruby-identifier">tline</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">%r'.*?'/</span>,<span class="ruby-string">&quot;&quot;</span>)
+            <span class="ruby-keyword">end</span>
+            <span class="ruby-keyword">while</span> <span class="ruby-identifier">tline</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">%r&quot;.*?&quot;/</span>,<span class="ruby-string">&quot;&quot;</span>)
+            <span class="ruby-keyword">end</span>
+            <span class="ruby-keyword">while</span> <span class="ruby-identifier">tline</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">%r\`.*?\`/</span>,<span class="ruby-string">&quot;&quot;</span>)
+            <span class="ruby-keyword">end</span>
+            <span class="ruby-keyword">while</span> <span class="ruby-identifier">tline</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">%r\([^\(]*?\)/</span>,<span class="ruby-string">&quot;&quot;</span>)
+            <span class="ruby-keyword">end</span>
+            <span class="ruby-keyword">while</span> <span class="ruby-identifier">tline</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">%r\/.*?\//</span>,<span class="ruby-string">&quot;&quot;</span>)
+            <span class="ruby-keyword">end</span>
+            <span class="ruby-keyword">while</span> <span class="ruby-identifier">tline</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">%r%r(.).*?\11//</span>,<span class="ruby-string">&quot;&quot;</span>)
+            <span class="ruby-keyword">end</span>
+            <span class="ruby-comment"># delete end-of-line comments</span>
+            <span class="ruby-identifier">tline</span>.<span class="ruby-identifier">sub!</span>(<span class="ruby-node">%r#[^\&quot;]+$/</span>,<span class="ruby-string">&quot;&quot;</span>)
+            <span class="ruby-comment"># convert quotes</span>
+            <span class="ruby-identifier">tline</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp">%r\\\&quot;/</span>,<span class="ruby-string">&quot;'&quot;</span>)
+            <span class="ruby-constant">OutdentExp</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">re</span><span class="ruby-operator">|</span>
+               <span class="ruby-keyword">if</span>(<span class="ruby-identifier">tline</span> <span class="ruby-operator">=~</span> <span class="ruby-identifier">re</span>)
+                  <span class="ruby-identifier">tab</span> <span class="ruby-operator">-=</span> <span class="ruby-value">1</span>
+                  <span class="ruby-keyword">break</span>
+               <span class="ruby-keyword">end</span>
+            <span class="ruby-keyword">end</span>
+         <span class="ruby-keyword">end</span>
+         <span class="ruby-keyword">if</span> (<span class="ruby-identifier">multiLine_array</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>)
+            <span class="ruby-identifier">multiLine_array</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">ml</span><span class="ruby-operator">|</span>
+               <span class="ruby-identifier">dest</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">add_line</span>(<span class="ruby-identifier">ml</span>,<span class="ruby-identifier">tab</span>)
+            <span class="ruby-keyword">end</span>
+            <span class="ruby-identifier">multiLine_array</span>.<span class="ruby-identifier">clear</span>
+            <span class="ruby-identifier">multiLine_str</span> = <span class="ruby-string">&quot;&quot;</span>
+         <span class="ruby-keyword">else</span>
+            <span class="ruby-identifier">dest</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">rb_add_line</span>(<span class="ruby-identifier">line</span>,<span class="ruby-identifier">tab</span>)
+         <span class="ruby-keyword">end</span>
+         <span class="ruby-keyword">if</span>(<span class="ruby-operator">!</span><span class="ruby-identifier">comment_line</span>)
+            <span class="ruby-constant">IndentExp</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">re</span><span class="ruby-operator">|</span>
+               <span class="ruby-keyword">if</span>(<span class="ruby-identifier">tline</span> <span class="ruby-operator">=~</span> <span class="ruby-identifier">re</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span>(<span class="ruby-identifier">tline</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">%r\s+end\s*$/</span>))
+                  <span class="ruby-identifier">tab</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+                  <span class="ruby-keyword">break</span>
+               <span class="ruby-keyword">end</span>
+            <span class="ruby-keyword">end</span>
+         <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">if</span>(<span class="ruby-identifier">tline</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">%r^=end/</span>)
+         <span class="ruby-identifier">comment_block</span> = <span class="ruby-keyword">false</span>
+      <span class="ruby-keyword">end</span>
+   <span class="ruby-keyword">end</span>
+   <span class="ruby-keyword">if</span>(<span class="ruby-identifier">tab</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>)
+     <span class="ruby-constant">STDERR</span>.<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;#{path}: Indentation error: #{tab}&quot;</span>
+   <span class="ruby-keyword">end</span>
+   <span class="ruby-keyword">return</span> <span class="ruby-identifier">dest</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- beautify_string-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- beautify_string-method -->
+
+    
+      <div id="method-c-main" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">main</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="main-source">
+            <pre><span class="ruby-comment"># File lib/faveod_extensions/lib/rbeautify.rb, line 189</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">RBeautify</span>.<span class="ruby-identifier">main</span>
+   <span class="ruby-keyword">if</span>(<span class="ruby-operator">!</span><span class="ruby-constant">ARGV</span>[<span class="ruby-value">0</span>])
+      <span class="ruby-constant">STDERR</span>.<span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;usage: Ruby filenames or \&quot;-\&quot; for stdin.&quot;</span>
+      <span class="ruby-identifier">exit</span> <span class="ruby-value">0</span>
+   <span class="ruby-keyword">end</span>
+   <span class="ruby-constant">ARGV</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">path</span><span class="ruby-operator">|</span>
+      <span class="ruby-constant">RBeautify</span>.<span class="ruby-identifier">beautify_file</span>(<span class="ruby-identifier">path</span>)
+   <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- main-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- main-method -->
+
+    
+      <div id="method-c-rb_add_line" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">rb_add_line</span><span
+            class="method-args">(line,tab)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="rb_add_line-source">
+            <pre><span class="ruby-comment"># File lib/faveod_extensions/lib/rbeautify.rb, line 72</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">RBeautify</span>.<span class="ruby-identifier">rb_add_line</span>(<span class="ruby-identifier">line</span>,<span class="ruby-identifier">tab</span>)
+   <span class="ruby-identifier">line</span>.<span class="ruby-identifier">strip!</span>
+   <span class="ruby-identifier">line</span> = <span class="ruby-identifier">rb_make_tab</span>(<span class="ruby-identifier">tab</span>) <span class="ruby-operator">+</span> <span class="ruby-identifier">line</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">line</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+   <span class="ruby-keyword">return</span> <span class="ruby-identifier">line</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- rb_add_line-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- rb_add_line-method -->
+
+    
+      <div id="method-c-rb_make_tab" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">rb_make_tab</span><span
+            class="method-args">(tab)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="rb_make_tab-source">
+            <pre><span class="ruby-comment"># File lib/faveod_extensions/lib/rbeautify.rb, line 68</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">RBeautify</span>.<span class="ruby-identifier">rb_make_tab</span>(<span class="ruby-identifier">tab</span>)
+   <span class="ruby-keyword">return</span> (<span class="ruby-identifier">tab</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>)<span class="ruby-operator">?</span><span class="ruby-string">&quot;&quot;</span><span class="ruby-operator">:</span><span class="ruby-constant">TabStr</span> * <span class="ruby-constant">TabSize</span> * <span class="ruby-identifier">tab</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- rb_make_tab-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- rb_make_tab-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

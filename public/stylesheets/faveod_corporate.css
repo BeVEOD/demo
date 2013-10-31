@@ -1,0 +1,562 @@
+
+/* #container_left */
+#container_left .content {
+  position:relative;
+width:220px;
+height:248px;
+background-repeat:repeat-y
+}
+#container_left .left_footer {
+  float:left;
+width:22px;
+height:30px
+}
+#container_left .left_title {
+  float:left;
+width:22px;
+height:20px
+}
+#container_left .center_footer {
+  float:left;
+width:186px;
+height:30px;
+background-repeat:repeat-x
+}
+#container_left .texte {
+  position:relative;
+width:166px;
+padding-left:32px;
+padding-top:5px;
+font-family:tahoma;
+font-size:11px;
+color:gray;
+text-align:justify
+}
+#container_left .right_title {
+  float:left;
+width:12px;
+height:20px
+}
+#container_left .right_footer {
+  float:left;
+width:12px;
+height:30px
+}
+#container_left  {
+  float:left;
+width:220px;
+height:300px
+}
+#container_left .title {
+  position:relative;
+width:220px;
+height:20px;
+background-repeat:repeat-x
+}
+#container_left .footer {
+  position:relative;
+width:220px;
+height:30px
+}
+#container_left .center_title {
+  float:left;
+width:186px;
+height:20px
+}
+
+
+/* #header */
+#header .management {
+  float:right;
+margin-right:.5em
+}
+#header #title {
+  display:block;
+position:absolute;
+left:8em
+}
+#header .management UL LI.tasks {
+  margin-top:.75em;
+border-top:1px solid #ACF;
+border-bottom:1px solid #69D;
+background-color:#8CD;
+padding-right:1.5em
+}
+#header .management H2 {
+  margin:0;
+padding:0;
+cursor:pointer
+}
+#header .management UL LI A {
+  text-decoration:none
+}
+#header .management UL LI {
+  padding:0 1em 0 1em
+}
+#header  {
+  width:100%;
+height:100px;
+background-image:url(/images/faveod/header_bg.png);
+background-repeat:repeat-x;
+border:none;
+padding:0;
+margin:0
+}
+#header .management .slide {
+  position:relative;
+z-index:1;
+cursor:pointer;
+margin:0;
+text-align:left;
+font-weight:bold;
+background-color:#78BFDA;
+border:1px solid #216C87;
+border-top:none;
+opacity:.9
+}
+#header #login {
+  float:right;
+margin-right:1em
+}
+#header #copyr {
+  font-size:9pt;
+font-weight:normal;
+position:absolute;
+top:70px;
+left:100px
+}
+#header .management UL {
+  margin:0;
+padding:0;
+list-style:none
+}
+#header #process {
+  width:14em
+}
+#header #header_left {
+  background-image:url(/images/faveod/header.png);
+background-repeat:no-repeat;
+height:100px;
+padding-top:30px
+}
+
+
+/* #container_main */
+#container_main .center_title {
+  float:left;
+width:646px;
+height:20px
+}
+#container_main .content {
+  position:relative;
+width:680px;
+height:500px;
+overflow:auto;
+background-repeat:repeat-y
+}
+#container_main .left_footer {
+  float:left;
+width:12px;
+height:30px
+}
+#container_main  {
+  float:left;
+width:680px;
+height:300px
+}
+#container_main .footer {
+  position:relative;
+width:680px;
+height:30px
+}
+#container_main .title {
+  position:relative;
+width:680px;
+height:20px;
+background-repeat:repeat-x
+}
+#container_main .right_footer {
+  float:left;
+width:22px;
+height:30px
+}
+#container_main .left_title {
+  float:left;
+width:12px;
+height:20px
+}
+#container_main .texte {
+  position:relative;
+width:626px;
+padding-left:22px;
+padding-top:5px;
+font-family:tahoma;
+font-size:10pt;
+color:#444;
+text-align:justify
+}
+#container_main .right_title {
+  float:left;
+width:22px;
+height:20px
+}
+#container_main .center_footer {
+  float:left;
+width:646px;
+height:30px;
+background-repeat:repeat-x
+}
+
+
+/* #root_container_div */
+#root_container_div .date_field {
+  background:transparent url(/images/std/date.png) no-repeat 2px;
+padding-left:20px
+}
+#root_container_div .nested_set_field {
+  background:transparent url(/images/std/nested_set.png) no-repeat scroll 2px 50%;
+padding-left:20px
+}
+#root_container_div .integer_field {
+  background:transparent url(/images/std/int.png) no-repeat scroll 2px 50%;
+padding-left:20px
+}
+#root_container_div .association_field,.habtm_assoc_field,.hm_assoc_field,.hm_through_assoc_field,.bt_assoc_field {
+  background:transparent url(/images/std/link.png) no-repeat scroll 2px 50%;
+padding-left:20px
+}
+#root_container_div DIV:hover {
+  border:2px blue solid
+}
+#root_container_div .any_object_field {
+  background:transparent url(/images/std/binary.png) no-repeat 2px;
+padding-left:20px
+}
+#root_container_div .string_field {
+  background:transparent url(/images/std/string.png) no-repeat scroll 2px 50%;
+padding-left:20px
+}
+#root_container_div .boolean_field {
+  background:transparent url(/images/std/bool.png) no-repeat 2px;
+padding-left:20px
+}
+#root_container_div .ordered_field {
+  background:transparent url(/images/std/ordered.png) no-repeat scroll 2px 50%;
+padding-left:20px
+}
+#root_container_div .label_field {
+  background:transparent url(/images/std/label.png) no-repeat 2px;
+padding-left:20px
+}
+#root_container_div DIV {
+  height:20px;
+border:2px solid transparent
+}
+#root_container_div TH {
+  padding:0 10px;
+font-size:11px;
+border:1px solid #789ba8
+}
+#root_container_div .float_field,.decimal_field {
+  background:transparent url(/images/std/float.png) no-repeat 2px;
+padding-left:20px
+}
+#root_container_div fieldset.moved_field_objects legend {
+  line-height:22px
+}
+#root_container_div .binary_field {
+  background:transparent url(/images/std/file.png) no-repeat 2px;
+padding-left:20px
+}
+#root_container_div .static_list_field {
+  background:transparent url(/images/std/static_list.png) no-repeat 2px;
+padding-left:20px
+}
+#root_container_div TD UL {
+  margin:0;
+padding:0;
+list-style:none
+}
+#root_container_div .versioned_field {
+  background:transparent url(/images/std/versioned.png) no-repeat scroll 2px 50%;
+padding-left:20px
+}
+#root_container_div .color_field {
+  background:transparent url(/images/std/colors.png) no-repeat 2px;
+padding-left:20px
+}
+#root_container_div .datetime_field {
+  background:transparent url(/images/std/datetime.png) no-repeat 2px;
+padding-left:20px
+}
+#root_container_div .text_field {
+  background:transparent url(/images/std/text.png) no-repeat 2px;
+padding-left:20px
+}
+#root_container_div .container_field {
+  background:transparent url(/images/std/forms.png) no-repeat 2px;
+padding-left:20px
+}
+#root_container_div .time_field {
+  background:transparent url(/images/std/time.png) no-repeat 2px;
+padding-left:20px
+}
+#root_container_div .geoloc_field {
+  background:transparent url(/images/std/geoloc.png) no-repeat scroll 2px 50%;
+padding-left:20px
+}
+
+
+/* #menu */
+#menu .sep {
+  float:left;
+width:10px;
+height:20px;
+background-repeat:no-repeat
+}
+#menu .btn {
+  float:left;
+height:20px;
+font-family:tahoma;
+font-size:12px;
+padding-top:2px;
+padding-left:5px;
+padding-right:5px;
+color:gray;
+display:block
+}
+#menu .left {
+  
+}
+#menu .center {
+  
+}
+#menu .right {
+  
+}
+#menu  {
+  position:relative;
+width:900px;
+height:30px;
+background-repeat:repeat-x
+}
+
+
+/* .versions */
+.versions li a {
+  text-decoration:none;
+color:black
+}
+.versions  {
+  height:15em;
+overflow:auto;
+list-style-type:none;
+margin:0;
+padding-left:1em;
+border:1px inset;
+width:24em
+}
+.versions li a:hover {
+  text-decoration:underline;
+cursor:pointer;
+color:blue
+}
+
+
+/* select */
+select .button_field {
+  background:transparent url(/images/std/button.png) no-repeat 2px;
+padding-left:20px
+}
+select .association_field {
+  background:transparent url(/images/std/link.png) no-repeat 2px;
+padding-left:20px
+}
+select .integer_field {
+  background:transparent url(/images/std/int.png) no-repeat 2px;
+padding-left:20px
+}
+select .date_field {
+  background:transparent url(/images/std/date.png) no-repeat 2px;
+padding-left:20px
+}
+select .decimal_field {
+  background:transparent url(/images/std/float.png) no-repeat 2px;
+padding-left:20px
+}
+select .any_object_field {
+  background:transparent url(/images/std/binary.png) no-repeat 2px;
+padding-left:20px
+}
+select .static_list_field {
+  background:transparent url(/images/std/static_list.png) no-repeat 2px;
+padding-left:20px
+}
+select .label_field {
+  background:transparent url(/images/std/label.png) no-repeat 2px;
+padding-left:20px
+}
+select .time_field {
+  background:transparent url(/images/std/time.png) no-repeat 2px;
+padding-left:20px
+}
+select .float_field {
+  background:transparent url(/images/std/float.png) no-repeat 2px;
+padding-left:20px
+}
+select .container_field {
+  background:transparent url(/images/std/forms.png) no-repeat 2px;
+padding-left:20px
+}
+select .text_field {
+  background:transparent url(/images/std/text.png) no-repeat 2px;
+padding-left:20px
+}
+select .string_field {
+  background:transparent url(/images/std/string.png) no-repeat 2px;
+padding-left:20px
+}
+select .datetime_field {
+  background:transparent url(/images/std/datetime.png) no-repeat 2px;
+padding-left:20px
+}
+select .boolean_field {
+  background:transparent url(/images/std/bool.png) no-repeat 2px;
+padding-left:20px
+}
+select  {
+  border-style:ridge;
+font-size:x-small;
+width:16em
+}
+select .color_field {
+  background:transparent url(/images/std/colors.png) no-repeat 2px;
+padding-left:20px
+}
+select .binary_field {
+  background:transparent url(/images/std/file.png) no-repeat 2px;
+padding-left:20px
+}
+
+
+/* .texte */
+.texte UL {
+  padding-left:.8em
+}
+.texte  {
+  font-family:tahoma;
+font-size:10px;
+color:gray;
+text-align:justify
+}
+
+
+/* .drag_objects */
+.drag_objects LI SPAN {
+  -moz-border-radius:4px;
+-webkit-border-radius:4px;
+background-color:#CCE;
+background-image:url(/images/faveod2/title_background.png);
+border:1px outset blue;
+display:block;
+height:1.3em;
+width:8em;
+cursor:move;
+margin:0 0 .5em;
+padding:2px 2px 5px 3px
+}
+.drag_objects UL {
+  list-style:none;
+list-style-type:none;
+margin:0;
+padding:2px
+}
+
+
+/* [no container] */
+.left-deco {
+  background-image:url(/images/faveod/title_left_content.png);
+background-repeat:no-repeat;
+float:left;
+width:16px;
+height:16px
+}
+.tabs_content {
+  border:1px solid #CDE
+}
+#logo {
+  position:relative;
+height:100px;
+width:109px;
+margin-top:5px;
+margin-left:395px;
+background-repeat:no-repeat
+}
+.mf_actions {
+  border:gray solid 1px;
+display:none;
+float:right;
+line-height:16px;
+padding:0 1px 1px
+}
+#container {
+  position:relative;
+width:900px;
+height:300px
+}
+#admin_table td,.drag_objects td {
+  vertical-align:top
+}
+.right-deco {
+  background-image:url(/images/faveod/title_left_content.png);
+background-repeat:no-repeat;
+float:right;
+width:16px;
+height:16px
+}
+#footer {
+  position:absolute;
+width:900px;
+height:30px;
+top:695px;
+font-family:tahoma;
+font-size:10px;
+color:#ccc;
+text-align:center
+}
+#global {
+  width:900px;
+margin:auto
+}
+select.linker,select.linker option {
+  background-color:white;
+background-image:url(/images/faveod/link.gif);
+background-position:3px 1px;
+background-repeat:no-repeat;
+padding-left:22px
+}
+body {
+  background-color:#C0C0C0;
+overflow-y:auto;
+overflow-x:hidden;
+margin:0;
+background-repeat:repeat-x
+}
+
+
+/* table.report */
+table.report TR.border_tds,TD,TR.border_tds,TH {
+  border-top:gray 1px solid
+}
+table.report  {
+  border-collapse:collapse;
+border:1px gray solid;
+text-align:center
+}
+
+
+/* [no container] */
+#content {
+  // top:100px
+}
+

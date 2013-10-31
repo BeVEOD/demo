@@ -1,0 +1,19 @@
+
+digraph G {
+  fontsize = 14
+  fontname = "Verdana"
+  style = "filled";
+  fillcolor = "white";
+<% colors = %w(#D01F3C #356AA0 #C79810 #7FFFD4 #D2691E #A9A9A9 #BDB76B #DCDCDC #ADFF2F #F4A460 #F5DEB3) %><%#  shape = "tab"; %>
+
+  node [color=blue, fillcolor="#d1ecff", shape=record, style=filled, fontname=Verdana, fontsize=10];
+
+<% @gems.each do |g| %>
+  "<%= g.name %>" [
+    label="<%= "#{g.name} (#{g.version})" %>"
+  ];
+<% end %>
+<% @gems.each do |g|
+  g.dependencies.reject{|d| d.type == :development }.each { |d| %>
+     "<%= g.name %>" -> "<%= d.name %>" [label="<%= d.requirements_list.to_sentence %>" fontsize=8];<% } %><% end %>
+}

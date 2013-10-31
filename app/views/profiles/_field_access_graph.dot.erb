@@ -1,0 +1,30 @@
+
+digraph G {
+  "<%= @profile.name %>" [
+		label="{<%= _(@profile.name) + '|' + @profile.users.map{|u| %Q(<#{u.id}> #{u.disp_name}) }.join('|') %>}"
+		shape="record"
+	];
+
+<% @accesses.group_by(&:table_sid).each do |t, pas| %>
+	table_<%= t %> [
+		label="{<%= _(t.titleize) + '|' + pas.map{|a| %Q(<#{a.id}> #{a.disp_name}) }.join('|') %>}"
+		shape="record" color=darkgreen
+	];
+<% end %>
+
+<% @accesses.each do |a| 
+  pa = a.profile_accesses.first(:conditions => {:profile_id => @profile.id}) 
+  lab = pa.read? ? "Read" : ""
+  lab = pa.write? ? "Write" : ""
+  lab = "Read & Write" if pa.read? && pa.write? %>
+	"<%= @profile.name %>" -> table_<%= a.table_sid %>:<%= a.id %> [label="<%= lab %>" labeldistance="3.0"];<% end %>
+
+  bgcolor = "transparent";
+
+  node [
+    shape = "record"
+    style = "filled"
+    fontname = "Verdana"
+    fontsize = 9
+  ]
+}

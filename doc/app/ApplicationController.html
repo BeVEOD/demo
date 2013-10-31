@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class ApplicationController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/application_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">ActionController::Base
+  
+</nav>
+
+    <!-- Included Modules -->
+<nav id="includes-section" class="section">
+  <h3 class="section-header">Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><span class="include">FastGettext::Translation</span>
+  
+  
+  </ul>
+</nav>
+
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-check_accesses">#check_accesses</a>
+    
+    <li><a href="#method-i-current_user">#current_user</a>
+    
+    <li><a href="#method-i-current_user-3D">#current_user=</a>
+    
+    <li><a href="#method-i-log_exception">#log_exception</a>
+    
+    <li><a href="#method-i-rescue_action_in_public">#rescue_action_in_public</a>
+    
+    <li><a href="#method-i-rescue_action_locally">#rescue_action_locally</a>
+    
+    <li><a href="#method-i-set_locale">#set_locale</a>
+    
+    <li><a href="#method-i-user_setup">#user_setup</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Faveod.html">Faveod</a>
+  
+    <li><a href="./Faveod/AVBBFTranslationService.html">Faveod::AVBBFTranslationService</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions.html">Faveod::ActiveResourceExtensions</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions/ClassMethods.html">Faveod::ActiveResourceExtensions::ClassMethods</a>
+  
+    <li><a href="./Faveod/DistributedColors.html">Faveod::DistributedColors</a>
+  
+    <li><a href="./Faveod/GoogleTranslationService.html">Faveod::GoogleTranslationService</a>
+  
+    <li><a href="./Faveod/GraphMaker.html">Faveod::GraphMaker</a>
+  
+    <li><a href="./Faveod/HtmlTruncator.html">Faveod::HtmlTruncator</a>
+  
+    <li><a href="./Faveod/IePdfHeadersMiddleware.html">Faveod::IePdfHeadersMiddleware</a>
+  
+    <li><a href="./Faveod/PoUtils.html">Faveod::PoUtils</a>
+  
+    <li><a href="./Faveod/TranslationServer.html">Faveod::TranslationServer</a>
+  
+    <li><a href="./Faveod/TranslationServicesHelper.html">Faveod::TranslationServicesHelper</a>
+  
+    <li><a href="./Faveod/Validations.html">Faveod::Validations</a>
+  
+    <li><a href="./Faveod/Validations/Syntax.html">Faveod::Validations::Syntax</a>
+  
+    <li><a href="./Faveod/Validations/Syntax/ClassMethods.html">Faveod::Validations::Syntax::ClassMethods</a>
+  
+    <li><a href="./ActiveRecord.html">ActiveRecord</a>
+  
+    <li><a href="./ActiveRecord/Base.html">ActiveRecord::Base</a>
+  
+    <li><a href="./ActiveRecord/Condition.html">ActiveRecord::Condition</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters.html">ActiveRecord::ConnectionAdapters</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters/Column.html">ActiveRecord::ConnectionAdapters::Column</a>
+  
+    <li><a href="./ActiveRecord/Validations.html">ActiveRecord::Validations</a>
+  
+    <li><a href="./ActiveRecord/Validations/ClassMethods.html">ActiveRecord::Validations::ClassMethods</a>
+  
+    <li><a href="./ActionView.html">ActionView</a>
+  
+    <li><a href="./ActionView/Helpers.html">ActionView::Helpers</a>
+  
+    <li><a href="./ActionView/Helpers/FormOptionsHelper.html">ActionView::Helpers::FormOptionsHelper</a>
+  
+    <li><a href="./DefaultFinder.html">DefaultFinder</a>
+  
+    <li><a href="./DefaultFinder/Finder.html">DefaultFinder::Finder</a>
+  
+    <li><a href="./DefaultFinder/Finder/ClassMethods.html">DefaultFinder::Finder::ClassMethods</a>
+  
+    <li><a href="./IrbjaxEngine.html">IrbjaxEngine</a>
+  
+    <li><a href="./IrbjaxEngine/IrbjaxSession.html">IrbjaxEngine::IrbjaxSession</a>
+  
+    <li><a href="./IrbjaxEngine/Output.html">IrbjaxEngine::Output</a>
+  
+    <li><a href="./SymetrieCom.html">SymetrieCom</a>
+  
+    <li><a href="./SymetrieCom/Acts.html">SymetrieCom::Acts</a>
+  
+    <li><a href="./SymetrieCom/Acts/BetterNestedSetHelper.html">SymetrieCom::Acts::BetterNestedSetHelper</a>
+  
+    <li><a href="./GetText.html">GetText</a>
+  
+    <li><a href="./GetText/PoParser.html">GetText::PoParser</a>
+  
+    <li><a href="./Rack.html">Rack</a>
+  
+    <li><a href="./Rack/Utils.html">Rack::Utils</a>
+  
+    <li><a href="./WillPaginate.html">WillPaginate</a>
+  
+    <li><a href="./WillPaginate/ViewHelpers.html">WillPaginate::ViewHelpers</a>
+  
+    <li><a href="./AbstractReport.html">AbstractReport</a>
+  
+    <li><a href="./Access.html">Access</a>
+  
+    <li><a href="./AccessApi.html">AccessApi</a>
+  
+    <li><a href="./AccessReport.html">AccessReport</a>
+  
+    <li><a href="./AccessesController.html">AccessesController</a>
+  
+    <li><a href="./AccessesHelper.html">AccessesHelper</a>
+  
+    <li><a href="./AppLocale.html">AppLocale</a>
+  
+    <li><a href="./AppLocaleApi.html">AppLocaleApi</a>
+  
+    <li><a href="./AppLocalesController.html">AppLocalesController</a>
+  
+    <li><a href="./AppLocalesHelper.html">AppLocalesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BgWorker.html">BgWorker</a>
+  
+    <li><a href="./BgWorkerApi.html">BgWorkerApi</a>
+  
+    <li><a href="./BgWorkerReport.html">BgWorkerReport</a>
+  
+    <li><a href="./BgWorkersController.html">BgWorkersController</a>
+  
+    <li><a href="./BgWorkersHelper.html">BgWorkersHelper</a>
+  
+    <li><a href="./Customer.html">Customer</a>
+  
+    <li><a href="./CustomerApi.html">CustomerApi</a>
+  
+    <li><a href="./CustomersController.html">CustomersController</a>
+  
+    <li><a href="./CustomersHelper.html">CustomersHelper</a>
+  
+    <li><a href="./Date.html">Date</a>
+  
+    <li><a href="./DateHelper.html">DateHelper</a>
+  
+    <li><a href="./DevFeedback.html">DevFeedback</a>
+  
+    <li><a href="./DevFeedbackApi.html">DevFeedbackApi</a>
+  
+    <li><a href="./DevFeedbacksController.html">DevFeedbacksController</a>
+  
+    <li><a href="./DevFeedbacksHelper.html">DevFeedbacksHelper</a>
+  
+    <li><a href="./Enumerable.html">Enumerable</a>
+  
+    <li><a href="./FileImport.html">FileImport</a>
+  
+    <li><a href="./FileImportApi.html">FileImportApi</a>
+  
+    <li><a href="./FileImportReport.html">FileImportReport</a>
+  
+    <li><a href="./FileImportsController.html">FileImportsController</a>
+  
+    <li><a href="./FileImportsHelper.html">FileImportsHelper</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./PdfHandler.html">PdfHandler</a>
+  
+    <li><a href="./Profile.html">Profile</a>
+  
+    <li><a href="./ProfileAccess.html">ProfileAccess</a>
+  
+    <li><a href="./ProfileAccessApi.html">ProfileAccessApi</a>
+  
+    <li><a href="./ProfileAccessesController.html">ProfileAccessesController</a>
+  
+    <li><a href="./ProfileAccessesHelper.html">ProfileAccessesHelper</a>
+  
+    <li><a href="./ProfileApi.html">ProfileApi</a>
+  
+    <li><a href="./ProfilesController.html">ProfilesController</a>
+  
+    <li><a href="./ProfilesHelper.html">ProfilesHelper</a>
+  
+    <li><a href="./RBeautify.html">RBeautify</a>
+  
+    <li><a href="./Range.html">Range</a>
+  
+    <li><a href="./SavedReport.html">SavedReport</a>
+  
+    <li><a href="./SavedReportApi.html">SavedReportApi</a>
+  
+    <li><a href="./SavedReportsController.html">SavedReportsController</a>
+  
+    <li><a href="./SavedReportsHelper.html">SavedReportsHelper</a>
+  
+    <li><a href="./SmartQueriesController.html">SmartQueriesController</a>
+  
+    <li><a href="./SmartQueriesHelper.html">SmartQueriesHelper</a>
+  
+    <li><a href="./SmartQuery.html">SmartQuery</a>
+  
+    <li><a href="./SmartQueryApi.html">SmartQueryApi</a>
+  
+    <li><a href="./SystemSetting.html">SystemSetting</a>
+  
+    <li><a href="./SystemSettingApi.html">SystemSettingApi</a>
+  
+    <li><a href="./SystemSettingsController.html">SystemSettingsController</a>
+  
+    <li><a href="./SystemSettingsHelper.html">SystemSettingsHelper</a>
+  
+    <li><a href="./Thumbnailer.html">Thumbnailer</a>
+  
+    <li><a href="./Translation.html">Translation</a>
+  
+    <li><a href="./TranslationApi.html">TranslationApi</a>
+  
+    <li><a href="./TranslationsController.html">TranslationsController</a>
+  
+    <li><a href="./TranslationsHelper.html">TranslationsHelper</a>
+  
+    <li><a href="./UncatchedException.html">UncatchedException</a>
+  
+    <li><a href="./UncatchedExceptionApi.html">UncatchedExceptionApi</a>
+  
+    <li><a href="./UncatchedExceptionMailer.html">UncatchedExceptionMailer</a>
+  
+    <li><a href="./UncatchedExceptionsController.html">UncatchedExceptionsController</a>
+  
+    <li><a href="./UncatchedExceptionsHelper.html">UncatchedExceptionsHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserAccess.html">UserAccess</a>
+  
+    <li><a href="./UserAccessApi.html">UserAccessApi</a>
+  
+    <li><a href="./UserAccessesController.html">UserAccessesController</a>
+  
+    <li><a href="./UserAccessesHelper.html">UserAccessesHelper</a>
+  
+    <li><a href="./UserApi.html">UserApi</a>
+  
+    <li><a href="./UserMailer.html">UserMailer</a>
+  
+    <li><a href="./UserReport.html">UserReport</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class ApplicationController</h1>
+
+  <div id="description" class="description">
+    
+<pre>This file and all its content belong to Faveod S.A.S unless a commercial
+contract signed by a representant of Faveod S.A.S states otherwise.</pre>
+
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</p>
+
+<pre>This has been generated by Faveod Generator on Mon Apr 01 10:59:39 +0200 2013
+It should be placed at 'app/controllers/application_controller.rb'
+All manual modifications will be destroyed on next generation</pre>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="protected-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Protected Instance Methods</h3>
+
+    
+      <div id="method-i-check_accesses" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">check_accesses</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>This action is called for every request so we can check authorizations and
+access. You can change the process here with extra caution.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>24</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-04-01 10:59:43 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Could be optimized</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="check_accesses-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 134</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">check_accesses</span>
+  <span class="ruby-identifier">path_params</span> = <span class="ruby-identifier">request</span>.<span class="ruby-identifier">path_parameters</span>() <span class="ruby-comment">#path_params[:action] path_params[:controller]</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">post?</span> <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">p</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:user</span>]) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">path_params</span>[<span class="ruby-value">:controller</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'users'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">path_params</span>[<span class="ruby-value">:action</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'login'</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">current_user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">sign_on</span>(<span class="ruby-identifier">p</span>[<span class="ruby-value">:login</span>], <span class="ruby-identifier">p</span>[<span class="ruby-value">:password</span>]) <span class="ruby-keyword">if</span> <span class="ruby-identifier">p</span>[<span class="ruby-value">:login</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">p</span>[<span class="ruby-value">:password</span>]
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:login_succeeded</span>] = <span class="ruby-keyword">true</span> <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">current_user</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;[CHECK ACCESSES] Current User: #{self.current_user.inspect}  #{path_params.inspect}&quot;</span>)
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] <span class="ruby-operator">||=</span> {}
+
+  <span class="ruby-comment"># session[:context][:user_id] = self.current_user.id if self.current_user # context example</span>
+  <span class="ruby-comment"># disable multiple session per user</span>
+  <span class="ruby-comment">#if !@current_user.nil? &amp;&amp; session.session_id != @current_user.last_session_id</span>
+  <span class="ruby-comment">#  @current_user = User.current = nil</span>
+  <span class="ruby-comment">#  reset_session</span>
+  <span class="ruby-comment">#  flash[:notice]='This session is no longer valid...&lt;br/&gt;Please login to continue'</span>
+  <span class="ruby-comment">#  session[:return_to]=request.fullpath if (path_params[:controller] != 'users' &amp;&amp; path_params[:action] != 'logout')</span>
+  <span class="ruby-comment">#  redirect_to :controller =&gt; 'users', :action =&gt; 'login'</span>
+  <span class="ruby-comment">#  return false</span>
+  <span class="ruby-comment">#end</span>
+  <span class="ruby-comment"># Grants everything to Faveod Users</span>
+
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span> <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-keyword">self</span>.<span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">active?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">has_profile?</span>(<span class="ruby-string">&quot;Faveod User&quot;</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span> <span class="ruby-keyword">if</span> <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">env</span> <span class="ruby-operator">==</span> <span class="ruby-string">'test'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:user_profile</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;Faveod User&quot;</span>
+
+  <span class="ruby-comment"># else get accesses</span>
+
+  <span class="ruby-identifier">action</span> = <span class="ruby-constant">Access</span>.<span class="ruby-identifier">actions</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:table_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">path_params</span>[<span class="ruby-value">:controller</span>], <span class="ruby-value">:action_sid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">path_params</span>[<span class="ruby-value">:action</span>]).<span class="ruby-identifier">first</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">action</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:file</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot;public&quot;</span>, <span class="ruby-string">&quot;404.html&quot;</span>), <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span>, <span class="ruby-value">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;404 File Not Found&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment"># Check if loggin is required</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">new_record?</span>
+
+    <span class="ruby-comment">#    not_logged = Profile.find_by_name('Not Logged')</span>
+
+    <span class="ruby-keyword">unless</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">can_run?</span>(<span class="ruby-identifier">action</span>)
+      <span class="ruby-identifier">flash</span>[<span class="ruby-value">:notice</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Please login to continue.&quot;</span>)
+      <span class="ruby-identifier">session</span>[<span class="ruby-value">:return_to</span>] = <span class="ruby-identifier">request</span>.<span class="ruby-identifier">fullpath</span> <span class="ruby-keyword">if</span> (<span class="ruby-identifier">path_params</span>[<span class="ruby-value">:controller</span>] <span class="ruby-operator">!=</span> <span class="ruby-string">'users'</span> <span class="ruby-operator">&amp;&amp;</span>
+      <span class="ruby-operator">!</span>([<span class="ruby-string">'login'</span>,<span class="ruby-string">'logout'</span>,<span class="ruby-string">'home'</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">path_params</span>[<span class="ruby-value">:action</span>])))
+      <span class="ruby-identifier">redirect_to</span> <span class="ruby-value">:controller</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:users</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:login</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment"># if granted is not allowed, redirect to the access denied</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-keyword">self</span>.<span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">can_run?</span>(<span class="ruby-identifier">action</span>)
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:file</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">Rails</span>.<span class="ruby-identifier">public_path</span>, <span class="ruby-string">&quot;401.html&quot;</span>), <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>, <span class="ruby-value">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;401 Access Denied&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- check_accesses-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- check_accesses-method -->
+
+    
+      <div id="method-i-current_user" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">current_user</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Accesses the current user from the session. Future calls avoid the database
+because nil is not equal to false.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>8</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-02-02 15:18:32 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="current_user-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 216</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">current_user</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-ivar">@current_user</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@current_user</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">||</span> <span class="ruby-ivar">@current_user</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">session</span>[<span class="ruby-value">:user_id</span>]
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">current_user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">session</span>[<span class="ruby-value">:user_id</span>])
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">cookies</span>[<span class="ruby-value">:auth_token</span>]
+    <span class="ruby-identifier">user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">find_by_remember_token</span>(<span class="ruby-identifier">cookies</span>[<span class="ruby-value">:auth_token</span>])
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">user</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">user</span>.<span class="ruby-identifier">remember_token?</span>
+      <span class="ruby-identifier">cookies</span>[<span class="ruby-value">:auth_token</span>] = { <span class="ruby-value">:value</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">user</span>.<span class="ruby-identifier">remember_token</span>, <span class="ruby-value">:expires</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">user</span>.<span class="ruby-identifier">remember_token_expires_at</span> }
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">current_user</span> = <span class="ruby-identifier">user</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span> <span class="ruby-comment"># Basic HTTP Login (useful for Web Services)</span>
+    <span class="ruby-identifier">authenticate_with_http_basic</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">username</span>, <span class="ruby-identifier">password</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">current_user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">sign_on</span>(<span class="ruby-identifier">username</span>, <span class="ruby-identifier">password</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment"># no authenticated user, new anonymous user</span>
+
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">current_user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:login</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">'Anonymous'</span>), <span class="ruby-value">:last_name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">_</span>(<span class="ruby-string">'Anonymous'</span>), <span class="ruby-value">:active</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>) <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@current_user</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-ivar">@current_user</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- current_user-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- current_user-method -->
+
+    
+      <div id="method-i-current_user-3D" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">current_user=</span><span
+            class="method-args">(new_user)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Store the given user id in the session.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>3</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-02-10 18:13:17 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="current_user-3D-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 201</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">current_user=</span>(<span class="ruby-identifier">new_user</span>)
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:user_id</span>] = <span class="ruby-identifier">new_user</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">new_user</span>.<span class="ruby-identifier">id</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+  <span class="ruby-ivar">@current_user</span> = <span class="ruby-identifier">new_user</span> <span class="ruby-operator">||</span> <span class="ruby-keyword">false</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- current_user-3D-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- current_user-3D-method -->
+
+    
+      <div id="method-i-log_exception" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">log_exception</span><span
+            class="method-args">(exc, &block)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Catch uncatched exceptions</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>5</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-05-19 14:21:28 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Requires Tests</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="log_exception-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 247</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">log_exception</span>(<span class="ruby-identifier">exc</span>, &amp;<span class="ruby-identifier">block</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">SystemSetting</span>[<span class="ruby-value">:store_uncatched_exceptions</span>]
+    <span class="ruby-identifier">deliverer</span> = <span class="ruby-identifier">block</span> <span class="ruby-operator">||</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">read_inheritable_attribute</span>(<span class="ruby-value">:exception_data</span>)
+    <span class="ruby-identifier">data</span> = <span class="ruby-keyword">case</span> <span class="ruby-identifier">deliverer</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-keyword">nil</span>    <span class="ruby-keyword">then</span> {}
+    <span class="ruby-keyword">when</span> <span class="ruby-constant">Symbol</span> <span class="ruby-keyword">then</span> <span class="ruby-identifier">send</span>(<span class="ruby-identifier">deliverer</span>)
+    <span class="ruby-keyword">when</span> <span class="ruby-constant">Proc</span>   <span class="ruby-keyword">then</span> <span class="ruby-identifier">deliverer</span>.<span class="ruby-identifier">call</span>(<span class="ruby-keyword">self</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">saved</span> = <span class="ruby-constant">UncatchedException</span>.<span class="ruby-identifier">create_from_exception</span>(<span class="ruby-keyword">self</span>, <span class="ruby-identifier">exc</span>, <span class="ruby-identifier">data</span>)
+    <span class="ruby-constant">UncatchedExceptionMailer</span>.<span class="ruby-identifier">deliver_uncatched_exception</span>(<span class="ruby-identifier">exc</span>, <span class="ruby-identifier">current_user</span>, <span class="ruby-identifier">params</span>, <span class="ruby-identifier">saved</span>)
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:warning</span>] = <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;An error occured during last action, you have been redirected.&quot;</span>)
+    <span class="ruby-identifier">redirect_to</span>(<span class="ruby-string">&quot;/&quot;</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">current_user</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Exception catched but not stored:\n#{exc.inspect}&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- log_exception-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- log_exception-method -->
+
+    
+      <div id="method-i-rescue_action_in_public" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">rescue_action_in_public</span><span
+            class="method-args">(exc)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Overrides default action.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>3</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-05-03 11:28:00 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="rescue_action_in_public-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 290</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">rescue_action_in_public</span>(<span class="ruby-identifier">exc</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">SystemSetting</span>[<span class="ruby-value">:store_uncatched_exceptions</span>]
+    <span class="ruby-identifier">log_exception</span>(<span class="ruby-identifier">exc</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">super</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- rescue_action_in_public-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- rescue_action_in_public-method -->
+
+    
+      <div id="method-i-rescue_action_locally" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">rescue_action_locally</span><span
+            class="method-args">(exc)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Overrides default method.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>3</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-05-03 11:27:53 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="rescue_action_locally-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 273</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">rescue_action_locally</span>(<span class="ruby-identifier">exc</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">SystemSetting</span>[<span class="ruby-value">:store_uncatched_exceptions</span>]
+    <span class="ruby-identifier">log_exception</span>(<span class="ruby-identifier">exc</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">super</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- rescue_action_locally-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- rescue_action_locally-method -->
+
+    
+      <div id="method-i-set_locale" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_locale</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>8</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-02-23 21:08:18 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="set_locale-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 305</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_locale</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">Object</span>.<span class="ruby-identifier">const_defined?</span>(<span class="ruby-string">'FastGettext'</span>)
+    <span class="ruby-constant">FastGettext</span>.<span class="ruby-identifier">available_locales</span> = <span class="ruby-constant">GSS</span>[<span class="ruby-value">:field_languages</span>] <span class="ruby-operator">?</span> <span class="ruby-constant">GSS</span>[<span class="ruby-value">:field_languages</span>].<span class="ruby-identifier">split</span>(<span class="ruby-string">' '</span>) <span class="ruby-operator">:</span> <span class="ruby-node">%w(en fr ar ko)</span>
+    <span class="ruby-constant">FastGettext</span>.<span class="ruby-identifier">text_domain</span> = <span class="ruby-constant">APP_SID</span>
+    <span class="ruby-identifier">session</span>[<span class="ruby-value">:locale</span>] = <span class="ruby-constant">I18n</span>.<span class="ruby-identifier">locale</span> = <span class="ruby-constant">FastGettext</span>.<span class="ruby-identifier">set_locale</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:locale</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:lang</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">cookies</span>[<span class="ruby-value">:lang</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">session</span>[<span class="ruby-value">:locale</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">env</span>[<span class="ruby-string">'HTTP_ACCEPT_LANGUAGE'</span>] <span class="ruby-operator">||</span> <span class="ruby-string">'en'</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set_locale-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set_locale-method -->
+
+    
+      <div id="method-i-user_setup" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">user_setup</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>5</p>
+</dd><dt>Last Update
+<dd>
+<p>2009-08-19 14:03:13 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="user_setup-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 53</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">user_setup</span>
+  <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;USER_SETUP: #{session.inspect}&quot;</span>)
+
+  <span class="ruby-comment"># User.current=() needs a thread-global reference to the session.</span>
+
+  <span class="ruby-constant">Thread</span>.<span class="ruby-identifier">current</span>[<span class="ruby-value">:session</span>] = <span class="ruby-identifier">session</span>
+
+  <span class="ruby-comment"># User.current needs a thread-global reference to the session[:user_id]</span>
+
+  <span class="ruby-constant">Thread</span>.<span class="ruby-identifier">current</span>[<span class="ruby-value">:user_id</span>] = <span class="ruby-identifier">session</span>[<span class="ruby-value">:user_id</span>]
+
+  <span class="ruby-comment"># This is used by the logout action to discard the old HTTP authentiction.</span>
+  <span class="ruby-comment"># Logout redirects to login and that generates a new authentication request. That request is the only input that can tell the browser to</span>
+  <span class="ruby-comment"># stop sending the old authentication data with every request!</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">flash</span>[<span class="ruby-value">:skip_user_setup</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword">true</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:skip_user_setup</span>] = <span class="ruby-keyword">false</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">login</span> = <span class="ruby-identifier">password</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">r</span> = <span class="ruby-identifier">request</span>.<span class="ruby-identifier">env</span>
+
+  <span class="ruby-comment">#  old_user = user = User.current</span>
+  <span class="ruby-comment"># If the request contains an HTTP authentication, decode it.</span>
+  <span class="ruby-comment"># Don't use it to authenticate the user yet.</span>
+
+  <span class="ruby-keyword">if</span> (<span class="ruby-identifier">authdata</span> =  <span class="ruby-identifier">r</span>[<span class="ruby-string">'X-HTTP_AUTHORIZATION'</span>]) <span class="ruby-keyword">or</span> (<span class="ruby-identifier">authdata</span> = <span class="ruby-identifier">r</span>[<span class="ruby-string">'HTTP_AUTHORIZATION'</span>])
+    <span class="ruby-identifier">authdata</span> = <span class="ruby-identifier">authdata</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">split</span>
+
+    <span class="ruby-comment"># FIX: At the moment we only support Basic authentication. It's</span>
+    <span class="ruby-comment"># prone to sniffing. Change to Digest authentication.</span>
+
+    <span class="ruby-keyword">if</span> <span class="ruby-keyword">not</span> <span class="ruby-identifier">authdata</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'Basic'</span>
+      <span class="ruby-identifier">login</span>, <span class="ruby-identifier">password</span> = <span class="ruby-constant">Base64</span>.<span class="ruby-identifier">decode64</span>(<span class="ruby-identifier">authdata</span>[<span class="ruby-value">1</span>]).<span class="ruby-identifier">split</span>(<span class="ruby-string">':'</span>)[<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-value">1</span>]
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment"># If the HTTP authentication is for a different user name, the user wants</span>
+  <span class="ruby-comment"># to change logins. This can happen if an operation requires an</span>
+  <span class="ruby-comment"># administrative login and the current user isn't the administrator but</span>
+  <span class="ruby-comment"># also has an administrative login. It can also happen with command-line</span>
+  <span class="ruby-comment"># tools like &quot;wget&quot; or web services clients that operate on behalf of</span>
+  <span class="ruby-comment"># several users.</span>
+  <span class="ruby-comment">#</span>
+  <span class="ruby-comment"># Note that HTTP authentication (at least Basic) can be sent without</span>
+  <span class="ruby-comment"># the server first asking for it, and that's valid according to the</span>
+  <span class="ruby-comment"># HTTP specification. So, I can get here without having asked the browser</span>
+  <span class="ruby-comment"># to put up a login panel.</span>
+  <span class="ruby-comment">#</span>
+  <span class="ruby-comment"># Allow re-log-in if the user name and password authenticate properly.</span>
+  <span class="ruby-comment">#</span>
+  <span class="ruby-comment">#if login and (user.blank? or login != user.login)</span>
+  <span class="ruby-comment">#  user = User.sign_on(login, password)</span>
+  <span class="ruby-comment">#end</span>
+  <span class="ruby-comment"># Sign on the user via a web form.</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">post?</span> <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">p</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:user</span>])
+    <span class="ruby-ivar">@current_user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">sign_on</span>(<span class="ruby-identifier">p</span>[<span class="ruby-value">:login</span>], <span class="ruby-identifier">p</span>[<span class="ruby-value">:password</span>]) <span class="ruby-keyword">if</span> <span class="ruby-identifier">p</span>[<span class="ruby-value">:login</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">p</span>[<span class="ruby-value">:password</span>]
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:login_succeeded</span>] = <span class="ruby-keyword">true</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@current_user</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment"># Sign on the user via a security token.</span>
+  <span class="ruby-comment">#if params[:id] and params[:token]</span>
+  <span class="ruby-comment">#  user = User.sign_on_by_token(params[:id], params['token'])</span>
+  <span class="ruby-comment">#end</span>
+  <span class="ruby-comment">#if @current_user != old_user &amp;&amp; !@current_user.nil?</span>
+  <span class="ruby-comment">#  flash[:login_succeeded] = true</span>
+  <span class="ruby-comment">#end</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- user_setup-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- user_setup-method -->
+
+    
+    </section><!-- protected-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

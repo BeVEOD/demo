@@ -1,0 +1,11 @@
+
+update_page do |page|
+  params[:msgid].each do |f, fdata|
+    fdata.each do |k, kdata|
+      kdata.each do |j, jdata|
+        page << %Q[$("msgid_#{f}_#{k}_#{j}").setValue('#{@res}')]
+      end
+    end
+  end
+end
+

@@ -1,0 +1,19 @@
+
+feedback = ''
+feedback += @errors.map{|e| content_tag(:div, e, :class => 'warning')}.join if @errors
+feedback += content_tag(:div, @success, :class => 'notice') if @success
+page.replace_html('flash', feedback)
+
+page << "top.Windows.closeAll()"
+
+if @success
+  case params[:action]
+  when /create/
+    page.insert_html(:bottom, "saved_report_list}", :partial => 'saved_report')
+  when /update/
+    page.replace("saved_report_#{@success.id}", :partial => 'saved_report')
+  when /destroy/
+    page.remove("saved_report_#{@success.id}")
+  end
+end
+

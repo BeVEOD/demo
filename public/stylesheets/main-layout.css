@@ -1,0 +1,172 @@
+
+/* select.data_types */
+select.data_types option {
+  line-height: 20px
+}
+
+
+/* [no container] */
+td.std_links {
+  width: 74px
+}
+#content {
+  position:absolute;
+left:22.5%;
+border: #DDD 1px solid;
+padding: 0px 3px 3px 3px;
+margin:4px 0px;
+min-width:76%;
+background-color: #EEE;
+// -moz-border-radius:10px
+}
+.classic_form {
+  
+}
+#global_search {
+  float:right;
+font-size:small;
+margin: 3px
+}
+#menu {
+  position:absolute;
+padding:0px;
+margin:4px 0px;
+width: 20%;
+max-width:21%;
+left:1%
+}
+#global_search_results {
+  background-color:white;
+font-size:smaller;
+margin-left:74%;
+margin-top:-25px;
+opacity:0.8;
+padding:3px;
+position:absolute;
+width:25%;
+z-index:2
+}
+.inline_content {
+  
+}
+.not-aligned {
+  
+}
+.half_width {
+  display:inline;
+width:47%
+}
+
+
+/* #flash */
+#flash div {
+  -moz-border-radius: 3px;
+margin: 3px;
+display:inline;
+padding-left:1em;
+padding-right:1em
+}
+#flash .warning {
+  border: 1px solid #F60;
+color: #930;
+background: #F96
+}
+#flash .error {
+  border: 1px solid #800;
+color: #FFF;
+background: #F00
+}
+#flash  {
+  position: absolute;
+left: 20%
+}
+#flash .notice {
+  border: 1px solid #0F6;
+color: #093;
+background: #9FB
+}
+
+
+/* table.no-border */
+table.no-border tr td {
+  border: none
+}
+
+
+/* .menubar */
+.menubar #main-menubar {
+  margin: -3px 0 0 -9px
+}
+.menubar UL LI UL LI UL {
+  left: 159px;
+top: 0
+}
+.menubar UL {
+  list-style-type:none;
+margin: 0pt;
+padding:0pt;
+z-index:1001
+}
+
+
+/* .tabs */
+.tabs .current {
+  opacity:1;
+background-color:#ACE;
+border-top:1px solid #268;
+border-right:1px solid #268;
+border-left:1px solid #268
+}
+.tabs  {
+  display:inline;
+list-style:none;
+margin:0px 5px;
+padding-left:5px
+}
+.tabs LI {
+  display:inline;
+font-size:larger;
+font-weight:bold;
+padding:5px;
+padding-bottom:0px;
+margin-top:8px;
+// margin-left:5px;
+-moz-border-radius-topleft: 4px;
+-moz-border-radius-topright: 4px;
+cursor: pointer;
+opacity:0.8;
+background-color:#CDE;
+border-top:1px solid #BBF;
+border-right:1px solid #BBF;
+border-left:1px solid #BBF
+}
+.tabs LI A {
+  text-decoration: none;
+color: #00285F
+}
+
+
+/* .invisible_fs */
+.invisible_fs legend {
+  display: none
+}
+.invisible_fs  {
+  border: none;
+padding:0;
+margin: 0 0 1em 0
+}
+
+
+/* #content */
+#content .classic_form,LABEL,LABEL.classic_form {
+  clear: left;
+display: block;
+text-align: right;
+padding-right: 3px;
+margin-right:50%
+}
+#content .inline_content,LABEL,LABEL.inline_content {
+  display:inline;
+margin-right:2em
+}
+

@@ -1,0 +1,44 @@
+
+digraph G {
+  "<%= @user.disp_name %>";
+
+<% @user.profiles.each do |p| %>
+	"<%= p.name %>" [color=darkblue];
+	"<%= @user.disp_name %>" -> "<%= p.name %>";
+<% end %>
+
+<% (@user_accesses | @profile_accesses).group_by(&:table_sid).each do |t, pas| %>
+	table_<%= t %> [
+		label="{<%= _(t.titleize) + '|' + pas.map{|a| %Q(<#{a.id}> #{a.disp_name}) }.join('|') %>}"
+		shape="record"
+		color=darkgreen
+	];
+<% end %>
+
+<% @user.profiles.each do |p| %>
+<% p.accesses.each do |a|
+  pa = a.profile_accesses.first(:conditions => {:profile_id => p.id, 'profile_accesses.read' => true, 'profile_accesses.write' => true})
+  next if pa.nil?
+  lab = pa.read? ? "Read" : ""
+  lab = pa.write? ? "Write" : ""
+  lab = "Read & Write" if pa.read? && pa.write? %>
+	"<%= p.name %>" -> table_<%= a.table_sid %>:<%= a.id %> [label="<%= lab %>" labeldistance="4.0"];<% end %>
+<% end %>
+
+<% @user_accesses.each do |ua|
+  pa = ua.user_accesses.first(:conditions => {:user_id => @user.id}) 
+  lab = pa.read? ? "Read" : ""
+  lab = pa.write? ? "Write" : ""
+  lab = "Read & Write" if pa.read? && pa.write? %>
+	"<%= @user.disp_name %>" -> table_<%= ua.table_sid %>:<%= ua.id %> [label="<%= lab %>" labeldistance="4.0"];<% end %>
+
+  bgcolor = "transparent";
+
+  node [
+    shape = "record"
+    style = "filled"
+    fontname = "Verdana"
+    fontsize = 9
+  ]
+}
+

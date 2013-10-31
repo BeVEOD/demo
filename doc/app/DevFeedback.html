@@ -1,0 +1,2574 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class DevFeedback - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/dev_feedback.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ActiveRecord/Base.html">ActiveRecord::Base</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-active-3F">::active?</a>
+    
+    <li><a href="#method-c-assoc_sids_to_columns">::assoc_sids_to_columns</a>
+    
+    <li><a href="#method-c-attribute_condition">::attribute_condition</a>
+    
+    <li><a href="#method-c-available">::available</a>
+    
+    <li><a href="#method-c-browser_detection">::browser_detection</a>
+    
+    <li><a href="#method-c-from_kml">::from_kml</a>
+    
+    <li><a href="#method-c-get_root">::get_root</a>
+    
+    <li><a href="#method-c-load_from_params">::load_from_params</a>
+    
+    <li><a href="#method-c-named_scope_active_filter_method">::named_scope_active_filter_method</a>
+    
+    <li><a href="#method-c-named_scope_closed_method">::named_scope_closed_method</a>
+    
+    <li><a href="#method-c-named_scope_closing_method">::named_scope_closing_method</a>
+    
+    <li><a href="#method-c-named_scope_default_scope_method">::named_scope_default_scope_method</a>
+    
+    <li><a href="#method-c-named_scope_for_page_method">::named_scope_for_page_method</a>
+    
+    <li><a href="#method-c-named_scope_for_user_method">::named_scope_for_user_method</a>
+    
+    <li><a href="#method-c-named_scope_just_opened_method">::named_scope_just_opened_method</a>
+    
+    <li><a href="#method-c-named_scope_open_method">::named_scope_open_method</a>
+    
+    <li><a href="#method-c-named_scope_pending_method">::named_scope_pending_method</a>
+    
+    <li><a href="#method-c-report_calculation">::report_calculation</a>
+    
+    <li><a href="#method-c-search">::search</a>
+    
+    <li><a href="#method-i-disp_class">#disp_class</a>
+    
+    <li><a href="#method-i-disp_name">#disp_name</a>
+    
+    <li><a href="#method-i-move_to_saved_parent">#move_to_saved_parent</a>
+    
+    <li><a href="#method-i-next">#next</a>
+    
+    <li><a href="#method-i-parent__potential_values">#parent__potential_values</a>
+    
+    <li><a href="#method-i-previous">#previous</a>
+    
+    <li><a href="#method-i-set_browser_detection">#set_browser_detection</a>
+    
+    <li><a href="#method-i-ticket_status">#ticket_status</a>
+    
+    <li><a href="#method-i-ticket_status-3D">#ticket_status=</a>
+    
+    <li><a href="#method-i-ticket_status__index">#ticket_status__index</a>
+    
+    <li><a href="#method-i-ticket_status__potential_values">#ticket_status__potential_values</a>
+    
+    <li><a href="#method-i-user__potential_values">#user__potential_values</a>
+    
+    <li><a href="#method-i-user_human_display">#user_human_display</a>
+    
+    <li><a href="#method-i-user_load_from_params">#user_load_from_params</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Faveod.html">Faveod</a>
+  
+    <li><a href="./Faveod/AVBBFTranslationService.html">Faveod::AVBBFTranslationService</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions.html">Faveod::ActiveResourceExtensions</a>
+  
+    <li><a href="./Faveod/ActiveResourceExtensions/ClassMethods.html">Faveod::ActiveResourceExtensions::ClassMethods</a>
+  
+    <li><a href="./Faveod/DistributedColors.html">Faveod::DistributedColors</a>
+  
+    <li><a href="./Faveod/GoogleTranslationService.html">Faveod::GoogleTranslationService</a>
+  
+    <li><a href="./Faveod/GraphMaker.html">Faveod::GraphMaker</a>
+  
+    <li><a href="./Faveod/HtmlTruncator.html">Faveod::HtmlTruncator</a>
+  
+    <li><a href="./Faveod/IePdfHeadersMiddleware.html">Faveod::IePdfHeadersMiddleware</a>
+  
+    <li><a href="./Faveod/PoUtils.html">Faveod::PoUtils</a>
+  
+    <li><a href="./Faveod/TranslationServer.html">Faveod::TranslationServer</a>
+  
+    <li><a href="./Faveod/TranslationServicesHelper.html">Faveod::TranslationServicesHelper</a>
+  
+    <li><a href="./Faveod/Validations.html">Faveod::Validations</a>
+  
+    <li><a href="./Faveod/Validations/Syntax.html">Faveod::Validations::Syntax</a>
+  
+    <li><a href="./Faveod/Validations/Syntax/ClassMethods.html">Faveod::Validations::Syntax::ClassMethods</a>
+  
+    <li><a href="./ActiveRecord.html">ActiveRecord</a>
+  
+    <li><a href="./ActiveRecord/Base.html">ActiveRecord::Base</a>
+  
+    <li><a href="./ActiveRecord/Condition.html">ActiveRecord::Condition</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters.html">ActiveRecord::ConnectionAdapters</a>
+  
+    <li><a href="./ActiveRecord/ConnectionAdapters/Column.html">ActiveRecord::ConnectionAdapters::Column</a>
+  
+    <li><a href="./ActiveRecord/Validations.html">ActiveRecord::Validations</a>
+  
+    <li><a href="./ActiveRecord/Validations/ClassMethods.html">ActiveRecord::Validations::ClassMethods</a>
+  
+    <li><a href="./ActionView.html">ActionView</a>
+  
+    <li><a href="./ActionView/Helpers.html">ActionView::Helpers</a>
+  
+    <li><a href="./ActionView/Helpers/FormOptionsHelper.html">ActionView::Helpers::FormOptionsHelper</a>
+  
+    <li><a href="./DefaultFinder.html">DefaultFinder</a>
+  
+    <li><a href="./DefaultFinder/Finder.html">DefaultFinder::Finder</a>
+  
+    <li><a href="./DefaultFinder/Finder/ClassMethods.html">DefaultFinder::Finder::ClassMethods</a>
+  
+    <li><a href="./IrbjaxEngine.html">IrbjaxEngine</a>
+  
+    <li><a href="./IrbjaxEngine/IrbjaxSession.html">IrbjaxEngine::IrbjaxSession</a>
+  
+    <li><a href="./IrbjaxEngine/Output.html">IrbjaxEngine::Output</a>
+  
+    <li><a href="./SymetrieCom.html">SymetrieCom</a>
+  
+    <li><a href="./SymetrieCom/Acts.html">SymetrieCom::Acts</a>
+  
+    <li><a href="./SymetrieCom/Acts/BetterNestedSetHelper.html">SymetrieCom::Acts::BetterNestedSetHelper</a>
+  
+    <li><a href="./GetText.html">GetText</a>
+  
+    <li><a href="./GetText/PoParser.html">GetText::PoParser</a>
+  
+    <li><a href="./Rack.html">Rack</a>
+  
+    <li><a href="./Rack/Utils.html">Rack::Utils</a>
+  
+    <li><a href="./WillPaginate.html">WillPaginate</a>
+  
+    <li><a href="./WillPaginate/ViewHelpers.html">WillPaginate::ViewHelpers</a>
+  
+    <li><a href="./AbstractReport.html">AbstractReport</a>
+  
+    <li><a href="./Access.html">Access</a>
+  
+    <li><a href="./AccessApi.html">AccessApi</a>
+  
+    <li><a href="./AccessReport.html">AccessReport</a>
+  
+    <li><a href="./AccessesController.html">AccessesController</a>
+  
+    <li><a href="./AccessesHelper.html">AccessesHelper</a>
+  
+    <li><a href="./AppLocale.html">AppLocale</a>
+  
+    <li><a href="./AppLocaleApi.html">AppLocaleApi</a>
+  
+    <li><a href="./AppLocalesController.html">AppLocalesController</a>
+  
+    <li><a href="./AppLocalesHelper.html">AppLocalesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BgWorker.html">BgWorker</a>
+  
+    <li><a href="./BgWorkerApi.html">BgWorkerApi</a>
+  
+    <li><a href="./BgWorkerReport.html">BgWorkerReport</a>
+  
+    <li><a href="./BgWorkersController.html">BgWorkersController</a>
+  
+    <li><a href="./BgWorkersHelper.html">BgWorkersHelper</a>
+  
+    <li><a href="./Customer.html">Customer</a>
+  
+    <li><a href="./CustomerApi.html">CustomerApi</a>
+  
+    <li><a href="./CustomersController.html">CustomersController</a>
+  
+    <li><a href="./CustomersHelper.html">CustomersHelper</a>
+  
+    <li><a href="./Date.html">Date</a>
+  
+    <li><a href="./DateHelper.html">DateHelper</a>
+  
+    <li><a href="./DevFeedback.html">DevFeedback</a>
+  
+    <li><a href="./DevFeedbackApi.html">DevFeedbackApi</a>
+  
+    <li><a href="./DevFeedbacksController.html">DevFeedbacksController</a>
+  
+    <li><a href="./DevFeedbacksHelper.html">DevFeedbacksHelper</a>
+  
+    <li><a href="./Enumerable.html">Enumerable</a>
+  
+    <li><a href="./FileImport.html">FileImport</a>
+  
+    <li><a href="./FileImportApi.html">FileImportApi</a>
+  
+    <li><a href="./FileImportReport.html">FileImportReport</a>
+  
+    <li><a href="./FileImportsController.html">FileImportsController</a>
+  
+    <li><a href="./FileImportsHelper.html">FileImportsHelper</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./PdfHandler.html">PdfHandler</a>
+  
+    <li><a href="./Profile.html">Profile</a>
+  
+    <li><a href="./ProfileAccess.html">ProfileAccess</a>
+  
+    <li><a href="./ProfileAccessApi.html">ProfileAccessApi</a>
+  
+    <li><a href="./ProfileAccessesController.html">ProfileAccessesController</a>
+  
+    <li><a href="./ProfileAccessesHelper.html">ProfileAccessesHelper</a>
+  
+    <li><a href="./ProfileApi.html">ProfileApi</a>
+  
+    <li><a href="./ProfilesController.html">ProfilesController</a>
+  
+    <li><a href="./ProfilesHelper.html">ProfilesHelper</a>
+  
+    <li><a href="./RBeautify.html">RBeautify</a>
+  
+    <li><a href="./Range.html">Range</a>
+  
+    <li><a href="./SavedReport.html">SavedReport</a>
+  
+    <li><a href="./SavedReportApi.html">SavedReportApi</a>
+  
+    <li><a href="./SavedReportsController.html">SavedReportsController</a>
+  
+    <li><a href="./SavedReportsHelper.html">SavedReportsHelper</a>
+  
+    <li><a href="./SmartQueriesController.html">SmartQueriesController</a>
+  
+    <li><a href="./SmartQueriesHelper.html">SmartQueriesHelper</a>
+  
+    <li><a href="./SmartQuery.html">SmartQuery</a>
+  
+    <li><a href="./SmartQueryApi.html">SmartQueryApi</a>
+  
+    <li><a href="./SystemSetting.html">SystemSetting</a>
+  
+    <li><a href="./SystemSettingApi.html">SystemSettingApi</a>
+  
+    <li><a href="./SystemSettingsController.html">SystemSettingsController</a>
+  
+    <li><a href="./SystemSettingsHelper.html">SystemSettingsHelper</a>
+  
+    <li><a href="./Thumbnailer.html">Thumbnailer</a>
+  
+    <li><a href="./Translation.html">Translation</a>
+  
+    <li><a href="./TranslationApi.html">TranslationApi</a>
+  
+    <li><a href="./TranslationsController.html">TranslationsController</a>
+  
+    <li><a href="./TranslationsHelper.html">TranslationsHelper</a>
+  
+    <li><a href="./UncatchedException.html">UncatchedException</a>
+  
+    <li><a href="./UncatchedExceptionApi.html">UncatchedExceptionApi</a>
+  
+    <li><a href="./UncatchedExceptionMailer.html">UncatchedExceptionMailer</a>
+  
+    <li><a href="./UncatchedExceptionsController.html">UncatchedExceptionsController</a>
+  
+    <li><a href="./UncatchedExceptionsHelper.html">UncatchedExceptionsHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserAccess.html">UserAccess</a>
+  
+    <li><a href="./UserAccessApi.html">UserAccessApi</a>
+  
+    <li><a href="./UserAccessesController.html">UserAccessesController</a>
+  
+    <li><a href="./UserAccessesHelper.html">UserAccessesHelper</a>
+  
+    <li><a href="./UserApi.html">UserApi</a>
+  
+    <li><a href="./UserMailer.html">UserMailer</a>
+  
+    <li><a href="./UserReport.html">UserReport</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class DevFeedback</h1>
+
+  <div id="description" class="description">
+    
+<pre>This file and all its content belong to Faveod S.A.S unless a commercial
+contract signed by a representant of Faveod S.A.S states otherwise.</pre>
+
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</p>
+
+<pre>This has been generated by Faveod Generator on Fri Oct 18 12:04:12 +0200 2013
+It should be placed at 'app/models/dev_feedback.rb'
+All manual modifications will be destroyed on next generation</pre>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="COMPARATORS">COMPARATORS
+        
+        <dd class="description">
+        
+      
+        <dt id="FIELDS">FIELDS
+        
+        <dd class="description">
+        
+      
+        <dt id="FILES_DEST">FILES_DEST
+        
+        <dd class="description">
+        
+      
+        <dt id="LOCALIZED_TICKET_STATUSES">LOCALIZED_TICKET_STATUSES
+        
+        <dd class="description">
+        
+      
+        <dt id="RESTRICTED_FIELDS">RESTRICTED_FIELDS
+        
+        <dd class="description">
+        
+      
+        <dt id="SEARCHABLE_FIELDS">SEARCHABLE_FIELDS
+        
+        <dd class="description">
+        
+      
+        <dt id="TICKET_STATUSES">TICKET_STATUSES
+        
+        <dd class="description">
+        
+      
+        <dt id="WINDOWS_VERSIONS">WINDOWS_VERSIONS
+        
+        <dd class="description">
+        
+      
+      </dl>
+    </section>
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-future_parent_id" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">future_parent_id</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Associations through specific setters</p>
+
+<p>Virtual Fields</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-ticket_status__index_was" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">ticket_status__index_was</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-user_was" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">user_was</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-active-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">active?</span><span
+            class="method-args">(opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>3</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-07-04 12:40:46 UTC</p>
+</dd><dt>Status
+<dd>
+<p>In Progress</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="active-3F-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 887</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">active?</span>(<span class="ruby-identifier">opts</span>={})
+<span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span> <span class="ruby-keyword">unless</span> <span class="ruby-constant">SystemSetting</span>.<span class="ruby-identifier">true?</span>(<span class="ruby-string">'dev_feedbacks'</span>)
+<span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">opts</span>[<span class="ruby-value">:user</span>]
+<span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">opts</span>[<span class="ruby-value">:user</span>].<span class="ruby-identifier">is_admin?</span>
+<span class="ruby-keyword">false</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- active-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- active-3F-method -->
+
+    
+      <div id="method-c-assoc_sids_to_columns" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">assoc_sids_to_columns</span><span
+            class="method-args">(attrs)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="assoc_sids_to_columns-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 1013</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">assoc_sids_to_columns</span>(<span class="ruby-identifier">attrs</span>)
+<span class="ruby-identifier">h</span> = <span class="ruby-identifier">attrs</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:conditions</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">attrs</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-operator">:</span> <span class="ruby-identifier">attrs</span>
+
+<span class="ruby-identifier">h</span>[<span class="ruby-value">:user_id</span>] = <span class="ruby-identifier">h</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:user</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">h</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:user</span>)
+
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">attrs</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:conditions</span>)
+  <span class="ruby-identifier">attrs</span>[<span class="ruby-value">:conditions</span>] = <span class="ruby-identifier">h</span>
+  <span class="ruby-identifier">attrs</span>
+<span class="ruby-keyword">else</span>
+  <span class="ruby-identifier">h</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- assoc_sids_to_columns-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- assoc_sids_to_columns-method -->
+
+    
+      <div id="method-c-attribute_condition" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">attribute_condition</span><span
+            class="method-args">(quoted_column_name, argument)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="attribute_condition-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 92</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">attribute_condition</span>(<span class="ruby-identifier">quoted_column_name</span>, <span class="ruby-identifier">argument</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">quoted_column_name</span>[<span class="ruby-regexp">%r\.(\'|\`){0,1}(ticket_status)(__index){0,1}(\'|\`){0,1}\Z/</span>]
+    <span class="ruby-node">%Q[#{quoted_column_name.sub('__index', '')} = ?]</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">case</span> <span class="ruby-identifier">argument</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-keyword">nil</span>   <span class="ruby-keyword">then</span> <span class="ruby-node">&quot;#{quoted_column_name} IS ?&quot;</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-constant">Array</span>, <span class="ruby-constant">ActiveRecord</span><span class="ruby-operator">::</span><span class="ruby-constant">Associations</span><span class="ruby-operator">::</span><span class="ruby-constant">AssociationCollection</span>, <span class="ruby-constant">ActiveRecord</span><span class="ruby-operator">::</span><span class="ruby-constant">NamedScope</span><span class="ruby-operator">::</span><span class="ruby-constant">Scope</span> <span class="ruby-keyword">then</span> <span class="ruby-node">&quot;#{quoted_column_name} IN (?)&quot;</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-constant">Range</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">argument</span>.<span class="ruby-identifier">exclude_end?</span>
+        <span class="ruby-node">&quot;#{quoted_column_name} &gt;= ? AND #{quoted_column_name} &lt; ?&quot;</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-node">&quot;#{quoted_column_name} BETWEEN ? AND ?&quot;</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">else</span>            <span class="ruby-node">&quot;#{quoted_column_name} = ?&quot;</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- attribute_condition-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- attribute_condition-method -->
+
+    
+      <div id="method-c-available" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">available</span><span
+            class="method-args">(opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>3</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-07-08 20:21:08 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="available-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 901</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">available</span>(<span class="ruby-identifier">opts</span>={})
+<span class="ruby-constant">DevFeedback</span>.<span class="ruby-identifier">for_user</span>(<span class="ruby-identifier">opts</span>[<span class="ruby-value">:user</span>]).<span class="ruby-identifier">for_page</span>(<span class="ruby-identifier">opts</span>[<span class="ruby-value">:params</span>])
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- available-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- available-method -->
+
+    
+      <div id="method-c-browser_detection" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">browser_detection</span><span
+            class="method-args">(user_agent)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>8</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-07-07 20:00:32 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="browser_detection-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 924</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">browser_detection</span>(<span class="ruby-identifier">user_agent</span>)
+<span class="ruby-identifier">ua</span> = <span class="ruby-identifier">user_agent</span>.<span class="ruby-identifier">downcase</span>
+<span class="ruby-identifier">res</span> = {
+  <span class="ruby-value">:platform</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>,
+  <span class="ruby-value">:engine</span>       =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>,
+  <span class="ruby-value">:browser</span>      =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>,
+  <span class="ruby-value">:mobile</span>       =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>
+}
+(<span class="ruby-node">%w(iphone ipod ipad)</span>).<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">ua</span> <span class="ruby-operator">=~</span> <span class="ruby-node">%r#{p}/</span>
+    <span class="ruby-identifier">res</span>[<span class="ruby-value">:platform</span>]      = <span class="ruby-string">'iOS'</span>
+    <span class="ruby-identifier">res</span>[<span class="ruby-value">:engine</span>]        = <span class="ruby-string">'WebKit'</span>
+    <span class="ruby-identifier">res</span>[<span class="ruby-value">:browser</span>]       = <span class="ruby-string">'Mobile Safari'</span>
+    <span class="ruby-identifier">res</span>[<span class="ruby-value">:mobile</span>]        = <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">end</span>
+}
+(<span class="ruby-node">%w(blackberry android webos symbian psp)</span>).<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">ua</span> <span class="ruby-operator">=~</span> <span class="ruby-node">%r#{p}/</span>
+    <span class="ruby-identifier">res</span>[<span class="ruby-value">:platform</span>]      = <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">last_match</span>.<span class="ruby-identifier">first</span>
+    <span class="ruby-identifier">res</span>[<span class="ruby-value">:mobile</span>]        = <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">end</span>
+}
+(<span class="ruby-node">%w(opera konqueror)</span>).<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">ua</span> <span class="ruby-operator">=~</span> <span class="ruby-node">%r#{p}/</span>
+    <span class="ruby-identifier">res</span>[<span class="ruby-value">:engine</span>]        = <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">last_match</span>.<span class="ruby-identifier">first</span>
+    <span class="ruby-identifier">res</span>[<span class="ruby-value">:browser</span>]       = <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">last_match</span>.<span class="ruby-identifier">first</span>
+  <span class="ruby-keyword">end</span>
+}
+(<span class="ruby-node">%w(windows macintosh linux ios)</span>).<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">ua</span> <span class="ruby-operator">=~</span> <span class="ruby-node">%r#{p}/</span>
+    <span class="ruby-identifier">res</span>[<span class="ruby-value">:platform</span>]      <span class="ruby-operator">||=</span> <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">last_match</span>.<span class="ruby-identifier">first</span>
+  <span class="ruby-keyword">end</span>
+}
+(<span class="ruby-node">%w(googlebot msnbot yahoobot slurp robot)</span>).<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">ua</span> <span class="ruby-operator">=~</span> <span class="ruby-node">%r#{p}/</span>
+    <span class="ruby-identifier">res</span>[<span class="ruby-value">:platform</span>]      = <span class="ruby-string">'Bot'</span>
+    <span class="ruby-identifier">res</span>[<span class="ruby-value">:browser</span>]       = <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">last_match</span>.<span class="ruby-identifier">first</span>
+  <span class="ruby-keyword">end</span>
+}
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">ua</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">%r(msie) (\d+\.?\d+)/</span>
+
+  <span class="ruby-comment">#    ver =</span>
+
+  <span class="ruby-identifier">res</span>[<span class="ruby-value">:engine</span>]  = <span class="ruby-string">'IE'</span>
+  <span class="ruby-identifier">res</span>[<span class="ruby-value">:browser</span>] = <span class="ruby-node">&quot;IE #{Regexp.last_match.last}&quot;</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">res</span>[<span class="ruby-value">:platform</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'windows'</span>
+  <span class="ruby-identifier">ua</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">%rwindows (95|98|ce|nt|phone os)( \d+\.?\d+)?/</span>
+  <span class="ruby-identifier">ver</span> = <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">last_match</span>.<span class="ruby-identifier">to_a</span>[<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">-1</span>].<span class="ruby-identifier">join</span>.<span class="ruby-identifier">upcase</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">last_match</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'phone os'</span>
+    <span class="ruby-identifier">res</span>[<span class="ruby-value">:platform</span>] = <span class="ruby-node">&quot;Windows #{ver}&quot;</span>
+    <span class="ruby-identifier">res</span>[<span class="ruby-value">:mobile</span>] = <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">res</span>[<span class="ruby-value">:platform</span>] = <span class="ruby-node">&quot;Windows #{DevFeedback::WINDOWS_VERSIONS[ver]}&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-identifier">res</span>[<span class="ruby-value">:engine</span>] <span class="ruby-operator">||=</span> <span class="ruby-string">'gecko'</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">ua</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">%rgecko/</span>
+<span class="ruby-identifier">res</span>[<span class="ruby-value">:browser</span>] <span class="ruby-operator">||=</span> <span class="ruby-string">'FireFox'</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">res</span>[<span class="ruby-value">:engine</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'gecko'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">ua</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">%rmozilla/</span>
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">ua</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">%rapplewebkit/</span>
+  <span class="ruby-identifier">res</span>[<span class="ruby-value">:engine</span>]  = <span class="ruby-string">'WebKit'</span>
+  <span class="ruby-identifier">res</span>[<span class="ruby-value">:browser</span>] = <span class="ruby-string">'Safari'</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-identifier">res</span>[<span class="ruby-value">:browser</span>]   <span class="ruby-operator">||=</span> <span class="ruby-string">'?'</span>
+<span class="ruby-identifier">res</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- browser_detection-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- browser_detection-method -->
+
+    
+      <div id="method-c-from_kml" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">from_kml</span><span
+            class="method-args">(path)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Import maps elements from KML format.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-10-18 22:14:54 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="from_kml-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 627</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">from_kml</span>(<span class="ruby-identifier">path</span>)
+  <span class="ruby-identifier">doc</span> = <span class="ruby-constant">Nokogiri</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">path</span>))
+  <span class="ruby-identifier">doc</span>.<span class="ruby-identifier">css</span>(<span class="ruby-string">'Placemark'</span>).<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">pi</span> = <span class="ruby-identifier">l</span>.<span class="ruby-identifier">css</span>(<span class="ruby-string">'Data[name=Name] value'</span>)[<span class="ruby-value">0</span>].<span class="ruby-identifier">content</span>.<span class="ruby-identifier">strip</span>
+    <span class="ruby-identifier">country</span> = <span class="ruby-constant">DevFeedback</span>.<span class="ruby-identifier">find_by_name</span>(<span class="ruby-identifier">pi</span>)
+    <span class="ruby-identifier">poly</span> = <span class="ruby-identifier">l</span>.<span class="ruby-identifier">css</span>(<span class="ruby-string">'Polygon'</span>).<span class="ruby-identifier">to_a</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">p</span>.<span class="ruby-identifier">content</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r,0\.0/</span>, <span class="ruby-string">','</span>).<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>).<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:to_f</span>)
+    }.<span class="ruby-identifier">flatten</span>
+    (<span class="ruby-identifier">poly</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">/</span> <span class="ruby-value">2</span>).<span class="ruby-identifier">times</span>{
+      <span class="ruby-identifier">country</span>.<span class="ruby-identifier">devfeedback_borders</span>.<span class="ruby-identifier">create</span>(<span class="ruby-value">:lat</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">poly</span>.<span class="ruby-identifier">shift</span>, <span class="ruby-value">:lng</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">poly</span>.<span class="ruby-identifier">shift</span>)
+    }
+  }
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- from_kml-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- from_kml-method -->
+
+    
+      <div id="method-c-get_root" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_root</span><span
+            class="method-args">(opts = {})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Nested Sets: gets the tree root.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>10</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 14:36:10 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="get_root-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 650</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_root</span>(<span class="ruby-identifier">opts</span> = {})
+  <span class="ruby-identifier">root</span> = <span class="ruby-constant">DevFeedback</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">root</span>.<span class="ruby-identifier">id</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">@@root_options</span> = <span class="ruby-identifier">opts</span>
+
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">root</span>.<span class="ruby-identifier">children</span>(<span class="ruby-identifier">options</span> = <span class="ruby-identifier">@@root_options</span>)
+    <span class="ruby-identifier">options</span>[<span class="ruby-value">:conditions</span>] = <span class="ruby-identifier">options</span>[<span class="ruby-value">:conditions</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:conditions</span>].<span class="ruby-identifier">merge</span>(<span class="ruby-value">:parent_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>) <span class="ruby-operator">:</span> {<span class="ruby-value">:parent_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-identifier">options</span>[<span class="ruby-value">:order</span>] <span class="ruby-operator">||=</span> <span class="ruby-value">:lft</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-constant">DevFeedback</span>.<span class="ruby-identifier">all</span>(<span class="ruby-identifier">options</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">root</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_root-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_root-method -->
+
+    
+      <div id="method-c-load_from_params" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">load_from_params</span><span
+            class="method-args">(att)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Load the matching object with right attributes.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>53</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-09-03 16:56:08 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="load_from_params-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 124</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-identifier">att</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-constant">DevFeedback</span>.<span class="ruby-identifier">new</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">att</span>.<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">std_atts</span> = <span class="ruby-identifier">att</span>.<span class="ruby-identifier">reject</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-node">%w(id user)</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_s</span>) }
+  <span class="ruby-identifier">dev_feedback</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">att</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:id</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">att</span>[<span class="ruby-value">:id</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span> <span class="ruby-comment"># Useful for HasOne (ho_assoc)</span>
+    <span class="ruby-identifier">dev_feedback</span> = <span class="ruby-constant">DevFeedback</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">att</span>[<span class="ruby-value">:id</span>])
+    <span class="ruby-identifier">dev_feedback</span>.<span class="ruby-identifier">attributes</span> = <span class="ruby-identifier">std_atts</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">dev_feedback</span> = <span class="ruby-constant">DevFeedback</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">std_atts</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">dev_feedback</span>.<span class="ruby-identifier">future_parent_id</span> = <span class="ruby-identifier">std_atts</span>[<span class="ruby-value">:parent_id</span>]
+  <span class="ruby-identifier">std_atts</span>.<span class="ruby-identifier">reject!</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-node">%w(parent_id lft rgt)</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_s</span>) }
+
+  <span class="ruby-comment"># clean associations</span>
+
+  <span class="ruby-identifier">dev_feedback</span>.<span class="ruby-identifier">user_load_from_params</span>(<span class="ruby-identifier">att</span>[<span class="ruby-value">:user</span>])
+
+  <span class="ruby-comment">#clean binaries</span>
+  <span class="ruby-comment">#clean serialized data</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">att</span>[<span class="ruby-value">:zone</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">att</span>[<span class="ruby-value">:zone</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>)
+    <span class="ruby-identifier">dev_feedback</span>.<span class="ruby-identifier">zone</span> = <span class="ruby-constant">ActiveSupport</span><span class="ruby-operator">::</span><span class="ruby-constant">JSON</span>.<span class="ruby-identifier">decode</span>(<span class="ruby-identifier">att</span>[<span class="ruby-value">:zone</span>])
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">att</span>[<span class="ruby-value">:browser</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">att</span>[<span class="ruby-value">:browser</span>].<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>)
+    <span class="ruby-identifier">dev_feedback</span>.<span class="ruby-identifier">browser</span> = <span class="ruby-constant">ActiveSupport</span><span class="ruby-operator">::</span><span class="ruby-constant">JSON</span>.<span class="ruby-identifier">decode</span>(<span class="ruby-identifier">att</span>[<span class="ruby-value">:browser</span>])
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">dev_feedback</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- load_from_params-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- load_from_params-method -->
+
+    
+      <div id="method-c-named_scope_active_filter_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">named_scope_active_filter_method</span><span
+            class="method-args">(hash)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>9</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-02-03 20:51:21 UTC</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="named_scope_active_filter_method-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 837</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">named_scope_active_filter_method</span>(<span class="ruby-identifier">hash</span>)
+
+    <span class="ruby-comment">#hash looks like {'field1' =&gt; {'op' =&gt; value}, 'field2' =&gt; ... }</span>
+    <span class="ruby-comment">#op could be =, !=, ^=, $=, =~, !~, &gt;, &lt;, &gt;=, &lt;=, IN, FTS...</span>
+
+    <span class="ruby-identifier">hash</span> <span class="ruby-operator">||=</span> {}
+    <span class="ruby-identifier">values</span> = []
+    <span class="ruby-identifier">joins_fields</span> = []
+    <span class="ruby-identifier">_scopes</span> = <span class="ruby-keyword">nil</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">hash</span>[<span class="ruby-string">'_scopes'</span>].<span class="ruby-identifier">blank?</span>
+      (<span class="ruby-node">%w()</span> &amp; <span class="ruby-identifier">hash</span>[<span class="ruby-string">'_scopes'</span>]).<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">s</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">_scopes</span> = (<span class="ruby-identifier">_scopes</span> <span class="ruby-operator">||</span> <span class="ruby-keyword">self</span>).<span class="ruby-identifier">send</span>(<span class="ruby-identifier">s</span>.<span class="ruby-identifier">to_sym</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">str</span> = <span class="ruby-identifier">hash</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">field</span>, <span class="ruby-identifier">pairs</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">if</span> [<span class="ruby-value">:ticket_status</span>, <span class="ruby-value">:title</span>, <span class="ruby-value">:text</span>, <span class="ruby-value">:zone</span>, <span class="ruby-value">:url</span>, <span class="ruby-value">:controller</span>, <span class="ruby-value">:action</span>, <span class="ruby-value">:created_at</span>, <span class="ruby-value">:user</span>, <span class="ruby-value">:user_id</span>, <span class="ruby-value">:ip</span>, <span class="ruby-value">:ua</span>, <span class="ruby-value">:browser</span>, <span class="ruby-value">:lft</span>, <span class="ruby-value">:parent_id</span>, <span class="ruby-value">:rgt</span>
+      ].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">field</span>.<span class="ruby-identifier">to_sym</span>)
+      <span class="ruby-constant">Array</span>(<span class="ruby-identifier">pairs</span>).<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">op</span>,<span class="ruby-identifier">val</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-constant">COMPARATORS</span>[<span class="ruby-identifier">field</span>.<span class="ruby-identifier">to_sym</span>][<span class="ruby-identifier">op</span>]
+        <span class="ruby-identifier">values</span> <span class="ruby-operator">&lt;&lt;</span> (<span class="ruby-identifier">cmp</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">val</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">%</span> <span class="ruby-identifier">val</span>)) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">cmp</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">cmp</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-string">''</span>
+        <span class="ruby-identifier">cmp</span>[<span class="ruby-value">0</span>]
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">elsif</span> [
+    ].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">field</span>.<span class="ruby-identifier">to_sym</span>)
+    <span class="ruby-constant">Array</span>(<span class="ruby-identifier">pairs</span>).<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">op</span>,<span class="ruby-identifier">val</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">cmp</span> = <span class="ruby-constant">COMPARATORS</span>[<span class="ruby-identifier">field</span>.<span class="ruby-identifier">to_sym</span>][<span class="ruby-identifier">op</span>]
+      <span class="ruby-identifier">values</span> <span class="ruby-operator">+=</span> <span class="ruby-constant">Array</span>(<span class="ruby-identifier">val</span>)
+      <span class="ruby-string">&quot;(%s)&quot;</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">val</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">cmp</span>[<span class="ruby-value">0</span>] }.<span class="ruby-identifier">join</span>(<span class="ruby-string">' OR '</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+}.<span class="ruby-identifier">compact</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">' AND '</span>)
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">_scopes</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">_scopes</span>.<span class="ruby-identifier">proxy_options</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">values</span>.<span class="ruby-identifier">blank?</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">_scopes</span>.<span class="ruby-identifier">joins</span>(<span class="ruby-identifier">joins_fields</span>).<span class="ruby-identifier">where</span>(<span class="ruby-identifier">values</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">str</span>)).<span class="ruby-identifier">proxy_options</span>
+<span class="ruby-keyword">else</span>
+  <span class="ruby-identifier">res</span> = <span class="ruby-identifier">joins_fields</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> {} <span class="ruby-operator">:</span> {<span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">joins_fields</span>}
+  <span class="ruby-identifier">res</span>[<span class="ruby-value">:conditions</span>] = <span class="ruby-identifier">values</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">str</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">res</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- named_scope_active_filter_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- named_scope_active_filter_method-method -->
+
+    
+      <div id="method-c-named_scope_closed_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">named_scope_closed_method</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>1</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-07-04 14:56:04 UTC</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="named_scope_closed_method-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 777</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">named_scope_closed_method</span>
+  {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;ticket_status &gt; ?&quot;</span>, <span class="ruby-value">10</span>]}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- named_scope_closed_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- named_scope_closed_method-method -->
+
+    
+      <div id="method-c-named_scope_closing_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">named_scope_closing_method</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>1</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-07-04 14:53:07 UTC</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="named_scope_closing_method-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 766</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">named_scope_closing_method</span>
+  {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;ticket_status &gt; ? AND ticket_status &lt; ?&quot;</span>, <span class="ruby-value">6</span>, <span class="ruby-value">11</span>]}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- named_scope_closing_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- named_scope_closing_method-method -->
+
+    
+      <div id="method-c-named_scope_default_scope_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">named_scope_default_scope_method</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>5</p>
+</dd><dt>Last Update
+<dd>
+<p>2009-11-01 16:01:43 UTC</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="named_scope_default_scope_method-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 825</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">named_scope_default_scope_method</span>
+
+  {<span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'lft'</span>}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- named_scope_default_scope_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- named_scope_default_scope_method-method -->
+
+    
+      <div id="method-c-named_scope_for_page_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">named_scope_for_page_method</span><span
+            class="method-args">(params)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-07-07 15:25:16 UTC</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="named_scope_for_page_method-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 788</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">named_scope_for_page_method</span>(<span class="ruby-identifier">params</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>
+    <span class="ruby-identifier">conds</span> = {}
+    <span class="ruby-identifier">conds</span>[<span class="ruby-value">:controller</span>]        = <span class="ruby-identifier">params</span>[<span class="ruby-value">:controller</span>]  <span class="ruby-keyword">unless</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:controller</span>].<span class="ruby-identifier">blank?</span>
+    <span class="ruby-identifier">conds</span>[<span class="ruby-value">:action</span>]    = <span class="ruby-identifier">params</span>[<span class="ruby-value">:action</span>]  <span class="ruby-keyword">unless</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:action</span>].<span class="ruby-identifier">blank?</span>
+    {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">conds</span>}
+  <span class="ruby-keyword">else</span>
+    {}
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- named_scope_for_page_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- named_scope_for_page_method-method -->
+
+    
+      <div id="method-c-named_scope_for_user_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">named_scope_for_user_method</span><span
+            class="method-args">(user)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-07-04 19:23:41 UTC</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="named_scope_for_user_method-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 806</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">named_scope_for_user_method</span>(<span class="ruby-identifier">user</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">user</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">user</span>.<span class="ruby-identifier">is_admin?</span>
+      {}
+    <span class="ruby-keyword">else</span>
+      {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:user_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">user</span>.<span class="ruby-identifier">id</span>}}
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>}}
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- named_scope_for_user_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- named_scope_for_user_method-method -->
+
+    
+      <div id="method-c-named_scope_just_opened_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">named_scope_just_opened_method</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-07-04 15:00:27 UTC</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="named_scope_just_opened_method-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 744</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">named_scope_just_opened_method</span>
+  {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;ticket_status &lt; ?&quot;</span>, <span class="ruby-value">2</span>]}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- named_scope_just_opened_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- named_scope_just_opened_method-method -->
+
+    
+      <div id="method-c-named_scope_open_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">named_scope_open_method</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-07-04 15:00:42 UTC</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="named_scope_open_method-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 733</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">named_scope_open_method</span>
+  {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;ticket_status &lt; ?&quot;</span>, <span class="ruby-value">7</span>]}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- named_scope_open_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- named_scope_open_method-method -->
+
+    
+      <div id="method-c-named_scope_pending_method" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">named_scope_pending_method</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>3</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-07-04 15:04:00 UTC</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="named_scope_pending_method-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 755</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">named_scope_pending_method</span>
+  {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;ticket_status &lt; ?&quot;</span>, <span class="ruby-value">7</span>]}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- named_scope_pending_method-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- named_scope_pending_method-method -->
+
+    
+      <div id="method-c-report_calculation" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">report_calculation</span><span
+            class="method-args">(op, field = :id, opts = {})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Makes all kind of calculations for reports.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>20</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-02-27 12:27:37 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Should be optimized</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="report_calculation-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 299</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">report_calculation</span>(<span class="ruby-identifier">op</span>, <span class="ruby-identifier">field</span> = <span class="ruby-value">:id</span>, <span class="ruby-identifier">opts</span> = {})
+  <span class="ruby-identifier">scope</span>       = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:scope</span>]
+  <span class="ruby-identifier">labels</span>      = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:labels</span>]        <span class="ruby-operator">||</span> []
+  <span class="ruby-identifier">step</span>        = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:step</span>]
+  <span class="ruby-identifier">group</span>       = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:group</span>]
+  <span class="ruby-identifier">ret_hash</span>= <span class="ruby-identifier">opts</span>[<span class="ruby-value">:ret_hash</span>] <span class="ruby-operator">||</span> <span class="ruby-keyword">false</span>
+  <span class="ruby-identifier">opsym</span>       = <span class="ruby-keyword">case</span> <span class="ruby-identifier">op</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:count</span>, <span class="ruby-string">'count'</span>                        <span class="ruby-keyword">then</span> <span class="ruby-identifier">field</span> = <span class="ruby-value">:id</span> ; <span class="ruby-value">:count</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:avg</span>, <span class="ruby-string">'avg'</span>, <span class="ruby-string">'average'</span>, <span class="ruby-value">:average</span>       <span class="ruby-keyword">then</span> <span class="ruby-value">:avg</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:value</span>, <span class="ruby-string">'value'</span>, <span class="ruby-value">:sum</span>, <span class="ruby-string">'sum'</span>   <span class="ruby-keyword">then</span> <span class="ruby-value">:sum</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:min</span>, <span class="ruby-string">'min'</span>, <span class="ruby-value">:minimum</span>, <span class="ruby-string">'minimum'</span>       <span class="ruby-keyword">then</span> <span class="ruby-value">:min</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:max</span>, <span class="ruby-string">'max'</span>, <span class="ruby-value">:maximum</span>, <span class="ruby-string">'maximum'</span>       <span class="ruby-keyword">then</span> <span class="ruby-value">:max</span>
+  <span class="ruby-keyword">else</span> <span class="ruby-identifier">field</span> = <span class="ruby-value">:id</span> ; <span class="ruby-value">:count</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">group</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-keyword">nil</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) { <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>) }
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:user</span>, <span class="ruby-string">'user'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user_id</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user_id</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> (<span class="ruby-identifier">l</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Fixnum</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">:</span> (<span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>.<span class="ruby-identifier">id</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>.<span class="ruby-identifier">id</span>.<span class="ruby-identifier">to_s</span>])) <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:ticket_status</span>, <span class="ruby-string">'ticket_status'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'ticket_status'</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'ticket_status'</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">ret_hash</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">h</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">serie</span> = []
+      <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">each_with_index</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span>,<span class="ruby-identifier">idx</span><span class="ruby-operator">|</span> <span class="ruby-identifier">serie</span> <span class="ruby-operator">&lt;&lt;</span> (<span class="ruby-identifier">h</span>[<span class="ruby-identifier">idx</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>)}
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">serie</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:&quot;users.active&quot;</span>, <span class="ruby-string">'users.active'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.active'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.active'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">ret_hash</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">h</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">serie</span> = []
+      <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">each_with_index</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span>,<span class="ruby-identifier">idx</span><span class="ruby-operator">|</span> <span class="ruby-identifier">serie</span> <span class="ruby-operator">&lt;&lt;</span> (<span class="ruby-identifier">h</span>[<span class="ruby-identifier">idx</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>)}
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">serie</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:title</span>, <span class="ruby-string">'title'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'title'</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'title'</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:url</span>, <span class="ruby-string">'url'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'url'</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'url'</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:controller</span>, <span class="ruby-string">'controller'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'controller'</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'controller'</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:action</span>, <span class="ruby-string">'action'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'action'</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'action'</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:ip</span>, <span class="ruby-string">'ip'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'ip'</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'ip'</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:ua</span>, <span class="ruby-string">'ua'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'ua'</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'ua'</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:&quot;users.login&quot;</span>, <span class="ruby-string">'users.login'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.login'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.login'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:&quot;users.first_name&quot;</span>, <span class="ruby-string">'users.first_name'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.first_name'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.first_name'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:&quot;users.last_name&quot;</span>, <span class="ruby-string">'users.last_name'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.last_name'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.last_name'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:&quot;users.email&quot;</span>, <span class="ruby-string">'users.email'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.email'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.email'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:&quot;users.telephone&quot;</span>, <span class="ruby-string">'users.telephone'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.telephone'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.telephone'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:&quot;users.language&quot;</span>, <span class="ruby-string">'users.language'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.language'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.language'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:&quot;users.password&quot;</span>, <span class="ruby-string">'users.password'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.password'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.password'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:&quot;users.hashed_password&quot;</span>, <span class="ruby-string">'users.hashed_password'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.hashed_password'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.hashed_password'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:&quot;users.salt&quot;</span>, <span class="ruby-string">'users.salt'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.salt'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.salt'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:&quot;users.last_session_id&quot;</span>, <span class="ruby-string">'users.last_session_id'</span>
+    <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.last_session_id'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.last_session_id'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+      }
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:lft</span>, <span class="ruby-string">'lft'</span>
+    <span class="ruby-identifier">h</span> = {}
+    <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">each_with_index</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">l</span>, <span class="ruby-identifier">idx</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">where</span>([<span class="ruby-string">&quot;dev_feedbacks.lft &gt;= ? AND dev_feedbacks.lft &lt; ?&quot;</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">labels</span>[<span class="ruby-identifier">idx</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>]]).<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>)
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">where</span>([<span class="ruby-string">&quot;dev_feedbacks.lft &gt;= ? AND dev_feedbacks.lft &lt; ?&quot;</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">labels</span>[<span class="ruby-identifier">idx</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>]]).<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>)
+        }
+      <span class="ruby-keyword">end</span>
+    }
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:parent_id</span>, <span class="ruby-string">'parent_id'</span>
+    <span class="ruby-identifier">h</span> = {}
+    <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">each_with_index</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">l</span>, <span class="ruby-identifier">idx</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">where</span>([<span class="ruby-string">&quot;dev_feedbacks.parent_id &gt;= ? AND dev_feedbacks.parent_id &lt; ?&quot;</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">labels</span>[<span class="ruby-identifier">idx</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>]]).<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>)
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">where</span>([<span class="ruby-string">&quot;dev_feedbacks.parent_id &gt;= ? AND dev_feedbacks.parent_id &lt; ?&quot;</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">labels</span>[<span class="ruby-identifier">idx</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>]]).<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>)
+        }
+      <span class="ruby-keyword">end</span>
+    }
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:rgt</span>, <span class="ruby-string">'rgt'</span>
+    <span class="ruby-identifier">h</span> = {}
+    <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">each_with_index</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">l</span>, <span class="ruby-identifier">idx</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">where</span>([<span class="ruby-string">&quot;dev_feedbacks.rgt &gt;= ? AND dev_feedbacks.rgt &lt; ?&quot;</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">labels</span>[<span class="ruby-identifier">idx</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>]]).<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>)
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">where</span>([<span class="ruby-string">&quot;dev_feedbacks.rgt &gt;= ? AND dev_feedbacks.rgt &lt; ?&quot;</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">labels</span>[<span class="ruby-identifier">idx</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>]]).<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>)
+        }
+      <span class="ruby-keyword">end</span>
+    }
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:created_at</span>, <span class="ruby-string">'created_at'</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">opts</span>[<span class="ruby-value">:period</span>]
+      <span class="ruby-identifier">lab_format</span> = <span class="ruby-string">&quot;&quot;</span>
+      <span class="ruby-identifier">pgroup</span> = <span class="ruby-keyword">case</span> <span class="ruby-identifier">opts</span>[<span class="ruby-value">:period</span>].<span class="ruby-identifier">to_sym</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:day</span>
+        <span class="ruby-identifier">lab_format</span> = <span class="ruby-string">'%Y-%m-%d'</span>
+        <span class="ruby-string">&quot;DATE(dev_feedbacks.created_at)&quot;</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:week</span>
+        <span class="ruby-identifier">lab_format</span> = <span class="ruby-string">'%Y-%W'</span>
+        <span class="ruby-string">&quot;CONCAT(YEAR(dev_feedbacks.created_at),'-', WEEK(dev_feedbacks.created_at))&quot;</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:month</span>
+        <span class="ruby-identifier">lab_format</span> = <span class="ruby-string">'%Y-%m'</span>
+        <span class="ruby-string">&quot;CONCAT(YEAR(dev_feedbacks.created_at),'-', MONTH(dev_feedbacks.created_at))&quot;</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:year</span>
+        <span class="ruby-identifier">lab_format</span> = <span class="ruby-string">'%Y'</span>
+        <span class="ruby-string">&quot;YEAR(dev_feedbacks.created_at)&quot;</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">pgroup</span>, <span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'created_at'</span>)
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">pgroup</span>, <span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'created_at'</span>)
+        }
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-identifier">lab_format</span>)] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">h</span> = {}
+      <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">each_with_index</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">l</span>, <span class="ruby-identifier">idx</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">where</span>([<span class="ruby-node">&quot;dev_feedbacks.#{group} &gt;= ? AND dev_feedbacks.#{group} &lt; ?&quot;</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">labels</span>[<span class="ruby-identifier">idx</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>]]).<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>)
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+            <span class="ruby-keyword">self</span>.<span class="ruby-identifier">where</span>([<span class="ruby-node">&quot;dev_feedbacks.#{group} &gt;= ? AND dev_feedbacks.#{group} &lt; ?&quot;</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">labels</span>[<span class="ruby-identifier">idx</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>]]).<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>)
+          }
+        <span class="ruby-keyword">end</span>
+      }
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:&quot;users.last_login&quot;</span>, <span class="ruby-string">'users.last_login'</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">opts</span>[<span class="ruby-value">:period</span>]
+      <span class="ruby-identifier">lab_format</span> = <span class="ruby-string">&quot;&quot;</span>
+      <span class="ruby-identifier">pgroup</span> = <span class="ruby-keyword">case</span> <span class="ruby-identifier">opts</span>[<span class="ruby-value">:period</span>].<span class="ruby-identifier">to_sym</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:day</span>
+        <span class="ruby-identifier">lab_format</span> = <span class="ruby-string">'%Y-%m-%d'</span>
+        <span class="ruby-string">&quot;DATE(users.last_login)&quot;</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:week</span>
+        <span class="ruby-identifier">lab_format</span> = <span class="ruby-string">'%Y-%W'</span>
+        <span class="ruby-string">&quot;CONCAT(YEAR(users.last_login),'-', WEEK(users.last_login))&quot;</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:month</span>
+        <span class="ruby-identifier">lab_format</span> = <span class="ruby-string">'%Y-%m'</span>
+        <span class="ruby-string">&quot;CONCAT(YEAR(users.last_login),'-', MONTH(users.last_login))&quot;</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:year</span>
+        <span class="ruby-identifier">lab_format</span> = <span class="ruby-string">'%Y'</span>
+        <span class="ruby-string">&quot;YEAR(users.last_login)&quot;</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-identifier">h</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">pgroup</span>, <span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.last_login'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>, <span class="ruby-value">:group</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">pgroup</span>, <span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'users.last_login'</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:user</span>)
+        }
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-identifier">lab_format</span>)] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">h</span> = {}
+      <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">each_with_index</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">l</span>, <span class="ruby-identifier">idx</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] = <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope</span>.<span class="ruby-identifier">blank?</span>
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">where</span>([<span class="ruby-node">&quot;dev_feedbacks.#{group} &gt;= ? AND dev_feedbacks.#{group} &lt; ?&quot;</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">labels</span>[<span class="ruby-identifier">idx</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>]]).<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>)
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_scope</span>(<span class="ruby-value">:find</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">scope</span>}) {
+            <span class="ruby-keyword">self</span>.<span class="ruby-identifier">where</span>([<span class="ruby-node">&quot;dev_feedbacks.#{group} &gt;= ? AND dev_feedbacks.#{group} &lt; ?&quot;</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">labels</span>[<span class="ruby-identifier">idx</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>]]).<span class="ruby-identifier">calculate</span>(<span class="ruby-identifier">opsym</span>, <span class="ruby-identifier">field</span>)
+          }
+        <span class="ruby-keyword">end</span>
+      }
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">ret_hash</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">h</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">labels</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">l</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>}
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Unknown Group: #{group} (operation: #{opsym}, scope: #{scope})&quot;</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> []
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- report_calculation-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- report_calculation-method -->
+
+    
+      <div id="method-c-search" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">search</span><span
+            class="method-args">(values, comps=nil, opts={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Search</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>23</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-08-09 11:16:42 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="search-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 182</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">search</span>(<span class="ruby-identifier">values</span>, <span class="ruby-identifier">comps</span>=<span class="ruby-keyword">nil</span>, <span class="ruby-identifier">opts</span>={})
+  <span class="ruby-identifier">ar_opts</span> = {}
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">values</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">SmartQuery</span>)
+    <span class="ruby-identifier">ar_opts</span> = <span class="ruby-identifier">values</span>.<span class="ruby-identifier">to_ar_opts</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">cond</span> = {}
+    <span class="ruby-identifier">inc</span> = []
+    <span class="ruby-identifier">string_h</span> = {<span class="ruby-string">'='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'&lt;&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ne</span>, <span class="ruby-string">'=~'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:like</span>, <span class="ruby-string">'!=~'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:not</span>,
+      <span class="ruby-string">'LIKE'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:eq</span>, <span class="ruby-string">'NOT LIKE'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ne</span>, <span class="ruby-string">'STARTS WITH'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:starts_with</span>, <span class="ruby-string">'ENDS WITH'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ends_with</span>,
+    <span class="ruby-string">'IS NULL'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'IN'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-identifier">numb_h</span> = {<span class="ruby-string">'='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'&lt;&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ne</span>, <span class="ruby-string">'&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:gt</span>, <span class="ruby-string">'&lt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lt</span>, <span class="ruby-string">'&gt;='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:gte</span>, <span class="ruby-string">'&lt;='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lte</span>, <span class="ruby-string">'IS NULL'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'IN'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-identifier">date_h</span> = {<span class="ruby-string">'='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'&lt;&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ne</span>, <span class="ruby-string">'&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:gt</span>, <span class="ruby-string">'&lt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lt</span>, <span class="ruby-string">'&gt;='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:gte</span>, <span class="ruby-string">'&lt;='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lte</span>, <span class="ruby-string">'IS NULL'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'IN'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-identifier">bin_h</span> = {<span class="ruby-string">'is named'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:eq</span>, <span class="ruby-string">'size larger than'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:gte</span>, <span class="ruby-string">'size smaller than'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lte</span>, <span class="ruby-string">'is not set'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-identifier">assoc_h</span> = {<span class="ruby-string">'&lt;&gt;'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:ne</span>, <span class="ruby-string">'='</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'IN'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>, <span class="ruby-string">'IS NULL'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>}
+    <span class="ruby-constant">DevFeedback</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">params_to_attributes</span>(<span class="ruby-identifier">values</span>).<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">case</span> <span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_sym</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:ticket_status</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_ticket_status&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'LIKE'</span>
+        <span class="ruby-identifier">vals</span> = <span class="ruby-identifier">val</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Enumerable</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">val</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>).<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:to_i</span>)
+        <span class="ruby-identifier">vals</span> = <span class="ruby-identifier">vals</span>.<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-identifier">found</span> = <span class="ruby-constant">DevFeedback</span><span class="ruby-operator">::</span><span class="ruby-constant">TICKET_STATUSES</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">i</span>);
+        <span class="ruby-identifier">found</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">found</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">i</span>}
+        <span class="ruby-identifier">val</span> = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">vals</span>
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">numb_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:ticket_status</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;ticket_status_#{numb_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:title</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_title&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'STARTS WITH'</span>
+        <span class="ruby-identifier">val</span> = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IN'</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>)
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">string_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:title</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;title_#{string_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:text</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_text&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'STARTS WITH'</span>
+        <span class="ruby-identifier">val</span> = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IN'</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>)
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">string_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:text</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;text_#{string_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:url</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_url&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'STARTS WITH'</span>
+        <span class="ruby-identifier">val</span> = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IN'</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>)
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">string_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:url</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;url_#{string_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:controller</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_controller&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'STARTS WITH'</span>
+        <span class="ruby-identifier">val</span> = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IN'</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>)
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">string_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:controller</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;controller_#{string_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:action</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_action&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'STARTS WITH'</span>
+        <span class="ruby-identifier">val</span> = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IN'</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>)
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">string_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:action</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;action_#{string_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:created_at</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_created_at&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'='</span>
+        <span class="ruby-identifier">val</span> = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IN'</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>)
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">date_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:created_at</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;created_at_#{date_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:user_id</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_user_id&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'IN'</span>
+        <span class="ruby-identifier">vals</span>  = <span class="ruby-identifier">val</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Enumerable</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>).<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:to_i</span>)
+        <span class="ruby-identifier">val</span>   = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">vals</span>
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">numb_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:user_id</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;user_id_#{numb_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:ip</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_ip&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'STARTS WITH'</span>
+        <span class="ruby-identifier">val</span> = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IN'</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>)
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">string_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:ip</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;ip_#{string_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:ua</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_ua&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'STARTS WITH'</span>
+        <span class="ruby-identifier">val</span> = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IN'</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>)
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">string_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:ua</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;ua_#{string_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:parent_id</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_parent_id&quot;</span>]
+        <span class="ruby-identifier">cmp</span> <span class="ruby-operator">||=</span> <span class="ruby-string">'='</span>
+        <span class="ruby-identifier">val</span> = <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IN'</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>).<span class="ruby-identifier">map</span>(&amp;<span class="ruby-value">:to_i</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">to_i</span>)
+        <span class="ruby-identifier">field</span> = <span class="ruby-identifier">numb_h</span>[<span class="ruby-identifier">cmp</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">:parent_id</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;parent_id_#{numb_h[cmp]}&quot;</span>
+        <span class="ruby-identifier">cond</span>[<span class="ruby-identifier">field</span>] = <span class="ruby-identifier">val</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">:parent_id</span>
+        <span class="ruby-identifier">cmp</span> = <span class="ruby-identifier">comps</span>[<span class="ruby-string">&quot;comp_parent_id&quot;</span>]
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IS NULL'</span>
+          <span class="ruby-identifier">cond</span>[<span class="ruby-string">&quot;parent_id&quot;</span>] = <span class="ruby-keyword">nil</span>
+        <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">cmp</span> <span class="ruby-operator">==</span> <span class="ruby-string">'IN'</span>
+          <span class="ruby-identifier">dev_feedbacks_parent</span> = <span class="ruby-constant">DevFeedback</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">v</span>)
+          <span class="ruby-identifier">cond</span>[<span class="ruby-string">&quot;lft_gt&quot;</span>] = <span class="ruby-identifier">dev_feedbacks_parent</span>.<span class="ruby-identifier">lft</span>
+          <span class="ruby-identifier">cond</span>[<span class="ruby-string">&quot;rgt_lt&quot;</span>] = <span class="ruby-identifier">dev_feedbacks_parent</span>.<span class="ruby-identifier">rgt</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-identifier">cond</span>[<span class="ruby-string">&quot;parent_id&quot;</span>] = <span class="ruby-identifier">v</span>
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+    }
+    <span class="ruby-identifier">ar_opts</span> = {<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">cond</span>}
+    <span class="ruby-identifier">ar_opts</span>[<span class="ruby-value">:include</span>] = <span class="ruby-identifier">inc</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">inc</span>.<span class="ruby-identifier">blank?</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">ar_opts</span>[<span class="ruby-value">:per_page</span>] = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:per_page</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">opts</span>[<span class="ruby-value">:per_page</span>] <span class="ruby-operator">:</span> <span class="ruby-identifier">count</span>(<span class="ruby-value">:all</span>, <span class="ruby-identifier">ar_opts</span>)
+  <span class="ruby-identifier">ar_opts</span>[<span class="ruby-value">:per_page</span>] = <span class="ruby-value">1</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">ar_opts</span>[<span class="ruby-value">:per_page</span>] <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+  <span class="ruby-identifier">ar_opts</span>[<span class="ruby-value">:page</span>]         = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:page</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">opts</span>[<span class="ruby-value">:page</span>] <span class="ruby-operator">:</span> <span class="ruby-value">1</span>
+  <span class="ruby-identifier">paginate</span>(<span class="ruby-identifier">ar_opts</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- search-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- search-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-disp_class" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">disp_class</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-07-07 15:30:41 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="disp_class-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 912</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">disp_class</span>
+
+<span class="ruby-node">&quot;dev_feedback status_#{self.ticket_status__index || 0}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- disp_class-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- disp_class-method -->
+
+    
+      <div id="method-i-disp_name" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">disp_name</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>The <a href="DevFeedback.html#method-i-disp_name">#disp_name</a> is how any
+record will appear in most use cases, such as lists of associated records
+during ‘show’, ‘list’…</p>
+
+<p><a href="Faveod.html">Faveod</a> will try to guess the best single field,
+based on SID, usually from fields containing “Title”, “Name” or
+“Label”.</p>
+
+<p>Customized code often will often look like these snippets: Multiple key:
+“#{self.first_name} #{self.last_name}” <a href="Date.html">Date</a> or
+time: “#{self.name} #{self.created_at.strftime(‘%H:%M %y-%m-%d’) if
+self.created_at}” Associations: “#{self.name} #{self.user ?
+self.user.disp_name : _(‘No user’)}”</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-05-31 17:21:54 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="disp_name-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 169</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">disp_name</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">title</span> <span class="ruby-operator">||</span> <span class="ruby-string">''</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- disp_name-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- disp_name-method -->
+
+    
+      <div id="method-i-move_to_saved_parent" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">move_to_saved_parent</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Use @parent_id created by load_from_params.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>6</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-03-18 18:58:35 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="move_to_saved_parent-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 689</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">move_to_saved_parent</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@future_parent_id</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@future_parent_id</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> <span class="ruby-ivar">@future_parent_id</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">move_to_root</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">move_to_child_of</span>(<span class="ruby-ivar">@future_parent_id</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- move_to_saved_parent-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- move_to_saved_parent-method -->
+
+    
+      <div id="method-i-next" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">next</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns next element.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>1</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-04-02 13:10:22 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="next-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 723</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">next</span>
+
+  <span class="ruby-constant">DevFeedback</span>.<span class="ruby-identifier">first</span>(<span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lft</span>, <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;lft &gt; ?&quot;</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">lft</span>])
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- next-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- next-method -->
+
+    
+      <div id="method-i-parent__potential_values" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">parent__potential_values</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Nested Sets: possible parents.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>3</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-06-16 14:36:32 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="parent__potential_values-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 672</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">parent__potential_values</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">new_record?</span>
+    <span class="ruby-constant">DevFeedback</span>.<span class="ruby-identifier">all</span>(<span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lft</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-constant">DevFeedback</span>.<span class="ruby-identifier">all</span>(<span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;rgt &lt; ? OR lft &gt; ? OR (lft &lt; ? AND rgt &gt; ?)&quot;</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">lft</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">rgt</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">lft</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">rgt</span>], <span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lft</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- parent__potential_values-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- parent__potential_values-method -->
+
+    
+      <div id="method-i-previous" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">previous</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Return the previous element.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>1</p>
+</dd><dt>Last Update
+<dd>
+<p>2009-09-14 14:48:02 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="previous-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 709</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">previous</span>
+
+  <span class="ruby-constant">DevFeedback</span>.<span class="ruby-identifier">first</span>(<span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'lft DESC'</span>, <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;lft &lt; ?&quot;</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">lft</span>])
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- previous-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- previous-method -->
+
+    
+      <div id="method-i-set_browser_detection" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_browser_detection</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Sylvain Abélard</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-07-07 15:26:10 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validation Pending</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="set_browser_detection-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 997</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_browser_detection</span>
+<span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">ua</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">browser</span>.<span class="ruby-identifier">blank?</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">browser</span> = <span class="ruby-constant">DevFeedback</span>.<span class="ruby-identifier">browser_detection</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">ua</span>)
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set_browser_detection-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set_browser_detection-method -->
+
+    
+      <div id="method-i-ticket_status" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ticket_status</span><span
+            class="method-args">(t = false)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns translated string value.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>4</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-03-21 11:35:21 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="ticket_status-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 1039</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ticket_status</span>(<span class="ruby-identifier">t</span> = <span class="ruby-keyword">false</span>)
+<span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">read_attribute</span>(<span class="ruby-value">:ticket_status</span>).<span class="ruby-identifier">nil?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">read_attribute</span>(<span class="ruby-value">:ticket_status</span>) <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="ruby-keyword">return</span> <span class="ruby-identifier">t</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">_</span>(<span class="ruby-constant">TICKET_STATUSES</span>[(<span class="ruby-identifier">read_attribute</span>(<span class="ruby-value">:ticket_status</span>)) <span class="ruby-operator">-</span> <span class="ruby-value">1</span>].<span class="ruby-identifier">to_s</span>) <span class="ruby-operator">:</span> <span class="ruby-constant">TICKET_STATUSES</span>[(<span class="ruby-identifier">read_attribute</span>(<span class="ruby-value">:ticket_status</span>)) <span class="ruby-operator">-</span> <span class="ruby-value">1</span>].<span class="ruby-identifier">to_s</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- ticket_status-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- ticket_status-method -->
+
+    
+      <div id="method-i-ticket_status-3D" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ticket_status=</span><span
+            class="method-args">(val)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Flexible setter for the static list.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>12</p>
+</dd><dt>Last Update
+<dd>
+<p>2013-09-03 16:56:09 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="ticket_status-3D-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 1079</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ticket_status=</span>(<span class="ruby-identifier">val</span>)
+
+<span class="ruby-keyword">self</span>.<span class="ruby-identifier">ticket_status__index_was</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">ticket_status__index</span>
+<span class="ruby-keyword">case</span> <span class="ruby-identifier">val</span>
+<span class="ruby-keyword">when</span> <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">write_attribute</span>(<span class="ruby-value">:ticket_status</span>, <span class="ruby-keyword">nil</span>)
+<span class="ruby-keyword">when</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">11</span> <span class="ruby-comment"># index</span>
+  <span class="ruby-identifier">write_attribute</span>(<span class="ruby-value">:ticket_status</span>, <span class="ruby-identifier">val</span>)
+<span class="ruby-keyword">when</span> <span class="ruby-string">&quot;1&quot;</span>, <span class="ruby-string">&quot;2&quot;</span>, <span class="ruby-string">&quot;3&quot;</span>, <span class="ruby-string">&quot;4&quot;</span>, <span class="ruby-string">&quot;5&quot;</span>, <span class="ruby-string">&quot;6&quot;</span>, <span class="ruby-string">&quot;7&quot;</span>, <span class="ruby-string">&quot;8&quot;</span>, <span class="ruby-string">&quot;9&quot;</span>, <span class="ruby-string">&quot;10&quot;</span>, <span class="ruby-string">&quot;11&quot;</span> <span class="ruby-comment"># index as string</span>
+  <span class="ruby-identifier">write_attribute</span>(<span class="ruby-value">:ticket_status</span>, <span class="ruby-identifier">val</span>.<span class="ruby-identifier">to_i</span>)
+<span class="ruby-keyword">when</span> *(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">ticket_status__potential_values</span>) <span class="ruby-comment"># value</span>
+  <span class="ruby-identifier">write_attribute</span>(<span class="ruby-value">:ticket_status</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">ticket_status__potential_values</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">val</span>) <span class="ruby-operator">+</span> <span class="ruby-value">1</span>)
+<span class="ruby-keyword">when</span> *<span class="ruby-constant">LOCALIZED_TICKET_STATUSES</span> <span class="ruby-comment"># localized value</span>
+  <span class="ruby-identifier">write_attribute</span>(<span class="ruby-value">:ticket_status</span>, <span class="ruby-constant">LOCALIZED_TICKET_STATUSES</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">val</span>) <span class="ruby-operator">+</span> <span class="ruby-value">1</span>)
+<span class="ruby-keyword">else</span>
+  <span class="ruby-identifier">write_attribute</span>(<span class="ruby-value">:ticket_status</span>, <span class="ruby-keyword">nil</span>)
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- ticket_status-3D-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- ticket_status-3D-method -->
+
+    
+      <div id="method-i-ticket_status__index" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ticket_status__index</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the 1-based index(es).</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>1</p>
+</dd><dt>Last Update
+<dd>
+<p>2010-01-18 00:13:42 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="ticket_status__index-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 1053</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ticket_status__index</span>
+<span class="ruby-keyword">return</span> <span class="ruby-identifier">read_attribute</span>(<span class="ruby-value">:ticket_status</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- ticket_status__index-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- ticket_status__index-method -->
+
+    
+      <div id="method-i-ticket_status__potential_values" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ticket_status__potential_values</span><span
+            class="method-args">(current_user = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the potential values for this list.</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>2</p>
+</dd><dt>Last Update
+<dd>
+<p>2011-08-09 11:09:07 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="ticket_status__potential_values-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 1066</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ticket_status__potential_values</span>(<span class="ruby-identifier">current_user</span> = <span class="ruby-keyword">nil</span>)
+<span class="ruby-constant">TICKET_STATUSES</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- ticket_status__potential_values-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- ticket_status__potential_values-method -->
+
+    
+      <div id="method-i-user__potential_values" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">user__potential_values</span><span
+            class="method-args">(options = {})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Yann Azoury</p>
+</dd><dt>Version
+<dd>
+<p>3</p>
+</dd><dt>Last Update
+<dd>
+<p>2012-03-19 01:57:30 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="user__potential_values-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 1105</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">user__potential_values</span>(<span class="ruby-identifier">options</span> = {})
+<span class="ruby-keyword">if</span> <span class="ruby-identifier">options</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:page</span>)
+  <span class="ruby-constant">User</span>.<span class="ruby-identifier">paginate</span>(<span class="ruby-identifier">options</span>)
+<span class="ruby-keyword">else</span>
+  <span class="ruby-constant">User</span>.<span class="ruby-identifier">all</span>(<span class="ruby-identifier">options</span>)
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- user__potential_values-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- user__potential_values-method -->
+
+    
+      <div id="method-i-user_human_display" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">user_human_display</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>useful method</p>
+          
+
+          
+          <div class="method-source-code" id="user_human_display-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 1006</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">user_human_display</span>
+
+<span class="ruby-keyword">return</span> <span class="ruby-identifier">user</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">user</span>.<span class="ruby-identifier">disp_name</span> <span class="ruby-operator">:</span> <span class="ruby-string">&quot;&quot;</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- user_human_display-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- user_human_display-method -->
+
+    
+      <div id="method-i-user_load_from_params" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">user_load_from_params</span><span
+            class="method-args">(val)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Load association from different params formats.</p>
+<dl class="rdoc-list note-list"><dt>Version
+<dd></dd><dt>Last Update
+<dd>
+<p>2013-08-17 13:22:16 UTC</p>
+</dd><dt>Status
+<dd>
+<p>Validated</p>
+</dd></dl>
+          
+
+          
+          <div class="method-source-code" id="user_load_from_params-source">
+            <pre><span class="ruby-comment"># File app/models/dev_feedback.rb, line 1121</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">user_load_from_params</span>(<span class="ruby-identifier">val</span>)
+
+<span class="ruby-keyword">self</span>.<span class="ruby-identifier">user_was</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">user</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">val</span>
+<span class="ruby-keyword">case</span> <span class="ruby-identifier">val</span>
+<span class="ruby-keyword">when</span> <span class="ruby-constant">Hash</span>, <span class="ruby-constant">HashWithIndifferentAccess</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">user</span> = <span class="ruby-identifier">val</span>.<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>, <span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">k</span>[<span class="ruby-regexp">%r\A(_|-)\d+/</span>] <span class="ruby-comment"># CREATE</span>
+      <span class="ruby-identifier">elt</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-identifier">v</span>)
+      <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">elt</span>.<span class="ruby-identifier">valid?</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">:user</span>, <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Invalid user: %{d}&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:d</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">full_messages</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">','</span>)})
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-identifier">elt</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">v</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">String</span> <span class="ruby-comment"># UNCHANGED OR DESTROY</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">v</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;-1&quot;</span> <span class="ruby-comment">#DESTROY</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">user</span>.<span class="ruby-identifier">destroy</span>(<span class="ruby-identifier">k</span>) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+        <span class="ruby-identifier">val</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">k</span>)
+        <span class="ruby-keyword">nil</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-constant">User</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">k</span>) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">elt</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">load_from_params</span>(<span class="ruby-identifier">v</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">k</span>))
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">valid?</span>
+        <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">save</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">changed?</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">:user</span>, <span class="ruby-identifier">_</span>(<span class="ruby-string">&quot;Invalid user: %{d}&quot;</span>) <span class="ruby-operator">%</span> {<span class="ruby-value">:d</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">elt</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">full_messages</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">','</span>)})
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-identifier">elt</span>
+    <span class="ruby-keyword">end</span>
+  }.<span class="ruby-identifier">compact</span>.<span class="ruby-identifier">first</span>
+<span class="ruby-keyword">when</span> <span class="ruby-constant">String</span>, <span class="ruby-constant">Fixnum</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">user</span> = <span class="ruby-identifier">val</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">:</span> <span class="ruby-constant">User</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">val</span>)
+<span class="ruby-keyword">when</span> <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">else</span> <span class="ruby-identifier">logger</span>.<span class="ruby-identifier">warn</span>(<span class="ruby-node">&quot;Unexpected params type for 'user': #{val.class}&quot;</span>)
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- user_load_from_params-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- user_load_from_params-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
